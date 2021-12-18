@@ -4,7 +4,7 @@ import Controll from "./Controll";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class CButtontemp extends cc.Component {
 
     @property(cc.Sprite)
     sBakeGroud: cc.Sprite = null;
@@ -20,10 +20,9 @@ export default class NewClass extends cc.Component {
                     .to(1, { scale: 1 })
             )
             .start()
-
-                this.btnStart.node.on(onClick.TouchEnd,()=>{
-                    Controll.man.StartGO(3);
-                },this)
+        this.btnStart.node.on(onClick.TouchEnd, () => {
+            Controll.man.StartGO(4);
+        }, this)
     }
 
 }
