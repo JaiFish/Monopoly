@@ -30,7 +30,7 @@ export default class CMan extends cc.Component {
         let tryData: Array<cc.Vec2> = Controll.instens.pathBezierData.get(this.nowIndex)
         if (tryData == undefined) this.GoLine(GoCount)
         else {
-            this.GoBezier(GoCount, 0, tryData.length)
+            // this.GoBezier(GoCount, 0, tryData.length)
         }
 
     }
