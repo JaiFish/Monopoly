@@ -84,7 +84,7 @@ export default class Controll extends cc.Component {
         Arr.push(cc.v2(x, y))
         console.log(Arr);
 
-        // this.pathBezierData.set(mapNumber + 1, Arr);
+        this.pathBezierData.set(mapNumber + 1, Arr);
     }
 }
 
