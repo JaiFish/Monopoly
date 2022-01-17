@@ -82,7 +82,7 @@ export default class Controll extends cc.Component {
         x = pathData[mapNumber + 1]["value"][0];
         y = pathData[mapNumber + 1]["value"][1];
         Arr.push(cc.v2(x, y))
-        console.log(Arr);
+        // console.log(Arr);
 
         this.pathBezierData.set(mapNumber + 1, Arr);
     }
