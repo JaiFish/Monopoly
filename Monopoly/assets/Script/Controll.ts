@@ -76,7 +76,7 @@ export default class Controll extends cc.Component {
         //調整位子  有夠麻煩
         // let getPushOne: cc.Vec2 = Arr.splice(1, 1)[0]
         // console.log(getPushOne.x,getPushOne.y);
-        Arr.unshift(getPushOne);
+        // Arr.unshift(getPushOne);
 
         //下一個點為終點所以要在這加入
         x = pathData[mapNumber + 1]["value"][0];
@@ -84,7 +84,7 @@ export default class Controll extends cc.Component {
         Arr.push(cc.v2(x, y))
         console.log(Arr);
 
-        this.pathBezierData.set(mapNumber + 1, Arr);
+        // this.pathBezierData.set(mapNumber + 1, Arr);
     }
 }
 
