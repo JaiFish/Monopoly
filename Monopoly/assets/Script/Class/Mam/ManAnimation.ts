@@ -78,11 +78,5 @@ export default class ManAction extends DataMan {
         
         this.gameModle = _gameModel
     }
-    convertOtherNodeSpaceAR(node: cc.Node, targetNode: cc.Node) {
-        let pos = targetNode.position;
-        //轉成世界座標
-        let worldPoint = node.convertToWorldSpaceAR(pos);
-        return targetNode.convertToNodeSpaceAR(worldPoint);
-    }
 
 }

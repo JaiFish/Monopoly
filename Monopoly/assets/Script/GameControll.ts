@@ -1,4 +1,5 @@
 import AssetMng from "./Asset/AssetMng";
+import CameraControll from "./Class/CameraControll";
 import ComponentBase from "./Class/ComponentBase";
 import Panel_Man from "./Class/Mam/Panel_Man";
 import Panel_AniPath from "./Class/Panel_AniPath";
@@ -14,12 +15,14 @@ export default class Controll extends ComponentBase {
     panel_AniPath: Panel_AniPath;
     panel_Map: Panel_Map;
     panel_Man: Panel_Man;
+    cameraControll:CameraControll;
     gameModle: GameModle;
 
     onLoad() {
         this.panel_AniPath = cc.find("Canvas/Panel_AniPath").addComponent(Panel_AniPath);
         this.panel_Map = cc.find("Canvas/Panel_Map").addComponent(Panel_Map);
         this.panel_Man = cc.find("Canvas/Panel_Man").addComponent(Panel_Man);
+        this.cameraControll = cc.find("Canvas/MainCamera").addComponent(CameraControll);
         this.gameModle = GameModle;
         console.log(this.gameModle);
 

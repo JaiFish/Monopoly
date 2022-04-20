@@ -16,8 +16,12 @@ class GameModel {
     public pathBezierData: Map<number, Array<cc.Vec2>> = new Map();
 
     public panel_Map: Panel_Map;
-    Request(){
-        
+
+    convertOtherNodeSpaceAR(node: cc.Node, targetNode: cc.Node) {
+        let pos = targetNode.position;
+        //轉成世界座標
+        let worldPoint = node.convertToWorldSpaceAR(pos);
+        return targetNode.convertToNodeSpaceAR(worldPoint);
     }
 
 

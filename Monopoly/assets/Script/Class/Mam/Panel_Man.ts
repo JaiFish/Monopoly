@@ -4,6 +4,7 @@ import MyMath from "../../Data/MyMath";
 import { GameEvent } from "../../Enum/GameEvent";
 import { GameState } from "../../Enum/GameState";
 import EventMng from "../../Event/EventMng";
+import GameModel from "../../GameModel";
 import ManAction from "./ManAnimation";
 
 export default class Panel_Man extends ManAction {
@@ -20,10 +21,10 @@ export default class Panel_Man extends ManAction {
         EventMng.emit(GameEvent.SendModel, GameEvent.SetModel)
         setTimeout(() => {
             this.resetOeg()
-            this.setStation();
-            this.smoothSpeed();
-            this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
-            this.startGO();
+            // this.setStation();
+            // this.smoothSpeed();
+            // this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
+            // this.startGO();
         }, 1000);
 
     }
@@ -63,7 +64,7 @@ export default class Panel_Man extends ManAction {
     }
 
     setNextPosition(_pos: cc.Vec2) {
-        let changePosition: cc.Vec3 = this.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
+        let changePosition: cc.Vec3 = GameModel.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
         console.log(changePosition);
 
         this.targetX = MyMath.round(changePosition.x, 3);
@@ -81,7 +82,7 @@ export default class Panel_Man extends ManAction {
     }
 
     smoothSpeed(): void {
-        let pos = this.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
+        let pos = GameModel.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
         let man = this.nMan.getPosition()
 
         //計算兩點之間距離
