@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e7b0ee7c-11e7-4519-bb14-ace559837004",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 306,
+  "height": 274,
+  "platformSettings": {},
+  "subMetas": {
+    "車站-宜蘭車站": {
+      "ver": "1.0.6",
+      "uuid": "0e5ab7da-1c89-4688-a55c-4ac52f93694d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e7b0ee7c-11e7-4519-bb14-ace559837004",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 306,
+      "height": 274,
+      "rawWidth": 306,
+      "rawHeight": 274,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

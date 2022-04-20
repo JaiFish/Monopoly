@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2894d2cb-940e-4814-b5ed-d76501f6ec52",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 169,
+  "height": 92,
+  "platformSettings": {},
+  "subMetas": {
+    "彩色車站-山佳車站": {
+      "ver": "1.0.6",
+      "uuid": "8388bb87-db55-422d-94f1-e10d7eb6f602",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2894d2cb-940e-4814-b5ed-d76501f6ec52",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 169,
+      "height": 92,
+      "rawWidth": 169,
+      "rawHeight": 92,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

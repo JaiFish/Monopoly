@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0c34ff8d-2cb2-4ba6-ac89-7252209ccbe1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 306,
+  "height": 274,
+  "platformSettings": {},
+  "subMetas": {
+    "車站-日南車站": {
+      "ver": "1.0.6",
+      "uuid": "48667b9b-5970-4382-957c-6c42a1db0c75",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0c34ff8d-2cb2-4ba6-ac89-7252209ccbe1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 306,
+      "height": 274,
+      "rawWidth": 306,
+      "rawHeight": 274,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

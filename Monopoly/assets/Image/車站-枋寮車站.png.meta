@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "076e4332-b035-45d2-b12d-4d609dc22c1d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 306,
+  "height": 273,
+  "platformSettings": {},
+  "subMetas": {
+    "車站-枋寮車站": {
+      "ver": "1.0.6",
+      "uuid": "c73dccb1-a3b2-4acd-b1e0-e0bac07f5e57",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "076e4332-b035-45d2-b12d-4d609dc22c1d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 306,
+      "height": 273,
+      "rawWidth": 306,
+      "rawHeight": 273,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

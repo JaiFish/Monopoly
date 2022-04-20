@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3a8b4949-30d3-4468-b03c-07c6eced646c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 205,
+  "height": 78,
+  "platformSettings": {},
+  "subMetas": {
+    "彩色車站-台中車站": {
+      "ver": "1.0.6",
+      "uuid": "a0ff01ed-ccd5-4439-88f8-1ed1a5170f6e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3a8b4949-30d3-4468-b03c-07c6eced646c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 205,
+      "height": 78,
+      "rawWidth": 205,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

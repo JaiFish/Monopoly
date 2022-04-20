@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bf6cbfbe-8446-4831-bbcd-507f12d80762",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 163,
+  "height": 93,
+  "platformSettings": {},
+  "subMetas": {
+    "彩色車站-新竹車站": {
+      "ver": "1.0.6",
+      "uuid": "84f92ead-ebfe-43fc-98c8-fc6a1908c478",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bf6cbfbe-8446-4831-bbcd-507f12d80762",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 163,
+      "height": 93,
+      "rawWidth": 163,
+      "rawHeight": 93,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

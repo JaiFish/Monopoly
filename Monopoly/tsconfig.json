@@ -8,6 +8,10 @@
     "outDir": "temp/vscode-dist",
     "forceConsistentCasingInFileNames": true
   },
+  "types": [
+    "creator",
+    "@types/type"
+  ],
   "exclude": [
     "node_modules",
     "library",
@@ -15,5 +19,6 @@
     "temp",
     "build",
     "settings"
-  ]
+  ],
+
 }

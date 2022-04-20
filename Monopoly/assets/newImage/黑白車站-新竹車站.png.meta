@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ac62ac5a-6fb6-4948-830e-fc60caf9df7b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 163,
+  "height": 93,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-新竹車站": {
+      "ver": "1.0.6",
+      "uuid": "1e7e628c-8c2a-47da-8bec-34851c6a068b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ac62ac5a-6fb6-4948-830e-fc60caf9df7b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 163,
+      "height": 93,
+      "rawWidth": 163,
+      "rawHeight": 93,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

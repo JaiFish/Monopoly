@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "10d5023e-2103-4cc9-b076-dcb973e473bd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 306,
+  "height": 274,
+  "platformSettings": {},
+  "subMetas": {
+    "車站-新竹車站": {
+      "ver": "1.0.6",
+      "uuid": "bd5b28ab-0439-44e0-9045-5e3df65680dd",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "10d5023e-2103-4cc9-b076-dcb973e473bd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 306,
+      "height": 274,
+      "rawWidth": 306,
+      "rawHeight": 274,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "eb3453aa-696a-4bbb-9416-d4b91c3fde46",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 191,
+  "height": 126,
+  "platformSettings": {},
+  "subMetas": {
+    "彩色車站-花蓮車站": {
+      "ver": "1.0.6",
+      "uuid": "ebed8efe-c614-4255-ad6b-cf04862c0046",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "eb3453aa-696a-4bbb-9416-d4b91c3fde46",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 191,
+      "height": 126,
+      "rawWidth": 191,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
