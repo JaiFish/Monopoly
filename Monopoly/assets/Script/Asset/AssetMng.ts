@@ -10,7 +10,6 @@ class AssetMng {
     }
 
     checkState(): Promise<void> {
-
         // this.AllAssetClass.forEach(_AssetClass => {
         //     if (!_AssetClass.checkAssetState) return check = false
         // })

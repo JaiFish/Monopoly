@@ -1,13 +1,14 @@
 declare class GameModle {
-    stationType_WaitRad: number[]
-    stationType_Start: number[]
-    stationType_Normal: number[]
-    stationType_QandA: number[]
-    mapItem: Map<number, MapItem>;
-    pathPositionData: Map<number, cc.Vec2>;
-    pathBezierData: Map<number, Array<cc.Vec2>>;
-    panel_Map: Panel_Map;
+    stationType_WaitRad: number[];
+    stationType_Start: number[];
+    stationType_Normal: number[];
+    stationType_QandA: number[];
 
+    mapItem: Map<number, MapItem> = new Map();
+    pathPositionData: Map<number, cc.Vec2> = new Map();
+    pathBezierData: Map<number, Array<cc.Vec2>> = new Map();
+
+    gameState: GameState;
     convertOtherNodeSpaceAR(node: cc.Node, targetNode: cc.Node)
 }
 declare class Panel_AniPath {
@@ -15,7 +16,7 @@ declare class Panel_AniPath {
     public TWPath: cc.Animation;
 
 }
-declare class MapItem extends cc.Component{
+declare class MapItem extends cc.Component {
     _myNumber: number;
     _myType: StationType;
 

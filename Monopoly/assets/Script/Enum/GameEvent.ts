@@ -10,4 +10,5 @@ export enum GameEvent {
     ShowAllView = "ShowAllView",
     OpenDoor = "OpenDoor",
     CloseDoor = "CloseDoor",
+    BearSetModle="BearSetModle",
 }

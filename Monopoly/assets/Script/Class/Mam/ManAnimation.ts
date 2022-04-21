@@ -8,8 +8,8 @@ export default class ManAction extends DataMan {
     stopGo() {
         if (this.isCanGo) this.isCanGo = !this.isCanGo;
     }
-    StartGO_Tween(_gameModel: GameModle, GoCount: number, SayGO?: boolean) {
-        if (!this.gameModle) this.setGameModel(_gameModel)
+    StartGO_Tween(_gameModle: GameModle, GoCount: number, SayGO?: boolean) {
+        if (!this.gameModle) this.setGameModle(_gameModle)
         console.log(GoCount);
         if (GoCount == 0) return;
         this.nowIndex++
@@ -73,10 +73,10 @@ export default class ManAction extends DataMan {
     //         .to(1, { x: getNextMap.x, y: getNextMap.y }, { easing: dt => cc.easeCubicActionOut().easing(dt) })
     //         .start()
     // }
-    setGameModel(_gameModel: GameModle) {
-        console.log(_gameModel);
+    setGameModle(_gameModle: GameModle) {
+        console.log(_gameModle);
         
-        this.gameModle = _gameModel
+        this.gameModle = _gameModle
     }
 
 }

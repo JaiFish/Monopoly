@@ -4,57 +4,239 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>Station_Normal.png</key>
+            <key>Statipm_10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,72},{44,33}}</string>
+                <string>{{2,2},{427,160}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{427,160}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{427,160}</string>
             </dict>
-            <key>Station_Q&amp;A.png</key>
+            <key>Statipm_11.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,107},{43,33}}</string>
+                <string>{{319,1792},{270,175}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{43,33}}</string>
+                <string>{{0,0},{270,175}}</string>
                 <key>sourceSize</key>
-                <string>{43,33}</string>
+                <string>{270,175}</string>
             </dict>
-            <key>Station_Start.png</key>
+            <key>Statipm_12.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,37},{44,33}}</string>
+                <string>{{2,1190},{346,183}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{346,183}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{346,183}</string>
             </dict>
-            <key>Station_WaitRad.png</key>
+            <key>Statipm_13.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{44,33}}</string>
+                <string>{{341,1375},{295,220}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{295,220}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{295,220}</string>
+            </dict>
+            <key>Statipm_14.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{431,2},{321,213}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{321,213}}</string>
+                <key>sourceSize</key>
+                <string>{321,213}</string>
+            </dict>
+            <key>Statipm_15.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1732},{315,307}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{315,307}}</string>
+                <key>sourceSize</key>
+                <string>{315,307}</string>
+            </dict>
+            <key>Statipm_16.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{375,688},{350,220}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{350,220}}</string>
+                <key>sourceSize</key>
+                <string>{350,220}</string>
+            </dict>
+            <key>Statipm_17.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,426},{394,176}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{394,176}}</string>
+                <key>sourceSize</key>
+                <string>{394,176}</string>
+            </dict>
+            <key>Statipm_18.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,164},{397,260}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{397,260}}</string>
+                <key>sourceSize</key>
+                <string>{397,260}</string>
+            </dict>
+            <key>Statipm_19.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{401,325},{361,223}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{361,223}}</string>
+                <key>sourceSize</key>
+                <string>{361,223}</string>
+            </dict>
+            <key>Statipm_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,1189},{280,184}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{280,184}}</string>
+                <key>sourceSize</key>
+                <string>{280,184}</string>
+            </dict>
+            <key>Statipm_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,1040},{281,147}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{281,147}}</string>
+                <key>sourceSize</key>
+                <string>{281,147}</string>
+            </dict>
+            <key>Statipm_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,997},{352,191}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{352,191}}</string>
+                <key>sourceSize</key>
+                <string>{352,191}</string>
+            </dict>
+            <key>Statipm_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,604},{371,218}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{371,218}}</string>
+                <key>sourceSize</key>
+                <string>{371,218}</string>
+            </dict>
+            <key>Statipm_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1570},{332,160}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{332,160}}</string>
+                <key>sourceSize</key>
+                <string>{332,160}</string>
+            </dict>
+            <key>Statipm_7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1375},{337,193}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{337,193}}</string>
+                <key>sourceSize</key>
+                <string>{337,193}</string>
+            </dict>
+            <key>Statipm_8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,824},{370,171}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{370,171}}</string>
+                <key>sourceSize</key>
+                <string>{370,171}</string>
+            </dict>
+            <key>Statipm_9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{336,1597},{308,193}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{308,193}}</string>
+                <key>sourceSize</key>
+                <string>{308,193}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -64,9 +246,9 @@
             <key>realTextureFileName</key>
             <string>Station.png</string>
             <key>size</key>
-            <string>{48,142}</string>
+            <string>{646,2041}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c7e2cfe93c1dbb8f0ee2fb9eeec03ef3$</string>
+            <string>$TexturePacker:SmartUpdate:87d5f0f12e072d7b84e21c966497bdde$</string>
             <key>textureFileName</key>
             <string>Station.png</string>
         </dict>

@@ -11,7 +11,7 @@ export default class Panel_Man extends ManAction {
         this.nMan = cc.find("nMan", this.node);
         this.initEvent(GameEvent.ManGO, this.manGO)
         this.initEvent(GameEvent.ManStop, this.manStop)
-        this.initEvent(GameEvent.SetModel, this.setGameModel)
+        this.initEvent(GameEvent.SetModel, this.setGameModle)
         this.initEvent(GameEvent.SetManState, this.setManState);
         this.nowStation = 0
 
