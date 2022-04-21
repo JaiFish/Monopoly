@@ -7,6 +7,8 @@ declare class GameModle {
     pathPositionData: Map<number, cc.Vec2>;
     pathBezierData: Map<number, Array<cc.Vec2>>;
     panel_Map: Panel_Map;
+
+    convertOtherNodeSpaceAR(node: cc.Node, targetNode: cc.Node)
 }
 declare class Panel_AniPath {
     public aPath: cc.Animation;

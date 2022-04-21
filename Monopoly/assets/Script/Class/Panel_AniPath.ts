@@ -1,4 +1,4 @@
-import ComponentBase from "./ComponentBase";
+import ComponentBase from "../Data/base/ComponentBase";
 
 export default class Panel_AniPath extends ComponentBase {
     public aPath: cc.Animation ;

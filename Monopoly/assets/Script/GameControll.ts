@@ -1,12 +1,13 @@
 import AssetMng from "./Asset/AssetMng";
 import CameraControll from "./Class/CameraControll";
-import ComponentBase from "./Class/ComponentBase";
+import ComponentBase from "./Data/base/ComponentBase";
 import Panel_Man from "./Class/Mam/Panel_Man";
 import Panel_AniPath from "./Class/Panel_AniPath";
 
 import Panel_Map from "./Class/Panel_Map";
 import { GameEvent } from "./Enum/GameEvent";
 import GameModle from "./GameModel";
+import Panel_Door from "./Class/Panel_Door";
 
 const { ccclass, property } = cc._decorator;
 
@@ -15,14 +16,16 @@ export default class Controll extends ComponentBase {
     panel_AniPath: Panel_AniPath;
     panel_Map: Panel_Map;
     panel_Man: Panel_Man;
-    cameraControll:CameraControll;
+    cameraControll: CameraControll;
     gameModle: GameModle;
+    panel_Door: Panel_Door;
 
     onLoad() {
         this.panel_AniPath = cc.find("Canvas/Panel_AniPath").addComponent(Panel_AniPath);
         this.panel_Map = cc.find("Canvas/Panel_Map").addComponent(Panel_Map);
         this.panel_Man = cc.find("Canvas/Panel_Man").addComponent(Panel_Man);
         this.cameraControll = cc.find("Canvas/MainCamera").addComponent(CameraControll);
+        this.panel_Door = cc.find("Canvas/Panel_Door").addComponent(Panel_Door);
         this.gameModle = GameModle;
         console.log(this.gameModle);
 

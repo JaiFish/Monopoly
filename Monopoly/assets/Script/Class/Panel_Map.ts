@@ -3,7 +3,7 @@ import { GameEvent } from "../Enum/GameEvent";
 import { StationType } from "../Enum/StationType";
 import { TypeClass } from "../Enum/TypeClass";
 import MapItem from "../Item/MapItem";
-import ComponentBase from "./ComponentBase";
+import ComponentBase from "../Data/base/ComponentBase";
 
 export default class Panel_Map extends ComponentBase {
     public tempMapItem: cc.Node;

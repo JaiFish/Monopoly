@@ -1,4 +1,4 @@
-import ComponentBase from "../Class/ComponentBase";
+import ComponentBase from "../Data/base/ComponentBase";
 import { StationType } from "../Enum/StationType";
 
 export default class MapItem extends ComponentBase {

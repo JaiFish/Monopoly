@@ -1,4 +1,4 @@
-import EventMng from "../Event/EventMng";
+import EventMng from "../../Event/EventMng";
 
 export default class ComponentBase extends cc.Component {
     initEvent(name: string, callback: Function) {

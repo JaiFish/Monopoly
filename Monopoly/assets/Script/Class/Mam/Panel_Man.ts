@@ -4,7 +4,6 @@ import MyMath from "../../Data/MyMath";
 import { GameEvent } from "../../Enum/GameEvent";
 import { GameState } from "../../Enum/GameState";
 import EventMng from "../../Event/EventMng";
-import GameModel from "../../GameModel";
 import ManAction from "./ManAnimation";
 
 export default class Panel_Man extends ManAction {
@@ -64,7 +63,7 @@ export default class Panel_Man extends ManAction {
     }
 
     setNextPosition(_pos: cc.Vec2) {
-        let changePosition: cc.Vec3 = GameModel.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
+        let changePosition: cc.Vec3 = this.gameModle.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
         console.log(changePosition);
 
         this.targetX = MyMath.round(changePosition.x, 3);
@@ -82,7 +81,7 @@ export default class Panel_Man extends ManAction {
     }
 
     smoothSpeed(): void {
-        let pos = GameModel.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
+        let pos = this.gameModle.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
         let man = this.nMan.getPosition()
 
         //計算兩點之間距離

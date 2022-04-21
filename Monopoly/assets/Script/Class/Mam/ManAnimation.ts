@@ -1,5 +1,5 @@
 import DataMan from "../../Data/DataMan";
-import ComponentBase from "../ComponentBase"
+import ComponentBase from "../../Data/base/ComponentBase"
 
 export default class ManAction extends DataMan {
     startGO() {

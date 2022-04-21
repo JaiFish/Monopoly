@@ -1,4 +1,4 @@
-import ComponentBase from "../Class/ComponentBase";
+import ComponentBase from "./base/ComponentBase";
 import { GameState } from "../Enum/GameState";
 
 export default class DataMan extends ComponentBase {
