@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>Statipm_Gary_10.png</key>
+            <key>Station_Gary_10.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{403,136}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{403,136}</string>
             </dict>
-            <key>Statipm_Gary_11.png</key>
+            <key>Station_Gary_11.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{297,1542},{251,157}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{251,157}</string>
             </dict>
-            <key>Statipm_Gary_12.png</key>
+            <key>Station_Gary_12.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{386,313},{321,160}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{321,160}</string>
             </dict>
-            <key>Statipm_Gary_13.png</key>
+            <key>Station_Gary_13.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{343,940},{274,199}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{274,199}</string>
             </dict>
-            <key>Statipm_Gary_14.png</key>
+            <key>Station_Gary_14.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{352,636},{302,194}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{302,194}</string>
             </dict>
-            <key>Statipm_Gary_15.png</key>
+            <key>Station_Gary_15.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1426},{293,284}}</string>
@@ -82,7 +82,7 @@
                 <key>sourceSize</key>
                 <string>{293,284}</string>
             </dict>
-            <key>Statipm_Gary_16.png</key>
+            <key>Station_Gary_16.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{331,1216},{324,193}}</string>
@@ -95,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{324,193}</string>
             </dict>
-            <key>Statipm_Gary_17.png</key>
+            <key>Station_Gary_17.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,380},{372,153}}</string>
@@ -108,7 +108,7 @@
                 <key>sourceSize</key>
                 <string>{372,153}</string>
             </dict>
-            <key>Statipm_Gary_18.png</key>
+            <key>Station_Gary_18.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,140},{382,238}}</string>
@@ -121,7 +121,7 @@
                 <key>sourceSize</key>
                 <string>{382,238}</string>
             </dict>
-            <key>Statipm_Gary_19.png</key>
+            <key>Station_Gary_19.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,881},{339,204}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{339,204}</string>
             </dict>
-            <key>Statipm_Gary_2.png</key>
+            <key>Station_Gary_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{306,1701},{262,168}}</string>
@@ -147,7 +147,7 @@
                 <key>sourceSize</key>
                 <string>{262,168}</string>
             </dict>
-            <key>Statipm_Gary_3.png</key>
+            <key>Station_Gary_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{177,1712},{264,127}}</string>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{264,127}</string>
             </dict>
-            <key>Statipm_Gary_4.png</key>
+            <key>Station_Gary_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1087},{327,165}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{327,165}</string>
             </dict>
-            <key>Statipm_Gary_5.png</key>
+            <key>Station_Gary_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,535},{348,196}}</string>
@@ -186,7 +186,7 @@
                 <key>sourceSize</key>
                 <string>{348,196}</string>
             </dict>
-            <key>Statipm_Gary_6.png</key>
+            <key>Station_Gary_6.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{407,2},{309,139}}</string>
@@ -199,7 +199,7 @@
                 <key>sourceSize</key>
                 <string>{309,139}</string>
             </dict>
-            <key>Statipm_Gary_7.png</key>
+            <key>Station_Gary_7.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1254},{316,170}}</string>
@@ -212,7 +212,7 @@
                 <key>sourceSize</key>
                 <string>{316,170}</string>
             </dict>
-            <key>Statipm_Gary_8.png</key>
+            <key>Station_Gary_8.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,733},{345,146}}</string>
@@ -225,7 +225,7 @@
                 <key>sourceSize</key>
                 <string>{345,146}</string>
             </dict>
-            <key>Statipm_Gary_9.png</key>
+            <key>Station_Gary_9.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1712},{289,173}}</string>
@@ -248,7 +248,7 @@
             <key>size</key>
             <string>{550,2003}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:8b0146f58576fa510723870193c4786f$</string>
+            <string>$TexturePacker:SmartUpdate:593b2badc00e45e6a90d6b5eb328c8da$</string>
             <key>textureFileName</key>
             <string>Station_Gary.png</string>
         </dict>

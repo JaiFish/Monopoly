@@ -4,13 +4,16 @@ import { StationType } from "../Enum/StationType";
 import { TypeClass } from "../Enum/TypeClass";
 import MapItem from "../Item/MapItem";
 import ComponentBase from "../Data/base/ComponentBase";
+import MapSprite from "../Item/MapSprite";
 
 export default class Panel_Map extends ComponentBase {
     public tempMapItem: cc.Node;
     public content_Map: cc.Node;
+    public content_Station: cc.Node;
     protected onLoad(): void {
         this.tempMapItem = cc.find("mapItem", this.node)
         this.content_Map = cc.find("nContent_Map", this.node)
+        this.content_Station = cc.find("nContent_StationSprite", this.node)
         this.initEvent(GameEvent.InitMap, this.initMap)
     }
     protected start(): void {
@@ -19,6 +22,7 @@ export default class Panel_Map extends ComponentBase {
     async initMap(_gameModle: GameModle, _path: cc.Animation) {
 
         let pathData: Array<object> = _path.getClips()[0].curveData.props.position
+        //拿取Animation的路徑
         for (let index: number = 0; index < pathData.length; index++) {
             let x: number = pathData[index]["value"][0]
             let y: number = pathData[index]["value"][1]
@@ -40,6 +44,12 @@ export default class Panel_Map extends ComponentBase {
             _class.myType = this.getStationType(index);
             _class.setSprite(this.getSpriteType(index));
             _gameModle.mapItem.set(index, _class)
+        }
+        for (let index = 2; index <= 19; index++) {
+            let spriteClass = cc.find(index.toString(), this.content_Station).getComponent(cc.Sprite).addComponent(MapSprite)
+
+            spriteClass.mySprite.spriteFrame = AssetMng.Asset.get("Station_Gary_" + index.toString())
+            _gameModle.mapSprite.set(index, spriteClass)
         }
 
         console.log(_gameModle.pathBezierData);

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a695f3b4-3aaf-4c54-a748-fd406ff898f4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 92,
+  "height": 115,
+  "platformSettings": {},
+  "subMetas": {
+    "棋子-自強號": {
+      "ver": "1.0.6",
+      "uuid": "a3380c02-95fb-4a37-8e48-919fa0c083e7",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a695f3b4-3aaf-4c54-a748-fd406ff898f4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 92,
+      "height": 115,
+      "rawWidth": 92,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

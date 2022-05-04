@@ -11,27 +11,22 @@ export default class Panel_Man extends ManAction {
         this.nMan = cc.find("nMan", this.node);
         this.initEvent(GameEvent.ManGO, this.manGO)
         this.initEvent(GameEvent.ManStop, this.manStop)
+        this.initEvent(GameEvent.ManWait, this.manWait)
+        this.initEvent(GameEvent.ManSkip, this.manSkip)
         this.initEvent(GameEvent.SetModel, this.setGameModle)
         this.initEvent(GameEvent.SetManState, this.setManState);
         this.nowStation = 0
-
+        this.node.opacity = 0
     }
     protected start(): void {
         EventMng.emit(GameEvent.SendModel, GameEvent.SetModel)
-        setTimeout(() => {
-            this.resetOeg()
-            // this.setStation();
-            // this.smoothSpeed();
-            // this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
-            // this.startGO();
-        }, 1000);
 
     }
     protected update(dt: number): void {
         if (this.isCanGo) {
 
-            let x = (dt * this.xSpeed) * this.directionX
-            let y = (dt * this.ySpeed) * this.directionY
+            let x = (dt * this.xSpeed * this.manSpeed) * this.directionX
+            let y = (dt * this.ySpeed * this.manSpeed) * this.directionY
 
             x = MyMath.add(this.nMan.x, x)
             y = MyMath.add(this.nMan.y, y)
@@ -39,27 +34,39 @@ export default class Panel_Man extends ManAction {
             if (this.checkX(x) && this.checkY(y)) {
                 this.skipGoPosition()
                 this.stopGo();
-                if (this.manState == GameState.Start)
-                    setTimeout(() => {
-                        this.setStation();
-                        this.smoothSpeed();
-                        this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
-                        this.startGO();
-                    }, 500);
+                EventMng.emit(GameEvent.GetStation, this.nowStation)
+                if (this.manState == GameState.Start || this.manState == GameState.Skip)
+                    if (!this.checkStationStop())
+                        setTimeout(() => {
+                            this.manGO()
+                        }, 500);
             }
         }
     }
     manGO() {
+        console.log("開始走囉", this.isCanGo);
+
         this.setStation();
         this.smoothSpeed();
         this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
+        this.setManState(GameState.Start)
         this.startGO();
+        console.log("開始走囉", this.isCanGo);
+    }
+    manWait() {
+        this.setManState(GameState.Wait)
     }
     manStop() {
         this.stopGo();
     }
+    manSkip() {
+        if (!this.isCanGo) this.startGO();
+        this.manSpeed = this.manSkipSeed;
+        this.setManState(GameState.Skip)
+    }
     setStation(num: number = 1) {
         this.nowStation += num;
+        if (this.nowStation > 20) this.nowStation = 0
     }
 
     setNextPosition(_pos: cc.Vec2) {
@@ -99,8 +106,8 @@ export default class Panel_Man extends ManAction {
         // console.log(absX / vectorDistance);
         // console.log(absY / vectorDistance);
         //(向量單邊距離 / 向量距離) * 移動速率
-        this.xSpeed = (absX / vectorDistance) * this.manSpeed;
-        this.ySpeed = (absY / vectorDistance) * this.manSpeed;
+        this.xSpeed = (absX / vectorDistance);
+        this.ySpeed = (absY / vectorDistance);
     }
     setManState(_state: GameState) {
         this.manState = _state;
@@ -113,14 +120,19 @@ export default class Panel_Man extends ManAction {
         //         break;
         // }
     }
+    setManSprite(_sprite: cc.SpriteFrame) {
+        this.nMan.getComponent(cc.Sprite).spriteFrame = _sprite
+    }
     /**
      * 回到原點
      */
     resetOeg() {
+        this.node.opacity = 255
         this.setStation(0);
         this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
         this.skipGoPosition();
         this.manState = GameState.Wait;
+        this.manSpeed = this.manDefaultSpeed;
         this.stopGo()
     }
     checkX(x: number): boolean {
@@ -136,6 +148,33 @@ export default class Panel_Man extends ManAction {
             return nowY > this.targetY ? true : false
         else
             return nowY < this.targetY ? true : false
+    }
+    checkStationStop(): boolean {
+        if (this.nowStation == 3 ||
+            this.nowStation == 11 ||
+            this.nowStation == 15 ||
+            this.nowStation == 1 ||
+            this.nowStation == 20
+        ) {
+            this.stopGo()
+            this.manState = GameState.ShowMessage
+            switch (this.nowStation) {
+                case 3:
+                case 11:
+                case 15:
+
+                    //傳遞訊息開啟QA視窗
+                    break;
+                case 1:
+                case 20:
+                    //傳遞訊息
+                    break;
+            }
+            return true;
+        }
+        else
+            return false;
+
     }
 }
 

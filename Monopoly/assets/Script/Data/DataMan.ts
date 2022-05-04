@@ -7,8 +7,10 @@ export default class DataMan extends ComponentBase {
     getCount: number;
     nowIndex: number = 0;
 
-    manState:GameState;
-    manSpeed: number = 1000;
+    manState: GameState;
+    manSkipSeed: number = 1000;
+    manDefaultSpeed: number = 30;
+    manSpeed: number;
     /**
      * X增加速率，撫平每秒速率
      */

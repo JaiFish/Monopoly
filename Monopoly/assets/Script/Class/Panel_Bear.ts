@@ -2,8 +2,6 @@ import AssetMng from '../Asset/AssetMng';
 import ComponentBase from '../Data/base/ComponentBase';
 import { GameEvent } from '../Enum/GameEvent';
 import { GameState } from '../Enum/GameState';
-import EventMng from '../Event/EventMng';
-import Controll from '../GameControll';
 enum BearState {
     Greee = "Greee",
     Red = "Red",

@@ -1,5 +1,6 @@
 
 import IAsset from "../Interface/IAsset";
+import SpriteAsset from "./SpriteAsset";
 import SpriteAtlasAsset from "./SpriteAtlasAsset";
 
 class AssetMng {
@@ -7,6 +8,7 @@ class AssetMng {
     AllAssetClass: Array<IAsset> = []
     startLoad() {
         this.AllAssetClass.push(SpriteAtlasAsset.loadAsset(this.Asset));
+        this.AllAssetClass.push(SpriteAsset.loadAsset(this.Asset));
     }
 
     checkState(): Promise<void> {

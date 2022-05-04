@@ -9,9 +9,9 @@
   },
   "type": "Texture Packer",
   "subMetas": {
-    "Statipm_Gary_10.png": {
+    "Station_Gary_10.png": {
       "ver": "1.0.6",
-      "uuid": "d566da89-f86e-4072-b6d5-2b1ea36e5226",
+      "uuid": "b70d3eb4-18d0-4224-b464-643601770c94",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -32,9 +32,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_11.png": {
+    "Station_Gary_11.png": {
       "ver": "1.0.6",
-      "uuid": "f7090e9e-b7e3-47b2-b48d-f3cbb2d319cd",
+      "uuid": "40c7838a-7471-4a86-aabd-1655934b5505",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -55,9 +55,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_12.png": {
+    "Station_Gary_12.png": {
       "ver": "1.0.6",
-      "uuid": "5c5f130e-5036-44b3-8639-ec057c394c7f",
+      "uuid": "29870b20-09c0-4180-9ede-64af011a7124",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -78,9 +78,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_13.png": {
+    "Station_Gary_13.png": {
       "ver": "1.0.6",
-      "uuid": "332e01c1-2805-4c3c-9a50-60f54768f378",
+      "uuid": "b8caec24-fe69-4125-b0d1-f8bf13333f60",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -101,9 +101,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_14.png": {
+    "Station_Gary_14.png": {
       "ver": "1.0.6",
-      "uuid": "10cf5d5c-a74b-49f0-b254-463ce6572ab8",
+      "uuid": "2cb62ae5-00a8-4360-a01c-ada034653a3e",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -124,9 +124,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_15.png": {
+    "Station_Gary_15.png": {
       "ver": "1.0.6",
-      "uuid": "cff941d5-9117-41ca-80da-4241eaa64548",
+      "uuid": "4794fbf6-b1f5-487c-b42a-d6d8e9aca12c",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -147,9 +147,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_16.png": {
+    "Station_Gary_16.png": {
       "ver": "1.0.6",
-      "uuid": "8c614702-c066-4ca4-8bf3-88003fa1d033",
+      "uuid": "59f82c8a-c92b-449c-a664-2b53330f2dc3",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -170,9 +170,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_17.png": {
+    "Station_Gary_17.png": {
       "ver": "1.0.6",
-      "uuid": "8a5ddbac-4d72-4f43-97f7-97b34118bc22",
+      "uuid": "848a53eb-8502-4d91-ab17-e7916c22b1a5",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -193,9 +193,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_18.png": {
+    "Station_Gary_18.png": {
       "ver": "1.0.6",
-      "uuid": "c942dbd1-70ae-4ce3-a081-98eb7a2a47d4",
+      "uuid": "57f6516b-8f0a-42d3-8ad3-0fa8eeb4d00c",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -216,9 +216,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_19.png": {
+    "Station_Gary_19.png": {
       "ver": "1.0.6",
-      "uuid": "4b434e74-1451-40a5-b4e8-d4c3211084a8",
+      "uuid": "20f82954-1ed8-4054-b18f-6f4745adaa15",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -239,9 +239,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_2.png": {
+    "Station_Gary_2.png": {
       "ver": "1.0.6",
-      "uuid": "795123bf-08ff-4757-92c6-188e9c51d5cf",
+      "uuid": "9439c6a7-ce15-41b3-94ab-ecd9b4fa719f",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -262,9 +262,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_3.png": {
+    "Station_Gary_3.png": {
       "ver": "1.0.6",
-      "uuid": "074a927a-ac60-497b-b6ba-b004c98ca554",
+      "uuid": "71b13ac3-7e48-49b6-9deb-0523e9ecf1c7",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -285,9 +285,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_4.png": {
+    "Station_Gary_4.png": {
       "ver": "1.0.6",
-      "uuid": "4b1a3b63-aa4e-4e07-9ae3-d51640e1fd31",
+      "uuid": "873d309b-0996-4877-8fa9-4ca69b9428a9",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -308,9 +308,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_5.png": {
+    "Station_Gary_5.png": {
       "ver": "1.0.6",
-      "uuid": "29ead04b-bab1-40fa-a9bb-073f831a26d6",
+      "uuid": "db39e93a-f682-4def-9381-bbc8c2ce8d6c",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -331,9 +331,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_6.png": {
+    "Station_Gary_6.png": {
       "ver": "1.0.6",
-      "uuid": "eacd494f-7e65-44de-bf7a-fbbf51d71c54",
+      "uuid": "7d2a6a6f-d2e3-4253-bf80-39e69f572aca",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -354,9 +354,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_7.png": {
+    "Station_Gary_7.png": {
       "ver": "1.0.6",
-      "uuid": "e292d962-a394-4392-866e-d72355d59581",
+      "uuid": "d0ab76f9-d525-4add-9a5d-756d9e2f6ed0",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -377,9 +377,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_8.png": {
+    "Station_Gary_8.png": {
       "ver": "1.0.6",
-      "uuid": "adde779b-7300-4b51-b804-35a5321f09e4",
+      "uuid": "584cdd98-c404-469b-930d-3da6f76eeea9",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",
@@ -400,9 +400,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Statipm_Gary_9.png": {
+    "Station_Gary_9.png": {
       "ver": "1.0.6",
-      "uuid": "6a8e779d-037e-4cd8-a80e-0ffbc0467e61",
+      "uuid": "9f82490c-4ce5-45d3-b92d-781b648ddb2d",
       "importer": "sprite-frame",
       "rawTextureUuid": "3f3a034d-d082-482a-8307-9a81e844b3f5",
       "trimType": "auto",

@@ -1,5 +1,8 @@
 import ComponentBase from '../Data/base/ComponentBase';
+import { GameEvent } from '../Enum/GameEvent';
 export default class CloudItem extends ComponentBase {
+
+    cloudNumber: number;
     Speed: number;
     direction: number;
     targetX: number;
@@ -17,11 +20,11 @@ export default class CloudItem extends ComponentBase {
             this.node.x += (dt * this.Speed) * this.direction;
             if (this.direction > 0) {
                 if (this.node.x > this.targetX)
-                    this.node.destroy()
+                    this.EventEmit(GameEvent.DeletCloud, this.cloudNumber)
             }
             else {
                 if (this.node.x < this.targetX)
-                    this.node.destroy()
+                    this.EventEmit(GameEvent.DeletCloud, this.cloudNumber)
             }
 
         }

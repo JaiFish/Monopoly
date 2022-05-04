@@ -1,12 +1,16 @@
 
-import ComponentBase from "./Data/base/ComponentBase";
 import { GameState } from "./Enum/GameState";
-import MapItem from "./Item/MapItem";
+import { TrainType } from "./Enum/TrainType";
+
+class Player {
+    level:number;
+    trainType:TrainType;
+    qa:Map<number,string>= new Map()
+    explain:Map<number,string>= new Map()
+}
 
 class GameModel {
-
-
-
+    playData: Player = new Player();
     stationType_WaitRad: number[] = [1, 20];
     stationType_Start: number[] = [0];
     stationType_Normal: number[] = [
@@ -17,6 +21,7 @@ class GameModel {
     stationType_QandA: number[] = [3, 11, 15];
 
     mapItem: Map<number, MapItem> = new Map();
+    mapSprite: Map<number, MapSprite> = new Map();
     pathPositionData: Map<number, cc.Vec2> = new Map();
     pathBezierData: Map<number, Array<cc.Vec2>> = new Map();
 
@@ -29,3 +34,6 @@ class GameModel {
     }
 }
 export default new GameModel()
+
+
+

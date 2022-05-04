@@ -1,3 +1,4 @@
+
 declare class GameModle {
     stationType_WaitRad: number[];
     stationType_Start: number[];
@@ -5,6 +6,7 @@ declare class GameModle {
     stationType_QandA: number[];
 
     mapItem: Map<number, MapItem> = new Map();
+    mapSprite: Map<number, MapSprite> = new Map();
     pathPositionData: Map<number, cc.Vec2> = new Map();
     pathBezierData: Map<number, Array<cc.Vec2>> = new Map();
 
@@ -29,4 +31,14 @@ declare class MapItem extends cc.Component {
     public set myType(v: StationType);
 
     public get myType(): StationType;
+}
+declare class MapSprite extends ComponentBase {
+    isGet: boolean
+    _mySprite: cc.Sprite;
+    public set mySprite(v: cc.Sprite)
+    public get mySprite(): cc.Sprite
+
+
+    getAction()
+
 }

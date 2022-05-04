@@ -15,7 +15,7 @@ export enum Easing {
     sineOut = "sineOut",
     sineInOut = "sineInOut",
     expoIn = "expoIn",
-    expoOu = "expoOu",
+    expoOut = "expoOut",
     expoInOut = "expoInOut",
     circIn = "circIn",
     circOut = "circOut",
