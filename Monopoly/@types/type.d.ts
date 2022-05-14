@@ -1,9 +1,9 @@
 
 declare class GameModle {
-    stationType_WaitRad: number[];
+    stationType_ShowVideo: number[];
     stationType_Start: number[];
     stationType_Normal: number[];
-    stationType_QandA: number[];
+    stationType_QA: number[];
 
     mapItem: Map<number, MapItem> = new Map();
     mapSprite: Map<number, MapSprite> = new Map();

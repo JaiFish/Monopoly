@@ -3,8 +3,7 @@ class SpriteAsset {
     checkAssetState: boolean;
     typePath: string = "Image/";
     filePath: string[] = [
-        "棋子",
-        "test",
+
 
     ];
     loadAsset(_Asset: Map<string, any>) {

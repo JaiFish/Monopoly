@@ -1,6 +1,7 @@
 import { Easing } from "../Enum/Easing";
 import { GameEvent } from "../Enum/GameEvent";
 import ComponentBase from "../Data/base/ComponentBase";
+import GameModle from "../GameModle";
 export default class CameraControll extends ComponentBase {
     manCamera: cc.Camera;
     mineCamera: cc.Camera;
@@ -29,8 +30,8 @@ export default class CameraControll extends ComponentBase {
     activeMineCamera(isboolean: boolean) {
         this.mineCamera.node.active = isboolean
     }
-    moveToStation(target: cc.Node, model: GameModle) {
-        let manePos = model.convertOtherNodeSpaceAR(target, this.mineCamera.node)
+    moveToStation(target: cc.Node) {
+        let manePos = GameModle.convertOtherNodeSpaceAR(target, this.mineCamera.node)
         cc.tween(this.mineCamera.node)
             .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
             .start()
@@ -40,7 +41,7 @@ export default class CameraControll extends ComponentBase {
             .start()
 
     }
-    async moveToManCamera(model: GameModle, isJump: boolean = true) {
+    async moveToManCamera( isJump: boolean = true) {
         return new Promise<void>((resolve, reject) => {
             let tween: cc.Tween;
             if (!isJump)
@@ -51,7 +52,7 @@ export default class CameraControll extends ComponentBase {
                     .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
                     .to(this.moveSpeed * 0.5, { zoomRatio: this.manZoomRatio }, { easing: Easing.cubicOut })
 
-            let manePos = model.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
+            let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
             cc.tween(this.mineCamera.node)
                 .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
                 .call(resolve)

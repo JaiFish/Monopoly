@@ -10,10 +10,12 @@ export default class Panel_Door extends ComponentBase {
         this.right = cc.find("right", this.node)
         this.initEvent(GameEvent.OpenDoor, this.openDoor)
         this.initEvent(GameEvent.CloseDoor, this.closeDoor)
+        this.defaultReset()
     }
     async reset(): Promise<void> {
         this.left.x = 0
         this.right.x = 0
+        this.show()
         await this.openDoor()
         await this.scaleAction()
 

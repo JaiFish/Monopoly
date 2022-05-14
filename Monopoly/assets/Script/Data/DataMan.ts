@@ -48,7 +48,9 @@ export default class DataMan extends ComponentBase {
      * Y方向
      */
     directionY: number;
-
+    /**
+     * 目前停靠站位置
+     */
     nowStation: number;
 
     isCanGo: boolean;

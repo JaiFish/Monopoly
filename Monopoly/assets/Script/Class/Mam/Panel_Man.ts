@@ -1,6 +1,7 @@
 
 
 import MyMath from "../../Data/MyMath";
+import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
 import { GameState } from "../../Enum/GameState";
 import EventMng from "../../Event/EventMng";
@@ -150,7 +151,7 @@ export default class Panel_Man extends ManAction {
             return nowY < this.targetY ? true : false
     }
     checkStationStop(): boolean {
-        if (this.nowStation == 3 ||
+        if (this.nowStation == 6 ||
             this.nowStation == 11 ||
             this.nowStation == 15 ||
             this.nowStation == 1 ||
@@ -159,15 +160,15 @@ export default class Panel_Man extends ManAction {
             this.stopGo()
             this.manState = GameState.ShowMessage
             switch (this.nowStation) {
-                case 3:
+                case 6:
                 case 11:
                 case 15:
-
                     //傳遞訊息開啟QA視窗
                     break;
                 case 1:
                 case 20:
-                    //傳遞訊息
+                    this.EventEmit(GameEvent.SendCommand,Commamnd.ShowVideo)
+                    //傳遞Show影片訊息
                     break;
             }
             return true;

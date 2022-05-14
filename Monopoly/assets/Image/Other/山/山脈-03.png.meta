@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8c26b157-efb8-4173-92dd-18b30d11214f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 197,
+  "height": 91,
+  "platformSettings": {},
+  "subMetas": {
+    "山脈-03": {
+      "ver": "1.0.6",
+      "uuid": "316d4163-13e1-476f-a846-0f7d76b13037",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8c26b157-efb8-4173-92dd-18b30d11214f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 197,
+      "height": 91,
+      "rawWidth": 197,
+      "rawHeight": 91,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

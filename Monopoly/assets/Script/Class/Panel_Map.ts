@@ -46,14 +46,14 @@ export default class Panel_Map extends ComponentBase {
             _gameModle.mapItem.set(index, _class)
         }
         for (let index = 2; index <= 19; index++) {
+            // let spriteClass = this.content_Station.children[index].addComponent(MapSprite)
             let spriteClass = cc.find(index.toString(), this.content_Station).getComponent(cc.Sprite).addComponent(MapSprite)
-
             spriteClass.mySprite.spriteFrame = AssetMng.Asset.get("Station_Gary_" + index.toString())
             _gameModle.mapSprite.set(index, spriteClass)
         }
 
-        console.log(_gameModle.pathBezierData);
-        console.log(_gameModle.pathPositionData);
+        // console.log(_gameModle.pathBezierData);
+        // console.log(_gameModle.pathPositionData);
     }
     AddBezier(mapNumber: number, pathData: Array<object>, _gameModle: GameModle) {
         let Arr: Array<cc.Vec2> = []
@@ -92,18 +92,18 @@ export default class Panel_Map extends ComponentBase {
         _gameModle.pathBezierData.set(mapNumber + 1, Arr);
     }
     getSpriteType(_number: number) {
-        console.log(_number);
+        // console.log(_number);
 
         switch (_number) {
             case 0:
-                console.log(AssetMng.Asset.get("Station_Start"));
                 return AssetMng.Asset.get("Station_Start");
             case 1:
             case 20:
                 return AssetMng.Asset.get("Station_WaitRad");
-            case 3:
+            case 6:
             case 11:
             case 15:
+            case 18:
                 return AssetMng.Asset.get("Station_Q&A");
             default:
                 return AssetMng.Asset.get("Station_Normal");
@@ -115,9 +115,9 @@ export default class Panel_Map extends ComponentBase {
             case 0:
                 return StationType.Start
             case 1:
-            case 20:
+            case 21:
                 return StationType.WaitRad
-            case 3:
+            case 6:
             case 11:
             case 15:
                 return StationType.QandA

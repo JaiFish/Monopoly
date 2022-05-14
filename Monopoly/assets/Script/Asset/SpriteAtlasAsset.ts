@@ -10,6 +10,12 @@ class SpriteAtlasAsset implements IAsset {
         "Bear",
         "MapPoint",
         "Cloud",
+        "TrainType",
+        "UIBtn_Train_Gary",
+        "TrainInfo1",
+        "TrainInfo2",
+        "Props/GetProps",
+        "Props/Props",
     ];
     loadAsset(_Asset: Map<string, any>) {
         this.checkAssetState = false

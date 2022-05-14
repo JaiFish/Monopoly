@@ -1,4 +1,6 @@
 export enum GameEvent {
+    ControllPath ="Controll",
+    ControllComponent ="Controll",
     SetModel = "SetModel",
     SendModel = "SendModel",
     SendCommand = "sendCommand",

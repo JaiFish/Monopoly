@@ -56,6 +56,7 @@ export default class Choose_Train extends ComponentBase {
             }
             if (this.totaleDT > this.endDT) {
                 this.isRandom = false
+                GameModle.playData.trainTypeNumber = this.lastShowTrain
                 GameModle.playData.trainType = this.changeTrainType()
                 this.EventEmit(GameEvent.SendCommand, Commamnd.EndChoosTrain)
                 //delay時間後，將圖片從畫面移動到場警(try幾個小時)
@@ -71,7 +72,7 @@ export default class Choose_Train extends ComponentBase {
     }
     initTrainSprite() {
         for (let index = 0; index < this.itmes.length; index++) {
-            this.itmes[index].sprtie.spriteFrame = AssetMng.Asset.get("棋子");
+            this.itmes[index].sprtie.spriteFrame = AssetMng.Asset.get("TrainType_" + index);
         }
     }
     mineChange() {

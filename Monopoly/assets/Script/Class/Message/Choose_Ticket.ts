@@ -35,10 +35,10 @@ export default class Choose_Ticket extends ComponentBase {
                 GameModle.playData.level = 2
                 break;
         }
-
-        this.actionHide(() => {
-            this.EventEmit(GameEvent.SendCommand, Commamnd.EndChooseTicket)
-        });
+        this.EventEmit(GameEvent.SendCommand, Commamnd.EndChooseTicket)
+        // this.actionHide(() => {
+        //     this.EventEmit(GameEvent.SendCommand, Commamnd.EndChooseTicket)
+        // });
     }
 
 }
