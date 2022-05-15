@@ -236,8 +236,9 @@ export default class Controll extends ComponentBase {
     }
     async showEndGame() {
         this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
-        this.panel_Message.endGame.actionShow();
         await this.panel_Message.show();
+        this.panel_Message.endGame.actionShow();
+
     }
     async closeEndGame() {
         await this.panel_Message.endGame.actionHide()
@@ -248,8 +249,11 @@ export default class Controll extends ComponentBase {
         cc.director.loadScene("GameSence");
     }
 
-    goLottery() {
+    async goLottery() {
         this.closeEndGame()
+        await this.cameraControll.showAllView()
+        await this.panel_Door.backScaleAction()
+        await this.panel_Door.closeDoor()
     }
     doorAgainGame() {
         cc.director.loadScene("GameSence");
@@ -259,10 +263,10 @@ export default class Controll extends ComponentBase {
             await this.cameraControll.moveToManCamera()
         this.panel_Man.manGO()
     }
-    manWait (){
+    manWait() {
         this.panel_Man.manWait()
     }
-    manLineWait(){
+    manLineWait() {
         this.panel_Man.manLineWait()
     }
     async moveTarget(select: number) {
@@ -270,14 +274,14 @@ export default class Controll extends ComponentBase {
             this.panel_UI.props_Feature.setStart_Stop(false)
             this.panel_Man.manLineWait()
         }
-           
+
         this.panel_Message.stationInfo.reset()
         this.cameraControll.activeManCamera(false);
         this.cameraControll.activeMineCamera(true);
         await this.cameraControll.moveToStation(GameModle.mapItem.get(select).node)
 
     }
-    updataUIStart(setBoolea:boolean){
+    updataUIStart(setBoolea: boolean) {
         this.panel_UI.props_Feature.setStart_Stop(setBoolea)
     }
 }

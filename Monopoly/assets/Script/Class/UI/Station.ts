@@ -78,8 +78,10 @@ export default class Station extends ComponentBase {
     }
     checkInit() {
         let isCheck = false
-        if (this.con.children[this.itemCount - 1].getComponent(StationBtn).btn != null)
-            isCheck = true
+
+        if (this.con.children[this.itemCount - 1].getComponent(StationBtn) != undefined)
+            if (this.con.children[this.itemCount - 1].getComponent(StationBtn).btn != null)
+                isCheck = true
         return isCheck
     }
     eventControllOpen(e: cc.Event, _customEventData: string) {

@@ -81,4 +81,16 @@ export default class Panel_Door extends ComponentBase {
 
         })
     }
+    async backScaleAction() {
+        return new Promise<void>((resolve, reject) => {
+            this.node.active = true
+            cc.tween(this.node)
+                .to(1, { scale: 1 })
+                .call(() => {
+                    resolve()
+                })
+                .start()
+
+        })
+    }
 }

@@ -177,7 +177,8 @@ export default class Panel_Man extends ManAction {
             this.nowStation == 11 ||
             this.nowStation == 15 ||
             this.nowStation == 1 ||
-            this.nowStation == 20
+            this.nowStation == 20 ||
+            this.nowStation == 21
         ) {
             this.stopGo()
             this.manState = GameState.Stop
@@ -193,6 +194,9 @@ export default class Panel_Man extends ManAction {
                 case 20:
                     this.EventEmit(GameEvent.SendCommand, Commamnd.ShowVideo)
                     //傳遞Show影片訊息
+                    break;
+                case 21:
+                    this.EventEmit(GameEvent.SendCommand, Commamnd.ShowEndGame)
                     break;
             }
             return true;
