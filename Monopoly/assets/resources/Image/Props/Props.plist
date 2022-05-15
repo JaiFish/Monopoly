@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{75,50}</string>
             </dict>
-            <key>Props_6.png</key>
+            <key>Props_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{151,57},{56,72}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{74,50}</string>
             </dict>
-            <key>Props_Gary_6.png</key>
+            <key>Props_Gary_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{77,54},{56,72}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{230,115}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:311e8449a6379c71549d49f652d30893$</string>
+            <string>$TexturePacker:SmartUpdate:c1e4f3eca00bb6f94e5bf9e48481a905$</string>
             <key>textureFileName</key>
             <string>Props.png</string>
         </dict>

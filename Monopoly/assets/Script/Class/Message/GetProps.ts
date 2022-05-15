@@ -31,8 +31,10 @@ export default class GetProps extends ComponentBase {
         return new Promise<void>((resolve, reject) => {
             this.show()
             let setScale = 1
-            if (this.Props.spriteFrame.name.split('_')[1] == "6")//如果是碼表要做特殊處理。因為圖片太大
-                setScale = 0.65
+            this.node.opacity = 255
+            this.node.setPosition(0, 0)
+            if (this.Props.spriteFrame.name.split('_')[1] == "5")//如果是碼表要做特殊處理。因為圖片太大
+                setScale = 0.651
             let action1 = cc.tween()
                 .set({ scale: 0.1 })
                 .to(0.5, { scale: setScale }, { easing: Easing.backOut })

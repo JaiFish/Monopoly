@@ -5,15 +5,17 @@ class SpriteAtlasAsset implements IAsset {
     checkAssetState: boolean;
     typePath: string = "Image/";
     filePath: string[] = [
-        "Station",
-        "Station_Gary",
+        "Station/Station",
+        "Station/Station_Gary",
+        "Station/UIBtnStatoin",
+        "Station/StationInfo1",
+        "Station/StationInfo2",
         "Bear",
         "MapPoint",
         "Cloud",
         "TrainType",
-        "UIBtn_Train_Gary",
-        "TrainInfo1",
-        "TrainInfo2",
+        "Feature",
+        "Setting",
         "Props/GetProps",
         "Props/Props",
     ];
@@ -34,6 +36,6 @@ class SpriteAtlasAsset implements IAsset {
         })
         return this
     }
-  
+
 }
 export default new SpriteAtlasAsset();

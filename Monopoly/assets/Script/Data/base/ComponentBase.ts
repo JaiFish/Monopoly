@@ -23,8 +23,9 @@ export default class ComponentBase extends cc.Component {
     }
     async actionShow(callback?: Function) {
         return new Promise<void>((resolve, reject) => {
-            this.show()
             cc.Tween.stopAllByTarget(this.node)
+            this.show()
+            this.node.setPosition(0, 0)
             let action1 = cc.tween()
                 .set({ y: this.node.y - 30, opacity: 0 })
                 .to(0.5, { y: 0, opacity: 255 })

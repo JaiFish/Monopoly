@@ -5,8 +5,9 @@
   ],
   "group-list": [
     "default",
-    "UI",
-    "BufferCamera"
+    "Message",
+    "BufferCamera",
+    "UI"
   ],
   "collision-matrix": [
     [
@@ -17,6 +18,12 @@
       false
     ],
     [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
       false,
       false,
       false

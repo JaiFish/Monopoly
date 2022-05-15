@@ -61,7 +61,7 @@ export default class Panel_Cloud extends DataCloud {
 
         let randomCloud = 1 + Math.floor(Math.random() * 10)
         let format = randomCloud < 9 ? "0" + String(randomCloud) : String(randomCloud)
-        temp.getComponent(cc.Sprite).spriteFrame = AssetMng.Asset.get("雲-" + format)//隨機1~10的雲
+        temp.getComponent(cc.Sprite).spriteFrame = AssetMng.data_SprtieAtlas.get("雲-" + format)//隨機1~10的雲
         this.tempNumber++
     }
     stopCloud() {

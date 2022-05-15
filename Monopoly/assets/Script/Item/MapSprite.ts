@@ -10,6 +10,7 @@ export default class MapSprite extends ComponentBase {
     isGet: boolean;
     _mySprite: cc.Sprite;
     btn: cc.Button
+    type: number;
     public set mySprite(v: cc.Sprite) {
         this._mySprite = v;
     }
@@ -21,18 +22,23 @@ export default class MapSprite extends ComponentBase {
         this.mySprite = this.node.getComponent(cc.Sprite)
         this.btn = this.node.getComponent(cc.Button);
         this.btn.target = this.node
-        ButtonMng.addEvent(this.node, "MapSprite", "sendEvent", this.btn, this.node.name)
+        this.btn.interactable = false
     }
 
     getAction() {
         this.node.setScale(0)
         this.isGet = true;
-        ButtonMng.addEvent(this.node, "MapSprite", "sendEvent", this.btn, this.node.name)
         cc.tween(this.node)
             .to(1, { scale: 1 }, { easing: Easing.backOut })
             .start()
+        if (this.type == 5 ||
+            this.type == 11 ||
+            this.type == 15) return
+        ButtonMng.addEvent(this.node, "MapSprite", "sendEvent", this.btn, this.node.name)
+        this.btn.interactable = true
     }
     sendEvent(e: cc.Event, _customEventData: string) {
+        this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
         this.EventEmit(GameEvent.SendCommand, Commamnd.ShowStationInfo, Number(_customEventData))
     }
 

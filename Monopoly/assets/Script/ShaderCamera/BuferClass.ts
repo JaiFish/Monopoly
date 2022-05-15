@@ -54,7 +54,7 @@ export default class BuferClass extends ComponentBase {
 
         // 截图图像是翻转的，所以y轴镜像
         this.node.scaleY = -1;
-
+        this.node.addComponent(cc.BlockInputEvents)
         // 创建渲染贴图对象
         this.texture = new cc.RenderTexture();
         //@ts-ignore
@@ -92,6 +92,7 @@ export default class BuferClass extends ComponentBase {
         this.sprite.setMaterial(0, this.material);
         this.initEvent(GameEvent.OpenBufer, this.openRender)
         this.initEvent(GameEvent.CloseBufer, this.closeRender)
+
     }
     openRender() {
         this.node.opacity = 0

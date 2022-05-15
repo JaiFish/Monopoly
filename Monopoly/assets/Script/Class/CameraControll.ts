@@ -2,6 +2,8 @@ import { Easing } from "../Enum/Easing";
 import { GameEvent } from "../Enum/GameEvent";
 import ComponentBase from "../Data/base/ComponentBase";
 import GameModle from "../GameModle";
+import { CameraState } from "../Enum/CameraState";
+
 export default class CameraControll extends ComponentBase {
     manCamera: cc.Camera;
     mineCamera: cc.Camera;
@@ -11,16 +13,20 @@ export default class CameraControll extends ComponentBase {
 
     moveSpeed: number = 1;
 
+    cameraState: CameraState;
+
     protected onLoad(): void {
         this.mineCamera = this.node.getComponent(cc.Camera)
         this.manCamera = cc.find("Canvas/Panel_Man/nMan/manCamera").getComponent(cc.Camera)
         this.mineCamera.zoomRatio = 1
+        this.manCamera.zoomRatio = this.manZoomRatio
         this.mineCamera.node.setPosition(cc.Vec2.ZERO)
         this.initEvent(GameEvent.MoveToStation, this.moveToStation);
         this.initEvent(GameEvent.MoveToManCamera, this.moveToManCamera);
         this.initEvent(GameEvent.ShowAllView, this.showAllView);
     }
     protected start(): void {
+        this.cameraState = CameraState.Mine
         // this.showAllView()
 
     }
@@ -30,35 +36,59 @@ export default class CameraControll extends ComponentBase {
     activeMineCamera(isboolean: boolean) {
         this.mineCamera.node.active = isboolean
     }
-    moveToStation(target: cc.Node) {
-        let manePos = GameModle.convertOtherNodeSpaceAR(target, this.mineCamera.node)
-        cc.tween(this.mineCamera.node)
-            .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
-            .start()
-        cc.tween(this.mineCamera)
-            .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
-            .to(this.moveSpeed * 0.5, { zoomRatio: this.stationZoomRatio }, { easing: Easing.cubicOut })
-            .start()
-
-    }
-    async moveToManCamera( isJump: boolean = true) {
+    async moveToStation(target: cc.Node) {
         return new Promise<void>((resolve, reject) => {
-            let tween: cc.Tween;
-            if (!isJump)
-                tween = cc.tween()
-                    .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
-            else
-                tween = cc.tween()
-                    .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
-                    .to(this.moveSpeed * 0.5, { zoomRatio: this.manZoomRatio }, { easing: Easing.cubicOut })
+            if (this.cameraState == CameraState.Men) {
+                this.asyncMine()
+                this.cameraState = CameraState.Mine
+            }
 
-            let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
+            // if (!isJump)
+            //     tween = cc.tween()
+            //         .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
+            // else
+            //     tween = cc.tween()
+            //         .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
+            //         .to(this.moveSpeed * 0.5, { zoomRatio: this.manZoomRatio }, { easing: Easing.cubicOut })
+            let manePos = GameModle.convertOtherNodeSpaceAR(target, this.mineCamera.node)
             cc.tween(this.mineCamera.node)
                 .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
                 .call(resolve)
                 .start()
             cc.tween(this.mineCamera)
-                .then(tween)
+                .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
+                // .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
+                // .to(this.moveSpeed * 0.5, { zoomRatio: this.stationZoomRatio }, { easing: Easing.cubicOut })
+                .start()
+        })
+    }
+    asyncMine() {
+        let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
+        this.mineCamera.node.position = manePos
+    }
+    async moveToManCamera(isJump: boolean = true) {
+        return new Promise<void>((resolve, reject) => {
+            let tween: cc.Tween;
+            // if (!isJump)
+            //     tween = cc.tween()
+            //         .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
+            // else
+            //     tween = cc.tween()
+            //         .to(this.moveSpeed * 0.5, { zoomRatio: 1 }, { easing: Easing.cubicIn })
+            //         .to(this.moveSpeed * 0.5, { zoomRatio: this.manZoomRatio }, { easing: Easing.cubicOut })
+
+            let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
+            cc.tween(this.mineCamera.node)
+                .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
+                .call(() => {
+                    this.cameraState = CameraState.Men
+                    this.activeManCamera(true);
+                    this.activeMineCamera(false);
+                    resolve()
+                })
+                .start()
+            cc.tween(this.mineCamera)
+                .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
                 .start()
         })
 

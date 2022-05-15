@@ -3,7 +3,9 @@ import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
 import { onClick } from "../../Enum/onClick";
 import GameModle from "../../GameModle";
+const { ccclass, property } = cc._decorator;
 
+@ccclass
 export default class Choose_Ticket extends ComponentBase {
     btn_Blue: cc.Node;
     btn_Red: cc.Node;

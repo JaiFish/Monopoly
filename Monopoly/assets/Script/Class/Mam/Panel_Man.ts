@@ -12,12 +12,12 @@ export default class Panel_Man extends ManAction {
         this.nMan = cc.find("nMan", this.node);
         this.initEvent(GameEvent.ManGO, this.manGO)
         this.initEvent(GameEvent.ManStop, this.manStop)
-        this.initEvent(GameEvent.ManWait, this.manWait)
         this.initEvent(GameEvent.ManSkip, this.manSkip)
         this.initEvent(GameEvent.SetModel, this.setGameModle)
         this.initEvent(GameEvent.SetManState, this.setManState);
         this.nowStation = 0
         this.node.opacity = 0
+        this.isArrival = true
     }
     protected start(): void {
         EventMng.emit(GameEvent.SendModel, GameEvent.SetModel)
@@ -34,30 +34,52 @@ export default class Panel_Man extends ManAction {
             this.nMan.setPosition(x, y);
             if (this.checkX(x) && this.checkY(y)) {
                 this.skipGoPosition()
+                this.isArrival = true
                 this.stopGo();
                 EventMng.emit(GameEvent.GetStation, this.nowStation)
-                if (this.manState == GameState.Start || this.manState == GameState.Skip)
-                    if (!this.checkStationStop())
-                        setTimeout(() => {
-                            this.manGO()
-                        }, 500);
+                EventMng.emit(GameEvent.UIGetStation, this.nowStation)
+                if (this.manState == GameState.Start || this.manState == GameState.Skip) {
+                    if (!this.checkStationStop()) {
+                        this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, true)
+                        this.manGO()
+                    }
+                    else
+                        this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
+                }
+                else {
+                    this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
+                    this.manState = GameState.Stop
+                }
+
             }
         }
     }
     manGO() {
         console.log("開始走囉", this.isCanGo);
 
-        this.setStation();
-        this.smoothSpeed();
-        this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
-        this.setManState(GameState.Start)
-        this.startGO();
+        if (!this.isArrival)
+            this.startGO();
+        else {
+            this.setStation();
+            this.smoothSpeed();
+            this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
+            this.setManState(GameState.Start)
+            this.isArrival = false;
+            this.startGO();
+        }
+
+
         console.log("開始走囉", this.isCanGo);
+    }
+    manLineWait() {
+        this.setManState(GameState.Wait)
+        this.stopGo();
     }
     manWait() {
         this.setManState(GameState.Wait)
     }
     manStop() {
+        this.setManState(GameState.Stop)
         this.stopGo();
     }
     manSkip() {
@@ -132,7 +154,7 @@ export default class Panel_Man extends ManAction {
         this.setStation(0);
         this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
         this.skipGoPosition();
-        this.manState = GameState.Wait;
+        this.manState = GameState.Stop;
         this.manSpeed = this.manDefaultSpeed;
         this.stopGo()
     }
@@ -151,23 +173,25 @@ export default class Panel_Man extends ManAction {
             return nowY < this.targetY ? true : false
     }
     checkStationStop(): boolean {
-        if (this.nowStation == 6 ||
+        if (this.nowStation == 5 ||
             this.nowStation == 11 ||
             this.nowStation == 15 ||
             this.nowStation == 1 ||
             this.nowStation == 20
         ) {
             this.stopGo()
-            this.manState = GameState.ShowMessage
+            this.manState = GameState.Stop
+            this.manSpeed = this.manDefaultSpeed;
             switch (this.nowStation) {
-                case 6:
+                case 5:
                 case 11:
                 case 15:
+                    this.EventEmit(GameEvent.SendCommand, Commamnd.ShowQA)
                     //傳遞訊息開啟QA視窗
                     break;
                 case 1:
                 case 20:
-                    this.EventEmit(GameEvent.SendCommand,Commamnd.ShowVideo)
+                    this.EventEmit(GameEvent.SendCommand, Commamnd.ShowVideo)
                     //傳遞Show影片訊息
                     break;
             }

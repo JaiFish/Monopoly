@@ -19,6 +19,10 @@ export enum GameEvent {
     CloseDoor = "CloseDoor",
     BearSetModle = "BearSetModle",
     GetStation = "GetStation",
+    UIGetStation="UIGetStation",
+
+    UIReset="UIReset",
+
 
     StopCloud = "StopCloud",
     StartCloud = "StartCloud",

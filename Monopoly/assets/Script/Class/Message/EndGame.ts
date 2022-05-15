@@ -2,21 +2,25 @@ import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
+const { ccclass, property } = cc._decorator;
+
+@ccclass
 export default class EndGame extends ComponentBase {
-    sprite_Bear: cc.Animation;
+    animation_Bear: cc.Animation;
     btn_Again: cc.Button;
     btn_GoLottery: cc.Button;
     protected onLoad(): void {
-        this.sprite_Bear = cc.find("Mask/sprite_Bear", this.node).getComponent(cc.Animation)
+        this.animation_Bear = cc.find("Mask/animation_Bear", this.node).getComponent(cc.Animation)
         this.btn_GoLottery = cc.find("Btn_GoLottery", this.node).getComponent(cc.Button)
         this.btn_Again = cc.find("Btn_Again", this.node).getComponent(cc.Button)
+        this.defaultReset()
     }
     protected start(): void {
         ButtonMng.addEvent(this.node, "EndGame", "sendEvent", this.btn_GoLottery, "0")
         ButtonMng.addEvent(this.node, "EndGame", "sendEvent", this.btn_Again, "1")
     }
     playBearSprite(number: number) {
-        this.sprite_Bear.play("BearGif_" + number)
+        this.animation_Bear.play("Bear_Train" + number)
     }
     sendEvent(e: cc.Event, _customEventData: string) {
         switch (_customEventData) {

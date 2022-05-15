@@ -1,5 +1,7 @@
 import ButtonMng from "../../Data/base/ButtonMng";
 import ComponentBase from "../../Data/base/ComponentBase";
+import { Commamnd } from "../../Enum/Commad";
+import { GameEvent } from "../../Enum/GameEvent";
 import GameModle from "../../GameModle";
 
 
@@ -9,8 +11,9 @@ const { ccclass, property } = cc._decorator;
 export default class Question extends ComponentBase {
     title: cc.Label;
     info_Text: cc.Label;
-    info_Choose:cc.Label;
-    info_SpriteLayout: cc.Node
+    info_Choose: cc.Label;
+    info_Normal_5: cc.Node
+    info_Normal_9: cc.Node
     item_Btn: cc.Node;
 
 
@@ -22,8 +25,10 @@ export default class Question extends ComponentBase {
         this.item_Btn = cc.find("item_Btn", this.node)
 
         this.scrollView = cc.find("scroll_Info", this.node).getComponent(cc.ScrollView);
-        this.info_Text = cc.find("Mask/con/Text", this.scrollView.node).getComponent(cc.Label);
-        this.info_Choose = cc.find("Mask/con/Choose", this.scrollView.node).getComponent(cc.Label);
+        this.info_Text = cc.find("Text", this.scrollView.content).getComponent(cc.Label);
+        this.info_Choose = cc.find("Choose", this.scrollView.content).getComponent(cc.Label);
+        this.info_Normal_5 = cc.find("Normal_5", this.scrollView.content);
+        this.info_Normal_9 = cc.find("Normal_9", this.scrollView.content);
         this.content_Btn = cc.find("con_Btn", this.node);
         this.defaultReset()
     }
@@ -45,17 +50,35 @@ export default class Question extends ComponentBase {
         this.item_Btn.active = false
         this.title.string = "題目"
     }
-
-    setQAInfo(str: string) {
-        this.info_Text.string = str
+    reset() {
+        this.info_Normal_5.active = false
+        this.info_Normal_9.active = false
     }
-    setChoose(str:string){
+    setQAInfo(str: string, _level: number, _qaNum: number) {
+        console.log(_level, _qaNum);
+
+        if (_level == 1 && (_qaNum == 4 || _qaNum == 8)) {
+            switch (_qaNum) {
+                case 4:
+                    this.info_Normal_5.active = true
+                    break;
+                case 8:
+                    this.info_Normal_9.active = true
+                    break;
+            }
+        }
+        this.info_Text.node.active = true
+        this.info_Text.string = str
+
+    }
+    setChoose(str: string) {
+        this.info_Choose.node.active = true
         this.info_Choose.string = str
     }
     checkAnswer(e: cc.Event, _customEventData: string) {
-        GameModle.chooseAnswer =_customEventData
-        
-        console.log(e, _customEventData);
+        GameModle.chooseAnswer = _customEventData
+        this.EventEmit(GameEvent.SendCommand, Commamnd.EndQA)
+        // console.log(e, _customEventData);
         //開始接中央
     }
 }

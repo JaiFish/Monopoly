@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "40eed7e0-621a-4935-9cad-15ffdba5d263",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 77,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "UIBtn_Statoin_Gary_12": {
+      "ver": "1.0.6",
+      "uuid": "2687a2ae-f9c6-41dc-a24d-30aeacbaa0ab",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "40eed7e0-621a-4935-9cad-15ffdba5d263",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 77,
+      "height": 42,
+      "rawWidth": 77,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

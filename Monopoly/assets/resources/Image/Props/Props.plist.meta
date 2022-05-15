@@ -55,9 +55,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Props_6.png": {
+    "Props_5.png": {
       "ver": "1.0.6",
-      "uuid": "fbf431d4-08f9-42c0-8774-ff4218e939d1",
+      "uuid": "0f15500b-26c8-4e9b-97fe-55f425b56fb9",
       "importer": "sprite-frame",
       "rawTextureUuid": "1a8de254-c4e8-48e5-927d-d8a98b3f1c5b",
       "trimType": "auto",
@@ -124,9 +124,9 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "Props_Gary_6.png": {
+    "Props_Gary_5.png": {
       "ver": "1.0.6",
-      "uuid": "5949899d-ce0e-4612-b039-620be0ca81bd",
+      "uuid": "f47defa4-c449-4c95-9e39-b75c0c7bb105",
       "importer": "sprite-frame",
       "rawTextureUuid": "1a8de254-c4e8-48e5-927d-d8a98b3f1c5b",
       "trimType": "auto",

@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{365,246}</string>
             </dict>
-            <key>GetProps_6.png</key>
+            <key>GetProps_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{250,2},{343,444}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{930,369}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:162683187b874342c8bb13c710bdc77c$</string>
+            <string>$TexturePacker:SmartUpdate:4da987af7ba0dcec178d370037a94edd$</string>
             <key>textureFileName</key>
             <string>GetProps.png</string>
         </dict>

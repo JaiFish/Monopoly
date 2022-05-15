@@ -8,7 +8,7 @@ import { TrainType } from "./Enum/TrainType";
 
 class Player {
     level: number;
-    trainTypeNumber:number;
+    trainTypeNumber: number;
     trainType: TrainType;
 
 }
@@ -33,13 +33,13 @@ class GameModel {
     stationType_ShowVideo: number[] = [1, 20];
     stationType_Start: number[] = [0];
     stationType_Normal: number[] = [
-        2, 3, 4, 5,
-        7, 8, 9, 10,
+        2, 3, 4,
+        6, 7, 8, 9, 10,
         12, 13, 14,
         16, 17,
         19
     ];
-    stationType_QA: number[] = [6, 11, 15, 18];//19是裝飾用的並無提物，但因為點點生成顏色ˇ關係需要放點
+    stationType_QA: number[] = [5, 11, 15, 18];//19是裝飾用的並無提物，但因為點點生成顏色ˇ關係需要放點
     //------資料區，無引用到
     mapItem: Map<number, MapItem> = new Map();
     mapSprite: Map<number, MapSprite> = new Map();

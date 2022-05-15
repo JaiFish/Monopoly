@@ -5,6 +5,7 @@ import { TypeClass } from "../Enum/TypeClass";
 import MapItem from "../Item/MapItem";
 import ComponentBase from "../Data/base/ComponentBase";
 import MapSprite from "../Item/MapSprite";
+import GameModle from "../GameModle";
 
 export default class Panel_Map extends ComponentBase {
     public tempMapItem: cc.Node;
@@ -17,9 +18,9 @@ export default class Panel_Map extends ComponentBase {
         this.initEvent(GameEvent.InitMap, this.initMap)
     }
     protected start(): void {
-
+        
     }
-    async initMap(_gameModle: GameModle, _path: cc.Animation) {
+    async initMap(_path: cc.Animation) {
 
         let pathData: Array<object> = _path.getClips()[0].curveData.props.position
         //拿取Animation的路徑
@@ -27,10 +28,10 @@ export default class Panel_Map extends ComponentBase {
             let x: number = pathData[index]["value"][0]
             let y: number = pathData[index]["value"][1]
 
-            _gameModle.pathPositionData.set(index, cc.v2(x, y))
+            GameModle.pathPositionData.set(index, cc.v2(x, y))
             // console.log(pathData[index]);
             if (pathData[index]["motionPath"] != null && pathData[index]["motionPath"].length > 0) { //檢查是否有Bezier
-                this.AddBezier(index, pathData, _gameModle);
+                this.AddBezier(index, pathData, GameModle);
             }
         }
         //生產地圖的點
@@ -38,24 +39,25 @@ export default class Panel_Map extends ComponentBase {
         for (let index = 0; index < pathData.length - 1; index++) {//原點跟終點都是一樣的點，內容依樣就不用新增
             let tempItem: cc.Node = cc.instantiate(this.tempMapItem)
             this.content_Map.addChild(tempItem, cc.macro.MAX_ZINDEX)
-            tempItem.setPosition(_gameModle.pathPositionData.get(index))
+            tempItem.setPosition(GameModle.pathPositionData.get(index))
             let _class: MapItem = tempItem.addComponent(MapItem);
             _class.myNumber = index;
             _class.myType = this.getStationType(index);
             _class.setSprite(this.getSpriteType(index));
-            _gameModle.mapItem.set(index, _class)
+            GameModle.mapItem.set(index, _class)
         }
         for (let index = 2; index <= 19; index++) {
             // let spriteClass = this.content_Station.children[index].addComponent(MapSprite)
             let spriteClass = cc.find(index.toString(), this.content_Station).getComponent(cc.Sprite).addComponent(MapSprite)
-            spriteClass.mySprite.spriteFrame = AssetMng.Asset.get("Station_Gary_" + index.toString())
-            _gameModle.mapSprite.set(index, spriteClass)
+            spriteClass.mySprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Station_Gary_" + index.toString())
+            spriteClass.type = index
+            GameModle.mapSprite.set(index, spriteClass)
         }
 
-        // console.log(_gameModle.pathBezierData);
-        // console.log(_gameModle.pathPositionData);
+        // console.log(GameModle.pathBezierData);
+        // console.log(GameModle.pathPositionData);
     }
-    AddBezier(mapNumber: number, pathData: Array<object>, _gameModle: GameModle) {
+    AddBezier(mapNumber: number, pathData: Array<object>, GameModle: GameModle) {
         let Arr: Array<cc.Vec2> = []
         //起點
         // 中間點
@@ -89,24 +91,24 @@ export default class Panel_Map extends ComponentBase {
         Arr.push(cc.v2(x, y))
         console.log(Arr);
 
-        _gameModle.pathBezierData.set(mapNumber + 1, Arr);
+        GameModle.pathBezierData.set(mapNumber + 1, Arr);
     }
     getSpriteType(_number: number) {
         // console.log(_number);
 
         switch (_number) {
             case 0:
-                return AssetMng.Asset.get("Station_Start");
+                return AssetMng.data_SprtieAtlas.get("Station_Start");
             case 1:
             case 20:
-                return AssetMng.Asset.get("Station_WaitRad");
-            case 6:
+                return AssetMng.data_SprtieAtlas.get("Station_WaitRad");
+            case 5:
             case 11:
             case 15:
             case 18:
-                return AssetMng.Asset.get("Station_Q&A");
+                return AssetMng.data_SprtieAtlas.get("Station_Q&A");
             default:
-                return AssetMng.Asset.get("Station_Normal");
+                return AssetMng.data_SprtieAtlas.get("Station_Normal");
         }
         // let getType:StationType = _number
     }
@@ -117,7 +119,7 @@ export default class Panel_Map extends ComponentBase {
             case 1:
             case 21:
                 return StationType.WaitRad
-            case 6:
+            case 5:
             case 11:
             case 15:
                 return StationType.QandA

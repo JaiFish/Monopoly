@@ -1,14 +1,18 @@
 import AssetMng from '../../Asset/AssetMng';
+import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
 import { Commamnd } from '../../Enum/Commad';
 import { Easing } from '../../Enum/Easing';
 import { GameEvent } from '../../Enum/GameEvent';
 import { TrainType } from '../../Enum/TrainType';
 import GameModle from '../../GameModle';
+const { ccclass, property } = cc._decorator;
+
+@ccclass
 export default class Choose_Train extends ComponentBase {
     item: cc.Node;
     itmes: TrainItem[] = [];
-    MineTrain: TrainItem;
+    // MineTrain: TrainItem;
     content: cc.Node;
     isRandom: boolean;
     isStop: boolean;
@@ -21,11 +25,13 @@ export default class Choose_Train extends ComponentBase {
 
     lastShowTrain: number = 0;
 
+    btn_Start: cc.Button;
+
 
     protected onLoad(): void {
         this.item = cc.find("TrainFrame", this.node)
-        this.MineTrain = cc.find("MineTrain", this.node).addComponent(TrainItem)
         this.content = cc.find("Layout", this.node)
+        this.btn_Start = cc.find("btn_Check",this.node).getComponent(cc.Button)
         for (let index = 0; index < 6; index++) {
             let instItme = cc.instantiate(this.item)
             this.content.addChild(instItme)
@@ -35,12 +41,12 @@ export default class Choose_Train extends ComponentBase {
             let getIndex = index
             _class.type = getIndex
         }
-        console.log(this.itmes);
         this.item.destroy();
     }
     protected start(): void {
         this.node.opacity = 0
         this.hide()
+        ButtonMng.addEvent(this.node, "Choose_Train", "startRandom", this.btn_Start)
     }
 
     protected update(dt: number): void {
@@ -51,7 +57,6 @@ export default class Choose_Train extends ComponentBase {
 
             if (this.tempDT > this.speedChange) {
                 this.changeShow()
-                this.mineChange()
                 this.tempDT = 0
             }
             if (this.totaleDT > this.endDT) {
@@ -70,15 +75,16 @@ export default class Choose_Train extends ComponentBase {
         }
 
     }
+    startRandom() {
+        this.btn_Start.node.active = false
+        this.isRandom = true;
+    }
     initTrainSprite() {
         for (let index = 0; index < this.itmes.length; index++) {
-            this.itmes[index].sprtie.spriteFrame = AssetMng.Asset.get("TrainType_" + index);
+            this.itmes[index].sprtie.spriteFrame = AssetMng.data_SprtieAtlas.get("TrainType_" + index);
         }
     }
-    mineChange() {
-        this.MineTrain.sprtie.spriteFrame = this.itmes[this.lastShowTrain].sprtie.spriteFrame
-        // this.MineTrain.sprtie.spriteFrame = AssetMng.Asset.get("棋子");
-    }
+
     changeShow() {
         this.itmes[this.lastShowTrain].noChoose()
         let random = this.lastShowTrain
@@ -104,19 +110,19 @@ export default class Choose_Train extends ComponentBase {
                 return TrainType.Type5;;
         }
     }
-    async getTrainAciton(callback?: Function) {
-        return new Promise<void>((resolve, reject) => {
-            cc.tween(this.MineTrain.node)
-                .delay(2)
-                .repeat(2, cc.tween()
-                    .to(0.2, { scale: 1.3 })
-                    .to(1, { scale: 1 }, { easing: Easing.elasticOut })
-                )
-                .call(resolve)
-                .start()
-        })
+    // async getTrainAciton(callback?: Function) {
+    //     return new Promise<void>((resolve, reject) => {
+    //         cc.tween(this.MineTrain.node)
+    //             .delay(2)
+    //             .repeat(2, cc.tween()
+    //                 .to(0.2, { scale: 1.3 })
+    //                 .to(1, { scale: 1 }, { easing: Easing.elasticOut })
+    //             )
+    //             .call(resolve)
+    //             .start()
+    //     })
 
-    }
+    // }
 }
 
 

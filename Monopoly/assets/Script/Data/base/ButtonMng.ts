@@ -2,7 +2,7 @@ class MyButton {
     public addEvent(componentTrget: cc.Node, component: string, callBack: string, buttonTarget: cc.Button, callbackValue?: string) {
         if (this.findEvent(buttonTarget, callBack)) this.reMoveEvent(buttonTarget, callBack)
         let event = new cc.Component.EventHandler();
-        console.log(componentTrget);
+        // console.log(componentTrget);
 
         event.target = componentTrget;
         event.component = component;
