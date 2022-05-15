@@ -50,6 +50,9 @@ export default class Controll extends ComponentBase {
         this.initEvent(GameEvent.SendModel, this.sendModle)
         this.initEvent(GameEvent.SendCommand, this.sendCommand)
         this.initEvent(GameEvent.GetStation, this.changeStationSprite)
+
+        cc.view.enableAutoFullScreen(false);
+
         AssetMng.startLoad();
         // console.log(this.mapItem);
         // console.log(fcc);
