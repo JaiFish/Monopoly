@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Station_Gary_6",
+    "texture": "3f3a034d-d082-482a-8307-9a81e844b3f5",
+    "atlas": "c1ef0cbd-990a-47a9-a98f-d3743b1ad636",
+    "rect": [
+      407,
+      2,
+      309,
+      139
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      309,
+      139
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

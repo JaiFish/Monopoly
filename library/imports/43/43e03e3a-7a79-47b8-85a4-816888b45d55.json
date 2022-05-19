@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SoundClose",
+    "texture": "b004eb7e-ab56-415e-b018-e07d438336a8",
+    "atlas": "28f3a8ed-3217-40cf-a27f-729c931b4d1a",
+    "rect": [
+      2,
+      2,
+      73,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      73,
+      53
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

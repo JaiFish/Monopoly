@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "相片底",
+    "texture": "d715ec24-2e69-4461-a920-0cab499e7af9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      762,
+      759
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      762,
+      759
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

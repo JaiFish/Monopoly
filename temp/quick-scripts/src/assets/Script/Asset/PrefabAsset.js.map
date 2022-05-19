@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\Asset\\PrefabAsset.ts"],"names":[],"mappings":";;;;;;AACA;IAAA;IAEA,CAAC;IAAD,kBAAC;AAAD,CAFA,AAEC,IAAA;AACD,kBAAe,IAAI,WAAW,EAAE,CAAC","file":"","sourceRoot":"/","sourcesContent":["\r\nclass PrefabAsset {\r\n\r\n}\r\nexport default new PrefabAsset();"]}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "相片-遮罩用",
+    "texture": "9e5a6708-c4f8-4303-aaba-e51b60c23222",
+    "atlas": "",
+    "rect": [
+      117,
+      0,
+      811,
+      770
+    ],
+    "offset": [
+      58.5,
+      0
+    ],
+    "originalSize": [
+      928,
+      770
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "16b90c6a-c655-4fd1-b68b-8f7e083bff88",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 154,
+  "height": 103,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-台南車站": {
+      "ver": "1.0.6",
+      "uuid": "34d4973c-a188-4986-a80f-363fbe7d5346",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "16b90c6a-c655-4fd1-b68b-8f7e083bff88",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 154,
+      "height": 103,
+      "rawWidth": 154,
+      "rawHeight": 103,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

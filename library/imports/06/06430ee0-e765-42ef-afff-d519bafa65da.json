@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "三角錐",
+    "texture": "c3e9df83-6312-45fc-a80b-bfccc108d192",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      45,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      78
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

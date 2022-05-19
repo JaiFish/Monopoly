@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "橢圓藍色按鈕-大",
+    "texture": "3629640b-6d79-4f0e-936b-4dd62a9938ea",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      238,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      244,
+      74
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

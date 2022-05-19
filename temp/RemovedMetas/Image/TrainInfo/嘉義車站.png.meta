@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d046b96b-cd2c-4686-a48c-a2166296d8d9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 560,
+  "height": 650,
+  "platformSettings": {},
+  "subMetas": {
+    "嘉義車站": {
+      "ver": "1.0.6",
+      "uuid": "695bca92-bd03-4601-a400-ee2f18c6d8fb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d046b96b-cd2c-4686-a48c-a2166296d8d9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 560,
+      "height": 650,
+      "rawWidth": 560,
+      "rawHeight": 650,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

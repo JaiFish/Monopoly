@@ -1,0 +1,17 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "GetProps.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "GetProps_11": {
+      "__uuid__": "badcddfe-1713-4027-8266-b328e9b35b2d"
+    },
+    "GetProps_15": {
+      "__uuid__": "277ceff1-8b43-4ca7-bd56-9853195a3c9d"
+    },
+    "GetProps_5": {
+      "__uuid__": "79859521-5320-47b6-9f64-4248927e4a5f"
+    }
+  }
+}

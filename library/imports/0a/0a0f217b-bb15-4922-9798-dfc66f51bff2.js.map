@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\Asset\\SpineAsset.ts"],"names":[],"mappings":";;;;;;AACA;IAAA;IAEA,CAAC;IAAD,iBAAC;AAAD,CAFA,AAEC,IAAA;AACD,kBAAe,IAAI,UAAU,EAAE,CAAC","file":"","sourceRoot":"/","sourcesContent":["\r\nclass SpineAsset {\r\n\r\n}\r\nexport default new SpineAsset();"]}

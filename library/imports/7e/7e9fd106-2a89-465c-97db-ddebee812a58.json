@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Station_17",
+    "texture": "45c06241-b63f-463d-96d7-be46500867c0",
+    "atlas": "aa334aba-fbbe-41b5-9e7f-3b47459b9a58",
+    "rect": [
+      2,
+      426,
+      394,
+      176
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      394,
+      176
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "圖層 16",
+    "texture": "47606e73-7e9c-403a-8d01-ffc3240ee709",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      464,
+      642
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      464,
+      642
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

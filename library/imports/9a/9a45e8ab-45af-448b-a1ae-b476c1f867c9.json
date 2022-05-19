@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "直線路線",
+    "texture": "43f85ca6-4595-42c0-8df9-45850569178a",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      2139,
+      3474
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2141,
+      3474
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

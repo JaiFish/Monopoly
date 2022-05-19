@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "雲-08",
+    "texture": "77aa062e-1c80-4a29-b7ef-817bfe539296",
+    "atlas": "c36f5210-7740-49ef-ac9a-a82f7d1cfddf",
+    "rect": [
+      641,
+      249,
+      383,
+      241
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      383,
+      241
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,839 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly",
+  "mtimes": {
+    "5e4e7952-4844-4219-85ec-94905db854f3": {
+      "assetMtime": 1652629616282,
+      "metaMtime": 1652629618102
+    },
+    "0bff3805-310d-4f9b-b538-466cf24eb828": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511850
+    },
+    "5b90a680-1523-4fd0-90ba-0441e71f1fa2": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511850
+    },
+    "169d089a-6486-478b-80c8-5a741be80977": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511833
+    },
+    "2d089139-b9f0-49de-b574-0267b79fc972": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511833
+    },
+    "21cfac57-52db-4bb3-a783-7d10f63ae8d3": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512124
+    },
+    "261f7aa5-09d4-4309-aaa7-372f5dd1f38d": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512124
+    },
+    "22e6dbdc-2070-415d-818b-504fd508d907": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512141
+    },
+    "066ff9fd-5843-4556-b7aa-5b1e476037ff": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512141
+    },
+    "30d696c2-f461-4418-b7d9-078ce2ab4584": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511883
+    },
+    "301b9b59-143c-45d4-ac42-4c99b1872e35": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511883
+    },
+    "34997288-6e14-4c52-ba4c-383c30da4c0e": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511942
+    },
+    "fe3c3609-deb7-4085-bff5-8a0ea1403cf2": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511942
+    },
+    "386328e3-ad52-47d4-8053-7a8c61360057": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512083
+    },
+    "feae4649-47c5-4cc1-98a3-103f34dbb6ac": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512083
+    },
+    "3cc9f69a-69b1-4634-94d1-8231465bbaaa": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512187
+    },
+    "12dc24dc-3c55-49de-ab30-8de8fd47f787": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512187
+    },
+    "3dd7034b-6f2b-40ae-86a0-2cdcd1b3c331": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512213
+    },
+    "0af31112-8a2a-4806-b41d-262ca6b22294": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512213
+    },
+    "4a1f05ef-2360-44e0-87e8-b5dc7469348b": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512169
+    },
+    "85d62634-a0fa-4506-bcc0-ad37387a6fe2": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512169
+    },
+    "567bd3a9-1f1f-441a-9120-f427947f71ac": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512114
+    },
+    "741866d8-bf61-4549-9f4b-cbe9819a9b0d": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512114
+    },
+    "702fc2cf-204d-44d2-97bd-8c20af2b3957": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511858
+    },
+    "4924585f-399d-41dc-9a87-1e04911eeb0d": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511858
+    },
+    "78b368c2-13ac-4c76-bec4-a998aa019239": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512182
+    },
+    "096a9482-d56f-43af-93e2-a3db73353006": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512182
+    },
+    "9305674c-4ae1-489b-a2fe-fea553d77364": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511797
+    },
+    "a3a76dd2-6682-4dc9-b0f3-d889a179be13": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511797
+    },
+    "93beacb2-39ea-40ae-abb4-a23743e4730b": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512043
+    },
+    "eae508ad-3d40-490b-82cc-0ab34ea4b028": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512043
+    },
+    "afe12125-fdd4-4d0a-bb15-cb85e85e5a1b": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511966
+    },
+    "00aeab20-3f0e-4b54-9ec3-e02f58d935e7": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511966
+    },
+    "b2f80c93-58ea-4bc6-8916-62892093e758": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511835
+    },
+    "c52d69a2-b060-44e5-8e13-7edc98db10a5": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627511835
+    },
+    "c0914ca8-dd23-416c-ac38-6fe2e18ca10a": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511915
+    },
+    "50ae6a9e-d52b-4208-bab9-1c86e6df7f56": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511915
+    },
+    "c686a1e5-e9cc-4fba-9579-3de66312f560": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512080
+    },
+    "faa344b5-ef14-40c6-a2ba-958ac8ed0b48": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512080
+    },
+    "ca51cb63-f69f-4a30-bbb8-de566981c972": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511909
+    },
+    "e6f9cb57-fa95-4e0b-a99d-dd59035fbad9": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511909
+    },
+    "d745886b-d155-4a7c-a08b-f7b2e8fdb62f": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512063
+    },
+    "4a146fd0-489a-470f-b040-cedfd204c259": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512063
+    },
+    "ef60bc78-94a0-4baa-aadf-23fbcc08c81d": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512095
+    },
+    "b9d1d8a9-345e-4ebc-a000-dc2ff0ee165b": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627512095
+    },
+    "f22817ea-58fe-46de-a32d-f1ec2c54ee76": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511872
+    },
+    "a085ceea-9114-4894-8cc5-7adae1cf109a": {
+      "assetMtime": 1652598292000,
+      "metaMtime": 1652627511872
+    },
+    "f52534cd-bea7-45ec-badf-7ef53bebbf06": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512139
+    },
+    "3a5ba841-bfc1-4c4b-9edb-46430109f068": {
+      "assetMtime": 1652598360000,
+      "metaMtime": 1652627512139
+    }
+  },
+  "result": {
+    "name": "Bear_Sister-4",
+    "width": 886,
+    "height": 964,
+    "ver": "1.2.5",
+    "uuid": "5e4e7952-4844-4219-85ec-94905db854f3",
+    "importer": "auto-atlas",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "compressionLevel": 6,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "圖層 14",
+            "uuid": "169d089a-6486-478b-80c8-5a741be80977",
+            "textureUuid": "2d089139-b9f0-49de-b574-0267b79fc972",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 292,
+              "height": 429,
+              "rotatedWidth": 429,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 429,
+            "width": 298,
+            "height": 435,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/2d/2d089139-b9f0-49de-b574-0267b79fc972.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 435,
+            "rotatedHeight": 298
+          },
+          {
+            "name": "圖層 17",
+            "uuid": "30d696c2-f461-4418-b7d9-078ce2ab4584",
+            "textureUuid": "301b9b59-143c-45d4-ac42-4c99b1872e35",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_4.png",
+            "trim": {
+              "x": 438,
+              "y": 3,
+              "width": 292,
+              "height": 429,
+              "rotatedWidth": 429,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 429,
+            "width": 298,
+            "height": 435,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/30/301b9b59-143c-45d4-ac42-4c99b1872e35.png",
+            "x": 435,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 435,
+            "rotatedHeight": 298
+          },
+          {
+            "name": "圖層 15",
+            "uuid": "702fc2cf-204d-44d2-97bd-8c20af2b3957",
+            "textureUuid": "4924585f-399d-41dc-9a87-1e04911eeb0d",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_11.png",
+            "trim": {
+              "x": 3,
+              "y": 301,
+              "width": 292,
+              "height": 428,
+              "rotatedWidth": 428,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 428,
+            "width": 298,
+            "height": 434,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/49/4924585f-399d-41dc-9a87-1e04911eeb0d.png",
+            "x": 0,
+            "y": 298,
+            "rotated": true,
+            "rotatedWidth": 434,
+            "rotatedHeight": 298
+          },
+          {
+            "name": "圖層 12",
+            "uuid": "93beacb2-39ea-40ae-abb4-a23743e4730b",
+            "textureUuid": "eae508ad-3d40-490b-82cc-0ab34ea4b028",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619658_image_14.png",
+            "trim": {
+              "x": 437,
+              "y": 301,
+              "width": 292,
+              "height": 427,
+              "rotatedWidth": 427,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 427,
+            "width": 298,
+            "height": 433,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/ea/eae508ad-3d40-490b-82cc-0ab34ea4b028.png",
+            "x": 434,
+            "y": 298,
+            "rotated": true,
+            "rotatedWidth": 433,
+            "rotatedHeight": 298
+          },
+          {
+            "name": "圖層 13",
+            "uuid": "afe12125-fdd4-4d0a-bb15-cb85e85e5a1b",
+            "textureUuid": "00aeab20-3f0e-4b54-9ec3-e02f58d935e7",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619658_image_15.png",
+            "trim": {
+              "x": 3,
+              "y": 599,
+              "width": 292,
+              "height": 428,
+              "rotatedWidth": 428,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 428,
+            "width": 298,
+            "height": 434,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/00/00aeab20-3f0e-4b54-9ec3-e02f58d935e7.png",
+            "x": 0,
+            "y": 596,
+            "rotated": true,
+            "rotatedWidth": 434,
+            "rotatedHeight": 298
+          },
+          {
+            "name": "圖層 16",
+            "uuid": "f22817ea-58fe-46de-a32d-f1ec2c54ee76",
+            "textureUuid": "a085ceea-9114-4894-8cc5-7adae1cf109a",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619661_image_22.png",
+            "trim": {
+              "x": 437,
+              "y": 599,
+              "width": 292,
+              "height": 428,
+              "rotatedWidth": 428,
+              "rotatedHeight": 292
+            },
+            "rawWidth": 292,
+            "rawHeight": 428,
+            "width": 298,
+            "height": 434,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/a0/a085ceea-9114-4894-8cc5-7adae1cf109a.png",
+            "x": 434,
+            "y": 596,
+            "rotated": true,
+            "rotatedWidth": 434,
+            "rotatedHeight": 298
+          }
+        ],
+        "width": 870,
+        "height": 894,
+        "name": "Bear_Sister-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Bear\\sprites\\Bear_Sister\\Bear_Sister.pac\\Bear_Sister-1.png"
+      },
+      {
+        "files": [
+          {
+            "name": "圖層 11",
+            "uuid": "0bff3805-310d-4f9b-b538-466cf24eb828",
+            "textureUuid": "5b90a680-1523-4fd0-90ba-0441e71f1fa2",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619655_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 293,
+              "height": 428,
+              "rotatedWidth": 428,
+              "rotatedHeight": 293
+            },
+            "rawWidth": 293,
+            "rawHeight": 428,
+            "width": 299,
+            "height": 434,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/5b/5b90a680-1523-4fd0-90ba-0441e71f1fa2.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 434,
+            "rotatedHeight": 299
+          },
+          {
+            "name": "圖層 18",
+            "uuid": "ca51cb63-f69f-4a30-bbb8-de566981c972",
+            "textureUuid": "e6f9cb57-fa95-4e0b-a99d-dd59035fbad9",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619659_image_19.png",
+            "trim": {
+              "x": 437,
+              "y": 3,
+              "width": 293,
+              "height": 431,
+              "rotatedWidth": 431,
+              "rotatedHeight": 293
+            },
+            "rawWidth": 293,
+            "rawHeight": 431,
+            "width": 299,
+            "height": 437,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/e6/e6f9cb57-fa95-4e0b-a99d-dd59035fbad9.png",
+            "x": 434,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 437,
+            "rotatedHeight": 299
+          },
+          {
+            "name": "圖層 10",
+            "uuid": "b2f80c93-58ea-4bc6-8916-62892093e758",
+            "textureUuid": "c52d69a2-b060-44e5-8e13-7edc98db10a5",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619658_image_16.png",
+            "trim": {
+              "x": 3,
+              "y": 302,
+              "width": 296,
+              "height": 429,
+              "rotatedWidth": 429,
+              "rotatedHeight": 296
+            },
+            "rawWidth": 296,
+            "rawHeight": 429,
+            "width": 302,
+            "height": 435,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/c5/c52d69a2-b060-44e5-8e13-7edc98db10a5.png",
+            "x": 0,
+            "y": 299,
+            "rotated": true,
+            "rotatedWidth": 435,
+            "rotatedHeight": 302
+          },
+          {
+            "name": "圖層 19",
+            "uuid": "c0914ca8-dd23-416c-ac38-6fe2e18ca10a",
+            "textureUuid": "50ae6a9e-d52b-4208-bab9-1c86e6df7f56",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619658_image_17.png",
+            "trim": {
+              "x": 438,
+              "y": 302,
+              "width": 298,
+              "height": 432,
+              "rotatedWidth": 432,
+              "rotatedHeight": 298
+            },
+            "rawWidth": 298,
+            "rawHeight": 432,
+            "width": 304,
+            "height": 438,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/50/50ae6a9e-d52b-4208-bab9-1c86e6df7f56.png",
+            "x": 435,
+            "y": 299,
+            "rotated": true,
+            "rotatedWidth": 438,
+            "rotatedHeight": 304
+          },
+          {
+            "name": "圖層 9",
+            "uuid": "3dd7034b-6f2b-40ae-86a0-2cdcd1b3c331",
+            "textureUuid": "0af31112-8a2a-4806-b41d-262ca6b22294",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_8.png",
+            "trim": {
+              "x": 3,
+              "y": 606,
+              "width": 299,
+              "height": 430,
+              "rotatedWidth": 430,
+              "rotatedHeight": 299
+            },
+            "rawWidth": 299,
+            "rawHeight": 430,
+            "width": 305,
+            "height": 436,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/0a/0af31112-8a2a-4806-b41d-262ca6b22294.png",
+            "x": 0,
+            "y": 603,
+            "rotated": true,
+            "rotatedWidth": 436,
+            "rotatedHeight": 305
+          },
+          {
+            "name": "圖層 8",
+            "uuid": "3cc9f69a-69b1-4634-94d1-8231465bbaaa",
+            "textureUuid": "12dc24dc-3c55-49de-ab30-8de8fd47f787",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_7.png",
+            "trim": {
+              "x": 439,
+              "y": 606,
+              "width": 302,
+              "height": 432,
+              "rotatedWidth": 432,
+              "rotatedHeight": 302
+            },
+            "rawWidth": 302,
+            "rawHeight": 432,
+            "width": 308,
+            "height": 438,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/12/12dc24dc-3c55-49de-ab30-8de8fd47f787.png",
+            "x": 436,
+            "y": 603,
+            "rotated": true,
+            "rotatedWidth": 438,
+            "rotatedHeight": 308
+          }
+        ],
+        "width": 874,
+        "height": 911,
+        "name": "Bear_Sister-2",
+        "imagePath": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Bear\\sprites\\Bear_Sister\\Bear_Sister.pac\\Bear_Sister-2.png"
+      },
+      {
+        "files": [
+          {
+            "name": "圖層 20",
+            "uuid": "d745886b-d155-4a7c-a08b-f7b2e8fdb62f",
+            "textureUuid": "4a146fd0-489a-470f-b040-cedfd204c259",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619659_image_20.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 304,
+              "height": 433,
+              "rotatedWidth": 433,
+              "rotatedHeight": 304
+            },
+            "rawWidth": 304,
+            "rawHeight": 433,
+            "width": 310,
+            "height": 439,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/4a/4a146fd0-489a-470f-b040-cedfd204c259.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 439,
+            "rotatedHeight": 310
+          },
+          {
+            "name": "圖層 7",
+            "uuid": "4a1f05ef-2360-44e0-87e8-b5dc7469348b",
+            "textureUuid": "85d62634-a0fa-4506-bcc0-ad37387a6fe2",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_9.png",
+            "trim": {
+              "x": 442,
+              "y": 3,
+              "width": 308,
+              "height": 433,
+              "rotatedWidth": 433,
+              "rotatedHeight": 308
+            },
+            "rawWidth": 308,
+            "rawHeight": 433,
+            "width": 314,
+            "height": 439,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/85/85d62634-a0fa-4506-bcc0-ad37387a6fe2.png",
+            "x": 439,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 439,
+            "rotatedHeight": 314
+          },
+          {
+            "name": "圖層 21",
+            "uuid": "c686a1e5-e9cc-4fba-9579-3de66312f560",
+            "textureUuid": "faa344b5-ef14-40c6-a2ba-958ac8ed0b48",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619659_image_18.png",
+            "trim": {
+              "x": 3,
+              "y": 317,
+              "width": 309,
+              "height": 434,
+              "rotatedWidth": 434,
+              "rotatedHeight": 309
+            },
+            "rawWidth": 309,
+            "rawHeight": 434,
+            "width": 315,
+            "height": 440,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/fa/faa344b5-ef14-40c6-a2ba-958ac8ed0b48.png",
+            "x": 0,
+            "y": 314,
+            "rotated": true,
+            "rotatedWidth": 440,
+            "rotatedHeight": 315
+          },
+          {
+            "name": "圖層 22",
+            "uuid": "22e6dbdc-2070-415d-818b-504fd508d907",
+            "textureUuid": "066ff9fd-5843-4556-b7aa-5b1e476037ff",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_3.png",
+            "trim": {
+              "x": 443,
+              "y": 317,
+              "width": 312,
+              "height": 435,
+              "rotatedWidth": 435,
+              "rotatedHeight": 312
+            },
+            "rawWidth": 312,
+            "rawHeight": 435,
+            "width": 318,
+            "height": 441,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/06/066ff9fd-5843-4556-b7aa-5b1e476037ff.png",
+            "x": 440,
+            "y": 314,
+            "rotated": true,
+            "rotatedWidth": 441,
+            "rotatedHeight": 318
+          },
+          {
+            "name": "圖層 6",
+            "uuid": "78b368c2-13ac-4c76-bec4-a998aa019239",
+            "textureUuid": "096a9482-d56f-43af-93e2-a3db73353006",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_12.png",
+            "trim": {
+              "x": 3,
+              "y": 632,
+              "width": 312,
+              "height": 434,
+              "rotatedWidth": 434,
+              "rotatedHeight": 312
+            },
+            "rawWidth": 312,
+            "rawHeight": 434,
+            "width": 318,
+            "height": 440,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/09/096a9482-d56f-43af-93e2-a3db73353006.png",
+            "x": 0,
+            "y": 629,
+            "rotated": true,
+            "rotatedWidth": 440,
+            "rotatedHeight": 318
+          },
+          {
+            "name": "圖層 23",
+            "uuid": "386328e3-ad52-47d4-8053-7a8c61360057",
+            "textureUuid": "feae4649-47c5-4cc1-98a3-103f34dbb6ac",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_6.png",
+            "trim": {
+              "x": 443,
+              "y": 635,
+              "width": 313,
+              "height": 436,
+              "rotatedWidth": 436,
+              "rotatedHeight": 313
+            },
+            "rawWidth": 313,
+            "rawHeight": 436,
+            "width": 319,
+            "height": 442,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/fe/feae4649-47c5-4cc1-98a3-103f34dbb6ac.png",
+            "x": 440,
+            "y": 632,
+            "rotated": true,
+            "rotatedWidth": 442,
+            "rotatedHeight": 319
+          }
+        ],
+        "width": 882,
+        "height": 951,
+        "name": "Bear_Sister-3",
+        "imagePath": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Bear\\sprites\\Bear_Sister\\Bear_Sister.pac\\Bear_Sister-3.png"
+      },
+      {
+        "files": [
+          {
+            "name": "圖層 24",
+            "uuid": "ef60bc78-94a0-4baa-aadf-23fbcc08c81d",
+            "textureUuid": "b9d1d8a9-345e-4ebc-a000-dc2ff0ee165b",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619659_image_21.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 314,
+              "height": 436,
+              "rotatedWidth": 436,
+              "rotatedHeight": 314
+            },
+            "rawWidth": 314,
+            "rawHeight": 436,
+            "width": 320,
+            "height": 442,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/b9/b9d1d8a9-345e-4ebc-a000-dc2ff0ee165b.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 442,
+            "rotatedHeight": 320
+          },
+          {
+            "name": "圖層 5",
+            "uuid": "f52534cd-bea7-45ec-badf-7ef53bebbf06",
+            "textureUuid": "3a5ba841-bfc1-4c4b-9edb-46430109f068",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619663_image_23.png",
+            "trim": {
+              "x": 445,
+              "y": 3,
+              "width": 314,
+              "height": 435,
+              "rotatedWidth": 435,
+              "rotatedHeight": 314
+            },
+            "rawWidth": 314,
+            "rawHeight": 435,
+            "width": 320,
+            "height": 441,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/3a/3a5ba841-bfc1-4c4b-9edb-46430109f068.png",
+            "x": 442,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 441,
+            "rotatedHeight": 320
+          },
+          {
+            "name": "圖層 1",
+            "uuid": "9305674c-4ae1-489b-a2fe-fea553d77364",
+            "textureUuid": "a3a76dd2-6682-4dc9-b0f3-d889a179be13",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_13.png",
+            "trim": {
+              "x": 3,
+              "y": 323,
+              "width": 315,
+              "height": 437,
+              "rotatedWidth": 437,
+              "rotatedHeight": 315
+            },
+            "rawWidth": 315,
+            "rawHeight": 437,
+            "width": 321,
+            "height": 443,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/a3/a3a76dd2-6682-4dc9-b0f3-d889a179be13.png",
+            "x": 0,
+            "y": 320,
+            "rotated": true,
+            "rotatedWidth": 443,
+            "rotatedHeight": 321
+          },
+          {
+            "name": "圖層 3",
+            "uuid": "21cfac57-52db-4bb3-a783-7d10f63ae8d3",
+            "textureUuid": "261f7aa5-09d4-4309-aaa7-372f5dd1f38d",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_2.png",
+            "trim": {
+              "x": 446,
+              "y": 323,
+              "width": 316,
+              "height": 437,
+              "rotatedWidth": 437,
+              "rotatedHeight": 316
+            },
+            "rawWidth": 316,
+            "rawHeight": 437,
+            "width": 322,
+            "height": 443,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/26/261f7aa5-09d4-4309-aaa7-372f5dd1f38d.png",
+            "x": 443,
+            "y": 320,
+            "rotated": true,
+            "rotatedWidth": 443,
+            "rotatedHeight": 322
+          },
+          {
+            "name": "圖層 2",
+            "uuid": "34997288-6e14-4c52-ba4c-383c30da4c0e",
+            "textureUuid": "fe3c3609-deb7-4085-bff5-8a0ea1403cf2",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619656_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 644,
+              "width": 316,
+              "height": 437,
+              "rotatedWidth": 437,
+              "rotatedHeight": 316
+            },
+            "rawWidth": 316,
+            "rawHeight": 437,
+            "width": 322,
+            "height": 443,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/fe/fe3c3609-deb7-4085-bff5-8a0ea1403cf2.png",
+            "x": 0,
+            "y": 641,
+            "rotated": true,
+            "rotatedWidth": 443,
+            "rotatedHeight": 322
+          },
+          {
+            "name": "圖層 4",
+            "uuid": "567bd3a9-1f1f-441a-9120-f427947f71ac",
+            "textureUuid": "741866d8-bf61-4549-9f4b-cbe9819a9b0d",
+            "path": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\trimImages\\spritesheet_js_1652629619657_image_10.png",
+            "trim": {
+              "x": 446,
+              "y": 645,
+              "width": 316,
+              "height": 436,
+              "rotatedWidth": 436,
+              "rotatedHeight": 316
+            },
+            "rawWidth": 316,
+            "rawHeight": 436,
+            "width": 322,
+            "height": 442,
+            "originalPath": "D:/CocosCreateProject/2.4.7_Monopoly/Monopoly/library/imports/74/741866d8-bf61-4549-9f4b-cbe9819a9b0d.png",
+            "x": 443,
+            "y": 642,
+            "rotated": true,
+            "rotatedWidth": 442,
+            "rotatedHeight": 322
+          }
+        ],
+        "width": 886,
+        "height": 964,
+        "name": "Bear_Sister-4",
+        "imagePath": "D:\\CocosCreateProject\\2.4.7_Monopoly\\Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Bear\\sprites\\Bear_Sister\\Bear_Sister.pac\\Bear_Sister-4.png"
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

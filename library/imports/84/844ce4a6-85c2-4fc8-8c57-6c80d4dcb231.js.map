@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\Interface\\IAsset.ts"],"names":[],"mappings":"","file":"","sourceRoot":"/","sourcesContent":["export default interface IAsset{\r\n    checkAssetState: boolean;\r\n    typePath: string ;\r\n    filePath: string[];\r\n    loadAsset(_Asset: Map<string, any>):void\r\n}"]}

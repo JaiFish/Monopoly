@@ -1,0 +1,25 @@
+{
+  "__type__": "cc.Material",
+  "_name": "Buffer",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "5473caba-288d-4c10-a840-20828a59496d"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "props": {
+        "textureSize": {
+          "__type__": "cc.Vec2",
+          "x": 184,
+          "y": 184
+        }
+      },
+      "defines": {
+        "USE_TEXTURE": true,
+        "USE_GAUSSIAN_BLUR": true
+      }
+    }
+  }
+}

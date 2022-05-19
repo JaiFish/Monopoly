@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "9e5a6708-c4f8-4303-aaba-e51b60c23222",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 928,
+  "height": 770,
+  "platformSettings": {},
+  "subMetas": {
+    "相片-遮罩用": {
+      "ver": "1.0.4",
+      "uuid": "2b3edaf6-2395-4022-8f6c-515b451aba1d",
+      "rawTextureUuid": "9e5a6708-c4f8-4303-aaba-e51b60c23222",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 58.5,
+      "offsetY": 0,
+      "trimX": 117,
+      "trimY": 0,
+      "width": 811,
+      "height": 770,
+      "rawWidth": 928,
+      "rawHeight": 770,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

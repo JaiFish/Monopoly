@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Feature_Start",
+    "texture": "91533688-f25f-4e92-b9ec-4d6b6548d196",
+    "atlas": "ed24d608-ffa3-48dc-8ca4-7de40016ce89",
+    "rect": [
+      81,
+      27,
+      28,
+      35
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      28,
+      35
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

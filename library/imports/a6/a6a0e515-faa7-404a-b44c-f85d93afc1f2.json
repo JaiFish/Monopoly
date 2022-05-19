@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "控制區底",
+    "texture": "cb8d2d92-fb6b-4db1-b3b0-4276d9538179",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      636,
+      115
+    ],
+    "offset": [
+      1,
+      0
+    ],
+    "originalSize": [
+      638,
+      115
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

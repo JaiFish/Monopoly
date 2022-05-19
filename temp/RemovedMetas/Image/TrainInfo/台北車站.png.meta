@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "73b95ffd-f819-4736-a1d9-7c05fd2ec94c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 560,
+  "height": 650,
+  "platformSettings": {},
+  "subMetas": {
+    "台北車站": {
+      "ver": "1.0.6",
+      "uuid": "88058238-292a-4fac-a990-0e9f62eb0bc4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "73b95ffd-f819-4736-a1d9-7c05fd2ec94c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 560,
+      "height": 650,
+      "rawWidth": 560,
+      "rawHeight": 650,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

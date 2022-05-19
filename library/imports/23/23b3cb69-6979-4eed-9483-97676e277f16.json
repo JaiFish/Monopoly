@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "彈跳底",
+    "texture": "91a0272c-0104-47a8-9921-b3d0ae4ba3ae",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      1318,
+      798
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1324,
+      804
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

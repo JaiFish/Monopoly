@@ -1,0 +1,26 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "TrainType.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "TrainType_0": {
+      "__uuid__": "48775d97-b2f8-43a0-9d88-ad830b1dc472"
+    },
+    "TrainType_1": {
+      "__uuid__": "5f26b600-25d3-46d7-9b0c-106455272f45"
+    },
+    "TrainType_2": {
+      "__uuid__": "f00e166c-d6f4-4f4a-8a0d-355bd94464b6"
+    },
+    "TrainType_3": {
+      "__uuid__": "c76b90ac-1556-4b3b-a04a-1dc75f869723"
+    },
+    "TrainType_4": {
+      "__uuid__": "1faca3f3-6108-4ffc-91e5-5c8a83096a5b"
+    },
+    "TrainType_5": {
+      "__uuid__": "0dc2cddc-c7e1-4c62-bbbc-2069761438c5"
+    }
+  }
+}

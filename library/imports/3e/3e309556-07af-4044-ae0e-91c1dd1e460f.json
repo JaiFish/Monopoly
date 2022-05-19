@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "列車-車門-左",
+    "texture": "97585245-54e0-4e1c-8294-733e6ee76144",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      374,
+      830
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      375,
+      830
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

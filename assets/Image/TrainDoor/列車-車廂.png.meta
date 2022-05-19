@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "9e5a6a72-5377-4bf8-84da-ba4418a36690",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1918,
+  "height": 966,
+  "platformSettings": {},
+  "subMetas": {
+    "列車-車廂": {
+      "ver": "1.0.4",
+      "uuid": "833e6b5f-02da-47ce-97b2-76f1beb45269",
+      "rawTextureUuid": "9e5a6a72-5377-4bf8-84da-ba4418a36690",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1918,
+      "height": 966,
+      "rawWidth": 1918,
+      "rawHeight": 966,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

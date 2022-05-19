@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "112f27ec-c4bc-4b8b-be20-45a89e47b063",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 174,
+  "height": 107,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-宜蘭車站": {
+      "ver": "1.0.6",
+      "uuid": "b1443b03-2f03-4422-964b-822dcaa53ff9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "112f27ec-c4bc-4b8b-be20-45a89e47b063",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 174,
+      "height": 107,
+      "rawWidth": 174,
+      "rawHeight": 107,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

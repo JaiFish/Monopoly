@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\Enum\\onClick.ts"],"names":[],"mappings":";;;;;;;AACA,IAAY,OAMX;AAND,WAAY,OAAO;IACf;;OAEG;IACH,gCAAqB,CAAA;AAEzB,CAAC,EANW,OAAO,GAAP,eAAO,KAAP,eAAO,QAMlB","file":"","sourceRoot":"/","sourcesContent":["\r\nexport enum onClick {\r\n    /**ManClass\r\n     * \r\n     */\r\n    TouchEnd = \"touchend\",\r\n\r\n}"]}

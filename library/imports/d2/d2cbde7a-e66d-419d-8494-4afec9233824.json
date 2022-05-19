@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bear_Brother11",
+    "texture": "69d1ac90-4440-44a9-8dc5-9546977228ff",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      375,
+      572
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      375,
+      572
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

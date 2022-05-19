@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "功維敘隧道-放大版",
+    "texture": "e92f46d3-faa4-42d9-8c05-99e8315dc626",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      231,
+      171
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      231,
+      171
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

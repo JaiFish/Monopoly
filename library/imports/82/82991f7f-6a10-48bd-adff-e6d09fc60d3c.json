@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bear_X",
+    "texture": "8e7f9f18-3195-4fa1-81db-f2fe91ce0a71",
+    "atlas": "10b17d17-3e04-489a-8be8-f73987001736",
+    "rect": [
+      1654,
+      418,
+      157,
+      162
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      157,
+      162
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

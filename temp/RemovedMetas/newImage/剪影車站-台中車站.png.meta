@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f90444f6-d99c-4f63-bc0b-758b34ccf8c2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 95,
+  "height": 36,
+  "platformSettings": {},
+  "subMetas": {
+    "剪影車站-台中車站": {
+      "ver": "1.0.6",
+      "uuid": "728e632c-3ccb-4cd5-88b8-2ff91b95c39b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f90444f6-d99c-4f63-bc0b-758b34ccf8c2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 95,
+      "height": 36,
+      "rawWidth": 95,
+      "rawHeight": 36,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

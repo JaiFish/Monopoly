@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "白色圓形按鈕底_左右",
+    "texture": "3c10528e-a13b-4d84-a7ee-65dfd835391d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      70,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      70,
+      70
+    ],
+    "capInsets": [
+      34,
+      0,
+      34,
+      0
+    ]
+  }
+}

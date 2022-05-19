@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7c43aad5-5e2f-49fc-a463-36681839383b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 82,
+  "height": 49,
+  "platformSettings": {},
+  "subMetas": {
+    "剪影車站-台北機廠": {
+      "ver": "1.0.6",
+      "uuid": "d42ee1f2-b6a7-485e-9775-540f2da7e626",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7c43aad5-5e2f-49fc-a463-36681839383b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 82,
+      "height": 49,
+      "rawWidth": 82,
+      "rawHeight": 49,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "圖層 7",
+    "texture": "2d71907e-d7dd-461b-b253-e6a2f3332281",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      481,
+      638
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      481,
+      638
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

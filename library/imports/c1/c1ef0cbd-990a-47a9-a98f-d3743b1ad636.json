@@ -1,0 +1,62 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "Station_Gary.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "Station_Gary_10": {
+      "__uuid__": "b70d3eb4-18d0-4224-b464-643601770c94"
+    },
+    "Station_Gary_11": {
+      "__uuid__": "40c7838a-7471-4a86-aabd-1655934b5505"
+    },
+    "Station_Gary_12": {
+      "__uuid__": "29870b20-09c0-4180-9ede-64af011a7124"
+    },
+    "Station_Gary_13": {
+      "__uuid__": "b8caec24-fe69-4125-b0d1-f8bf13333f60"
+    },
+    "Station_Gary_14": {
+      "__uuid__": "2cb62ae5-00a8-4360-a01c-ada034653a3e"
+    },
+    "Station_Gary_15": {
+      "__uuid__": "4794fbf6-b1f5-487c-b42a-d6d8e9aca12c"
+    },
+    "Station_Gary_16": {
+      "__uuid__": "59f82c8a-c92b-449c-a664-2b53330f2dc3"
+    },
+    "Station_Gary_17": {
+      "__uuid__": "848a53eb-8502-4d91-ab17-e7916c22b1a5"
+    },
+    "Station_Gary_18": {
+      "__uuid__": "57f6516b-8f0a-42d3-8ad3-0fa8eeb4d00c"
+    },
+    "Station_Gary_19": {
+      "__uuid__": "20f82954-1ed8-4054-b18f-6f4745adaa15"
+    },
+    "Station_Gary_2": {
+      "__uuid__": "9439c6a7-ce15-41b3-94ab-ecd9b4fa719f"
+    },
+    "Station_Gary_3": {
+      "__uuid__": "71b13ac3-7e48-49b6-9deb-0523e9ecf1c7"
+    },
+    "Station_Gary_4": {
+      "__uuid__": "873d309b-0996-4877-8fa9-4ca69b9428a9"
+    },
+    "Station_Gary_5": {
+      "__uuid__": "db39e93a-f682-4def-9381-bbc8c2ce8d6c"
+    },
+    "Station_Gary_6": {
+      "__uuid__": "7d2a6a6f-d2e3-4253-bf80-39e69f572aca"
+    },
+    "Station_Gary_7": {
+      "__uuid__": "d0ab76f9-d525-4add-9a5d-756d9e2f6ed0"
+    },
+    "Station_Gary_8": {
+      "__uuid__": "584cdd98-c404-469b-930d-3da6f76eeea9"
+    },
+    "Station_Gary_9": {
+      "__uuid__": "9f82490c-4ce5-45d3-b92d-781b648ddb2d"
+    }
+  }
+}

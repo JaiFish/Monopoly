@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "山脈-01",
+    "texture": "55a3494c-daf9-460c-ba9e-6fe30e4f5b1c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      378,
+      112
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      378,
+      112
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

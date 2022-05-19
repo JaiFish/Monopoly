@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bear_TrainType0_13",
+    "texture": "e78fbb6c-8767-4067-9059-3c7051e69da0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      598,
+      639
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      598,
+      639
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

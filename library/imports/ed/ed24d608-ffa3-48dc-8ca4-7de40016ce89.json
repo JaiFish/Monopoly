@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "Feature.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "Feature_ResetView": {
+      "__uuid__": "620e902f-e214-478c-a850-319b633f16a4"
+    },
+    "Feature_Skip": {
+      "__uuid__": "ec6e157e-5e1d-447d-9519-75ecda0cd4db"
+    },
+    "Feature_Start": {
+      "__uuid__": "d2643884-8581-44a5-b448-f53deda07646"
+    },
+    "Feature_Stop": {
+      "__uuid__": "ca965d12-f429-4afb-942d-61648e0a9a22"
+    }
+  }
+}

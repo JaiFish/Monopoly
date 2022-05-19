@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "重製-功維敘隧道",
+    "texture": "a9de8ef8-5d3f-4875-b2de-edbe7da73c29",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      193,
+      135
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      193,
+      135
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

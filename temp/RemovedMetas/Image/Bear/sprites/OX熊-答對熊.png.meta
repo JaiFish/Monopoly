@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9ccedf90-ee52-492f-a9d8-674305576035",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 655,
+  "height": 824,
+  "platformSettings": {},
+  "subMetas": {
+    "OX熊-答對熊": {
+      "ver": "1.0.6",
+      "uuid": "fec33d54-1f46-494b-832a-30d205bc2288",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9ccedf90-ee52-492f-a9d8-674305576035",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 655,
+      "height": 824,
+      "rawWidth": 655,
+      "rawHeight": 824,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

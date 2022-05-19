@@ -1,0 +1,14 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "Setting.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "SoundClose": {
+      "__uuid__": "43e03e3a-7a79-47b8-85a4-816888b45d55"
+    },
+    "SoundOpen": {
+      "__uuid__": "434f6bae-d3b2-482e-8c8c-d3927701fa25"
+    }
+  }
+}

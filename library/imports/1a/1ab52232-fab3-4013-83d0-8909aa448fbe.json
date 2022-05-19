@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "一般版第9題原始圖示-3",
+    "texture": "56ae75de-727a-4691-8354-769a4c59ab38",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      413,
+      621
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      413,
+      621
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

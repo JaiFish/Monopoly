@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "海-右",
+    "texture": "0dc87866-d68f-45af-8788-1d7cd7edc6a6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2048,
+      2048
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2048,
+      2048
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "光束",
+    "texture": "6615bcef-682b-4b24-aa1f-0059b1227cc5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1300,
+      780
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1300,
+      780
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

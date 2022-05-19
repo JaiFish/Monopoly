@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "835adb58-c417-41d9-8917-6eb75ba598e8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 135,
+  "height": 71,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-基隆車站": {
+      "ver": "1.0.6",
+      "uuid": "4087b08d-68ca-4fda-a9e2-7878027871f4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "835adb58-c417-41d9-8917-6eb75ba598e8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 135,
+      "height": 71,
+      "rawWidth": 135,
+      "rawHeight": 71,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

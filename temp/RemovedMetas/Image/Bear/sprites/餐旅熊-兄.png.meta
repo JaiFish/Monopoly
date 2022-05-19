@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6982bcac-8308-4bdc-b6a3-2722bd3bab01",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 520,
+  "height": 805,
+  "platformSettings": {},
+  "subMetas": {
+    "餐旅熊-兄": {
+      "ver": "1.0.6",
+      "uuid": "91584844-a3e8-45b5-b9b8-160b5ecd73e2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6982bcac-8308-4bdc-b6a3-2722bd3bab01",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 520,
+      "height": 805,
+      "rawWidth": 520,
+      "rawHeight": 805,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

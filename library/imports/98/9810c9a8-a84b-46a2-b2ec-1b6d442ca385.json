@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "海-中",
+    "texture": "9d90e303-1a6e-437a-8bee-7f7e1e3921bf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2049,
+      2049
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2049,
+      2049
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

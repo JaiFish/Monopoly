@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "943d8b24-9c96-475c-9857-1c24c37883e1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 78,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "剪影車站-山佳車站": {
+      "ver": "1.0.6",
+      "uuid": "5795a292-8b33-4bb0-a6fb-56296de0715e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "943d8b24-9c96-475c-9857-1c24c37883e1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 78,
+      "height": 42,
+      "rawWidth": 78,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

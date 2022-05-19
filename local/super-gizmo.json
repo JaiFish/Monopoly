@@ -1,0 +1,33 @@
+{
+  "color": {
+    "defaultCircleFillColor": "rgba(62,45,255,0.8)",
+    "defaultCircleStrokeColor": "rgba(255,234,0,0.8)",
+    "defaultLineStrokeColor": "rgba(255,20,147,0.8)",
+    "defaultPathFillColor": "none",
+    "defaultPathStrokeColor": "rgba(20,255,226,0.8)",
+    "defaultRectFillColor": "none",
+    "defaultRectStrokeColor": "rgba(255,85,20,0.8)",
+    "defaultTouchFillColor": "none",
+    "defaultTouchStrokeColor": "rgba(255,20,147,0)",
+    "defaultStartColor": "rgba(255,0,0,0.5176470588235295)",
+    "defaultEndColor": "rgba(29,211,135,1)"
+  },
+  "strokeWidth": {
+    "defaultTouchStrokeWidth": 12,
+    "defaultStrokeWidth": 5
+  },
+  "dashArray": {
+    "defaultLineDashArray": "5,5",
+    "defaultCircleDashArray": "5,5",
+    "defaultPathDashArray": "5,5",
+    "defaultRectDashArray": "5,5"
+  },
+  "number": {
+    "defaultCircleRadius": 8,
+    "defaultRectWidth": 8,
+    "defaultRectHeight": 8,
+    "defaultTouchCircleRadius": 8,
+    "defaultTouchRectWidth": 8,
+    "defaultTouchRectHeight": 8
+  }
+}

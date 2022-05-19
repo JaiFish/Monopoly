@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "UIBtn_Statoin_Gary_14",
+    "texture": "d6b45e68-0889-4998-99dc-43c569de6f6b",
+    "atlas": "cc5700a6-cf97-4e54-9401-be28657c24ed",
+    "rect": [
+      2,
+      209,
+      72,
+      47
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      72,
+      47
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

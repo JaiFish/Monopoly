@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "MapPoint.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "Station_Normal": {
+      "__uuid__": "72e27658-9d77-4635-b365-c29578ba514e"
+    },
+    "Station_Q&A": {
+      "__uuid__": "fa99b2dd-d0a9-45f3-afae-4f66f789cb0a"
+    },
+    "Station_Start": {
+      "__uuid__": "76ddcca9-0986-4c58-8aa8-400df8482736"
+    },
+    "Station_WaitRad": {
+      "__uuid__": "3f2a4c9a-1cd6-494f-b4ff-c43045fb283a"
+    }
+  }
+}

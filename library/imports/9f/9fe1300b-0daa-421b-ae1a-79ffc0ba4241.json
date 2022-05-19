@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "一般版第5題原始圖示",
+    "texture": "195f4860-8764-4d77-b39a-6b65fb7529a1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1200,
+      708
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1200,
+      708
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

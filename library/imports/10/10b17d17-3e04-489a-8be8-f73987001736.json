@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "Bear.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "BearBrand": {
+      "__uuid__": "471af359-8dcb-421c-a48b-fdbfe9c62c91"
+    },
+    "Bear_Green": {
+      "__uuid__": "6b624b31-641e-4c8e-b5bb-4606754ca13c"
+    },
+    "Bear_O": {
+      "__uuid__": "d0bc40b4-677e-42d9-821f-1ff3332210d1"
+    },
+    "Bear_Red": {
+      "__uuid__": "4673aa7b-fd8e-4418-8d7d-54af08c513b0"
+    },
+    "Bear_X": {
+      "__uuid__": "82991f7f-6a10-48bd-adff-e6d09fc60d3c"
+    },
+    "Bear_false": {
+      "__uuid__": "781270e0-0e91-4074-9991-31b4f397a36c"
+    },
+    "Bear_true": {
+      "__uuid__": "ee8db249-fe09-491a-a6a0-caae42991aad"
+    }
+  }
+}

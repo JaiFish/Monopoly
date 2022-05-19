@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Props_Gary_5",
+    "texture": "1a8de254-c4e8-48e5-927d-d8a98b3f1c5b",
+    "atlas": "eace3634-afd3-4d53-b7b9-ffbb9f7336f3",
+    "rect": [
+      77,
+      54,
+      56,
+      72
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      56,
+      72
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

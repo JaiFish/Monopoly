@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5ebdb36a-ec94-4136-ab4e-1e367d090e6d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 418,
+  "height": 184,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-台北車站": {
+      "ver": "1.0.6",
+      "uuid": "c8aeaf7a-8eff-4e2c-9164-92cffebd0f6e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5ebdb36a-ec94-4136-ab4e-1e367d090e6d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 418,
+      "height": 184,
+      "rawWidth": 418,
+      "rawHeight": 184,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

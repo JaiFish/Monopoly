@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "兒童",
+    "texture": "29ec0e2a-1a0f-42e2-8a46-62d4d41737ad",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      166,
+      256
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      166,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

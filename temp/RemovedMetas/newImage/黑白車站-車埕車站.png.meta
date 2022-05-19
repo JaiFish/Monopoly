@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7c375bda-4c9b-4ee0-b87a-099d3c3fab33",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 166,
+  "height": 89,
+  "platformSettings": {},
+  "subMetas": {
+    "黑白車站-車埕車站": {
+      "ver": "1.0.6",
+      "uuid": "1f970073-88b0-4767-8711-6b978c445e17",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7c375bda-4c9b-4ee0-b87a-099d3c3fab33",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 166,
+      "height": 89,
+      "rawWidth": 166,
+      "rawHeight": 89,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

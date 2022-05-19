@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "97585245-54e0-4e1c-8294-733e6ee76144",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 375,
+  "height": 830,
+  "platformSettings": {},
+  "subMetas": {
+    "列車-車門-左": {
+      "ver": "1.0.4",
+      "uuid": "3e309556-07af-4044-ae0e-91c1dd1e460f",
+      "rawTextureUuid": "97585245-54e0-4e1c-8294-733e6ee76144",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 374,
+      "height": 830,
+      "rawWidth": 375,
+      "rawHeight": 830,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
