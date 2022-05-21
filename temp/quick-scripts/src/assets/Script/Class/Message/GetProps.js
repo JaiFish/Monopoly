@@ -25,6 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var Easing_1 = require("../../Enum/Easing");
 var GameEvent_1 = require("../../Enum/GameEvent");
@@ -69,6 +70,7 @@ var GetProps = /** @class */ (function (_super) {
         });
     };
     GetProps.prototype.end = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndGetProps);
     };
     GetProps = __decorate([

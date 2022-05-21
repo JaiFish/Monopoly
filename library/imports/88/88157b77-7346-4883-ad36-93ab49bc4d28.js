@@ -25,6 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -45,6 +46,7 @@ var StationInfo = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.node, "StationInfo", "sendEvent", this.btn_back);
     };
     StationInfo.prototype.sendEvent = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndtationInfo);
     };
     StationInfo.prototype.reset = function () {

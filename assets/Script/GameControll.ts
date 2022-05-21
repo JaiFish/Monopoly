@@ -25,7 +25,7 @@ import Panel_Test from "./Class/Panel_Test";
 import { TrainType } from "./Enum/TrainType";
 import { MyDelay } from "./Data/DelayTime";
 import Panel_Bufer from "./Class/Panel_Bufer";
-import Panel_Teaching from "./Class/Panel_Teaching";
+import MusciMng from "./Data/base/MusciMng";
 
 const { ccclass, property } = cc._decorator;
 
@@ -44,7 +44,6 @@ export default class Controll extends ComponentBase {
     panel_Version: Panel_Version
     panel_Test: Panel_Test
     panel_Bufer: Panel_Bufer
-    panel_Teaching: Panel_Teaching
 
     onLoad() {
         this.panel_AniPath = cc.find("Canvas/Panel_AniPath").addComponent(Panel_AniPath);
@@ -56,7 +55,6 @@ export default class Controll extends ComponentBase {
         this.panel_UI = cc.find("Canvas/Panel_UI").addComponent(Panel_UI);
         this.panel_Bear = cc.find("Canvas/Panel_Bear").addComponent(Panel_Bear);
         this.panel_Bufer = cc.find("Canvas/Panel_Bufer").addComponent(Panel_Bufer);
-        this.panel_Teaching = cc.find("Canvas/Panel_Teaching").addComponent(Panel_Teaching);
 
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version);
@@ -85,6 +83,7 @@ export default class Controll extends ComponentBase {
 
     }
     start() {
+        MusciMng.init()
         this.panel_Version.setVersion(GameModle.version);
         this.sendModle(GameEvent.InitMap);
         this.EventEmit(GameEvent.CloseBufer)
@@ -92,7 +91,7 @@ export default class Controll extends ComponentBase {
         GameModle.webPostMessage.connect()
         this.panel_Message.node.opacity = 255
         this.panel_Door.reset()
-
+        this.checkData()
         // this.mainInit()
     }
     sendModle(type: string) {
@@ -120,13 +119,40 @@ export default class Controll extends ComponentBase {
     /**
      * 流程
      */
-    async mainInit() {
+    async checkData() {
 
         await AssetMng.checkState();
+
+        MusciMng.musicPlay("gameBG")
+        // MusciMng.effectPlay("DoorOpen")
+        // MusciMng.musicStop()
+        // MusciMng.effectAllStop()
+                // GameModle.playData.level = 0
+        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
+        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+
+        // console.log(GameModle.qaLibrary.qaLib_str);
+        // console.log(GameModle.chooseLibrary.chooseLib);
+        // console.log(GameModle.answerLibrary.answerLib_str);
+        // console.log(GameModle.explainLibrary.explainLib);
+        
+    }
+    async mainInit() {
+        await AssetMng.checkState();
+        // MusciMng.musicPlay("gameBG")
+        // MusciMng.effectPlay("DoorOpen")
+        // MusciMng.musicStop()
+        // MusciMng.effectAllStop()
+
         this.panel_Version.node.active = false
+        MusciMng.effectPlay("DoorOpen")
         await this.panel_Door.openDoor()
         await this.panel_Door.scaleAction()
+        MusciMng.effectPlay("maneyMixSound")
         await this.cameraControll.showAllView()
+        await new MyDelay().setDelay(0.5)
         await this.cameraControll.moveToManCamera(false)
 
         // GameModle.playData.level = 0
@@ -138,7 +164,7 @@ export default class Controll extends ComponentBase {
         this.panel_Message.choose_Ticket.show()
 
         //test
-        // this.panel_Man.nowStation = 15
+        // this.panel_Man.nowStation = 20
         // GameModle.playData.level = 1
         // this.endChooseTicket()
 
@@ -168,22 +194,27 @@ export default class Controll extends ComponentBase {
     }
     async showTeaching() {
         this.panel_UI.show()
-        this.panel_Teaching.show();
-        this.panel_Teaching.info0.active = true
+        this.panel_UI.openTeaching()
     }
     async endTeaching() {
-        this.panel_Teaching.hide();
         GameModle.gameState = GameState.Start;
         // this.panel_UI.station.chengeSprit()
 
         this.cameraControll.activeManCamera(true);
         this.cameraControll.activeMineCamera(false);
         this.panel_UI.props_Feature.setStart_Stop(true)
+        this.waitSignalLight()
+    }
+    async waitSignalLight() {
+        this.panel_Man.manStop()
+        await this.panel_Bear.checkState()
         this.panel_Man.manGO()
     }
     async showVideo() {
         await this.panel_Message.show();
         let data = new postCmd()
+        MusciMng.swichEffect()
+        MusciMng.swichMusic()
         switch (this.panel_Man.nowStation) {
             case 1:
                 data.cmd = "OpenView"
@@ -204,9 +235,17 @@ export default class Controll extends ComponentBase {
         // window.parent.postMessage({}, "*")
     }
     async closeVideo() {
+        MusciMng.swichEffect()
+        MusciMng.swichMusic()
         await this.panel_Message.hide();
         this.panel_UI.props_Feature.setStart_Stop(true)
-        this.panel_Man.manGO()
+
+
+        if (this.panel_Man.nowStation == 20)
+            this.waitSignalLight()
+        else
+            this.panel_Man.manGO()
+
     }
     async showQA() {
         let getQA = ""
@@ -232,10 +271,14 @@ export default class Controll extends ComponentBase {
         getAnswer = GameModle.answerLibrary.answerLib_str[GameModle.qaIndex].substring(0, 1)
         this.panel_Message.qaAnswer.reset()
         if (GameModle.chooseAnswer == getAnswer) {
+            MusciMng.effectPlay("True")
             this.panel_Message.qaAnswer.trueAnswer()
         }
-        else
+        else {
             this.panel_Message.qaAnswer.falseAnswer()
+            MusciMng.effectPlay("False")
+        }
+
         this.panel_Message.qaAnswer.show();
     }
     async endAnswer() {
@@ -275,6 +318,10 @@ export default class Controll extends ComponentBase {
             AssetMng.data_SprtieAtlas.get("GetProps_" + this.panel_Man.nowStation.toString())
         )
         this.panel_Message.getProps.show()
+        console.log(this.panel_Man.nowStation);
+
+        this.panel_UI.props_Feature.getProps(this.panel_Man.nowStation)
+        MusciMng.effectPlay("GetProps")
     }
     async endGetProps() {
         this.panel_Message.getProps.hide()
@@ -284,10 +331,9 @@ export default class Controll extends ComponentBase {
         this.panel_Man.manGO()
     }
     async showEndGame() {
-        this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
         await this.panel_Message.show();
+        this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
         this.panel_Message.endGame.show();
-
     }
     async closeEndGame() {
         this.panel_Message.endGame.hide()
@@ -300,6 +346,7 @@ export default class Controll extends ComponentBase {
 
     async goLottery() {
         this.closeEndGame()
+        MusciMng.effectPlay("maneyMixSound")
         await this.cameraControll.showAllView()
         await this.panel_Door.backScaleAction()
         await this.panel_Door.closeDoor()
@@ -333,6 +380,13 @@ export default class Controll extends ComponentBase {
     updataUIStart(setBoolea: boolean) {
         this.panel_UI.props_Feature.setStart_Stop(setBoolea)
     }
+    protected update(dt: number): void {
+        // console.log(cc.audioEngine.getState(MusciMng.musicID));
+        // console.log(cc.audioEngine.getState(MusciMng.effectID.get('DoorOpen')));
+        // console.log("正在播放嗎?" + cc.audioEngine.isMusicPlaying());
+
+
+    }
 }
 
 class postCmd {
@@ -340,4 +394,5 @@ class postCmd {
     viewType: number
     level: number
 }
+
 

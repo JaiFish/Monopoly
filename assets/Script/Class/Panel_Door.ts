@@ -1,5 +1,6 @@
 import ButtonMng from '../Data/base/ButtonMng';
 import ComponentBase from '../Data/base/ComponentBase';
+import MusciMng from '../Data/base/MusciMng';
 import { Commamnd } from '../Enum/Commad';
 import { GameEvent } from '../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -32,9 +33,12 @@ export default class Panel_Door extends ComponentBase {
         // this.EventEmit(GameEvent.ShowAllView)
     }
     sendMainInit(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
+        ButtonMng.reMoveEvent(this.btn_Start, "sendMainInit")
         this.EventEmit(GameEvent.SendCommand, Commamnd.MainInit)
     }
     sendDoorAgainGame(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand, Commamnd.DoorAgainGame)
     }
     async openDoor() {
@@ -44,7 +48,6 @@ export default class Panel_Door extends ComponentBase {
             cc.tween(this.left)
                 .call(() => {
                     this.btn_Start.node.active = false
-                    ButtonMng.reMoveEvent(this.btn_Start, "sendMainInit")
                 })
                 .by(2, { x: -this.distance })
                 .start()

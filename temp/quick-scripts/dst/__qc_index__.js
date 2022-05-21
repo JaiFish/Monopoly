@@ -36,7 +36,6 @@ require('./assets/Script/Class/Panel_Bufer');
 require('./assets/Script/Class/Panel_Cloud');
 require('./assets/Script/Class/Panel_Door');
 require('./assets/Script/Class/Panel_Map');
-require('./assets/Script/Class/Panel_Teaching');
 require('./assets/Script/Class/Panel_Test');
 require('./assets/Script/Class/Panel_Version');
 require('./assets/Script/Class/UI/Panel_UI');

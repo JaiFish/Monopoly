@@ -26,6 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var AssetMng_1 = require("../../Asset/AssetMng");
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var TrainType_1 = require("../../Enum/TrainType");
@@ -100,6 +101,7 @@ var Choose_Train = /** @class */ (function (_super) {
         }
     };
     Choose_Train.prototype.startRandom = function () {
+        MusciMng_1.default.effectPlay("BtnClick");
         this.btn_Start.node.active = false;
         this.isRandom = true;
     };

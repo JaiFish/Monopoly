@@ -1,8 +1,8 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "海-右",
-    "texture": "0dc87866-d68f-45af-8788-1d7cd7edc6a6",
+    "name": "海-左",
+    "texture": "ac22d09e-46de-43b7-bc1c-422bf840ff39",
     "atlas": "",
     "rect": [
       0,

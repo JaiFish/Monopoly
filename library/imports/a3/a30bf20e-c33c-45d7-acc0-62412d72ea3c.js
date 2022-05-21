@@ -25,6 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var SettingBtn_1 = require("./SettingBtn");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Setting = /** @class */ (function (_super) {
@@ -45,7 +46,9 @@ var Setting = /** @class */ (function (_super) {
         this.Layout_BG1 = cc.find("Layout_BG1", this.scroll.node).getComponent(cc.Layout);
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout);
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout);
+        this.info3 = cc.find('Info3', this.node);
         this.itemInit();
+        this.info3.active = false;
     };
     Setting.prototype.start = function () {
         ButtonMng_1.default.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen);
@@ -75,6 +78,7 @@ var Setting = /** @class */ (function (_super) {
         // }
     };
     Setting.prototype.eventControllOpen = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         if (this.isOpen) {
             this.scroll.node.active = false;
             this.isOpen = this.scroll.node.active;

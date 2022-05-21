@@ -17,6 +17,17 @@ export default class Panel_Bear extends ComponentBase {
         this.sprite = cc.find("sprite", this.node).getComponent(cc.Sprite)
 
     }
+    async checkState() {
+        return new Promise<void>((resolve, reject) => {
+            let loop = setInterval(() => {
+                if (this.nowState == BearState.Green) {
+                    clearInterval(loop)
+                    resolve()
+                }
+            }, 50)
+        })
+    }
+
     init(): void {
         this.nowState = BearState.Red
         this.sprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Bear_" + this.nowState)

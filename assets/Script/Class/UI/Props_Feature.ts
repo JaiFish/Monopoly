@@ -1,6 +1,7 @@
 import AssetMng from '../../Asset/AssetMng';
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -13,20 +14,37 @@ export default class Props_Feature extends ComponentBase {
     skip: cc.Button
     resetView: cc.Button
 
-    Props6: cc.Sprite;
+    Props5: cc.Sprite;
     Props11: cc.Sprite;
     Props15: cc.Sprite;
+
+    info0: cc.Node
+    info1: cc.Node
     protected onLoad(): void {
         this.btn_Start_Stop = cc.find("BG_Layout/Start_Stop", this.node).getComponent(cc.Button)
         this.sprtie_start_Stop = cc.find("BG_Layout/Start_Stop/icon", this.node).getComponent(cc.Sprite)
         this.skip = cc.find("BG_Layout/Skip", this.node).getComponent(cc.Button)
         this.resetView = cc.find("BG_Layout/ResetView", this.node).getComponent(cc.Button)
 
+        this.info0 = cc.find('Info0', this.node)
+        this.info1 = cc.find('Info1', this.node)
+
+        this.Props5 = cc.find("BG_Layout/Props5/icon", this.node).getComponent(cc.Sprite)
+        this.Props11 = cc.find("BG_Layout/Props11/icon", this.node).getComponent(cc.Sprite)
+        this.Props15 = cc.find("BG_Layout/Props15/icon", this.node).getComponent(cc.Sprite)
+        console.log(this.Props5);
+
+
         ButtonMng.addEvent(this.node, "Props_Feature", "eventStart_Stop", this.btn_Start_Stop)
         ButtonMng.addEvent(this.node, "Props_Feature", "eventSkip", this.skip)
         ButtonMng.addEvent(this.node, "Props_Feature", "evetResetView", this.resetView)
+
+
+        this.info0.active = false
+        this.info1.active = false
     }
     eventStart_Stop(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         if (!this.isGo)
             this.EventEmit(GameEvent.SendCommand, Commamnd.MenGO);
         else
@@ -34,9 +52,11 @@ export default class Props_Feature extends ComponentBase {
         this.setStart_Stop()
     }
     eventSkip(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.ManSkip)
     }
     evetResetView(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.MoveToManCamera)
     }
     /**
@@ -53,19 +73,22 @@ export default class Props_Feature extends ComponentBase {
 
 
     getProps(_num: number) {
+        console.log(AssetMng.data_SprtieAtlas.get("Props_" + _num));
+
         switch (_num) {
-            case 6:
-                this.Props6.spriteFrame = AssetMng.data_SprtieAtlas.get("GetProps_" + _num)
+            case 5:
+                this.Props5.spriteFrame = AssetMng.data_SprtieAtlas.get("Props_" + _num)
                 break;
             case 11:
-                this.Props11.spriteFrame = AssetMng.data_SprtieAtlas.get("GetProps_" + _num)
+                this.Props11.spriteFrame = AssetMng.data_SprtieAtlas.get("Props_" + _num)
                 break;
             case 15:
-                this.Props15.spriteFrame = AssetMng.data_SprtieAtlas.get("GetProps_" + _num)
+                this.Props15.spriteFrame = AssetMng.data_SprtieAtlas.get("Props_" + _num)
                 break;
             default:
                 break;
         }
 
     }
+
 }

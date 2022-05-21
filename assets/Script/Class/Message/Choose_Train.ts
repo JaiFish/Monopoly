@@ -1,6 +1,7 @@
 import AssetMng from '../../Asset/AssetMng';
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { Easing } from '../../Enum/Easing';
 import { GameEvent } from '../../Enum/GameEvent';
@@ -76,6 +77,7 @@ export default class Choose_Train extends ComponentBase {
 
     }
     startRandom() {
+        MusciMng.effectPlay("BtnClick")
         this.btn_Start.node.active = false
         this.isRandom = true;
     }

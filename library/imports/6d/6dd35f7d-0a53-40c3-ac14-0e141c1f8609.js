@@ -38,6 +38,7 @@ var Panel_Man = /** @class */ (function (_super) {
         this.nowStation = 0;
         this.node.opacity = 0;
         this.isArrival = true;
+        this.isEnd = false;
     };
     Panel_Man.prototype.start = function () {
         EventMng_1.default.emit(GameEvent_1.GameEvent.SendModel, GameEvent_1.GameEvent.SetModel);
@@ -56,6 +57,10 @@ var Panel_Man = /** @class */ (function (_super) {
                 EventMng_1.default.emit(GameEvent_1.GameEvent.GetStation, this.nowStation);
                 EventMng_1.default.emit(GameEvent_1.GameEvent.UIGetStation, this.nowStation);
                 console.log(this.manState);
+                if (this.isEnd) {
+                    this.manStop();
+                    this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowEndGame);
+                }
                 if (this.manState == GameState_1.GameState.Start || this.manState == GameState_1.GameState.Skip) {
                     if (!this.checkStationStop()) {
                         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.UpdataUIStart, true);
@@ -105,8 +110,10 @@ var Panel_Man = /** @class */ (function (_super) {
     Panel_Man.prototype.setStation = function (num) {
         if (num === void 0) { num = 1; }
         this.nowStation += num;
-        if (this.nowStation > 20)
+        if (this.nowStation > 20) {
             this.nowStation = 0;
+            this.isEnd = true;
+        }
     };
     Panel_Man.prototype.setNextPosition = function (_pos) {
         var changePosition = this.gameModle.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);

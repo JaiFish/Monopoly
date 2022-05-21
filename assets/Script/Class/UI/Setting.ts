@@ -1,5 +1,6 @@
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import SettingBtn from './SettingBtn';
 
 const { ccclass, property } = cc._decorator;
@@ -16,6 +17,7 @@ export default class Setting extends ComponentBase {
     Layout_BG2: cc.Layout;
     maxIndex: number = 4
     itemCount: number = 1;
+    info3: cc.Node
 
     protected onLoad(): void {
         this.btn_ControllOpen = cc.find("Btn_ControllOpen", this.node).getComponent(cc.Button)
@@ -27,9 +29,10 @@ export default class Setting extends ComponentBase {
         this.Layout_BG1 = cc.find("Layout_BG1", this.scroll.node).getComponent(cc.Layout)
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout)
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout)
+        this.info3 = cc.find('Info3', this.node)
 
         this.itemInit()
-
+        this.info3.active = false
     }
     protected start(): void {
         ButtonMng.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen)
@@ -61,6 +64,7 @@ export default class Setting extends ComponentBase {
         // }
     }
     eventControllOpen(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         if (this.isOpen) {
             this.scroll.node.active = false
             this.isOpen = this.scroll.node.active

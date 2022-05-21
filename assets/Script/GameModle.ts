@@ -26,7 +26,7 @@ class NumberConvertEnglish {
 }
 
 class GameModel {
-    version: string = "1.0.4";
+    version: string = "1.0.6";
     chooseAnswer: string;
     playData: Player = new Player();
 

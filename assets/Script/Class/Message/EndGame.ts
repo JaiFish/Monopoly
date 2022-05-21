@@ -1,5 +1,7 @@
+import AssetMng from '../../Asset/AssetMng';
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -20,13 +22,20 @@ export default class EndGame extends ComponentBase {
         ButtonMng.addEvent(this.node, "EndGame", "sendEvent", this.btn_Again, "1")
     }
     playBearSprite(number: number) {
+        console.log(number);
+
         if (number == 0)
-            this.node.setPosition(-3.103, -1.858)
+            this.animation_Bear.node.setPosition(32.351, -1.858)
         else
-            this.node.setPosition(32.351, -1.858)
+            this.animation_Bear.node.setPosition(-3.103, -1.858)
+
+
+        console.log(AssetMng.data_Animation.get("Bear_Train" + number));
+        this.animation_Bear.addClip(AssetMng.data_Animation.get("Bear_Train" + number))
         this.animation_Bear.play("Bear_Train" + number)
     }
     sendEvent(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         switch (_customEventData) {
             case "0"://遊戲結束去抽獎
                 this.EventEmit(GameEvent.SendCommand, Commamnd.GoLottery)

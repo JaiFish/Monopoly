@@ -55,6 +55,7 @@ export default class DataMan extends ComponentBase {
 
     isCanGo: boolean;
     isArrival:boolean;
+    isEnd:boolean
 
     gameModle: GameModle;
 }

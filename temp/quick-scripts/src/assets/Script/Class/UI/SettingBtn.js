@@ -85,6 +85,7 @@ var SettingBtn = /** @class */ (function (_super) {
     SettingBtn.prototype.eventSwitchSound = function () {
         MusciMng_1.default.swichEffect();
         MusciMng_1.default.swichMusic();
+        MusciMng_1.default.effectPlay("BtnClick");
         this.setSoundSprite();
     };
     SettingBtn.prototype.setSoundSprite = function () {

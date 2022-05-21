@@ -62,6 +62,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var AssetMng_1 = require("../../Asset/AssetMng");
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var GameModle_1 = require("../../GameModle");
 var StationBtn_1 = require("./StationBtn");
@@ -85,7 +86,9 @@ var Station = /** @class */ (function (_super) {
         this.Layout_BG1 = cc.find("Layout_BG1", this.scroll.node).getComponent(cc.Layout);
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout);
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout);
+        this.info2 = cc.find('Info2', this.node);
         this.initEvent(GameEvent_1.GameEvent.UIGetStation, this.getStation);
+        this.info2.active = false;
         //額外處理
         this.sortData();
         this.itemCount = this.getStationData.length;
@@ -137,6 +140,7 @@ var Station = /** @class */ (function (_super) {
         return isCheck;
     };
     Station.prototype.eventControllOpen = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         if (this.isOpen) {
             this.scroll.node.active = false;
             this.isOpen = this.scroll.node.active;

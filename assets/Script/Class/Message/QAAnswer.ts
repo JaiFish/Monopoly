@@ -1,6 +1,7 @@
 import AssetMng from '../../Asset/AssetMng';
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -74,7 +75,8 @@ export default class QAAnswer extends ComponentBase {
 
     }
     async whichGO(e: cc.Event, _customEventData: string) {
-        await this.actionHide()
+        MusciMng.effectPlay("BtnClick")
+        this.hide()
         switch (Number(_customEventData)) {
             case 0://詳解
                 this.EventEmit(GameEvent.SendCommand, Commamnd.ShowExplain)

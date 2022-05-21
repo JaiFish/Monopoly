@@ -9,10 +9,24 @@ var MusicMng = /** @class */ (function () {
     function MusicMng() {
         this.musicVol = 0.8;
         this.effectVol = 0.8;
+        this.default_Music = 0.8;
+        this.default_Effect = 0.8;
         this.isMusicOpen = true;
         this.isEffectOpen = true;
         this.effectID = new Map();
     }
+    MusicMng.prototype.init = function () {
+        // this.setMusicVol(0)
+        // this.setEffectsicVol(0)
+        // this.swichMusic()
+        // this.swichEffect()
+        this.setMusicVol();
+        this.setEffectsicVol();
+    };
+    MusicMng.prototype.testPlayMusic = function (str, isLoop) {
+        if (isLoop === void 0) { isLoop = true; }
+        this.musicID = cc.audioEngine.play(AssetMng_1.default.data_Music.get(str), isLoop, this.musicVol);
+    };
     MusicMng.prototype.swichMusic = function () {
         this.isMusicOpen = !this.isMusicOpen;
         cc.audioEngine.setMusicVolume(this.isMusicOpen ? this.musicVol : 0);
@@ -31,19 +45,25 @@ var MusicMng = /** @class */ (function () {
     };
     MusicMng.prototype.swichEffect = function () {
         this.isEffectOpen = !this.isEffectOpen;
-        cc.audioEngine.setMusicVolume(this.isEffectOpen ? this.effectVol : 0);
+        cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0);
     };
-    MusicMng.prototype.effectsicVol = function (vol) {
+    MusicMng.prototype.setEffectsicVol = function (vol) {
         this.effectVol = vol ? vol : this.effectVol;
         cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0);
     };
     MusicMng.prototype.effectPlay = function (str, isLoop) {
         if (isLoop === void 0) { isLoop = false; }
-        this.musicStop();
-        this.musicID = cc.audioEngine.playMusic(AssetMng_1.default.data_Music.get(str), isLoop);
+        this.effectID.set(str, cc.audioEngine.playEffect(AssetMng_1.default.data_Music.get(str), isLoop));
     };
-    MusicMng.prototype.effectStop = function () {
-        cc.audioEngine.stopMusic();
+    MusicMng.prototype.effectStop = function (str) {
+        cc.audioEngine.stopEffect(this.effectID.get(str));
+    };
+    MusicMng.prototype.effectAllStop = function () {
+        var _this = this;
+        this.effectID.forEach(function (value, key) {
+            cc.audioEngine.stopEffect(_this.effectID.get(key));
+        });
+        this.effectID.clear();
     };
     return MusicMng;
 }());

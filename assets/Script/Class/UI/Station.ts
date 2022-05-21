@@ -1,6 +1,7 @@
 import AssetMng from '../../Asset/AssetMng';
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { GameEvent } from '../../Enum/GameEvent';
 import GameModle from '../../GameModle';
 import StationBtn from './StationBtn';
@@ -21,6 +22,9 @@ export default class Station extends ComponentBase {
     getStationData: number[] = []
     itemCount: number;//火車站總共數量
 
+
+    info2: cc.Node
+
     protected onLoad(): void {
         this.btn_ControllOpen = cc.find("Btn_ControllOpen", this.node).getComponent(cc.Button)
         this.icon = cc.find("icon", this.btn_ControllOpen.node);
@@ -32,9 +36,10 @@ export default class Station extends ComponentBase {
         this.Layout_BG1 = cc.find("Layout_BG1", this.scroll.node).getComponent(cc.Layout)
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout)
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout)
+        this.info2 = cc.find('Info2', this.node)
 
         this.initEvent(GameEvent.UIGetStation, this.getStation)
-
+        this.info2.active = false
         //額外處理
         this.sortData()
         this.itemCount = this.getStationData.length
@@ -90,6 +95,7 @@ export default class Station extends ComponentBase {
         return isCheck
     }
     eventControllOpen(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         if (this.isOpen) {
             this.scroll.node.active = false
             this.isOpen = this.scroll.node.active

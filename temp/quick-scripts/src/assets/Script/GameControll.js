@@ -84,7 +84,7 @@ var Panel_Version_1 = require("./Class/Panel_Version");
 var Panel_Test_1 = require("./Class/Panel_Test");
 var DelayTime_1 = require("./Data/DelayTime");
 var Panel_Bufer_1 = require("./Class/Panel_Bufer");
-var Panel_Teaching_1 = require("./Class/Panel_Teaching");
+var MusciMng_1 = require("./Data/base/MusciMng");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Controll = /** @class */ (function (_super) {
     __extends(Controll, _super);
@@ -101,7 +101,6 @@ var Controll = /** @class */ (function (_super) {
         this.panel_UI = cc.find("Canvas/Panel_UI").addComponent(Panel_UI_1.default);
         this.panel_Bear = cc.find("Canvas/Panel_Bear").addComponent(Panel_Bear_1.default);
         this.panel_Bufer = cc.find("Canvas/Panel_Bufer").addComponent(Panel_Bufer_1.default);
-        this.panel_Teaching = cc.find("Canvas/Panel_Teaching").addComponent(Panel_Teaching_1.default);
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message_1.default);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version_1.default);
         this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test_1.default);
@@ -124,6 +123,7 @@ var Controll = /** @class */ (function (_super) {
             .startListener(updateTime);
     };
     Controll.prototype.start = function () {
+        MusciMng_1.default.init();
         this.panel_Version.setVersion(GameModle_1.default.version);
         this.sendModle(GameEvent_1.GameEvent.InitMap);
         this.EventEmit(GameEvent_1.GameEvent.CloseBufer);
@@ -131,6 +131,7 @@ var Controll = /** @class */ (function (_super) {
         GameModle_1.default.webPostMessage.connect();
         this.panel_Message.node.opacity = 255;
         this.panel_Door.reset();
+        this.checkData();
         // this.mainInit()
     };
     Controll.prototype.sendModle = function (type) {
@@ -164,6 +165,19 @@ var Controll = /** @class */ (function (_super) {
     /**
      * 流程
      */
+    Controll.prototype.checkData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, AssetMng_1.default.checkState()];
+                    case 1:
+                        _a.sent();
+                        MusciMng_1.default.musicPlay("gameBG");
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     Controll.prototype.mainInit = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
@@ -171,15 +185,24 @@ var Controll = /** @class */ (function (_super) {
                     case 0: return [4 /*yield*/, AssetMng_1.default.checkState()];
                     case 1:
                         _a.sent();
+                        // MusciMng.musicPlay("gameBG")
+                        // MusciMng.effectPlay("DoorOpen")
+                        // MusciMng.musicStop()
+                        // MusciMng.effectAllStop()
                         this.panel_Version.node.active = false;
+                        MusciMng_1.default.effectPlay("DoorOpen");
                         return [4 /*yield*/, this.panel_Door.openDoor()];
                     case 2:
                         _a.sent();
                         return [4 /*yield*/, this.panel_Door.scaleAction()];
                     case 3:
                         _a.sent();
+                        MusciMng_1.default.effectPlay("maneyMixSound");
                         return [4 /*yield*/, this.cameraControll.showAllView()];
                     case 4:
+                        _a.sent();
+                        return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(0.5)];
+                    case 5:
                         _a.sent();
                         return [4 /*yield*/, this.cameraControll.moveToManCamera(false)
                             // GameModle.playData.level = 0
@@ -188,7 +211,7 @@ var Controll = /** @class */ (function (_super) {
                             // this.endChoosTrain()
                             // return
                         ];
-                    case 5:
+                    case 6:
                         _a.sent();
                         // GameModle.playData.level = 0
                         // GameModle.playData.trainTypeNumber = 0
@@ -196,7 +219,7 @@ var Controll = /** @class */ (function (_super) {
                         // this.endChoosTrain()
                         // return
                         return [4 /*yield*/, this.panel_Message.show()];
-                    case 6:
+                    case 7:
                         // GameModle.playData.level = 0
                         // GameModle.playData.trainTypeNumber = 0
                         // GameModle.playData.trainType = TrainType.Type0
@@ -248,8 +271,7 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 this.panel_UI.show();
-                this.panel_Teaching.show();
-                this.panel_Teaching.info0.active = true;
+                this.panel_UI.openTeaching();
                 return [2 /*return*/];
             });
         });
@@ -257,14 +279,28 @@ var Controll = /** @class */ (function (_super) {
     Controll.prototype.endTeaching = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                this.panel_Teaching.hide();
                 GameModle_1.default.gameState = GameState_1.GameState.Start;
                 // this.panel_UI.station.chengeSprit()
                 this.cameraControll.activeManCamera(true);
                 this.cameraControll.activeMineCamera(false);
                 this.panel_UI.props_Feature.setStart_Stop(true);
-                this.panel_Man.manGO();
+                this.waitSignalLight();
                 return [2 /*return*/];
+            });
+        });
+    };
+    Controll.prototype.waitSignalLight = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.panel_Man.manStop();
+                        return [4 /*yield*/, this.panel_Bear.checkState()];
+                    case 1:
+                        _a.sent();
+                        this.panel_Man.manGO();
+                        return [2 /*return*/];
+                }
             });
         });
     };
@@ -277,6 +313,8 @@ var Controll = /** @class */ (function (_super) {
                     case 1:
                         _a.sent();
                         data = new postCmd();
+                        MusciMng_1.default.swichEffect();
+                        MusciMng_1.default.swichMusic();
                         switch (this.panel_Man.nowStation) {
                             case 1:
                                 data.cmd = "OpenView";
@@ -301,11 +339,17 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.panel_Message.hide()];
+                    case 0:
+                        MusciMng_1.default.swichEffect();
+                        MusciMng_1.default.swichMusic();
+                        return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
                         this.panel_UI.props_Feature.setStart_Stop(true);
-                        this.panel_Man.manGO();
+                        if (this.panel_Man.nowStation == 20)
+                            this.waitSignalLight();
+                        else
+                            this.panel_Man.manGO();
                         return [2 /*return*/];
                 }
             });
@@ -359,10 +403,13 @@ var Controll = /** @class */ (function (_super) {
                 getAnswer = GameModle_1.default.answerLibrary.answerLib_str[GameModle_1.default.qaIndex].substring(0, 1);
                 this.panel_Message.qaAnswer.reset();
                 if (GameModle_1.default.chooseAnswer == getAnswer) {
+                    MusciMng_1.default.effectPlay("True");
                     this.panel_Message.qaAnswer.trueAnswer();
                 }
-                else
+                else {
                     this.panel_Message.qaAnswer.falseAnswer();
+                    MusciMng_1.default.effectPlay("False");
+                }
                 this.panel_Message.qaAnswer.show();
                 return [2 /*return*/];
             });
@@ -437,6 +484,9 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 this.panel_Message.getProps.setData(PropsLibrary_1.default.lib.get(this.panel_Man.nowStation), AssetMng_1.default.data_SprtieAtlas.get("GetProps_" + this.panel_Man.nowStation.toString()));
                 this.panel_Message.getProps.show();
+                console.log(this.panel_Man.nowStation);
+                this.panel_UI.props_Feature.getProps(this.panel_Man.nowStation);
+                MusciMng_1.default.effectPlay("GetProps");
                 return [2 /*return*/];
             });
         });
@@ -462,11 +512,10 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        this.panel_Message.endGame.playBearSprite(GameModle_1.default.playData.trainTypeNumber);
-                        return [4 /*yield*/, this.panel_Message.show()];
+                    case 0: return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
+                        this.panel_Message.endGame.playBearSprite(GameModle_1.default.playData.trainTypeNumber);
                         this.panel_Message.endGame.show();
                         return [2 /*return*/];
                 }
@@ -497,6 +546,7 @@ var Controll = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         this.closeEndGame();
+                        MusciMng_1.default.effectPlay("maneyMixSound");
                         return [4 /*yield*/, this.cameraControll.showAllView()];
                     case 1:
                         _a.sent();
@@ -559,6 +609,11 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.updataUIStart = function (setBoolea) {
         this.panel_UI.props_Feature.setStart_Stop(setBoolea);
+    };
+    Controll.prototype.update = function (dt) {
+        // console.log(cc.audioEngine.getState(MusciMng.musicID));
+        // console.log(cc.audioEngine.getState(MusciMng.effectID.get('DoorOpen')));
+        // console.log("正在播放嗎?" + cc.audioEngine.isMusicPlaying());
     };
     Controll = __decorate([
         ccclass

@@ -18,6 +18,7 @@ export default class Panel_Man extends ManAction {
         this.nowStation = 0
         this.node.opacity = 0
         this.isArrival = true
+        this.isEnd = false
     }
     protected start(): void {
         EventMng.emit(GameEvent.SendModel, GameEvent.SetModel)
@@ -39,6 +40,11 @@ export default class Panel_Man extends ManAction {
                 EventMng.emit(GameEvent.GetStation, this.nowStation)
                 EventMng.emit(GameEvent.UIGetStation, this.nowStation)
                 console.log(this.manState);
+                if (this.isEnd) {
+                    this.manStop()
+                    this.EventEmit(GameEvent.SendCommand, Commamnd.ShowEndGame)
+                }
+
                 if (this.manState == GameState.Start || this.manState == GameState.Skip) {
                     if (!this.checkStationStop()) {
                         this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, true)
@@ -89,7 +95,10 @@ export default class Panel_Man extends ManAction {
     }
     setStation(num: number = 1) {
         this.nowStation += num;
-        if (this.nowStation > 20) this.nowStation = 0
+        if (this.nowStation > 20) {
+            this.nowStation = 0
+            this.isEnd = true
+        }
     }
 
     setNextPosition(_pos: cc.Vec2) {

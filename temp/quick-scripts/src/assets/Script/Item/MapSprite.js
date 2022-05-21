@@ -66,8 +66,6 @@ var MapSprite = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.node, "MapSprite", "sendEvent", this.btn, this.node.name);
     };
     MapSprite.prototype.sendEvent = function (e, _customEventData) {
-        console.log(this.type);
-        console.log(this.isGet);
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.UpdataUIStart, false);
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowStationInfo, Number(_customEventData));
     };

@@ -61,6 +61,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -121,23 +122,20 @@ var QAAnswer = /** @class */ (function (_super) {
     QAAnswer.prototype.whichGO = function (e, _customEventData) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.actionHide()];
-                    case 1:
-                        _a.sent();
-                        switch (Number(_customEventData)) {
-                            case 0: //詳解
-                                this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowExplain);
-                                break;
-                            case 1: //下一流程(關閉畫面後回到火車畫面)
-                                this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndAnswer);
-                                break;
-                            case 2: //答錯回到上一個畫面
-                                this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowAgainQA);
-                                break;
-                        }
-                        return [2 /*return*/];
+                MusciMng_1.default.effectPlay("BtnClick");
+                this.hide();
+                switch (Number(_customEventData)) {
+                    case 0: //詳解
+                        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowExplain);
+                        break;
+                    case 1: //下一流程(關閉畫面後回到火車畫面)
+                        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndAnswer);
+                        break;
+                    case 2: //答錯回到上一個畫面
+                        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowAgainQA);
+                        break;
                 }
+                return [2 /*return*/];
             });
         });
     };

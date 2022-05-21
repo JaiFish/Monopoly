@@ -23,8 +23,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var AssetMng_1 = require("../../Asset/AssetMng");
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -44,13 +46,17 @@ var EndGame = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.node, "EndGame", "sendEvent", this.btn_Again, "1");
     };
     EndGame.prototype.playBearSprite = function (number) {
+        console.log(number);
         if (number == 0)
-            this.node.setPosition(-3.103, -1.858);
+            this.animation_Bear.node.setPosition(32.351, -1.858);
         else
-            this.node.setPosition(32.351, -1.858);
+            this.animation_Bear.node.setPosition(-3.103, -1.858);
+        console.log(AssetMng_1.default.data_Animation.get("Bear_Train" + number));
+        this.animation_Bear.addClip(AssetMng_1.default.data_Animation.get("Bear_Train" + number));
         this.animation_Bear.play("Bear_Train" + number);
     };
     EndGame.prototype.sendEvent = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         switch (_customEventData) {
             case "0": //遊戲結束去抽獎
                 this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.GoLottery);

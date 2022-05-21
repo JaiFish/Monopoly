@@ -1,5 +1,6 @@
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
 import Controll from '../../GameControll';
@@ -24,6 +25,7 @@ export default class StationInfo extends ComponentBase {
         ButtonMng.addEvent(this.node, "StationInfo", "sendEvent", this.btn_back)
     }
     sendEvent(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand, Commamnd.EndtationInfo)
     }
     reset() {

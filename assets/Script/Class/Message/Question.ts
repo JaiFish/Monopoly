@@ -1,5 +1,6 @@
 import ButtonMng from "../../Data/base/ButtonMng";
 import ComponentBase from "../../Data/base/ComponentBase";
+import MusciMng from "../../Data/base/MusciMng";
 import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
 import GameModle from "../../GameModle";
@@ -77,6 +78,7 @@ export default class Question extends ComponentBase {
     }
     checkAnswer(e: cc.Event, _customEventData: string) {
         GameModle.chooseAnswer = _customEventData
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand, Commamnd.EndQA)
         // console.log(e, _customEventData);
         //開始接中央

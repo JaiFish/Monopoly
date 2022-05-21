@@ -61,6 +61,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../Data/base/ButtonMng");
 var ComponentBase_1 = require("../Data/base/ComponentBase");
+var MusciMng_1 = require("../Data/base/MusciMng");
 var Commad_1 = require("../Enum/Commad");
 var GameEvent_1 = require("../Enum/GameEvent");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -91,9 +92,12 @@ var Panel_Door = /** @class */ (function (_super) {
         // this.EventEmit(GameEvent.ShowAllView)
     };
     Panel_Door.prototype.sendMainInit = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
+        ButtonMng_1.default.reMoveEvent(this.btn_Start, "sendMainInit");
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.MainInit);
     };
     Panel_Door.prototype.sendDoorAgainGame = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.DoorAgainGame);
     };
     Panel_Door.prototype.openDoor = function () {
@@ -106,7 +110,6 @@ var Panel_Door = /** @class */ (function (_super) {
                         cc.tween(_this.left)
                             .call(function () {
                             _this.btn_Start.node.active = false;
-                            ButtonMng_1.default.reMoveEvent(_this.btn_Start, "sendMainInit");
                         })
                             .by(2, { x: -_this.distance })
                             .start();

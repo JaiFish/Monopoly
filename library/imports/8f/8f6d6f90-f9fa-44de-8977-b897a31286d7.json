@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "一般版第9題原始圖示-2",
-    "texture": "2972e0c7-6487-42b6-924b-b475c1129f1e",
+    "name": "海-中",
+    "texture": "769c775d-8a94-466e-b667-a631768a2937",
     "atlas": "",
     "rect": [
       0,
       0,
-      413,
-      621
+      2048,
+      2048
     ],
     "offset": [
       0,
       0
     ],
     "originalSize": [
-      413,
-      621
+      2048,
+      2048
     ],
     "capInsets": [
       0,

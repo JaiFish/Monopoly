@@ -1,5 +1,4 @@
 
-import IAsset from "../Interface/IAsset";
 import AnimationAsset from "./AnimationAsset";
 import MusicAsset from "./MusicAsset";
 import SpriteAsset from "./SpriteAsset";

@@ -24,6 +24,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var onClick_1 = require("../../Enum/onClick");
@@ -48,6 +49,7 @@ var Choose_Ticket = /** @class */ (function (_super) {
     };
     Choose_Ticket.prototype.onBtnFuntion = function (e) {
         var _node = e.target;
+        MusciMng_1.default.effectPlay("BtnClick");
         switch (_node.parent.name) {
             case "Blue":
                 GameModle_1.default.playData.level = 0;

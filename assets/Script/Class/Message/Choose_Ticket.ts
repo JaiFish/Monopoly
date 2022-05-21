@@ -1,4 +1,5 @@
 import ComponentBase from "../../Data/base/ComponentBase";
+import MusciMng from "../../Data/base/MusciMng";
 import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
 import { onClick } from "../../Enum/onClick";
@@ -26,6 +27,7 @@ export default class Choose_Ticket extends ComponentBase {
 
     onBtnFuntion(e: cc.Event) {
         let _node: cc.Node = e.target
+        MusciMng.effectPlay("BtnClick")
         switch (_node.parent.name) {
             case "Blue":
                 GameModle.playData.level = 0

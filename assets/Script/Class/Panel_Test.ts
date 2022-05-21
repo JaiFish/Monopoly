@@ -1,5 +1,6 @@
 import ButtonMng from '../Data/base/ButtonMng';
 import ComponentBase from '../Data/base/ComponentBase';
+import MusciMng from '../Data/base/MusciMng';
 import { Commamnd } from '../Enum/Commad';
 import { GameEvent } from '../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -27,6 +28,7 @@ export default class Panel_Test extends ComponentBase {
 
     }
     eventCloseView(){
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand,Commamnd.CloseVideo)
     }
 }

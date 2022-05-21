@@ -42,9 +42,7 @@ export default class MapSprite extends ComponentBase {
        
     }
     sendEvent(e: cc.Event, _customEventData: string) {
-        console.log(this.type);
-
-        console.log(this.isGet);
+        
         this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
         this.EventEmit(GameEvent.SendCommand, Commamnd.ShowStationInfo, Number(_customEventData))
     }

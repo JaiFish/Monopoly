@@ -25,6 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -47,8 +48,8 @@ var Explain = /** @class */ (function (_super) {
         this.info_Text.string = str;
     };
     Explain.prototype.nextProcess = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndExplain);
-        //進入關閉畫面流程，記得傳遞自己
     };
     Explain = __decorate([
         ccclass

@@ -1,5 +1,6 @@
 import ButtonMng from '../../Data/base/ButtonMng';
 import ComponentBase from '../../Data/base/ComponentBase';
+import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
 const { ccclass, property } = cc._decorator;
@@ -25,7 +26,7 @@ export default class Explain extends ComponentBase {
         this.info_Text.string = str
     }
     nextProcess(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand,Commamnd.EndExplain)
-        //進入關閉畫面流程，記得傳遞自己
     }
 }

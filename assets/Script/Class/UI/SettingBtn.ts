@@ -11,7 +11,7 @@ export default class SettingBtn extends ComponentBase {
     protected onLoad(): void {
         this.sprite = cc.find("icon", this.node).getComponent(cc.Sprite)
         this.btn = this.node.getComponent(cc.Button);
-        this.node.setPosition(0,0)
+        this.node.setPosition(0, 0)
 
     }
     setEvent(_num: number) {
@@ -25,6 +25,7 @@ export default class SettingBtn extends ComponentBase {
     eventSwitchSound() {
         MusciMng.swichEffect()
         MusciMng.swichMusic()
+        MusciMng.effectPlay("BtnClick")
         this.setSoundSprite()
     }
     async setSoundSprite() {

@@ -16,6 +16,12 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -53,11 +59,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
+var MusciMng_1 = require("../../Data/base/MusciMng");
+var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
 var Props_Feature_1 = require("./Props_Feature");
 var Setting_1 = require("./Setting");
 var Station_1 = require("./Station");
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Panel_UI = /** @class */ (function (_super) {
     __extends(Panel_UI, _super);
     function Panel_UI() {
@@ -65,11 +75,19 @@ var Panel_UI = /** @class */ (function (_super) {
     }
     Panel_UI.prototype.onLoad = function () {
         this.node.opacity = 255;
+        this.bg = cc.find("BG", this.node);
+        this.block = cc.find("Block", this.node);
         this.props_Feature = cc.find("Props_Feature", this.node).addComponent(Props_Feature_1.default);
         this.station = cc.find("Station", this.node).addComponent(Station_1.default);
         this.setting = cc.find("Setting", this.node).addComponent(Setting_1.default);
         this.initEvent(GameEvent_1.GameEvent.UIReset, this.reset);
         this.reset();
+    };
+    Panel_UI.prototype.start = function () {
+        ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info0).getComponent(cc.Button), "0");
+        ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info1).getComponent(cc.Button), "1");
+        ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "2");
+        ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.setting.info3).getComponent(cc.Button), "3");
     };
     Panel_UI.prototype.reset = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -83,6 +101,8 @@ var Panel_UI = /** @class */ (function (_super) {
                         this.station.isOpen = this.station.scroll.node.active;
                         this.setting.scroll.node.active = false;
                         this.setting.isOpen = this.setting.scroll.node.active;
+                        this.bg.active = false;
+                        this.block.active = false;
                         return [2 /*return*/];
                 }
             });
@@ -104,6 +124,43 @@ var Panel_UI = /** @class */ (function (_super) {
             });
         });
     };
+    Panel_UI.prototype.openTeaching = function () {
+        this.bg.setSiblingIndex(cc.macro.MAX_ZINDEX);
+        this.props_Feature.info0.active = true;
+        this.bg.active = true;
+        this.block.active = true;
+        this.props_Feature.node.setSiblingIndex(cc.macro.MAX_ZINDEX);
+    };
+    Panel_UI.prototype.eventControll = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
+        switch (Number(_customEventData)) {
+            case 0:
+                this.props_Feature.info0.active = false;
+                this.props_Feature.info1.active = true;
+                break;
+            case 1:
+                this.station.node.setSiblingIndex(cc.macro.MAX_ZINDEX);
+                this.props_Feature.node.setSiblingIndex(cc.macro.MIN_ZINDEX + 1);
+                this.props_Feature.info1.active = false;
+                this.station.info2.active = true;
+                break;
+            case 2:
+                this.setting.node.setSiblingIndex(cc.macro.MAX_ZINDEX);
+                this.station.node.setSiblingIndex(cc.macro.MIN_ZINDEX + 1);
+                this.station.info2.active = false;
+                this.setting.info3.active = true;
+                break;
+            case 3:
+                this.setting.info3.active = false;
+                this.bg.active = false;
+                this.block.active = false;
+                this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndTeaching);
+                break;
+        }
+    };
+    Panel_UI = __decorate([
+        ccclass
+    ], Panel_UI);
     return Panel_UI;
 }(ComponentBase_1.default));
 exports.default = Panel_UI;
