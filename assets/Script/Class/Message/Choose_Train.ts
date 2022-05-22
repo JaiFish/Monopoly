@@ -20,7 +20,7 @@ export default class Choose_Train extends ComponentBase {
     tempDT: number = 0;
 
     totaleDT: number = 0;
-    endDT: number = 7;
+    endDT: number = 3;
     changeSpeed: number[] = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.75, 0.8, 0.85]
     speedChange: number = 0.1;
 

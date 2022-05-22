@@ -3,7 +3,6 @@ import ComponentBase from '../../Data/base/ComponentBase';
 import MusciMng from '../../Data/base/MusciMng';
 import { Commamnd } from '../../Enum/Commad';
 import { GameEvent } from '../../Enum/GameEvent';
-import Controll from '../../GameControll';
 const { ccclass, property } = cc._decorator;
 
 @ccclass

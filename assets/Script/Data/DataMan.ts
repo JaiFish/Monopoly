@@ -8,8 +8,8 @@ export default class DataMan extends ComponentBase {
     nowIndex: number = 0;
 
     manState: GameState;
-    manSkipSeed: number = 1000;
-    manDefaultSpeed: number = 30;
+    manSkipSeed: number = 150;
+    manDefaultSpeed: number = 36;
     manSpeed: number;
     /**
      * X增加速率，撫平每秒速率
@@ -54,8 +54,14 @@ export default class DataMan extends ComponentBase {
     nowStation: number;
 
     isCanGo: boolean;
-    isArrival:boolean;
-    isEnd:boolean
+    isArrival: boolean;
+    /**
+     * 遊戲是否準備結束
+     */
+    isEnd: boolean
+    isWaitSingnalLinght: boolean
 
     gameModle: GameModle;
+
+    WaitArray: number[] = [0, -1]
 }

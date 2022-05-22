@@ -68,7 +68,7 @@ var Question = /** @class */ (function (_super) {
         this.info_Normal_9.active = false;
     };
     Question.prototype.setQAInfo = function (str, _level, _qaNum) {
-        console.log(_level, _qaNum);
+        // console.log(_level, _qaNum);
         if (_level == 1 && (_qaNum == 4 || _qaNum == 8)) {
             switch (_qaNum) {
                 case 4:
@@ -81,6 +81,7 @@ var Question = /** @class */ (function (_super) {
         }
         this.info_Text.node.active = true;
         this.info_Text.string = str;
+        this.checkLenght(str);
     };
     Question.prototype.setChoose = function (str) {
         this.info_Choose.node.active = true;
@@ -92,6 +93,26 @@ var Question = /** @class */ (function (_super) {
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndQA);
         // console.log(e, _customEventData);
         //開始接中央
+    };
+    Question.prototype.checkLenght = function (str) {
+        var get = Math.floor(str.length / 32);
+        switch (get) {
+            case 0:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -50;
+                break;
+            case 1:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -80;
+                break;
+            case 2:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -110;
+                break;
+            case 3:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -140;
+                break;
+            case 4:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -170;
+                break;
+        }
     };
     Question = __decorate([
         ccclass

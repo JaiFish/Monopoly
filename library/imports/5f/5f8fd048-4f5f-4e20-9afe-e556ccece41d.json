@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "台灣地圖",
+    "texture": "c31ede83-d99e-4f32-8208-615d274d70f6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2105,
+      3429
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2105,
+      3429
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -8,17 +8,26 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Panel_Test extends ComponentBase {
     btn_FullSceen: cc.Button
-    btn_closeView:cc.Button
+    btn_closeView: cc.Button
+    btn_ShowAll: cc.Button
     _inedx: number
     protected onLoad(): void {
         this._inedx = 0
         this.btn_FullSceen = cc.find("AllSence", this.node).getComponent(cc.Button)
         this.btn_closeView = cc.find("CloseView", this.node).getComponent(cc.Button)
+        this.btn_ShowAll = cc.find("ShowAll", this.node).getComponent(cc.Button)
         ButtonMng.addEvent(this.node, "Panel_Test", "eventFull", this.btn_FullSceen)
         ButtonMng.addEvent(this.node, "Panel_Test", "eventCloseView", this.btn_closeView)
+
+        ButtonMng.addEvent(this.node, "Panel_Test", "eventShowAll", this.btn_ShowAll)
+    }
+
+    eventShowAll(e: cc.Event, _customEventData: string) {
+        MusciMng.effectPlay("BtnClick")
+        this.EventEmit(GameEvent.SendCommand, Commamnd.ShowAllView)
     }
     eventFull(e: cc.Event, _customEventData: string) {
-        console.log(e);
+        // console.log(e);
         //@ts-ignore
         if (cc.screen.fullScreen) return
         this._inedx++
@@ -27,8 +36,8 @@ export default class Panel_Test extends ComponentBase {
         // cc.view.setDesignResolutionSize(1280, 720, cc.ResolutionPolicy.SHOW_ALL)
 
     }
-    eventCloseView(){
+    eventCloseView() {
         MusciMng.effectPlay("BtnClick")
-        this.EventEmit(GameEvent.SendCommand,Commamnd.CloseVideo)
+        this.EventEmit(GameEvent.SendCommand, Commamnd.CloseVideo)
     }
 }

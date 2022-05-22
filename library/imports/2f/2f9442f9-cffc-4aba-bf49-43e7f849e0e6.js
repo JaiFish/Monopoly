@@ -24,7 +24,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var AssetMng_1 = require("../../Asset/AssetMng");
-var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
 var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
@@ -47,20 +46,16 @@ var Props_Feature = /** @class */ (function (_super) {
         this.Props5 = cc.find("BG_Layout/Props5/icon", this.node).getComponent(cc.Sprite);
         this.Props11 = cc.find("BG_Layout/Props11/icon", this.node).getComponent(cc.Sprite);
         this.Props15 = cc.find("BG_Layout/Props15/icon", this.node).getComponent(cc.Sprite);
-        console.log(this.Props5);
-        ButtonMng_1.default.addEvent(this.node, "Props_Feature", "eventStart_Stop", this.btn_Start_Stop);
-        ButtonMng_1.default.addEvent(this.node, "Props_Feature", "eventSkip", this.skip);
-        ButtonMng_1.default.addEvent(this.node, "Props_Feature", "evetResetView", this.resetView);
+        // console.log(this.Props5);
+        // ButtonMng.addEvent(this.node, "Props_Feature", "eventClinetClickStart_Stop", this.btn_Start_Stop)
+        // ButtonMng.addEvent(this.node, "Props_Feature", "eventSkip", this.skip)
+        // ButtonMng.addEvent(this.node, "Props_Feature", "evetResetView", this.resetView)
+        this.isGo = false;
         this.info0.active = false;
         this.info1.active = false;
     };
-    Props_Feature.prototype.eventStart_Stop = function (e, _customEventData) {
-        MusciMng_1.default.effectPlay("BtnClick");
-        if (!this.isGo)
-            this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.MenGO);
-        else
-            this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ManWait);
-        this.setStart_Stop();
+    Props_Feature.prototype.eventClinetClickStart_Stop = function (e, _customEventData) {
+        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ClinetClickStart_Stop);
     };
     Props_Feature.prototype.eventSkip = function (e, _customEventData) {
         MusciMng_1.default.effectPlay("BtnClick");
@@ -82,7 +77,7 @@ var Props_Feature = /** @class */ (function (_super) {
         this.sprtie_start_Stop.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Feature_" + getBoolean);
     };
     Props_Feature.prototype.getProps = function (_num) {
-        console.log(AssetMng_1.default.data_SprtieAtlas.get("Props_" + _num));
+        // console.log(AssetMng.data_SprtieAtlas.get("Props_" + _num));
         switch (_num) {
             case 5:
                 this.Props5.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Props_" + _num);

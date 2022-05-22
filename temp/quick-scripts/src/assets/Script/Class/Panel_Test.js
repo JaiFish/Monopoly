@@ -38,11 +38,17 @@ var Panel_Test = /** @class */ (function (_super) {
         this._inedx = 0;
         this.btn_FullSceen = cc.find("AllSence", this.node).getComponent(cc.Button);
         this.btn_closeView = cc.find("CloseView", this.node).getComponent(cc.Button);
+        this.btn_ShowAll = cc.find("ShowAll", this.node).getComponent(cc.Button);
         ButtonMng_1.default.addEvent(this.node, "Panel_Test", "eventFull", this.btn_FullSceen);
         ButtonMng_1.default.addEvent(this.node, "Panel_Test", "eventCloseView", this.btn_closeView);
+        ButtonMng_1.default.addEvent(this.node, "Panel_Test", "eventShowAll", this.btn_ShowAll);
+    };
+    Panel_Test.prototype.eventShowAll = function (e, _customEventData) {
+        MusciMng_1.default.effectPlay("BtnClick");
+        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowAllView);
     };
     Panel_Test.prototype.eventFull = function (e, _customEventData) {
-        console.log(e);
+        // console.log(e);
         //@ts-ignore
         if (cc.screen.fullScreen)
             return;

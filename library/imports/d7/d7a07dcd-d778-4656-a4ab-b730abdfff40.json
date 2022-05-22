@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "車票-公務員",
+    "texture": "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      345,
+      532
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      345,
+      532
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

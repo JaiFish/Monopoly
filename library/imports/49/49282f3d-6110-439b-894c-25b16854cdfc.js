@@ -12,6 +12,7 @@ var Commamnd;
     Commamnd["EndChoosTrain"] = "endChoosTrain";
     Commamnd["ShowTeaching"] = "showTeaching";
     Commamnd["EndTeaching"] = "endTeaching";
+    Commamnd["WaitSignalLight"] = "waitSignalLight";
     Commamnd["ShowVideo"] = "showVideo";
     Commamnd["CloseVideo"] = "closeVideo";
     Commamnd["ShowQA"] = "showQA";
@@ -35,6 +36,8 @@ var Commamnd;
     Commamnd["ManLineWait"] = "manLineWait";
     Commamnd["MoveTarget"] = "moveTarget";
     Commamnd["UpdataUIStart"] = "updataUIStart";
+    Commamnd["ClinetClickStart_Stop"] = "clinetClickStart_Stop";
+    Commamnd["ShowAllView"] = "showAllView";
 })(Commamnd = exports.Commamnd || (exports.Commamnd = {}));
 
 cc._RF.pop();

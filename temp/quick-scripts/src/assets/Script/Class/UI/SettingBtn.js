@@ -75,12 +75,27 @@ var SettingBtn = /** @class */ (function (_super) {
         this.node.setPosition(0, 0);
     };
     SettingBtn.prototype.setEvent = function (_num) {
-        switch (_num) {
-            case 0: //聲音   
-                this.setSoundSprite();
-                ButtonMng_1.default.addEvent(this.node, "SettingBtn", "eventSwitchSound", this.btn);
-                break;
-        }
+        return __awaiter(this, void 0, void 0, function () {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _a = _num;
+                        switch (_a) {
+                            case 0: return [3 /*break*/, 1];
+                        }
+                        return [3 /*break*/, 3];
+                    case 1: //聲音   
+                    return [4 /*yield*/, AssetMng_1.default.checkState()];
+                    case 2:
+                        _b.sent();
+                        this.setSoundSprite();
+                        ButtonMng_1.default.addEvent(this.node, "SettingBtn", "eventSwitchSound", this.btn);
+                        return [3 /*break*/, 3];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
     };
     SettingBtn.prototype.eventSwitchSound = function () {
         MusciMng_1.default.swichEffect();
@@ -92,15 +107,9 @@ var SettingBtn = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             var getBoolean;
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        getBoolean = MusciMng_1.default.isMusicOpen ? "Open" : "Close";
-                        return [4 /*yield*/, AssetMng_1.default.checkState()];
-                    case 1:
-                        _a.sent();
-                        this.sprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Sound" + getBoolean);
-                        return [2 /*return*/];
-                }
+                getBoolean = MusciMng_1.default.isMusicOpen ? "Open" : "Close";
+                this.sprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Sound" + getBoolean);
+                return [2 /*return*/];
             });
         });
     };

@@ -51,7 +51,7 @@ export default class Station extends ComponentBase {
 
     }
     protected start(): void {
-        ButtonMng.addEvent(this.node, "Station", "eventControllOpen", this.btn_ControllOpen)
+        // ButtonMng.addEvent(this.node, "Station", "eventControllOpen", this.btn_ControllOpen)
     }
     itemInit() {
         for (let index = 0; index < this.itemCount; index++) {

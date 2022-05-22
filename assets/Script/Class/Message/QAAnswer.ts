@@ -110,7 +110,7 @@ class Btn extends ComponentBase {
     protected onLoad(): void {
         this.str = cc.find("Label", this.node).getComponent(cc.Label)
         this.button = this.node.getComponent(cc.Button)
-        console.log("!!!!!!!!!?");
+        // console.log("!!!!!!!!!?");
     }
 
 }

@@ -85,6 +85,7 @@ var Panel_Test_1 = require("./Class/Panel_Test");
 var DelayTime_1 = require("./Data/DelayTime");
 var Panel_Bufer_1 = require("./Class/Panel_Bufer");
 var MusciMng_1 = require("./Data/base/MusciMng");
+var Panel_Loading_1 = require("./Class/Panel_Loading");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Controll = /** @class */ (function (_super) {
     __extends(Controll, _super);
@@ -92,6 +93,7 @@ var Controll = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Controll.prototype.onLoad = function () {
+        this.panel_Loading = cc.find("Canvas/Panel_Loading").addComponent(Panel_Loading_1.default);
         this.panel_AniPath = cc.find("Canvas/Panel_AniPath").addComponent(Panel_AniPath_1.default);
         this.panel_Map = cc.find("Canvas/Panel_Map").addComponent(Panel_Map_1.default);
         this.panel_Man = cc.find("Canvas/Panel_Man").addComponent(Panel_Man_1.default);
@@ -169,10 +171,33 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, AssetMng_1.default.checkState()];
+                    case 0:
+                        this.panel_Loading.show();
+                        //Test
+                        // GameModle.playData.level = 2
+                        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
+                        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // console.log(GameModle.qaLibrary.qaLib_str);
+                        // console.log(GameModle.chooseLibrary.chooseLib);
+                        // console.log(GameModle.answerLibrary.answerLib_str);
+                        // console.log(GameModle.explainLibrary.explainLib);
+                        return [4 /*yield*/, AssetMng_1.default.checkState()];
                     case 1:
+                        //Test
+                        // GameModle.playData.level = 2
+                        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
+                        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
+                        // console.log(GameModle.qaLibrary.qaLib_str);
+                        // console.log(GameModle.chooseLibrary.chooseLib);
+                        // console.log(GameModle.answerLibrary.answerLib_str);
+                        // console.log(GameModle.explainLibrary.explainLib);
                         _a.sent();
                         MusciMng_1.default.musicPlay("gameBG");
+                        this.panel_Loading.Actionhide();
                         return [2 /*return*/];
                 }
             });
@@ -218,13 +243,9 @@ var Controll = /** @class */ (function (_super) {
                         // GameModle.playData.trainType = TrainType.Type0
                         // this.endChoosTrain()
                         // return
+                        this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 7:
-                        // GameModle.playData.level = 0
-                        // GameModle.playData.trainTypeNumber = 0
-                        // GameModle.playData.trainType = TrainType.Type0
-                        // this.endChoosTrain()
-                        // return
                         _a.sent();
                         this.panel_Message.choose_Ticket.show();
                         return [2 /*return*/];
@@ -235,10 +256,15 @@ var Controll = /** @class */ (function (_super) {
     Controll.prototype.endChooseTicket = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                GameModle_1.default.qaIndex = 0;
                 GameModle_1.default.qaLibrary = new QALibrary_1.default(GameModle_1.default.playData.level, 3);
                 GameModle_1.default.chooseLibrary = new ChooseLibrary_1.default(GameModle_1.default.playData.level, GameModle_1.default.qaLibrary.qaLib_num);
                 GameModle_1.default.answerLibrary = new AnswerLibrary_1.default(GameModle_1.default.playData.level, GameModle_1.default.qaLibrary.qaLib_num);
                 GameModle_1.default.explainLibrary = new ExplainLibrary_1.default(GameModle_1.default.playData.level, GameModle_1.default.qaLibrary.qaLib_num);
+                // console.log("QA題庫：" + GameModle.qaLibrary.qaLib_str);
+                // console.log("選向：" + GameModle.chooseLibrary.chooseLib);
+                // console.log("問答：" + GameModle.answerLibrary.answerLib_str);
+                // console.log("祥解：" + GameModle.explainLibrary.explainLib);
                 this.panel_Message.choose_Ticket.hide();
                 this.panel_Message.choose_Train.initTrainSprite();
                 this.panel_Message.choose_Train.show();
@@ -261,6 +287,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 2:
                         _a.sent();
+                        this.panel_Man.manState = GameState_1.GameState.Wait;
                         this.showTeaching();
                         return [2 /*return*/];
                 }
@@ -281,10 +308,11 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 GameModle_1.default.gameState = GameState_1.GameState.Start;
                 // this.panel_UI.station.chengeSprit()
+                this.panel_UI.setBtnEvent();
                 this.cameraControll.activeManCamera(true);
                 this.cameraControll.activeMineCamera(false);
                 this.panel_UI.props_Feature.setStart_Stop(true);
-                this.waitSignalLight();
+                this.panel_Man.manGO();
                 return [2 /*return*/];
             });
         });
@@ -294,11 +322,17 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        this.panel_UI.props_Feature.setStart_Stop(false);
+                        if (this.panel_Man.isWaitSingnalLinght)
+                            return [2 /*return*/];
+                        // if (this.panel_Man.manState == GameState.WaitSignalLight) return;
+                        // this.panel_Man.manState = GameState.WaitSignalLight
                         this.panel_Man.manStop();
                         return [4 /*yield*/, this.panel_Bear.checkState()];
                     case 1:
                         _a.sent();
-                        this.panel_Man.manGO();
+                        this.panel_UI.props_Feature.setStart_Stop(true);
+                        this.panel_Man.manEndSignalLight();
                         return [2 /*return*/];
                 }
             });
@@ -309,7 +343,9 @@ var Controll = /** @class */ (function (_super) {
             var data;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.panel_Message.show()];
+                    case 0:
+                        this.panel_Man.manState = GameState_1.GameState.ShowMessage;
+                        return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
                         data = new postCmd();
@@ -319,13 +355,14 @@ var Controll = /** @class */ (function (_super) {
                             case 1:
                                 data.cmd = "OpenView";
                                 data.viewType = 1;
+                                data.kid = false;
                                 GameModle_1.default.webPostMessage.send(data);
                                 console.log("播放安全影片");
                                 break;
                             case 2:
                                 data.cmd = "OpenView";
                                 data.viewType = 2;
-                                data.level = GameModle_1.default.playData.level;
+                                data.kid = true;
                                 GameModle_1.default.webPostMessage.send(data);
                                 console.log("播放廉政影片");
                                 break;
@@ -345,11 +382,9 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
+                        this.panel_Man.manState = GameState_1.GameState.Wait;
                         this.panel_UI.props_Feature.setStart_Stop(true);
-                        if (this.panel_Man.nowStation == 20)
-                            this.waitSignalLight();
-                        else
-                            this.panel_Man.manGO();
+                        this.panel_Man.manGO();
                         return [2 /*return*/];
                 }
             });
@@ -368,6 +403,7 @@ var Controll = /** @class */ (function (_super) {
                         this.panel_Message.question.reset();
                         this.panel_Message.question.setQAInfo(getQA, GameModle_1.default.playData.level, GameModle_1.default.qaLibrary.qaLib_num[GameModle_1.default.qaIndex]);
                         this.panel_Message.question.setChoose(getChooese);
+                        this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
@@ -429,7 +465,6 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 this.panel_Message.qaAnswer.hide();
                 this.panel_Message.explain.setInfoStr(GameModle_1.default.explainLibrary.explainLib[GameModle_1.default.qaIndex]);
-                GameModle_1.default.qaIndex++; //+兩個地方是因為玩家會有分支，因此在分支的末端加1Index
                 this.panel_Message.explain.show();
                 return [2 /*return*/];
             });
@@ -449,10 +484,13 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        if (this.panel_Man.manState == GameState_1.GameState.ShowMessage)
+                            return [2 /*return*/];
                         if (select == 5 || select == 11 || select == 15)
                             return [2 /*return*/];
                         if (this.panel_Man.manState != GameState_1.GameState.Wait)
                             this.panel_Man.manLineWait();
+                        this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
@@ -460,6 +498,7 @@ var Controll = /** @class */ (function (_super) {
                         this.panel_Message.stationInfo.setSprite(AssetMng_1.default.data_SprtieAtlas.get("StationInfo_" + select.toString()));
                         this.panel_Message.stationInfo.setInfo(TrainInfoLibrary_1.default.getInfo(select));
                         this.panel_Message.stationInfo.show();
+                        "";
                         return [2 /*return*/];
                 }
             });
@@ -474,6 +513,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
+                        this.panel_Man.manState = GameState_1.GameState.Wait;
                         return [2 /*return*/];
                 }
             });
@@ -484,7 +524,6 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 this.panel_Message.getProps.setData(PropsLibrary_1.default.lib.get(this.panel_Man.nowStation), AssetMng_1.default.data_SprtieAtlas.get("GetProps_" + this.panel_Man.nowStation.toString()));
                 this.panel_Message.getProps.show();
-                console.log(this.panel_Man.nowStation);
                 this.panel_UI.props_Feature.getProps(this.panel_Man.nowStation);
                 MusciMng_1.default.effectPlay("GetProps");
                 return [2 /*return*/];
@@ -500,6 +539,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
+                        this.panel_Man.manState = GameState_1.GameState.Wait;
                         GameModle_1.default.qaIndex++; //+兩個地方是因為玩家會有分支，因此在分支的末端加1Index
                         this.panel_UI.props_Feature.setStart_Stop(true);
                         this.panel_Man.manGO();
@@ -512,7 +552,9 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.panel_Message.show()];
+                    case 0:
+                        this.panel_Man.manState = GameState_1.GameState.ShowMessage;
+                        return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
                         this.panel_Message.endGame.playBearSprite(GameModle_1.default.playData.trainTypeNumber);
@@ -531,6 +573,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
+                        this.panel_Man.manState = GameState_1.GameState.Wait;
                         return [2 /*return*/];
                 }
             });
@@ -542,6 +585,7 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.goLottery = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var data;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -556,6 +600,12 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Door.closeDoor()];
                     case 3:
                         _a.sent();
+                        data = new postCmd();
+                        data.cmd = "OpenView";
+                        data.viewType = -1;
+                        data.kid = false;
+                        GameModle_1.default.webPostMessage.send(data);
+                        console.log("遊戲結束Show抽獎與問答");
                         return [2 /*return*/];
                 }
             });
@@ -609,6 +659,23 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.updataUIStart = function (setBoolea) {
         this.panel_UI.props_Feature.setStart_Stop(setBoolea);
+    };
+    Controll.prototype.clinetClickStart_Stop = function () {
+        MusciMng_1.default.effectPlay("BtnClick");
+        if (this.panel_Man.isWaitSingnalLinght)
+            return;
+        this.panel_UI.props_Feature.setStart_Stop();
+        //正在走
+        if (!this.panel_UI.props_Feature.isGo)
+            this.panel_Man.manWait();
+        else
+            this.panel_Man.manGO();
+    };
+    Controll.prototype.showAllView = function () {
+        this.cameraControll.activeManCamera(false);
+        this.cameraControll.activeMineCamera(true);
+        this.panel_Message.hide();
+        this.cameraControll.showAllView();
     };
     Controll.prototype.update = function (dt) {
         // console.log(cc.audioEngine.getState(MusciMng.musicID));

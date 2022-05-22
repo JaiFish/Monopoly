@@ -17,7 +17,7 @@ class SpriteAsset {
                 _Asset.set(_Sprite.name, _Sprite)
             });
             this.checkAssetState = true;
-            console.log(_Asset);
+            // console.log(_Asset);
         })
 
         return this

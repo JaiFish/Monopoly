@@ -46,12 +46,12 @@ var EndGame = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.node, "EndGame", "sendEvent", this.btn_Again, "1");
     };
     EndGame.prototype.playBearSprite = function (number) {
-        console.log(number);
+        // console.log(number);
         if (number == 0)
             this.animation_Bear.node.setPosition(32.351, -1.858);
         else
             this.animation_Bear.node.setPosition(-3.103, -1.858);
-        console.log(AssetMng_1.default.data_Animation.get("Bear_Train" + number));
+        // console.log(AssetMng.data_Animation.get("Bear_Train" + number));
         this.animation_Bear.addClip(AssetMng_1.default.data_Animation.get("Bear_Train" + number));
         this.animation_Bear.play("Bear_Train" + number);
     };

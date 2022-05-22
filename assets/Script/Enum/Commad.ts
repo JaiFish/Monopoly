@@ -4,6 +4,7 @@ export enum Commamnd {
     EndChoosTrain = "endChoosTrain",
     ShowTeaching = "showTeaching",
     EndTeaching = "endTeaching",
+    WaitSignalLight="waitSignalLight",
     ShowVideo = "showVideo",
     CloseVideo = "closeVideo",
     ShowQA = "showQA",
@@ -27,5 +28,7 @@ export enum Commamnd {
     ManWait = "manWait",
     ManLineWait = "manLineWait",
     MoveTarget = "moveTarget",
-    UpdataUIStart = "updataUIStart"
+    UpdataUIStart = "updataUIStart",
+    ClinetClickStart_Stop="clinetClickStart_Stop",
+    ShowAllView="showAllView"
 }

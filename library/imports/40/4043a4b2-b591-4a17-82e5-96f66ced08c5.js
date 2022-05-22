@@ -60,7 +60,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var AssetMng_1 = require("../../Asset/AssetMng");
-var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
 var MusciMng_1 = require("../../Data/base/MusciMng");
 var GameEvent_1 = require("../../Enum/GameEvent");
@@ -98,7 +97,7 @@ var Station = /** @class */ (function (_super) {
         // }
     };
     Station.prototype.start = function () {
-        ButtonMng_1.default.addEvent(this.node, "Station", "eventControllOpen", this.btn_ControllOpen);
+        // ButtonMng.addEvent(this.node, "Station", "eventControllOpen", this.btn_ControllOpen)
     };
     Station.prototype.itemInit = function () {
         for (var index = 0; index < this.itemCount; index++) {

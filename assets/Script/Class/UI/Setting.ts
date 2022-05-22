@@ -35,7 +35,7 @@ export default class Setting extends ComponentBase {
         this.info3.active = false
     }
     protected start(): void {
-        ButtonMng.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen)
+        // ButtonMng.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen)
     }
     itemInit() {
         for (let index = 0; index < this.itemCount; index++) {

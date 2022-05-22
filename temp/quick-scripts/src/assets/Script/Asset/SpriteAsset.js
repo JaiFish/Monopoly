@@ -21,7 +21,7 @@ var SpriteAsset = /** @class */ (function () {
                 _Asset.set(_Sprite.name, _Sprite);
             });
             _this.checkAssetState = true;
-            console.log(_Asset);
+            // console.log(_Asset);
         });
         return this;
     };

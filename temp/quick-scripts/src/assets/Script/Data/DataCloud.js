@@ -24,10 +24,12 @@ var DataCloud = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.rangeX = 1280;
         _this.rangeY = 720;
+        _this.baseTime_Left = 3;
         _this.rangeTime_Left = 5;
+        _this.baseTime_Right = 3;
         _this.rangeTime_Right = 7;
         _this.baseSpeed = 30;
-        _this.rangeSpeed = 100;
+        _this.rangeSpeed = 60;
         _this.CloudClass = new Map();
         return _this;
     }

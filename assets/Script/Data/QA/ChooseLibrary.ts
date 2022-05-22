@@ -12,7 +12,11 @@ export default class ChooseLibrary {
             case 2: this.lib = libClass.hard;
                 break;
         }
+        console.log("QA難度" + qaLib_num);
+
         for (let index = 0; index < qaLib_num.length; index++) {
+            console.log("QA難度" + qaLib_num);
+            console.log("抽取題庫編號" + qaLib_num[index]);
             this.chooseLib.push(this.lib[qaLib_num[index]])
         }
         // console.log("等級" + level, "題庫：" + this.chooseLib);

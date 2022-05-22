@@ -23,7 +23,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var ButtonMng_1 = require("../../Data/base/ButtonMng");
 var ComponentBase_1 = require("../../Data/base/ComponentBase");
 var MusciMng_1 = require("../../Data/base/MusciMng");
 var SettingBtn_1 = require("./SettingBtn");
@@ -51,7 +50,7 @@ var Setting = /** @class */ (function (_super) {
         this.info3.active = false;
     };
     Setting.prototype.start = function () {
-        ButtonMng_1.default.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen);
+        // ButtonMng.addEvent(this.node, "Setting", "eventControllOpen", this.btn_ControllOpen)
     };
     Setting.prototype.itemInit = function () {
         for (var index = 0; index < this.itemCount; index++) {

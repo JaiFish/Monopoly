@@ -3,6 +3,7 @@ import AnswerLibrary from "./Data/QA/AnswerLibrary";
 import ChooseLibrary from "./Data/QA/ChooseLibrary";
 import ExplainLibrary from "./Data/QA/ExplainLibrary";
 import QALibrary from "./Data/QA/QALibrary";
+import { BearState } from "./Enum/BearState";
 import { GameState } from "./Enum/GameState";
 import { TrainType } from "./Enum/TrainType";
 import { WebPostMessage } from "./WebPostMessage";
@@ -26,7 +27,7 @@ class NumberConvertEnglish {
 }
 
 class GameModel {
-    version: string = "1.0.6";
+    version: string = "1.1.0";
     chooseAnswer: string;
     playData: Player = new Player();
 
@@ -50,6 +51,7 @@ class GameModel {
 
     englishLib: NumberConvertEnglish = new NumberConvertEnglish()
     gameState: GameState;
+    bearState:BearState
 
     webPostMessage:WebPostMessage = new WebPostMessage();
 

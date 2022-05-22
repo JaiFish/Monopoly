@@ -23,8 +23,8 @@ var DataMan = /** @class */ (function (_super) {
     function DataMan() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.nowIndex = 0;
-        _this.manSkipSeed = 1000;
-        _this.manDefaultSpeed = 30;
+        _this.manSkipSeed = 150;
+        _this.manDefaultSpeed = 36;
         /**
          * X增加速率，撫平每秒速率
          */
@@ -33,6 +33,7 @@ var DataMan = /** @class */ (function (_super) {
          * Y增加速率，撫平每秒速率
          */
         _this.ySpeed = 1;
+        _this.WaitArray = [0, -1];
         return _this;
     }
     return DataMan;

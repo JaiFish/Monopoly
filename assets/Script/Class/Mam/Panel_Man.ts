@@ -19,6 +19,7 @@ export default class Panel_Man extends ManAction {
         this.node.opacity = 0
         this.isArrival = true
         this.isEnd = false
+        this.isWaitSingnalLinght = false
     }
     protected start(): void {
         EventMng.emit(GameEvent.SendModel, GameEvent.SetModel)
@@ -39,49 +40,56 @@ export default class Panel_Man extends ManAction {
                 this.stopGo();
                 EventMng.emit(GameEvent.GetStation, this.nowStation)
                 EventMng.emit(GameEvent.UIGetStation, this.nowStation)
-                console.log(this.manState);
+                if (this.nowStation == 8)
+                    this.caveException()
+                // console.log(this.manState);
                 if (this.isEnd) {
                     this.manStop()
                     this.EventEmit(GameEvent.SendCommand, Commamnd.ShowEndGame)
                 }
 
-                if (this.manState == GameState.Start || this.manState == GameState.Skip) {
-                    if (!this.checkStationStop()) {
-                        this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, true)
+                if (!this.checkStationStop()) {
+                    if (this.manState == GameState.Start || this.manState == GameState.Skip)
                         this.manGO()
-                    }
                     else
                         this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
-                }
-                else {
-                    this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
-                    this.manState = GameState.Stop
                 }
             }
         }
     }
     manGO() {
-        console.log("開始走囉", this.isCanGo);
-
-        if (!this.isArrival)
-            this.startGO();
-        else {
+        // console.log("開始走囉", this.isCanGo);
+        if (this.isWaitSingnalLinght)
+            return
+        if (this.manState == GameState.ShowMessage) return
+        if (this.isArrival) {
             this.setStation();
             this.smoothSpeed();
             this.setNextPosition(this.gameModle.pathPositionData.get(this.nowStation));
-            this.setManState(GameState.Start)
             this.isArrival = false;
-            this.startGO();
         }
+        if (this.checkSignalLight() && !this.isWaitSingnalLinght) {
+            this.EventEmit(GameEvent.SendCommand, Commamnd.WaitSignalLight)
+            this.isWaitSingnalLinght = true
+            return
+        }
+        this.setManState(GameState.Start)
+        this.startGO();
 
-
-        console.log("開始走囉", this.isCanGo);
+        // console.log("開始走囉", this.isCanGo);
+    }
+    manEndSignalLight() {
+        this.isWaitSingnalLinght = false
+        this.setManState(GameState.Start)
+        this.startGO();
     }
     manLineWait() {
+        if (this.isWaitSingnalLinght) return
         this.setManState(GameState.Wait)
         this.stopGo();
     }
     manWait() {
+        if (this.isWaitSingnalLinght) return
         this.setManState(GameState.Wait)
     }
     manStop() {
@@ -89,6 +97,7 @@ export default class Panel_Man extends ManAction {
         this.stopGo();
     }
     manSkip() {
+        if (this.isWaitSingnalLinght) return
         if (!this.isCanGo) this.startGO();
         this.manSpeed = this.manSkipSeed;
         this.setManState(GameState.Skip)
@@ -103,13 +112,13 @@ export default class Panel_Man extends ManAction {
 
     setNextPosition(_pos: cc.Vec2) {
         let changePosition: cc.Vec3 = this.gameModle.convertOtherNodeSpaceAR(this.gameModle.mapItem.get(this.nowStation).node, this.node);
-        console.log(changePosition);
+        // console.log(changePosition);
 
         this.targetX = MyMath.round(changePosition.x, 3);
         this.targetY = MyMath.round(changePosition.y, 3);
 
-        console.log(this.targetX, this.targetY);
-        console.log(this.nMan.x, this.nMan.y);
+        // console.log(this.targetX, this.targetY);
+        // console.log(this.nMan.x, this.nMan.y);
 
 
         this.directionX = this.targetX > this.nMan.x ? 1 : -1
@@ -190,6 +199,7 @@ export default class Panel_Man extends ManAction {
             this.nowStation == 21
         ) {
             this.stopGo()
+            this.EventEmit(GameEvent.SendCommand, Commamnd.UpdataUIStart, false)
             this.manState = GameState.Stop
             this.manSpeed = this.manDefaultSpeed;
             switch (this.nowStation) {
@@ -213,6 +223,18 @@ export default class Panel_Man extends ManAction {
         else
             return false;
 
+    }
+    caveException() {
+        cc.find("Canvas/BG").setSiblingIndex(this.node.getSiblingIndex() - 1)
+    }
+    checkSignalLight() {//因為都會先計算下一個路的點，因此都會先+1，為了往回推需不需要停止就要-1
+        let tryGet = this.nowStation - 1
+        console.log("計算數字：" + tryGet);
+        if (this.WaitArray[0] == tryGet) {
+            this.WaitArray.shift()
+            return true
+        }
+        else return false
     }
 }
 

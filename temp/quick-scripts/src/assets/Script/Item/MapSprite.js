@@ -49,25 +49,46 @@ var MapSprite = /** @class */ (function (_super) {
         this.btn = this.node.getComponent(cc.Button);
         this.btn.target = this.node;
         this.btn.interactable = false;
+        this.node.anchorY = 0;
+        var getHight = this.node.getContentSize().height;
+        this.node.y = this.node.y - (getHight * 0.5);
     };
     MapSprite.prototype.getAction = function () {
         this.node.setScale(0);
         this.isGet = true;
-        console.log(this.type);
+        // console.log(this.type);
         cc.tween(this.node)
             .to(1, { scale: 1 }, { easing: Easing_1.Easing.backOut })
+            .call(this.loopShake.bind(this))
             .start();
         if (this.type == 5 ||
             this.type == 11 ||
             this.type == 15)
             return;
-        console.log("我有強化?");
+        // console.log("我有強化?");
         this.btn.interactable = true;
         ButtonMng_1.default.addEvent(this.node, "MapSprite", "sendEvent", this.btn, this.node.name);
     };
     MapSprite.prototype.sendEvent = function (e, _customEventData) {
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.UpdataUIStart, false);
         this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ShowStationInfo, Number(_customEventData));
+    };
+    MapSprite.prototype.loopShake = function () {
+        cc.Tween.stopAllByTarget(this.node);
+        this.node.angle = 0;
+        var totalTime = 2;
+        var setAngle = 15;
+        cc.tween(this.node)
+            .delay(3)
+            .repeatForever(cc.tween()
+            .repeat(3, cc.tween()
+            .by((totalTime / 4) / 3, { angle: -setAngle })
+            .by((totalTime / 4) / 3, { angle: setAngle })
+            .by((totalTime / 4) / 3, { angle: setAngle })
+            .by((totalTime / 4) / 3, { angle: -setAngle })
+            .delay(0.5))
+            .delay(6))
+            .start();
     };
     MapSprite = __decorate([
         ccclass

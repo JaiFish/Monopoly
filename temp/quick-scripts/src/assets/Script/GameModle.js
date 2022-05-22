@@ -24,7 +24,7 @@ var NumberConvertEnglish = /** @class */ (function () {
 }());
 var GameModel = /** @class */ (function () {
     function GameModel() {
-        this.version = "1.0.6";
+        this.version = "1.1.0";
         this.playData = new Player();
         //------資料區，無引用到
         // noUseStation: number[] = [8]

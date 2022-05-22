@@ -33,7 +33,7 @@
             <key>TrainType_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{177,119},{92,115}}</string>
+                <string>{{179,119},{92,115}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>TrainType_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{177,2},{92,115}}</string>
+                <string>{{179,2},{92,115}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,15 +59,15 @@
             <key>TrainType_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{95,131},{80,117}}</string>
+                <string>{{95,131},{82,119}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{80,117}}</string>
+                <string>{{0,0},{82,119}}</string>
                 <key>sourceSize</key>
-                <string>{80,117}</string>
+                <string>{82,119}</string>
             </dict>
             <key>TrainType_5.png</key>
             <dict>
@@ -90,9 +90,9 @@
             <key>realTextureFileName</key>
             <string>TrainType.png</string>
             <key>size</key>
-            <string>{271,253}</string>
+            <string>{273,253}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1244e7e8fe1779a39bd15a2f2ea2866e$</string>
+            <string>$TexturePacker:SmartUpdate:45ee8335642ad3c6ec78b5741117f4f9$</string>
             <key>textureFileName</key>
             <string>TrainType.png</string>
         </dict>

@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
 export default class Panel_Door extends ComponentBase {
     left: cc.Node;
     right: cc.Node;
-    distance: number = 365;//左右的最遠尺
+    distance: number = 272.58;//左右的最遠尺
     btn_Start: cc.Button;
 
     protected onLoad(): void {
@@ -75,7 +75,7 @@ export default class Panel_Door extends ComponentBase {
     async scaleAction() {
         return new Promise<void>((resolve, reject) => {
             cc.tween(this.node)
-                .to(1, { scale: 1.75 })
+                .to(0.5, { scale:2.35 })
                 .call(() => {
                     this.node.active = false
                     resolve()

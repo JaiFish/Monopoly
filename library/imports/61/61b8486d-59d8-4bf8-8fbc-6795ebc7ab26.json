@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "選擇的箭頭",
+    "texture": "e7b646ef-6204-43fb-9b8d-7ec60646103e",
+    "atlas": "",
+    "rect": [
+      106,
+      17,
+      37,
+      18
+    ],
+    "offset": [
+      41,
+      -0.5
+    ],
+    "originalSize": [
+      167,
+      51
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

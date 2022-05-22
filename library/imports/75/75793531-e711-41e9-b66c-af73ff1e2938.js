@@ -84,6 +84,7 @@ var Panel_UI = /** @class */ (function (_super) {
         this.reset();
     };
     Panel_UI.prototype.start = function () {
+        //Teach
         ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info0).getComponent(cc.Button), "0");
         ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info1).getComponent(cc.Button), "1");
         ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "2");
@@ -99,6 +100,7 @@ var Panel_UI = /** @class */ (function (_super) {
                         this.defaultReset();
                         this.station.scroll.node.active = true;
                         this.station.isOpen = this.station.scroll.node.active;
+                        this.station.icon.angle = 0;
                         this.setting.scroll.node.active = false;
                         this.setting.isOpen = this.setting.scroll.node.active;
                         this.bg.active = false;
@@ -107,6 +109,16 @@ var Panel_UI = /** @class */ (function (_super) {
                 }
             });
         });
+    };
+    Panel_UI.prototype.setBtnEvent = function () {
+        //Statino
+        ButtonMng_1.default.addEvent(this.station.node, "Station", "eventControllOpen", this.station.btn_ControllOpen);
+        //Setting
+        ButtonMng_1.default.addEvent(this.setting.node, "Setting", "eventControllOpen", this.setting.btn_ControllOpen);
+        //Props_Feature
+        ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "eventClinetClickStart_Stop", this.props_Feature.btn_Start_Stop);
+        ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "eventSkip", this.props_Feature.skip);
+        ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "evetResetView", this.props_Feature.resetView);
     };
     Panel_UI.prototype.checkInit = function () {
         return __awaiter(this, void 0, void 0, function () {

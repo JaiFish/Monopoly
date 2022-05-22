@@ -108,7 +108,7 @@ var Panel_Map = /** @class */ (function (_super) {
                         }
                         for (index = 2; index <= 19; index++) {
                             _node = this.exceptionSprite(index);
-                            spriteClass = _node.getComponent(cc.Sprite).addComponent(MapSprite_1.default);
+                            spriteClass = _node.addComponent(MapSprite_1.default);
                             spriteClass.mySprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Station_Gary_" + index.toString());
                             spriteClass.type = index;
                             GameModle_1.default.mapSprite.set(index, spriteClass);

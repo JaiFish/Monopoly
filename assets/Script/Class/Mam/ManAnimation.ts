@@ -10,7 +10,7 @@ export default class ManAction extends DataMan {
     }
     StartGO_Tween(_gameModle: GameModle, GoCount: number, SayGO?: boolean) {
         if (!this.gameModle) this.setGameModle(_gameModle)
-        console.log(GoCount);
+        // console.log(GoCount);
         if (GoCount == 0) return;
         this.nowIndex++
         GoCount--;
@@ -31,7 +31,7 @@ export default class ManAction extends DataMan {
         // let getPosition: cc.Vec2 = this.gameModle.pathBezierData.get(this.nowIndex)[BezierCount]
 
         // BezierCount++;
-        console.log(getPosition);
+        // console.log(getPosition);
         //起點
         // 中間點
         // 再來終點

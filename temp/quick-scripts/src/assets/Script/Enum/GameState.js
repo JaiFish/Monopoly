@@ -9,6 +9,7 @@ var GameState;
 (function (GameState) {
     GameState["Start"] = "start";
     GameState["Wait"] = "wait";
+    GameState["WaitSignalLight"] = "waitSignalLight";
     GameState["Skip"] = "skip";
     GameState["Stop"] = "stop";
     GameState["ShowMessage"] = "ShowMessage";

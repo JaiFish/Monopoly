@@ -11,6 +11,7 @@ var QALibrary = /** @class */ (function () {
         this.url = "https://docs.google.com/spreadsheets/d/1fbzCyt95TSj1nbzuwHgFHyImxNJISVFvs6BuiE-BO70/edit#gid=131335285";
         this.lib = [];
         var libClass = new lib();
+        console.log("創立");
         switch (level) {
             case 0:
                 this.lib = libClass.easy;
@@ -22,12 +23,19 @@ var QALibrary = /** @class */ (function () {
                 this.lib = libClass.hard;
                 break;
         }
+        // ex:8_「聯合國國際反貪日」是哪一天？"　轉換成這樣比較好切割與知道題目標號
+        for (var index = 0; index < this.lib.length; index++) {
+            this.lib[index] = String(index) + "_" + this.lib[index];
+        }
+        console.log(this.lib);
         for (var index = 0; index < getCount; index++) {
             var randomQA = Math.floor(Math.random() * this.lib.length);
-            this.qaLib_num.push(randomQA);
-            this.qaLib_str.push(this.lib[randomQA]);
+            var formatStr = this.lib[randomQA].split('_');
+            this.qaLib_str.push(formatStr[1]);
+            this.qaLib_num.push(Number(formatStr[0]));
             this.lib.splice(randomQA, 1); //刪除第幾個物件,刪除數量
         }
+        console.log();
     }
     return QALibrary;
 }());

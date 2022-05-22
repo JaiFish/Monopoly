@@ -32,24 +32,19 @@ export default class Props_Feature extends ComponentBase {
         this.Props5 = cc.find("BG_Layout/Props5/icon", this.node).getComponent(cc.Sprite)
         this.Props11 = cc.find("BG_Layout/Props11/icon", this.node).getComponent(cc.Sprite)
         this.Props15 = cc.find("BG_Layout/Props15/icon", this.node).getComponent(cc.Sprite)
-        console.log(this.Props5);
+        // console.log(this.Props5);
 
 
-        ButtonMng.addEvent(this.node, "Props_Feature", "eventStart_Stop", this.btn_Start_Stop)
-        ButtonMng.addEvent(this.node, "Props_Feature", "eventSkip", this.skip)
-        ButtonMng.addEvent(this.node, "Props_Feature", "evetResetView", this.resetView)
+        // ButtonMng.addEvent(this.node, "Props_Feature", "eventClinetClickStart_Stop", this.btn_Start_Stop)
+        // ButtonMng.addEvent(this.node, "Props_Feature", "eventSkip", this.skip)
+        // ButtonMng.addEvent(this.node, "Props_Feature", "evetResetView", this.resetView)
 
-
+        this.isGo = false
         this.info0.active = false
         this.info1.active = false
     }
-    eventStart_Stop(e: cc.Event, _customEventData: string) {
-        MusciMng.effectPlay("BtnClick")
-        if (!this.isGo)
-            this.EventEmit(GameEvent.SendCommand, Commamnd.MenGO);
-        else
-            this.EventEmit(GameEvent.SendCommand, Commamnd.ManWait)
-        this.setStart_Stop()
+    eventClinetClickStart_Stop(e: cc.Event, _customEventData: string) {
+        this.EventEmit(GameEvent.SendCommand,Commamnd.ClinetClickStart_Stop)
     }
     eventSkip(e: cc.Event, _customEventData: string) {
         MusciMng.effectPlay("BtnClick")
@@ -73,7 +68,7 @@ export default class Props_Feature extends ComponentBase {
 
 
     getProps(_num: number) {
-        console.log(AssetMng.data_SprtieAtlas.get("Props_" + _num));
+        // console.log(AssetMng.data_SprtieAtlas.get("Props_" + _num));
 
         switch (_num) {
             case 5:

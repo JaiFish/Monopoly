@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>StationInfo_12.png</key>
+            <key>StationInfo_12.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{564,1126},{560,650}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_13.png</key>
+            <key>StationInfo_13.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{1216,654},{560,650}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_14.png</key>
+            <key>StationInfo_14.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{564,564},{560,650}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_16.png</key>
+            <key>StationInfo_16.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{1216,2},{560,650}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_17.png</key>
+            <key>StationInfo_17.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{564,2},{560,650}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_18.png</key>
+            <key>StationInfo_18.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,654},{560,650}}</string>
@@ -82,7 +82,7 @@
                 <key>sourceSize</key>
                 <string>{560,650}</string>
             </dict>
-            <key>StationInfo_19.png</key>
+            <key>StationInfo_19.jpg</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{560,650}}</string>
@@ -105,7 +105,7 @@
             <key>size</key>
             <string>{1778,1688}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:5620488b0b119b5bbb434fb99132ce66$</string>
+            <string>$TexturePacker:SmartUpdate:11fa8572338da17071e7f8f47038e131$</string>
             <key>textureFileName</key>
             <string>StationInfo2.png</string>
         </dict>

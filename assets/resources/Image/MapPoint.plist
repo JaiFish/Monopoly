@@ -7,54 +7,54 @@
             <key>Station_Normal.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,72},{44,33}}</string>
+                <string>{{2,217},{89,68}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{89,68}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{89,68}</string>
             </dict>
             <key>Station_Q&amp;A.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,107},{43,33}}</string>
+                <string>{{2,147},{89,68}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{43,33}}</string>
+                <string>{{0,0},{89,68}}</string>
                 <key>sourceSize</key>
-                <string>{43,33}</string>
+                <string>{89,68}</string>
             </dict>
             <key>Station_Start.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,37},{44,33}}</string>
+                <string>{{2,2},{90,68}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{90,68}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{90,68}</string>
             </dict>
             <key>Station_WaitRad.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{44,33}}</string>
+                <string>{{2,72},{89,73}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{44,33}}</string>
+                <string>{{0,0},{89,73}}</string>
                 <key>sourceSize</key>
-                <string>{44,33}</string>
+                <string>{89,73}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -64,9 +64,9 @@
             <key>realTextureFileName</key>
             <string>MapPoint.png</string>
             <key>size</key>
-            <string>{48,142}</string>
+            <string>{94,287}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:804153de12cfbdd8e5d548727b22791a$</string>
+            <string>$TexturePacker:SmartUpdate:1e611f063b920381998e9a1130a86f4f$</string>
             <key>textureFileName</key>
             <string>MapPoint.png</string>
         </dict>

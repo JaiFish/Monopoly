@@ -31,7 +31,7 @@ var Panel_Bufer = /** @class */ (function (_super) {
         this.node.opacity = 255;
     };
     Panel_Bufer.prototype.openRender = function () {
-        console.log("HIHIHIHI");
+        // console.log("HIHIHIHI");
         this.bufer.active = true;
         this.EventEmit(GameEvent_1.GameEvent.StopCloud);
     };

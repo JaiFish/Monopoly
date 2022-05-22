@@ -53,12 +53,12 @@ var Panel_Cloud = /** @class */ (function (_super) {
             this.temp_Right += dt;
             if (this.temp_Left > this.randomTime_Left) {
                 this.instItem();
-                this.randomTime_Left = 1 + Math.floor(Math.random() * this.rangeTime_Left);
+                this.randomTime_Left = this.baseTime_Left + Math.floor(Math.random() * this.rangeTime_Left);
                 this.temp_Left = 0;
             }
             if (this.temp_Right > this.randomTime_Right) {
                 this.instItem();
-                this.randomTime_Right = 1 + Math.floor(Math.random() * this.rangeTime_Right);
+                this.randomTime_Right = this.baseTime_Right + Math.floor(Math.random() * this.rangeTime_Right);
                 this.temp_Right = 0;
             }
         }
@@ -77,6 +77,8 @@ var Panel_Cloud = /** @class */ (function (_super) {
         var randomCloud = 1 + Math.floor(Math.random() * 10);
         var format = randomCloud < 9 ? "0" + String(randomCloud) : String(randomCloud);
         temp.getComponent(cc.Sprite).spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("雲-" + format); //隨機1~10的雲
+        if (randomCloud > 0 && randomCloud < 5)
+            temp.setScale(0.5); //因為雲為了解析度有放大
         this.tempNumber++;
     };
     Panel_Cloud.prototype.stopCloud = function () {

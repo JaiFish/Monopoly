@@ -37,12 +37,12 @@ export default class Panel_Cloud extends DataCloud {
 
             if (this.temp_Left > this.randomTime_Left) {
                 this.instItem();
-                this.randomTime_Left = 1 + Math.floor(Math.random() * this.rangeTime_Left)
+                this.randomTime_Left = this.baseTime_Left + Math.floor(Math.random() * this.rangeTime_Left)
                 this.temp_Left = 0
             }
             if (this.temp_Right > this.randomTime_Right) {
                 this.instItem();
-                this.randomTime_Right = 1 + Math.floor(Math.random() * this.rangeTime_Right)
+                this.randomTime_Right = this.baseTime_Right + Math.floor(Math.random() * this.rangeTime_Right)
                 this.temp_Right = 0
             }
         }
@@ -62,6 +62,8 @@ export default class Panel_Cloud extends DataCloud {
         let randomCloud = 1 + Math.floor(Math.random() * 10)
         let format = randomCloud < 9 ? "0" + String(randomCloud) : String(randomCloud)
         temp.getComponent(cc.Sprite).spriteFrame = AssetMng.data_SprtieAtlas.get("雲-" + format)//隨機1~10的雲
+
+        if (randomCloud > 0 && randomCloud < 5) temp.setScale(0.5) //因為雲為了解析度有放大
         this.tempNumber++
     }
     stopCloud() {

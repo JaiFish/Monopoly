@@ -14,9 +14,10 @@ export default class SettingBtn extends ComponentBase {
         this.node.setPosition(0, 0)
 
     }
-    setEvent(_num: number) {
+    async setEvent(_num: number) {
         switch (_num) {
             case 0://聲音   
+                await AssetMng.checkState()
                 this.setSoundSprite()
                 ButtonMng.addEvent(this.node, "SettingBtn", "eventSwitchSound", this.btn)
                 break;
@@ -30,8 +31,6 @@ export default class SettingBtn extends ComponentBase {
     }
     async setSoundSprite() {
         let getBoolean = MusciMng.isMusicOpen ? "Open" : "Close";
-        await AssetMng.checkState()
-
         this.sprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Sound" + getBoolean)
     }
 }

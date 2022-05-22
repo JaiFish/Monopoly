@@ -34,7 +34,7 @@ var ManAction = /** @class */ (function (_super) {
     ManAction.prototype.StartGO_Tween = function (_gameModle, GoCount, SayGO) {
         if (!this.gameModle)
             this.setGameModle(_gameModle);
-        console.log(GoCount);
+        // console.log(GoCount);
         if (GoCount == 0)
             return;
         this.nowIndex++;
@@ -55,7 +55,7 @@ var ManAction = /** @class */ (function (_super) {
         var getPosition = this.gameModle.pathBezierData.get(this.nowIndex);
         // let getPosition: cc.Vec2 = this.gameModle.pathBezierData.get(this.nowIndex)[BezierCount]
         // BezierCount++;
-        console.log(getPosition);
+        // console.log(getPosition);
         //起點
         // 中間點
         // 再來終點

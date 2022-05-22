@@ -165,7 +165,7 @@ var Btn = /** @class */ (function (_super) {
     Btn.prototype.onLoad = function () {
         this.str = cc.find("Label", this.node).getComponent(cc.Label);
         this.button = this.node.getComponent(cc.Button);
-        console.log("!!!!!!!!!?");
+        // console.log("!!!!!!!!!?");
     };
     return Btn;
 }(ComponentBase_1.default));

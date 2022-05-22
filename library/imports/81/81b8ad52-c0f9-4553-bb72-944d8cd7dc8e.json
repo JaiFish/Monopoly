@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "對話框-loading",
+    "texture": "7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      372,
+      232
+    ],
+    "offset": [
+      -0.5,
+      0.5
+    ],
+    "originalSize": [
+      377,
+      237
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -31,6 +31,7 @@ export default class Question extends ComponentBase {
         this.info_Normal_5 = cc.find("Normal_5", this.scrollView.content);
         this.info_Normal_9 = cc.find("Normal_9", this.scrollView.content);
         this.content_Btn = cc.find("con_Btn", this.node);
+
         this.defaultReset()
     }
     protected start(): void {
@@ -56,7 +57,7 @@ export default class Question extends ComponentBase {
         this.info_Normal_9.active = false
     }
     setQAInfo(str: string, _level: number, _qaNum: number) {
-        console.log(_level, _qaNum);
+        // console.log(_level, _qaNum);
 
         if (_level == 1 && (_qaNum == 4 || _qaNum == 8)) {
             switch (_qaNum) {
@@ -70,7 +71,7 @@ export default class Question extends ComponentBase {
         }
         this.info_Text.node.active = true
         this.info_Text.string = str
-
+        this.checkLenght(str)
     }
     setChoose(str: string) {
         this.info_Choose.node.active = true
@@ -82,6 +83,27 @@ export default class Question extends ComponentBase {
         this.EventEmit(GameEvent.SendCommand, Commamnd.EndQA)
         // console.log(e, _customEventData);
         //開始接中央
+    }
+    checkLenght(str: string) {
+        let get = Math.floor(str.length / 32)
+        switch (get) {
+            case 0:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -50
+                break;
+            case 1:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -80
+                break;
+            case 2:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -110
+                break;
+            case 3:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -140
+                break;
+            case 4:
+                this.scrollView.content.getComponent(cc.Layout).spacingY = -170
+                break;
+        }
+
     }
 }
 

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "車票-一般",
+    "texture": "4d0a4437-9492-4be4-881b-c327a9cdc3d7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      345,
+      532
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      345,
+      532
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

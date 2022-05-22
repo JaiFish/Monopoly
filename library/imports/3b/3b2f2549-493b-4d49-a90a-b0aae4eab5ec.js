@@ -55,13 +55,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var AssetMng_1 = require("../Asset/AssetMng");
 var ComponentBase_1 = require("../Data/base/ComponentBase");
+var BearState_1 = require("../Enum/BearState");
 var GameState_1 = require("../Enum/GameState");
 var GameModle_1 = require("../GameModle");
-var BearState;
-(function (BearState) {
-    BearState["Green"] = "Green";
-    BearState["Red"] = "Red";
-})(BearState || (BearState = {}));
 var Panel_Bear = /** @class */ (function (_super) {
     __extends(Panel_Bear, _super);
     function Panel_Bear() {
@@ -79,7 +75,7 @@ var Panel_Bear = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         var loop = setInterval(function () {
-                            if (_this.nowState == BearState.Green) {
+                            if (_this.nowState == BearState_1.BearState.Green) {
                                 clearInterval(loop);
                                 resolve();
                             }
@@ -89,15 +85,17 @@ var Panel_Bear = /** @class */ (function (_super) {
         });
     };
     Panel_Bear.prototype.init = function () {
-        this.nowState = BearState.Red;
+        this.nowState = BearState_1.BearState.Red;
+        GameModle_1.default.bearState = this.nowState;
         this.sprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Bear_" + this.nowState);
-        console.log(AssetMng_1.default.data_SprtieAtlas.get("Bear_" + this.nowState));
+        // console.log(AssetMng.data_SprtieAtlas.get("Bear_" + this.nowState));
     };
     Panel_Bear.prototype.update = function (dt) {
         if (GameModle_1.default.gameState == GameState_1.GameState.Start) {
             this.tempDT += dt;
             if (this.tempDT > this.targetDT) {
-                this.nowState = this.nowState == BearState.Red ? BearState.Green : BearState.Red;
+                this.nowState = this.nowState == BearState_1.BearState.Red ? BearState_1.BearState.Green : BearState_1.BearState.Red;
+                GameModle_1.default.bearState = this.nowState;
                 this.sprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Bear_" + this.nowState);
                 this.tempDT = 0;
             }

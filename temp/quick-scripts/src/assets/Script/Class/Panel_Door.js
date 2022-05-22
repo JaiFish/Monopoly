@@ -69,7 +69,7 @@ var Panel_Door = /** @class */ (function (_super) {
     __extends(Panel_Door, _super);
     function Panel_Door() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.distance = 365; //左右的最遠尺
+        _this.distance = 272.58; //左右的最遠尺
         return _this;
     }
     Panel_Door.prototype.onLoad = function () {
@@ -145,7 +145,7 @@ var Panel_Door = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         cc.tween(_this.node)
-                            .to(1, { scale: 1.75 })
+                            .to(0.5, { scale: 2.35 })
                             .call(function () {
                             _this.node.active = false;
                             resolve();

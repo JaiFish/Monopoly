@@ -10,7 +10,7 @@ export default class Panel_Bufer extends ComponentBase {
         this.node.opacity = 255
     }
     openRender() {
-        console.log("HIHIHIHI");
+        // console.log("HIHIHIHI");
 
         this.bufer.active = true
 

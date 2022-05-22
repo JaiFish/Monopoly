@@ -50,12 +50,14 @@ export default class Panel_Map extends ComponentBase {
         }
         for (let index = 2; index <= 19; index++) {
             let _node = this.exceptionSprite(index)
-            let spriteClass = _node.getComponent(cc.Sprite).addComponent(MapSprite)
+            let spriteClass = _node.addComponent(MapSprite)
             spriteClass.mySprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Station_Gary_" + index.toString())
             spriteClass.type = index
             GameModle.mapSprite.set(index, spriteClass)
         } 
-
+        
+        //test
+        // cc.find("Canvas/2 copy").addComponent(MapSprite).getAction()
         // console.log(GameModle.pathBezierData);
         // console.log(GameModle.pathPositionData);
     }
