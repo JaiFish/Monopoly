@@ -20,8 +20,8 @@
     "relativePath": "Script"
   },
   "cbe3fae9-f887-4b72-92e5-4eb14556bd5c": {
-    "asset": 1652739981932,
-    "meta": 1652741939673,
+    "asset": 1653328968436,
+    "meta": 1653330805584,
     "relativePath": "Sence"
   },
   "8694e02d-4c53-4d7a-98a8-e0d4a8b4c17e": {
@@ -30,8 +30,8 @@
     "relativePath": "resources\\Image"
   },
   "3c7e9c98-3d3d-47ea-b5a9-47a9d4a50aee": {
-    "asset": 1653063576824,
-    "meta": 1653066858608,
+    "asset": 1653330501630,
+    "meta": 1653330805583,
     "relativePath": "resources\\Music"
   },
   "5aac4060-836a-4cc4-bc7f-a29514037a74": {
@@ -755,8 +755,8 @@
     "relativePath": "Image\\Other\\相片底.png"
   },
   "056c8011-8c09-47a0-8b4e-c00e07664628": {
-    "asset": 1652739980236,
-    "meta": 1652741936901,
+    "asset": 1653329021291,
+    "meta": 1653330805582,
     "relativePath": "Image\\BG"
   },
   "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5": {
@@ -870,8 +870,8 @@
     "relativePath": "Image\\Bear\\sprites\\Bear_True"
   },
   "fa99a9ca-22ca-4f0a-a1ab-2c9580e8e4b9": {
-    "asset": 1652739978076,
-    "meta": 1652741934988,
+    "asset": 1653328968432,
+    "meta": 1653330805581,
     "relativePath": "Image\\Bear\\sprites\\Bear_False"
   },
   "438112e6-7d95-4ad5-8452-a8533052f032": {
