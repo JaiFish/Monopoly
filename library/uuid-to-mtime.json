@@ -2319,11 +2319,6 @@
     "meta": 1653069634946,
     "relativePath": "Script\\Asset\\SpriteAtlasAsset.ts"
   },
-  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
-    "asset": 1653077244337,
-    "meta": 1653077272826,
-    "relativePath": "Script\\Data\\base\\MusciMng.ts"
-  },
   "b38a8d59-699b-4917-81e2-808c08273a02": {
     "asset": 1652669132000,
     "meta": 1653113695193,
@@ -2740,8 +2735,13 @@
     "relativePath": "Script\\GameModle.ts"
   },
   "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653286197658,
-    "meta": 1653286197710,
+    "asset": 1653289086937,
+    "meta": 1653289086981,
     "relativePath": "Sence\\GameSence.fire"
+  },
+  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
+    "asset": 1653289080817,
+    "meta": 1653289083856,
+    "relativePath": "Script\\Data\\base\\MusciMng.ts"
   }
 }
