@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
+      "x": -5,
       "y": 0,
-      "width": 1536,
-      "height": 824,
+      "width": 1537,
+      "height": 825,
       "layout": {
         "children": [
           {
@@ -18,25 +18,25 @@
                 "children": [
                   "scene"
                 ],
-                "height": 398.6750183105469,
+                "height": 151.03750610351562,
                 "type": "panel",
-                "width": 749.2000122070312
+                "width": 750.2000122070312
               },
               {
-                "active": 1,
+                "active": 2,
                 "children": [
                   "timeline",
                   "console",
                   "game-window"
                 ],
-                "height": 306.5249938964844,
+                "height": 554.1625366210938,
                 "type": "panel",
-                "width": 749.2000122070312
+                "width": 750.2000122070312
               }
             ],
             "height": 708.2000122070312,
             "type": "dock-v",
-            "width": 749.2000122070312
+            "width": 750.2000122070312
           },
           {
             "children": [
@@ -45,23 +45,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 334.1000061035156,
+                "height": 312.0874938964844,
                 "type": "panel",
-                "width": 315.0874938964844
+                "width": 314.0874938964844
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 371.1000061035156,
+                "height": 393.1125183105469,
                 "type": "panel",
-                "width": 315.0874938964844
+                "width": 314.0874938964844
               }
             ],
             "height": 708.2000122070312,
             "type": "dock-v",
-            "width": 315.0874938964844
+            "width": 314.0874938964844
           },
           {
             "active": 0,
@@ -89,8 +89,7 @@
         "node-library"
       ]
     },
-    "window-1653214738239": {},
-    "worker": {}
+    "window-1653282164985": {}
   },
   "panels": {
     "builder": {

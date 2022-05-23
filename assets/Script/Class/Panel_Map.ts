@@ -12,6 +12,7 @@ export default class Panel_Map extends ComponentBase {
     public content_Map: cc.Node;
     public content_Station: cc.Node;
     public content_Station2: cc.Node;
+    exceptionArray: number[] = [8, 12, 13, 18, 19]
     protected onLoad(): void {
         this.tempMapItem = cc.find("mapItem", this.node)
         this.content_Map = cc.find("nContent_Map", this.node)
@@ -54,8 +55,8 @@ export default class Panel_Map extends ComponentBase {
             spriteClass.mySprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Station_Gary_" + index.toString())
             spriteClass.type = index
             GameModle.mapSprite.set(index, spriteClass)
-        } 
-        
+        }
+
         //test
         // cc.find("Canvas/2 copy").addComponent(MapSprite).getAction()
         // console.log(GameModle.pathBezierData);
@@ -134,7 +135,15 @@ export default class Panel_Map extends ComponentBase {
     }
 
     exceptionSprite(_index: number) {
-        return _index == 8 ?
+        let isException = false
+        this.exceptionArray.forEach(num => {
+            if (num == _index) {
+                isException = true
+                return;
+            }
+        })
+
+        return isException ?
             cc.find(_index.toString(), this.content_Station2) :
             cc.find(_index.toString(), this.content_Station)
     }

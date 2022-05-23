@@ -17,6 +17,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var MusciMng_1 = require("../../Data/base/MusciMng");
 var MyMath_1 = require("../../Data/MyMath");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
@@ -90,6 +91,7 @@ var Panel_Man = /** @class */ (function (_super) {
             this.isWaitSingnalLinght = true;
             return;
         }
+        MusciMng_1.default.effectPlay("TrainGoing");
         this.setManState(GameState_1.GameState.Start);
         this.startGO();
         // console.log("開始走囉", this.isCanGo);
@@ -98,19 +100,23 @@ var Panel_Man = /** @class */ (function (_super) {
         this.isWaitSingnalLinght = false;
         this.setManState(GameState_1.GameState.Start);
         this.startGO();
+        MusciMng_1.default.effectPlay("TrainGoing");
     };
     Panel_Man.prototype.manLineWait = function () {
         if (this.isWaitSingnalLinght)
             return;
+        MusciMng_1.default.effectStop("TrainGoing");
         this.setManState(GameState_1.GameState.Wait);
         this.stopGo();
     };
     Panel_Man.prototype.manWait = function () {
         if (this.isWaitSingnalLinght)
             return;
+        MusciMng_1.default.effectStop("TrainGoing");
         this.setManState(GameState_1.GameState.Wait);
     };
     Panel_Man.prototype.manStop = function () {
+        MusciMng_1.default.effectStop("TrainGoing");
         this.setManState(GameState_1.GameState.Stop);
         this.stopGo();
     };

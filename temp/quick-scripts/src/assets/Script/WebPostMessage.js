@@ -28,11 +28,19 @@ var WebPostMessage = /** @class */ (function () {
         var cmd = event.data.cmd;
         var viewType = event.data.viewType;
         console.error(event);
-        switch (viewType) {
-            case 0:
-                EventMng_1.default.emit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.CloseVideo);
+        switch (String(cmd)) {
+            case "OpenView":
+                console.log("收到");
+                switch (viewType) {
+                    case 0:
+                        EventMng_1.default.emit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.CloseVideo);
+                        break;
+                    default:
+                        break;
+                }
                 break;
-            default:
+            case "Loading":
+                EventMng_1.default.emit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.WebCheckData);
                 break;
         }
         // EventMng.emit(cmd, viewType);

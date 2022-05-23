@@ -27,7 +27,7 @@ class NumberConvertEnglish {
 }
 
 class GameModel {
-    version: string = "1.1.0";
+    version: string = "1.1.4";
     chooseAnswer: string;
     playData: Player = new Player();
 
@@ -55,6 +55,7 @@ class GameModel {
 
     webPostMessage:WebPostMessage = new WebPostMessage();
 
+    isEndLoadingData:boolean
 
     //-------題庫-------
     qaLibrary: QALibrary;

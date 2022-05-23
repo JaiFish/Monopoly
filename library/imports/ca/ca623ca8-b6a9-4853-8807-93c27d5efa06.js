@@ -63,7 +63,9 @@ var GameModle_1 = require("../GameModle");
 var Panel_Map = /** @class */ (function (_super) {
     __extends(Panel_Map, _super);
     function Panel_Map() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.exceptionArray = [8, 12, 13, 18, 19];
+        return _this;
     }
     Panel_Map.prototype.onLoad = function () {
         this.tempMapItem = cc.find("mapItem", this.node);
@@ -186,7 +188,14 @@ var Panel_Map = /** @class */ (function (_super) {
         // let getType:StationType = _number
     };
     Panel_Map.prototype.exceptionSprite = function (_index) {
-        return _index == 8 ?
+        var isException = false;
+        this.exceptionArray.forEach(function (num) {
+            if (num == _index) {
+                isException = true;
+                return;
+            }
+        });
+        return isException ?
             cc.find(_index.toString(), this.content_Station2) :
             cc.find(_index.toString(), this.content_Station);
     };

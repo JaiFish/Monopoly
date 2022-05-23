@@ -25,8 +25,8 @@
     "relativePath": "Sence"
   },
   "8694e02d-4c53-4d7a-98a8-e0d4a8b4c17e": {
-    "asset": 1653117997117,
-    "meta": 1653123631501,
+    "asset": 1653212055767,
+    "meta": 1653237841754,
     "relativePath": "resources\\Image"
   },
   "3c7e9c98-3d3d-47ea-b5a9-47a9d4a50aee": {
@@ -725,8 +725,8 @@
     "relativePath": "Image\\Bear"
   },
   "196e0a91-d960-42ec-997c-831c17d20142": {
-    "asset": 1653114687827,
-    "meta": 1653116564499,
+    "asset": 1653240865227,
+    "meta": 1653281028383,
     "relativePath": "Image\\TrainDoor"
   },
   "75ed4dab-2ad7-446c-8c26-9a892e06b0aa": {
@@ -2274,25 +2274,10 @@
     "meta": 1652741939142,
     "relativePath": "Script\\Class\\Panel_Version.ts"
   },
-  "1d6e6101-4936-41fc-bff1-1e2875e7c596": {
-    "asset": 1652888183019,
-    "meta": 1652888184811,
-    "relativePath": "Script\\WebPostMessage.ts"
-  },
-  "eb1857a0-526d-4926-b355-462a8df47077": {
-    "asset": 1652893106770,
-    "meta": 1652893108086,
-    "relativePath": "Script\\ShaderCamera\\BuferClass.ts"
-  },
   "7f9ad8fa-189f-4527-b9e1-82547c1e677c": {
     "asset": 1652894341712,
     "meta": 1652894342302,
     "relativePath": "Script\\Data\\base\\ComponentBase.ts"
-  },
-  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
-    "asset": 1652974024137,
-    "meta": 1652974024848,
-    "relativePath": "Script\\Class\\CameraControll.ts"
   },
   "87c82343-d2a7-4d1b-add1-bf09338da330": {
     "asset": 1652979448524,
@@ -2373,21 +2358,6 @@
     "asset": 1651582784000,
     "meta": 1653114353677,
     "relativePath": "Image\\QA\\一般版第9題原始圖示-2.jpg"
-  },
-  "a39bfdbd-e88c-43c9-88c3-0df93832fcac": {
-    "asset": 1653114687835,
-    "meta": 1653114687909,
-    "relativePath": "Image\\TrainDoor\\列車-車門-右.png"
-  },
-  "9e5a6a72-5377-4bf8-84da-ba4418a36690": {
-    "asset": 1653114687835,
-    "meta": 1653114687925,
-    "relativePath": "Image\\TrainDoor\\列車-車廂.png"
-  },
-  "97585245-54e0-4e1c-8294-733e6ee76144": {
-    "asset": 1653114687835,
-    "meta": 1653114687927,
-    "relativePath": "Image\\TrainDoor\\列車-車門-左.png"
   },
   "dbe1a6a5-aeb0-4458-81e6-75f6301097ed": {
     "asset": 1653114748196,
@@ -2574,11 +2544,6 @@
     "meta": 1653123750478,
     "relativePath": "Script\\Class\\Panel_Loading.ts"
   },
-  "82a59f89-f2e3-4340-a818-426383dad8ef": {
-    "asset": 1653124270662,
-    "meta": 1653124271837,
-    "relativePath": "Script\\Class\\Panel_Door.ts"
-  },
   "a30bf20e-c33c-45d7-acc0-62412d72ea3c": {
     "asset": 1653124491760,
     "meta": 1653124643418,
@@ -2623,21 +2588,6 @@
     "asset": 1653135085659,
     "meta": 1653135103913,
     "relativePath": "Script\\Data\\DataMan.ts"
-  },
-  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653235027138,
-    "meta": 1653235027167,
-    "relativePath": "Sence\\GameSence.fire"
-  },
-  "ca623ca8-b6a9-4853-8807-93c27d5efa06": {
-    "asset": 1653141823407,
-    "meta": 1653141823922,
-    "relativePath": "Script\\Class\\Panel_Map.ts"
-  },
-  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
-    "asset": 1653143524276,
-    "meta": 1653143563593,
-    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
   },
   "88157b77-7346-4883-ad36-93ab49bc4d28": {
     "asset": 1653143434826,
@@ -2699,20 +2649,10 @@
     "meta": 1653211353952,
     "relativePath": "Script\\Data\\DataCloud.ts"
   },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1653211147120,
-    "meta": 1653211354162,
-    "relativePath": "Script\\GameModle.ts"
-  },
   "db8cca8c-32f4-4233-bf24-cfb104989752": {
     "asset": 1653211607805,
     "meta": 1653211608044,
     "relativePath": "Script\\Class\\Panel_Test.ts"
-  },
-  "49282f3d-6110-439b-894c-25b16854cdfc": {
-    "asset": 1653211582607,
-    "meta": 1653211608055,
-    "relativePath": "Script\\Enum\\Commad.ts"
   },
   "88f0a0cb-efb7-414d-9e59-b7965c0e75c6": {
     "asset": 1653211942151,
@@ -2739,9 +2679,69 @@
     "meta": 1653214311205,
     "relativePath": "Script\\Class\\Message\\Question.ts"
   },
+  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
+    "asset": 1653239491222,
+    "meta": 1653239501838,
+    "relativePath": "Script\\Class\\CameraControll.ts"
+  },
+  "ca623ca8-b6a9-4853-8807-93c27d5efa06": {
+    "asset": 1653239496589,
+    "meta": 1653239502049,
+    "relativePath": "Script\\Class\\Panel_Map.ts"
+  },
+  "eb1857a0-526d-4926-b355-462a8df47077": {
+    "asset": 1653239501161,
+    "meta": 1653239502246,
+    "relativePath": "Script\\ShaderCamera\\BuferClass.ts"
+  },
+  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
+    "asset": 1653243710589,
+    "meta": 1653243717147,
+    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
+  },
+  "a39bfdbd-e88c-43c9-88c3-0df93832fcac": {
+    "asset": 1653281113525,
+    "meta": 1653281113598,
+    "relativePath": "Image\\TrainDoor\\列車-車門-右.png"
+  },
+  "97585245-54e0-4e1c-8294-733e6ee76144": {
+    "asset": 1653281113525,
+    "meta": 1653281113615,
+    "relativePath": "Image\\TrainDoor\\列車-車門-左.png"
+  },
+  "9e5a6a72-5377-4bf8-84da-ba4418a36690": {
+    "asset": 1653281113525,
+    "meta": 1653281113631,
+    "relativePath": "Image\\TrainDoor\\列車-車廂.png"
+  },
+  "49282f3d-6110-439b-894c-25b16854cdfc": {
+    "asset": 1653281552293,
+    "meta": 1653281659718,
+    "relativePath": "Script\\Enum\\Commad.ts"
+  },
+  "82a59f89-f2e3-4340-a818-426383dad8ef": {
+    "asset": 1653281989308,
+    "meta": 1653282159060,
+    "relativePath": "Script\\Class\\Panel_Door.ts"
+  },
   "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1653234004089,
-    "meta": 1653234181559,
+    "asset": 1653282154026,
+    "meta": 1653282159224,
     "relativePath": "Script\\GameControll.ts"
+  },
+  "1d6e6101-4936-41fc-bff1-1e2875e7c596": {
+    "asset": 1653281784813,
+    "meta": 1653282159243,
+    "relativePath": "Script\\WebPostMessage.ts"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1653282180145,
+    "meta": 1653282180415,
+    "relativePath": "Script\\GameModle.ts"
+  },
+  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
+    "asset": 1653282182548,
+    "meta": 1653282182989,
+    "relativePath": "Sence\\GameSence.fire"
   }
 }

@@ -1,5 +1,6 @@
 
 
+import MusciMng from "../../Data/base/MusciMng";
 import MyMath from "../../Data/MyMath";
 import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
@@ -73,6 +74,7 @@ export default class Panel_Man extends ManAction {
             this.isWaitSingnalLinght = true
             return
         }
+        MusciMng.effectPlay("TrainGoing")
         this.setManState(GameState.Start)
         this.startGO();
 
@@ -82,17 +84,21 @@ export default class Panel_Man extends ManAction {
         this.isWaitSingnalLinght = false
         this.setManState(GameState.Start)
         this.startGO();
+        MusciMng.effectPlay("TrainGoing")
     }
     manLineWait() {
         if (this.isWaitSingnalLinght) return
+        MusciMng.effectStop("TrainGoing")
         this.setManState(GameState.Wait)
         this.stopGo();
     }
     manWait() {
         if (this.isWaitSingnalLinght) return
+        MusciMng.effectStop("TrainGoing")
         this.setManState(GameState.Wait)
     }
     manStop() {
+        MusciMng.effectStop("TrainGoing")
         this.setManState(GameState.Stop)
         this.stopGo();
     }

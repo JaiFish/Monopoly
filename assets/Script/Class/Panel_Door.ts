@@ -45,10 +45,8 @@ export default class Panel_Door extends ComponentBase {
         return new Promise<void>((resolve, reject) => {
             this.left.active = true
             this.right.active = true
+            this.btn_Start.node.active = false
             cc.tween(this.left)
-                .call(() => {
-                    this.btn_Start.node.active = false
-                })
                 .by(2, { x: -this.distance })
                 .start()
             cc.tween(this.right)

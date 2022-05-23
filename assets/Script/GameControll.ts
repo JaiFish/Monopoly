@@ -62,7 +62,7 @@ export default class Controll extends ComponentBase {
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version);
 
-        this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
+        // this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
 
         this.initEvent(GameEvent.SendModel, this.sendModle)
         this.initEvent(GameEvent.SendCommand, this.sendCommand)
@@ -125,6 +125,7 @@ export default class Controll extends ComponentBase {
      * 流程
      */
     async checkData() {
+        GameModle.isEndLoadingData = false
         this.panel_Loading.show()
         //Test
         // GameModle.playData.level = 2
@@ -138,7 +139,7 @@ export default class Controll extends ComponentBase {
         // console.log(GameModle.answerLibrary.answerLib_str);
         // console.log(GameModle.explainLibrary.explainLib);
         await AssetMng.checkState();
-
+        GameModle.isEndLoadingData = true
         MusciMng.musicPlay("gameBG")
         this.panel_Loading.Actionhide()
         // MusciMng.effectPlay("DoorOpen")
@@ -148,7 +149,7 @@ export default class Controll extends ComponentBase {
 
     }
     async mainInit() {
-        await AssetMng.checkState();
+        // await AssetMng.checkState();
         // MusciMng.musicPlay("gameBG")
         // MusciMng.effectPlay("DoorOpen")
         // MusciMng.musicStop()
@@ -247,10 +248,11 @@ export default class Controll extends ComponentBase {
                 GameModle.webPostMessage.send(data)
                 console.log("播放安全影片");
                 break
-            case 2:
+            case 20:
+                let getKid = GameModle.playData.level == 0 ? true : false
                 data.cmd = "OpenView"
                 data.viewType = 2
-                data.kid = true;
+                data.kid = getKid;
                 GameModle.webPostMessage.send(data)
                 console.log("播放廉政影片");
                 break
@@ -434,6 +436,17 @@ export default class Controll extends ComponentBase {
         this.cameraControll.activeMineCamera(true);
         this.panel_Message.hide()
         this.cameraControll.showAllView();
+    }
+    webCheckData() {
+        if (GameModle.isEndLoadingData) {
+            GameModle.isEndLoadingData = false //避免重複敲
+            let data = new postCmd()
+            data.cmd = 'Close'
+            GameModle.webPostMessage.send(data)
+            //開始遊戲
+            this.mainInit()
+        }
+
     }
     protected update(dt: number): void {
         // console.log(cc.audioEngine.getState(MusciMng.musicID));

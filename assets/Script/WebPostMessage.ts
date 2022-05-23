@@ -22,14 +22,23 @@ export class WebPostMessage {
         const cmd = event.data.cmd;
         const viewType = event.data.viewType;
         console.error(event);
-        switch (viewType) {
-            case 0:
-                EventMng.emit(GameEvent.SendCommand, Commamnd.CloseVideo)
-                break;
+        switch (String(cmd)) {
+            case "OpenView":
+                console.log("收到");
 
-            default:
+                switch (viewType) {
+                    case 0:
+                        EventMng.emit(GameEvent.SendCommand, Commamnd.CloseVideo)
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "Loading":
+                EventMng.emit(GameEvent.SendCommand, Commamnd.WebCheckData)
                 break;
         }
+
         // EventMng.emit(cmd, viewType);
         console.log("收到內容", event);
     }

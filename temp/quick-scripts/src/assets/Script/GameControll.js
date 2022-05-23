@@ -81,7 +81,6 @@ var TrainInfoLibrary_1 = require("./Data/TrainInfoLibrary");
 var PropsLibrary_1 = require("./Data/QA/PropsLibrary");
 var CameraState_1 = require("./Enum/CameraState");
 var Panel_Version_1 = require("./Class/Panel_Version");
-var Panel_Test_1 = require("./Class/Panel_Test");
 var DelayTime_1 = require("./Data/DelayTime");
 var Panel_Bufer_1 = require("./Class/Panel_Bufer");
 var MusciMng_1 = require("./Data/base/MusciMng");
@@ -105,7 +104,7 @@ var Controll = /** @class */ (function (_super) {
         this.panel_Bufer = cc.find("Canvas/Panel_Bufer").addComponent(Panel_Bufer_1.default);
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message_1.default);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version_1.default);
-        this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test_1.default);
+        // this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
         this.initEvent(GameEvent_1.GameEvent.SendModel, this.sendModle);
         this.initEvent(GameEvent_1.GameEvent.SendCommand, this.sendCommand);
         this.initEvent(GameEvent_1.GameEvent.GetStation, this.changeStationSprite);
@@ -172,6 +171,7 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        GameModle_1.default.isEndLoadingData = false;
                         this.panel_Loading.show();
                         //Test
                         // GameModle.playData.level = 2
@@ -196,6 +196,7 @@ var Controll = /** @class */ (function (_super) {
                         // console.log(GameModle.answerLibrary.answerLib_str);
                         // console.log(GameModle.explainLibrary.explainLib);
                         _a.sent();
+                        GameModle_1.default.isEndLoadingData = true;
                         MusciMng_1.default.musicPlay("gameBG");
                         this.panel_Loading.Actionhide();
                         return [2 /*return*/];
@@ -207,9 +208,8 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, AssetMng_1.default.checkState()];
-                    case 1:
-                        _a.sent();
+                    case 0:
+                        // await AssetMng.checkState();
                         // MusciMng.musicPlay("gameBG")
                         // MusciMng.effectPlay("DoorOpen")
                         // MusciMng.musicStop()
@@ -217,17 +217,17 @@ var Controll = /** @class */ (function (_super) {
                         this.panel_Version.node.active = false;
                         MusciMng_1.default.effectPlay("DoorOpen");
                         return [4 /*yield*/, this.panel_Door.openDoor()];
-                    case 2:
+                    case 1:
                         _a.sent();
                         return [4 /*yield*/, this.panel_Door.scaleAction()];
-                    case 3:
+                    case 2:
                         _a.sent();
                         MusciMng_1.default.effectPlay("maneyMixSound");
                         return [4 /*yield*/, this.cameraControll.showAllView()];
-                    case 4:
+                    case 3:
                         _a.sent();
                         return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(0.5)];
-                    case 5:
+                    case 4:
                         _a.sent();
                         return [4 /*yield*/, this.cameraControll.moveToManCamera(false)
                             // GameModle.playData.level = 0
@@ -236,7 +236,7 @@ var Controll = /** @class */ (function (_super) {
                             // this.endChoosTrain()
                             // return
                         ];
-                    case 6:
+                    case 5:
                         _a.sent();
                         // GameModle.playData.level = 0
                         // GameModle.playData.trainTypeNumber = 0
@@ -245,7 +245,7 @@ var Controll = /** @class */ (function (_super) {
                         // return
                         this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
-                    case 7:
+                    case 6:
                         _a.sent();
                         this.panel_Message.choose_Ticket.show();
                         return [2 /*return*/];
@@ -340,7 +340,7 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.showVideo = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var data;
+            var data, getKid;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -359,10 +359,11 @@ var Controll = /** @class */ (function (_super) {
                                 GameModle_1.default.webPostMessage.send(data);
                                 console.log("播放安全影片");
                                 break;
-                            case 2:
+                            case 20:
+                                getKid = GameModle_1.default.playData.level == 0 ? true : false;
                                 data.cmd = "OpenView";
                                 data.viewType = 2;
-                                data.kid = true;
+                                data.kid = getKid;
                                 GameModle_1.default.webPostMessage.send(data);
                                 console.log("播放廉政影片");
                                 break;
@@ -676,6 +677,16 @@ var Controll = /** @class */ (function (_super) {
         this.cameraControll.activeMineCamera(true);
         this.panel_Message.hide();
         this.cameraControll.showAllView();
+    };
+    Controll.prototype.webCheckData = function () {
+        if (GameModle_1.default.isEndLoadingData) {
+            GameModle_1.default.isEndLoadingData = false; //避免重複敲
+            var data = new postCmd();
+            data.cmd = 'Close';
+            GameModle_1.default.webPostMessage.send(data);
+            //開始遊戲
+            this.mainInit();
+        }
     };
     Controll.prototype.update = function (dt) {
         // console.log(cc.audioEngine.getState(MusciMng.musicID));

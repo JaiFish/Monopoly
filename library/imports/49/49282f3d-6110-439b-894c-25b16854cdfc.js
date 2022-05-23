@@ -38,6 +38,7 @@ var Commamnd;
     Commamnd["UpdataUIStart"] = "updataUIStart";
     Commamnd["ClinetClickStart_Stop"] = "clinetClickStart_Stop";
     Commamnd["ShowAllView"] = "showAllView";
+    Commamnd["WebCheckData"] = "webCheckData";
 })(Commamnd = exports.Commamnd || (exports.Commamnd = {}));
 
 cc._RF.pop();

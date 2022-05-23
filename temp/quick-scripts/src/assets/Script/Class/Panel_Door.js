@@ -107,10 +107,8 @@ var Panel_Door = /** @class */ (function (_super) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         _this.left.active = true;
                         _this.right.active = true;
+                        _this.btn_Start.node.active = false;
                         cc.tween(_this.left)
-                            .call(function () {
-                            _this.btn_Start.node.active = false;
-                        })
                             .by(2, { x: -_this.distance })
                             .start();
                         cc.tween(_this.right)
