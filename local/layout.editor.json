@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -5,
+      "x": 0,
       "y": 0,
-      "width": 1537,
-      "height": 825,
+      "width": 1536,
+      "height": 824,
       "layout": {
         "children": [
           {
@@ -89,7 +89,8 @@
         "node-library"
       ]
     },
-    "window-1653282164985": {}
+    "window-1653286203035": {},
+    "worker": {}
   },
   "panels": {
     "builder": {

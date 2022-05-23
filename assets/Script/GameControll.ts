@@ -381,6 +381,7 @@ export default class Controll extends ComponentBase {
         await this.cameraControll.showAllView()
         await this.panel_Door.backScaleAction()
         await this.panel_Door.closeDoor()
+        MusciMng.musicStop()
         let data = new postCmd()
         data.cmd = "OpenView"
         data.viewType = -1
