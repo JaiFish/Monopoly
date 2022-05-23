@@ -81,6 +81,7 @@ var TrainInfoLibrary_1 = require("./Data/TrainInfoLibrary");
 var PropsLibrary_1 = require("./Data/QA/PropsLibrary");
 var CameraState_1 = require("./Enum/CameraState");
 var Panel_Version_1 = require("./Class/Panel_Version");
+var Panel_Test_1 = require("./Class/Panel_Test");
 var DelayTime_1 = require("./Data/DelayTime");
 var Panel_Bufer_1 = require("./Class/Panel_Bufer");
 var MusciMng_1 = require("./Data/base/MusciMng");
@@ -104,7 +105,7 @@ var Controll = /** @class */ (function (_super) {
         this.panel_Bufer = cc.find("Canvas/Panel_Bufer").addComponent(Panel_Bufer_1.default);
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message_1.default);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version_1.default);
-        // this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
+        this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test_1.default);
         this.initEvent(GameEvent_1.GameEvent.SendModel, this.sendModle);
         this.initEvent(GameEvent_1.GameEvent.SendCommand, this.sendCommand);
         this.initEvent(GameEvent_1.GameEvent.GetStation, this.changeStationSprite);
@@ -276,7 +277,9 @@ var Controll = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(2)];
+                    case 0:
+                        AssetMng_1.default.bearAsset(GameModle_1.default.playData.trainTypeNumber);
+                        return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(2)];
                     case 1:
                         _a.sent();
                         this.panel_Man.setManSprite(AssetMng_1.default.data_SprtieAtlas.get(GameModle_1.default.playData.trainType));
@@ -557,6 +560,9 @@ var Controll = /** @class */ (function (_super) {
                         this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
+                        _a.sent();
+                        return [4 /*yield*/, AssetMng_1.default.checkState()];
+                    case 2:
                         _a.sent();
                         this.panel_Message.endGame.playBearSprite(GameModle_1.default.playData.trainTypeNumber);
                         this.panel_Message.endGame.show();

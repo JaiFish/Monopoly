@@ -53,6 +53,7 @@ class MusicMng {
     }
     effectPlay(str: string, isLoop: boolean = false) {
         this.effectID.set(str, cc.audioEngine.playEffect(AssetMng.data_Music.get(str), isLoop))
+        return  this.effectID.get(str)
     }
 
     effectStop(str: string) {

@@ -1,8 +1,8 @@
 {
   "ver": "1.2.1",
   "uuid": "5686f388-6069-467f-9ee2-2beb9cfcd2eb",
-  "maxWidth": 1024,
-  "maxHeight": 1024,
+  "maxWidth": 2048,
+  "maxHeight": 2048,
   "padding": 2,
   "allowRotation": true,
   "forceSquared": false,

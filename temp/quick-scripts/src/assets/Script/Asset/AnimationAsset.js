@@ -8,7 +8,9 @@ var AnimationbAsset = /** @class */ (function () {
     function AnimationbAsset() {
         this.typePath = "Animation";
         this.filePath = [];
-        this.bearPath = [];
+        this.bearPath = [
+            'Bear_Train'
+        ];
     }
     AnimationbAsset.prototype.loadAsset = function (_Asset) {
         var _this = this;
@@ -24,7 +26,11 @@ var AnimationbAsset = /** @class */ (function () {
     AnimationbAsset.prototype.targetLoadAsset = function (_Asset, _num) {
         var _this = this;
         this.checkAssetState = false;
-        cc.resources.l(this.typePath, cc.AnimationClip, function (err, data) {
+        var formatArr = [];
+        for (var index = 0; index < this.bearPath.length; index++) {
+            formatArr.push(this.typePath + this.bearPath[index]);
+        }
+        cc.resources.load(formatArr, cc.AnimationClip, function (err, data) {
             data.forEach(function (_animationClip) {
                 _Asset.set(_animationClip.name, _animationClip);
             });

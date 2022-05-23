@@ -43,7 +43,7 @@ export default class Controll extends ComponentBase {
     panel_Message: Panel_Message
     panel_Bear: Panel_Bear
     panel_Version: Panel_Version
-    // panel_Test: Panel_Test
+    panel_Test: Panel_Test
     panel_Bufer: Panel_Bufer
     panel_Loading: Panel_Loading
 
@@ -62,7 +62,7 @@ export default class Controll extends ComponentBase {
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version);
 
-        // this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
+        this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
 
         this.initEvent(GameEvent.SendModel, this.sendModle)
         this.initEvent(GameEvent.SendCommand, this.sendCommand)
@@ -199,7 +199,9 @@ export default class Controll extends ComponentBase {
 
     }
     async endChoosTrain() {
+        AssetMng.bearAsset(GameModle.playData.trainTypeNumber)
         await new MyDelay().setDelay(2)
+        
         this.panel_Man.setManSprite(AssetMng.data_SprtieAtlas.get(GameModle.playData.trainType))
         this.panel_Man.resetOeg()
         this.panel_Bear.init()
@@ -362,6 +364,7 @@ export default class Controll extends ComponentBase {
     async showEndGame() {
         this.panel_Man.manState = GameState.ShowMessage
         await this.panel_Message.show();
+        await AssetMng.checkState();
         this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
         this.panel_Message.endGame.show();
     }

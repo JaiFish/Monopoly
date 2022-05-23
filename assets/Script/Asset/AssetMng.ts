@@ -15,6 +15,10 @@ class AssetMng {
         this.AllAssetClass.push(SpriteAtlasAsset.loadAsset(this.data_SprtieAtlas));
         this.AllAssetClass.push(SpriteAsset.loadAsset(this.data_Sprtie));
         this.AllAssetClass.push(MusicAsset.loadAsset(this.data_Music));
+        
+    }
+
+    bearAsset(_num: number) {
         this.AllAssetClass.push(AnimationAsset.loadAsset(this.data_Animation));
     }
 

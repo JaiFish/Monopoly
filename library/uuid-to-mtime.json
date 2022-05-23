@@ -1004,36 +1004,6 @@
     "meta": 1652741938308,
     "relativePath": "resources\\Music\\DoorOpen.mp3"
   },
-  "ff89f6ee-87c2-4b09-ac1b-2953f9cddd74": {
-    "asset": 1652567298501,
-    "meta": 1652741938356,
-    "relativePath": "resources\\Music\\TrainGoing.mp3"
-  },
-  "253382bc-85a1-467b-8ca6-f4096fb5b33d": {
-    "asset": 1652567298504,
-    "meta": 1652741938341,
-    "relativePath": "resources\\Music\\maneyMixSound.mp3"
-  },
-  "50d40874-106b-43e1-8c2e-c5834bfdf69e": {
-    "asset": 1652567298511,
-    "meta": 1652741938311,
-    "relativePath": "resources\\Music\\BtnClick.mp3"
-  },
-  "636e6d0e-5dfb-4e23-9a45-3b85a65cdd8f": {
-    "asset": 1652567298500,
-    "meta": 1652741938322,
-    "relativePath": "resources\\Music\\False.mp3"
-  },
-  "7237cdb4-246c-44da-bc12-abfe675d871f": {
-    "asset": 1652567298527,
-    "meta": 1652741938331,
-    "relativePath": "resources\\Music\\GetProps.mp3"
-  },
-  "306cc67b-e87b-43df-8860-0a336887a521": {
-    "asset": 1652567298538,
-    "meta": 1652741939029,
-    "relativePath": "resources\\Music\\True.mp3"
-  },
   "757e7f4b-f733-48e7-b29f-82fcb37bbb27": {
     "asset": 1652584128569,
     "meta": 1652741939477,
@@ -2219,44 +2189,39 @@
     "meta": 1652741936846,
     "relativePath": "Image\\Bear\\sprites\\Bear_True\\圖層 22.png"
   },
-  "5686f388-6069-467f-9ee2-2beb9cfcd2eb": {
-    "asset": 1652629595082,
-    "meta": 1652741935185,
-    "relativePath": "Image\\Bear\\sprites\\Bear_False\\Bear_False.pac"
-  },
   "5e4e7952-4844-4219-85ec-94905db854f3": {
     "asset": 1652629616282,
-    "meta": 1652741935392,
+    "meta": 1653329087532,
     "relativePath": "Image\\Bear\\sprites\\Bear_Sister\\Bear_Sister.pac"
   },
   "42ac511b-2e16-433d-8a4c-4a4580fae040": {
     "asset": 1652629637640,
-    "meta": 1652741935395,
+    "meta": 1653329096488,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac"
   },
   "c0f613e5-7b0a-4ad3-802e-c88e7d415430": {
     "asset": 1652629652570,
-    "meta": 1652741935615,
+    "meta": 1653329105669,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train1\\Bear_Train1.pac"
   },
   "1f87e5cb-1c8e-40d7-9493-8eaf766bdcbf": {
     "asset": 1652629674803,
-    "meta": 1652741936021,
+    "meta": 1653329114003,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train2\\Bear_Train2.pac"
   },
   "8a4602b5-1da5-4c83-ac0e-c03ba6f5dc36": {
     "asset": 1652629694283,
-    "meta": 1652741936239,
+    "meta": 1653329128309,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac"
   },
   "e7d27b23-79b0-4cd8-89c5-b65b3a2434d9": {
     "asset": 1652629709089,
-    "meta": 1652741936460,
+    "meta": 1653329137706,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train4\\Bear_Train4.pac"
   },
   "cb552551-a455-4d4a-ba36-7765735b71af": {
     "asset": 1652629720180,
-    "meta": 1652741936708,
+    "meta": 1653329137712,
     "relativePath": "Image\\Bear\\sprites\\Bear_Train5\\Bear_Train5.pac"
   },
   "04b0a2d3-842b-428f-91f6-9971abca45bb": {
@@ -2284,20 +2249,10 @@
     "meta": 1652980169729,
     "relativePath": "Script\\Class\\Message\\GetProps.ts"
   },
-  "62b9bdcc-3061-4819-8004-b7f394486aa3": {
-    "asset": 1652567163694,
-    "meta": 1653063577722,
-    "relativePath": "resources\\Music\\gameBG.mp3"
-  },
   "ba762406-685d-4a3b-b818-0d5170e45fa9": {
     "asset": 1653064854852,
     "meta": 1653064907919,
     "relativePath": "Script\\Data\\DelayTime.ts"
-  },
-  "3bf4be8b-08b3-4b34-847c-8d183580587c": {
-    "asset": 1653066074890,
-    "meta": 1653066192829,
-    "relativePath": "Script\\Asset\\AssetMng.ts"
   },
   "241e5956-ad78-4717-bb5a-9c5287e43827": {
     "asset": 1653066056391,
@@ -2674,11 +2629,6 @@
     "meta": 1653239502246,
     "relativePath": "Script\\ShaderCamera\\BuferClass.ts"
   },
-  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
-    "asset": 1653243710589,
-    "meta": 1653243717147,
-    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
-  },
   "a39bfdbd-e88c-43c9-88c3-0df93832fcac": {
     "asset": 1653281113525,
     "meta": 1653281113598,
@@ -2709,21 +2659,6 @@
     "meta": 1653282159243,
     "relativePath": "Script\\WebPostMessage.ts"
   },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1653286108696,
-    "meta": 1653286112595,
-    "relativePath": "Script\\GameModle.ts"
-  },
-  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653327707574,
-    "meta": 1653327707612,
-    "relativePath": "Sence\\GameSence.fire"
-  },
-  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
-    "asset": 1653289080817,
-    "meta": 1653289083856,
-    "relativePath": "Script\\Data\\base\\MusciMng.ts"
-  },
   "142fdcf1-f8b0-41f9-9d11-0042e604aed6": {
     "asset": 1653318421449,
     "meta": 1653319728594,
@@ -2734,14 +2669,84 @@
     "meta": 1653326952592,
     "relativePath": "Script\\Class\\CameraControll.ts"
   },
-  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1653327786742,
-    "meta": 1653327787972,
-    "relativePath": "Script\\GameControll.ts"
+  "5686f388-6069-467f-9ee2-2beb9cfcd2eb": {
+    "asset": 1653328968415,
+    "meta": 1653329076732,
+    "relativePath": "Image\\Bear\\sprites\\Bear_False\\Bear_False.pac"
+  },
+  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
+    "asset": 1653330560461,
+    "meta": 1653330560487,
+    "relativePath": "Sence\\GameSence.fire"
+  },
+  "dd6dd28d-e1fd-4ced-a8e5-ad3e942f0565": {
+    "asset": 1653329021290,
+    "meta": 1653329053420,
+    "relativePath": "Image\\BG\\AutoAtlas.pac"
   },
   "b43147aa-6224-4f02-8e12-160e15391749": {
-    "asset": 1653328124197,
-    "meta": 1653328336067,
+    "asset": 1653329431696,
+    "meta": 1653329630887,
     "relativePath": "Script\\Asset\\AnimationAsset.ts"
+  },
+  "3bf4be8b-08b3-4b34-847c-8d183580587c": {
+    "asset": 1653329467036,
+    "meta": 1653329630904,
+    "relativePath": "Script\\Asset\\AssetMng.ts"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1653329895326,
+    "meta": 1653330032590,
+    "relativePath": "Script\\GameModle.ts"
+  },
+  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
+    "asset": 1653330234451,
+    "meta": 1653330269669,
+    "relativePath": "Script\\Data\\base\\MusciMng.ts"
+  },
+  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
+    "asset": 1653330141069,
+    "meta": 1653330269794,
+    "relativePath": "Script\\GameControll.ts"
+  },
+  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
+    "asset": 1653330345683,
+    "meta": 1653330377891,
+    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
+  },
+  "50d40874-106b-43e1-8c2e-c5834bfdf69e": {
+    "asset": 1653330501630,
+    "meta": 1653330503183,
+    "relativePath": "resources\\Music\\BtnClick.mp3"
+  },
+  "306cc67b-e87b-43df-8860-0a336887a521": {
+    "asset": 1653330501631,
+    "meta": 1653330503185,
+    "relativePath": "resources\\Music\\True.mp3"
+  },
+  "7237cdb4-246c-44da-bc12-abfe675d871f": {
+    "asset": 1653330501631,
+    "meta": 1653330503195,
+    "relativePath": "resources\\Music\\GetProps.mp3"
+  },
+  "636e6d0e-5dfb-4e23-9a45-3b85a65cdd8f": {
+    "asset": 1653330501631,
+    "meta": 1653330503197,
+    "relativePath": "resources\\Music\\False.mp3"
+  },
+  "253382bc-85a1-467b-8ca6-f4096fb5b33d": {
+    "asset": 1653330501639,
+    "meta": 1653330503206,
+    "relativePath": "resources\\Music\\maneyMixSound.mp3"
+  },
+  "ff89f6ee-87c2-4b09-ac1b-2953f9cddd74": {
+    "asset": 1653330501631,
+    "meta": 1653330503209,
+    "relativePath": "resources\\Music\\TrainGoing.mp3"
+  },
+  "62b9bdcc-3061-4819-8004-b7f394486aa3": {
+    "asset": 1653330502196,
+    "meta": 1653330503220,
+    "relativePath": "resources\\Music\\gameBG.mp3"
   }
 }

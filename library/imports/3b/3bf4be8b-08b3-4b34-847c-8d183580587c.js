@@ -20,6 +20,8 @@ var AssetMng = /** @class */ (function () {
         this.AllAssetClass.push(SpriteAtlasAsset_1.default.loadAsset(this.data_SprtieAtlas));
         this.AllAssetClass.push(SpriteAsset_1.default.loadAsset(this.data_Sprtie));
         this.AllAssetClass.push(MusicAsset_1.default.loadAsset(this.data_Music));
+    };
+    AssetMng.prototype.bearAsset = function (_num) {
         this.AllAssetClass.push(AnimationAsset_1.default.loadAsset(this.data_Animation));
     };
     AssetMng.prototype.checkState = function () {

@@ -54,6 +54,7 @@ var MusicMng = /** @class */ (function () {
     MusicMng.prototype.effectPlay = function (str, isLoop) {
         if (isLoop === void 0) { isLoop = false; }
         this.effectID.set(str, cc.audioEngine.playEffect(AssetMng_1.default.data_Music.get(str), isLoop));
+        return this.effectID.get(str);
     };
     MusicMng.prototype.effectStop = function (str) {
         cc.audioEngine.stopEffect(this.effectID.get(str));

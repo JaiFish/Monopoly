@@ -74,7 +74,8 @@ export default class Panel_Man extends ManAction {
             this.isWaitSingnalLinght = true
             return
         }
-        MusciMng.effectPlay("TrainGoing")
+        let getID = MusciMng.effectPlay("TrainGoing",true)
+        cc.audioEngine.setVolume(getID,1)
         this.setManState(GameState.Start)
         this.startGO();
 
@@ -84,7 +85,7 @@ export default class Panel_Man extends ManAction {
         this.isWaitSingnalLinght = false
         this.setManState(GameState.Start)
         this.startGO();
-        MusciMng.effectPlay("TrainGoing")
+        MusciMng.effectPlay("TrainGoing",true)
     }
     manLineWait() {
         if (this.isWaitSingnalLinght) return

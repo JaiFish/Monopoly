@@ -4,7 +4,7 @@
   "mtimes": {
     "42ac511b-2e16-433d-8a4c-4a4580fae040": {
       "assetMtime": 1652629637640,
-      "metaMtime": 1652741935395
+      "metaMtime": 1653329096488
     },
     "025d2d3e-3774-4983-b802-6a10bde180de": {
       "assetMtime": 1652598432000,
@@ -184,13 +184,13 @@
     }
   },
   "result": {
-    "name": "Bear_Train-22",
-    "width": 569,
-    "height": 629,
+    "name": "Bear_Train-3",
+    "width": 1142,
+    "height": 1261,
     "ver": "1.2.1",
     "uuid": "42ac511b-2e16-433d-8a4c-4a4580fae040",
-    "maxWidth": 1024,
-    "maxHeight": 1024,
+    "maxWidth": 2048,
+    "maxHeight": 2048,
     "padding": 2,
     "allowRotation": true,
     "forceSquared": false,
@@ -223,7 +223,7 @@
             "name": "Bear_TrainType0_16",
             "uuid": "b1cf1fd0-484d-4bd4-8799-ce001e52634c",
             "textureUuid": "83ee4d2c-7a4b-47ec-9be4-3b9b7c07e6b0",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_12.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_12.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -241,10 +241,197 @@
             "y": 0,
             "rotatedWidth": 612,
             "rotatedHeight": 641
+          },
+          {
+            "name": "Bear_TrainType0_15",
+            "uuid": "8c7d0c97-9d08-48e8-a6ea-c0500113328a",
+            "textureUuid": "2e71df34-f43b-4f6f-8770-0e92cd2e46cf",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_8.png",
+            "trim": {
+              "x": 3,
+              "y": 644,
+              "width": 605,
+              "height": 636,
+              "rotatedWidth": 605,
+              "rotatedHeight": 636
+            },
+            "rawWidth": 605,
+            "rawHeight": 636,
+            "width": 611,
+            "height": 642,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2e/2e71df34-f43b-4f6f-8770-0e92cd2e46cf.png",
+            "x": 0,
+            "y": 641,
+            "rotatedWidth": 611,
+            "rotatedHeight": 642
+          },
+          {
+            "name": "Bear_TrainType0_14",
+            "uuid": "8955b51c-e39d-43e3-9981-2b08c6d507e1",
+            "textureUuid": "88e51e86-3eda-4b75-acc7-8563635ebe67",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_6.png",
+            "trim": {
+              "x": 3,
+              "y": 1286,
+              "width": 603,
+              "height": 638,
+              "rotatedWidth": 603,
+              "rotatedHeight": 638
+            },
+            "rawWidth": 603,
+            "rawHeight": 638,
+            "width": 609,
+            "height": 644,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/88/88e51e86-3eda-4b75-acc7-8563635ebe67.png",
+            "x": 0,
+            "y": 1283,
+            "rotatedWidth": 609,
+            "rotatedHeight": 644
+          },
+          {
+            "name": "Bear_TrainType0_17",
+            "uuid": "fa044547-b5f5-45d9-8f3e-0433663e31ab",
+            "textureUuid": "679940ce-ffb1-448a-828d-c8d4a69e018e",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589603_image_21.png",
+            "trim": {
+              "x": 612,
+              "y": 1286,
+              "width": 604,
+              "height": 633,
+              "rotatedWidth": 604,
+              "rotatedHeight": 633
+            },
+            "rawWidth": 604,
+            "rawHeight": 633,
+            "width": 610,
+            "height": 639,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/67/679940ce-ffb1-448a-828d-c8d4a69e018e.png",
+            "x": 609,
+            "y": 1283,
+            "rotatedWidth": 610,
+            "rotatedHeight": 639
+          },
+          {
+            "name": "Bear_TrainType0_13",
+            "uuid": "9c7570b9-62fa-4190-8f25-7b1acc374501",
+            "textureUuid": "e78fbb6c-8767-4067-9059-3c7051e69da0",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_10.png",
+            "trim": {
+              "x": 614,
+              "y": 644,
+              "width": 598,
+              "height": 639,
+              "rotatedWidth": 639,
+              "rotatedHeight": 598
+            },
+            "rawWidth": 598,
+            "rawHeight": 639,
+            "width": 604,
+            "height": 645,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e7/e78fbb6c-8767-4067-9059-3c7051e69da0.png",
+            "x": 611,
+            "y": 641,
+            "rotated": true,
+            "rotatedWidth": 645,
+            "rotatedHeight": 604
+          },
+          {
+            "name": "Bear_TrainType0_12",
+            "uuid": "efcf8d11-ff1b-4c52-9629-62e74719c160",
+            "textureUuid": "33f8a2c7-c66a-482f-ac63-9c75a2ddf516",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589603_image_19.png",
+            "trim": {
+              "x": 1222,
+              "y": 1248,
+              "width": 594,
+              "height": 640,
+              "rotatedWidth": 594,
+              "rotatedHeight": 640
+            },
+            "rawWidth": 594,
+            "rawHeight": 640,
+            "width": 600,
+            "height": 646,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/33/33f8a2c7-c66a-482f-ac63-9c75a2ddf516.png",
+            "x": 1219,
+            "y": 1245,
+            "rotatedWidth": 600,
+            "rotatedHeight": 646
+          },
+          {
+            "name": "Bear_TrainType0_11",
+            "uuid": "a85ef10a-d81e-4f47-ae3d-87a878a82208",
+            "textureUuid": "2cd2101c-0039-4166-be73-6e490412c396",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_11.png",
+            "trim": {
+              "x": 615,
+              "y": 3,
+              "width": 592,
+              "height": 640,
+              "rotatedWidth": 640,
+              "rotatedHeight": 592
+            },
+            "rawWidth": 592,
+            "rawHeight": 640,
+            "width": 598,
+            "height": 646,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2c/2cd2101c-0039-4166-be73-6e490412c396.png",
+            "x": 612,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 646,
+            "rotatedHeight": 598
+          },
+          {
+            "name": "Bear_TrainType0_10",
+            "uuid": "025d2d3e-3774-4983-b802-6a10bde180de",
+            "textureUuid": "8850ebfd-de15-4f94-a0b2-b03533498a03",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589600_image_0.png",
+            "trim": {
+              "x": 1259,
+              "y": 601,
+              "width": 591,
+              "height": 639,
+              "rotatedWidth": 591,
+              "rotatedHeight": 639
+            },
+            "rawWidth": 591,
+            "rawHeight": 639,
+            "width": 597,
+            "height": 645,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/88/8850ebfd-de15-4f94-a0b2-b03533498a03.png",
+            "x": 1256,
+            "y": 598,
+            "rotatedWidth": 597,
+            "rotatedHeight": 645
+          },
+          {
+            "name": "Bear_TrainType0_9",
+            "uuid": "76bbeced-2360-49f8-97be-9370d8dfcdc6",
+            "textureUuid": "129207c8-94b8-4d0b-a40c-ecd14116d5ca",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_4.png",
+            "trim": {
+              "x": 1261,
+              "y": 3,
+              "width": 591,
+              "height": 638,
+              "rotatedWidth": 638,
+              "rotatedHeight": 591
+            },
+            "rawWidth": 591,
+            "rawHeight": 638,
+            "width": 597,
+            "height": 644,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/12/129207c8-94b8-4d0b-a40c-ecd14116d5ca.png",
+            "x": 1258,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 644,
+            "rotatedHeight": 597
           }
         ],
-        "width": 612,
-        "height": 641,
+        "width": 1902,
+        "height": 1927,
         "name": "Bear_Train-1",
         "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-1.png",
         "compressd": {
@@ -257,269 +444,10 @@
       {
         "files": [
           {
-            "name": "Bear_TrainType0_15",
-            "uuid": "8c7d0c97-9d08-48e8-a6ea-c0500113328a",
-            "textureUuid": "2e71df34-f43b-4f6f-8770-0e92cd2e46cf",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_8.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 605,
-              "height": 636,
-              "rotatedWidth": 605,
-              "rotatedHeight": 636
-            },
-            "rawWidth": 605,
-            "rawHeight": 636,
-            "width": 611,
-            "height": 642,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2e/2e71df34-f43b-4f6f-8770-0e92cd2e46cf.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 611,
-            "rotatedHeight": 642
-          }
-        ],
-        "width": 611,
-        "height": 642,
-        "name": "Bear_Train-2",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-2.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-2"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_14",
-            "uuid": "8955b51c-e39d-43e3-9981-2b08c6d507e1",
-            "textureUuid": "88e51e86-3eda-4b75-acc7-8563635ebe67",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_6.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 603,
-              "height": 638,
-              "rotatedWidth": 603,
-              "rotatedHeight": 638
-            },
-            "rawWidth": 603,
-            "rawHeight": 638,
-            "width": 609,
-            "height": 644,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/88/88e51e86-3eda-4b75-acc7-8563635ebe67.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 609,
-            "rotatedHeight": 644
-          }
-        ],
-        "width": 609,
-        "height": 644,
-        "name": "Bear_Train-3",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-3.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-3"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_17",
-            "uuid": "fa044547-b5f5-45d9-8f3e-0433663e31ab",
-            "textureUuid": "679940ce-ffb1-448a-828d-c8d4a69e018e",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309844_image_21.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 604,
-              "height": 633,
-              "rotatedWidth": 604,
-              "rotatedHeight": 633
-            },
-            "rawWidth": 604,
-            "rawHeight": 633,
-            "width": 610,
-            "height": 639,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/67/679940ce-ffb1-448a-828d-c8d4a69e018e.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 610,
-            "rotatedHeight": 639
-          }
-        ],
-        "width": 610,
-        "height": 639,
-        "name": "Bear_Train-4",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-4.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-4"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_13",
-            "uuid": "9c7570b9-62fa-4190-8f25-7b1acc374501",
-            "textureUuid": "e78fbb6c-8767-4067-9059-3c7051e69da0",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_10.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 598,
-              "height": 639,
-              "rotatedWidth": 598,
-              "rotatedHeight": 639
-            },
-            "rawWidth": 598,
-            "rawHeight": 639,
-            "width": 604,
-            "height": 645,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e7/e78fbb6c-8767-4067-9059-3c7051e69da0.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 604,
-            "rotatedHeight": 645
-          }
-        ],
-        "width": 604,
-        "height": 645,
-        "name": "Bear_Train-5",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-5.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-5"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_12",
-            "uuid": "efcf8d11-ff1b-4c52-9629-62e74719c160",
-            "textureUuid": "33f8a2c7-c66a-482f-ac63-9c75a2ddf516",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309844_image_19.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 594,
-              "height": 640,
-              "rotatedWidth": 594,
-              "rotatedHeight": 640
-            },
-            "rawWidth": 594,
-            "rawHeight": 640,
-            "width": 600,
-            "height": 646,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/33/33f8a2c7-c66a-482f-ac63-9c75a2ddf516.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 600,
-            "rotatedHeight": 646
-          }
-        ],
-        "width": 600,
-        "height": 646,
-        "name": "Bear_Train-6",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-6.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-6"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_11",
-            "uuid": "a85ef10a-d81e-4f47-ae3d-87a878a82208",
-            "textureUuid": "2cd2101c-0039-4166-be73-6e490412c396",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_11.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 592,
-              "height": 640,
-              "rotatedWidth": 592,
-              "rotatedHeight": 640
-            },
-            "rawWidth": 592,
-            "rawHeight": 640,
-            "width": 598,
-            "height": 646,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2c/2cd2101c-0039-4166-be73-6e490412c396.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 598,
-            "rotatedHeight": 646
-          }
-        ],
-        "width": 598,
-        "height": 646,
-        "name": "Bear_Train-7",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-7.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-7"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_10",
-            "uuid": "025d2d3e-3774-4983-b802-6a10bde180de",
-            "textureUuid": "8850ebfd-de15-4f94-a0b2-b03533498a03",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309840_image_0.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 591,
-              "height": 639,
-              "rotatedWidth": 591,
-              "rotatedHeight": 639
-            },
-            "rawWidth": 591,
-            "rawHeight": 639,
-            "width": 597,
-            "height": 645,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/88/8850ebfd-de15-4f94-a0b2-b03533498a03.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 597,
-            "rotatedHeight": 645
-          }
-        ],
-        "width": 597,
-        "height": 645,
-        "name": "Bear_Train-8",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-8.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-8"
-        }
-      },
-      {
-        "files": [
-          {
             "name": "Bear_TrainType0_18",
             "uuid": "4689d629-e566-4b56-b4d1-621515bd3234",
             "textureUuid": "997573e3-e871-4c97-ad0b-2f782215ff1d",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_3.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_3.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -537,66 +465,15 @@
             "y": 0,
             "rotatedWidth": 605,
             "rotatedHeight": 636
-          }
-        ],
-        "width": 605,
-        "height": 636,
-        "name": "Bear_Train-9",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-9.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-9"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_9",
-            "uuid": "76bbeced-2360-49f8-97be-9370d8dfcdc6",
-            "textureUuid": "129207c8-94b8-4d0b-a40c-ecd14116d5ca",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_4.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 591,
-              "height": 638,
-              "rotatedWidth": 591,
-              "rotatedHeight": 638
-            },
-            "rawWidth": 591,
-            "rawHeight": 638,
-            "width": 597,
-            "height": 644,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/12/129207c8-94b8-4d0b-a40c-ecd14116d5ca.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 597,
-            "rotatedHeight": 644
-          }
-        ],
-        "width": 597,
-        "height": 644,
-        "name": "Bear_Train-10",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-10.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-10"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_8",
             "uuid": "1514f0b9-36b7-4d51-8cbd-59feb3e9ddd8",
             "textureUuid": "d03792ba-a2d0-459b-b71e-5f6b7bf34b7e",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309841_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_1.png",
             "trim": {
               "x": 3,
-              "y": 3,
+              "y": 639,
               "width": 590,
               "height": 636,
               "rotatedWidth": 590,
@@ -608,32 +485,18 @@
             "height": 642,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d0/d03792ba-a2d0-459b-b71e-5f6b7bf34b7e.png",
             "x": 0,
-            "y": 0,
+            "y": 636,
             "rotatedWidth": 596,
             "rotatedHeight": 642
-          }
-        ],
-        "width": 596,
-        "height": 642,
-        "name": "Bear_Train-11",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-11.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-11"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_7",
             "uuid": "7ca564f3-db64-4b0a-acbe-20447d0399cd",
             "textureUuid": "50d83a35-5282-483a-b0aa-c3a3113d1249",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_5.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_5.png",
             "trim": {
               "x": 3,
-              "y": 3,
+              "y": 1281,
               "width": 587,
               "height": 634,
               "rotatedWidth": 587,
@@ -645,32 +508,18 @@
             "height": 640,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/50/50d83a35-5282-483a-b0aa-c3a3113d1249.png",
             "x": 0,
-            "y": 0,
+            "y": 1278,
             "rotatedWidth": 593,
             "rotatedHeight": 640
-          }
-        ],
-        "width": 593,
-        "height": 640,
-        "name": "Bear_Train-12",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-12.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-12"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_19",
             "uuid": "b1fa0a39-22b6-4338-ac0e-8ec9360e501c",
             "textureUuid": "83cf7b9c-4cd1-4f2c-b06b-10c9b4516204",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_13.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_13.png",
             "trim": {
-              "x": 3,
-              "y": 3,
+              "x": 596,
+              "y": 1281,
               "width": 591,
               "height": 628,
               "rotatedWidth": 591,
@@ -681,33 +530,19 @@
             "width": 597,
             "height": 634,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/83/83cf7b9c-4cd1-4f2c-b06b-10c9b4516204.png",
-            "x": 0,
-            "y": 0,
+            "x": 593,
+            "y": 1278,
             "rotatedWidth": 597,
             "rotatedHeight": 634
-          }
-        ],
-        "width": 597,
-        "height": 634,
-        "name": "Bear_Train-13",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-13.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-13"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_6",
             "uuid": "c8ff31fa-14f3-495b-b21c-9d06e6b9fef0",
             "textureUuid": "10ee3738-9d23-463d-be03-5445934dde5d",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_15.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_15.png",
             "trim": {
-              "x": 3,
-              "y": 3,
+              "x": 599,
+              "y": 639,
               "width": 583,
               "height": 632,
               "rotatedWidth": 583,
@@ -718,32 +553,18 @@
             "width": 589,
             "height": 638,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/10/10ee3738-9d23-463d-be03-5445934dde5d.png",
-            "x": 0,
-            "y": 0,
+            "x": 596,
+            "y": 636,
             "rotatedWidth": 589,
             "rotatedHeight": 638
-          }
-        ],
-        "width": 589,
-        "height": 638,
-        "name": "Bear_Train-14",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-14.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-14"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_20",
             "uuid": "8a39aaaf-109a-4718-a745-ac266ad8b139",
             "textureUuid": "bf7840dd-d1aa-452a-949f-3dafc3efbb23",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309842_image_7.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_7.png",
             "trim": {
-              "x": 3,
+              "x": 608,
               "y": 3,
               "width": 583,
               "height": 626,
@@ -755,33 +576,19 @@
             "width": 589,
             "height": 632,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/bf/bf7840dd-d1aa-452a-949f-3dafc3efbb23.png",
-            "x": 0,
+            "x": 605,
             "y": 0,
             "rotatedWidth": 589,
             "rotatedHeight": 632
-          }
-        ],
-        "width": 589,
-        "height": 632,
-        "name": "Bear_Train-15",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-15.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-15"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_5",
             "uuid": "953740c9-9374-4d59-9b4f-8de9a76fd730",
             "textureUuid": "845294c1-c1b8-4104-acb1-1e2322c95b54",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_9.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_9.png",
             "trim": {
-              "x": 3,
-              "y": 3,
+              "x": 1188,
+              "y": 635,
               "width": 577,
               "height": 629,
               "rotatedWidth": 577,
@@ -792,70 +599,43 @@
             "width": 583,
             "height": 635,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/84/845294c1-c1b8-4104-acb1-1e2322c95b54.png",
-            "x": 0,
-            "y": 0,
+            "x": 1185,
+            "y": 632,
             "rotatedWidth": 583,
             "rotatedHeight": 635
-          }
-        ],
-        "width": 583,
-        "height": 635,
-        "name": "Bear_Train-16",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-16.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-16"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_4",
             "uuid": "e0267b02-1bdd-4031-a96e-884a8ffbf759",
             "textureUuid": "6993cab8-e8b2-4625-8fb2-dc166054b641",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309844_image_18.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589603_image_18.png",
             "trim": {
-              "x": 3,
+              "x": 1197,
               "y": 3,
               "width": 572,
               "height": 627,
-              "rotatedWidth": 572,
-              "rotatedHeight": 627
+              "rotatedWidth": 627,
+              "rotatedHeight": 572
             },
             "rawWidth": 572,
             "rawHeight": 627,
             "width": 578,
             "height": 633,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/69/6993cab8-e8b2-4625-8fb2-dc166054b641.png",
-            "x": 0,
+            "x": 1194,
             "y": 0,
-            "rotatedWidth": 578,
-            "rotatedHeight": 633
-          }
-        ],
-        "width": 578,
-        "height": 633,
-        "name": "Bear_Train-17",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-17.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-17"
-        }
-      },
-      {
-        "files": [
+            "rotated": true,
+            "rotatedWidth": 633,
+            "rotatedHeight": 578
+          },
           {
             "name": "Bear_TrainType0_21",
             "uuid": "3e5813d3-84db-49dc-8703-ea2d60455461",
             "textureUuid": "d52c8d16-a0c0-4aae-85a6-ef1c15cd14af",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309841_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589601_image_2.png",
             "trim": {
-              "x": 3,
-              "y": 3,
+              "x": 1193,
+              "y": 1270,
               "width": 573,
               "height": 624,
               "rotatedWidth": 573,
@@ -866,21 +646,21 @@
             "width": 579,
             "height": 630,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d5/d52c8d16-a0c0-4aae-85a6-ef1c15cd14af.png",
-            "x": 0,
-            "y": 0,
+            "x": 1190,
+            "y": 1267,
             "rotatedWidth": 579,
             "rotatedHeight": 630
           }
         ],
-        "width": 579,
-        "height": 630,
-        "name": "Bear_Train-18",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-18.png",
+        "width": 1827,
+        "height": 1918,
+        "name": "Bear_Train-2",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-2.png",
         "compressd": {
           "suffix": [
             ".png"
           ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-18"
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-2"
         }
       },
       {
@@ -889,7 +669,7 @@
             "name": "Bear_TrainType0_3",
             "uuid": "df4bc6ca-0bb8-4c55-a86b-827245f12416",
             "textureUuid": "c508e672-9f9b-45ea-a9d5-468660579105",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_17.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589603_image_17.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -907,66 +687,15 @@
             "y": 0,
             "rotatedWidth": 573,
             "rotatedHeight": 631
-          }
-        ],
-        "width": 573,
-        "height": 631,
-        "name": "Bear_Train-19",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-19.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-19"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "Bear_TrainType0_22",
-            "uuid": "bd265d36-6edd-469c-9732-3f31287d4a10",
-            "textureUuid": "a9047bdf-bcbd-43b8-9e3e-760ca31e45ab",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_14.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 565,
-              "height": 623,
-              "rotatedWidth": 565,
-              "rotatedHeight": 623
-            },
-            "rawWidth": 565,
-            "rawHeight": 623,
-            "width": 571,
-            "height": 629,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a9/a9047bdf-bcbd-43b8-9e3e-760ca31e45ab.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 571,
-            "rotatedHeight": 629
-          }
-        ],
-        "width": 571,
-        "height": 629,
-        "name": "Bear_Train-20",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-20.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-20"
-        }
-      },
-      {
-        "files": [
+          },
           {
             "name": "Bear_TrainType0_1",
             "uuid": "df06cb60-03bb-4b67-a24c-b2d1346e21b9",
             "textureUuid": "b8a74e28-4258-41d7-b639-8ee5f84e056b",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309843_image_16.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_16.png",
             "trim": {
               "x": 3,
-              "y": 3,
+              "y": 634,
               "width": 564,
               "height": 624,
               "rotatedWidth": 564,
@@ -978,31 +707,40 @@
             "height": 630,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/b8/b8a74e28-4258-41d7-b639-8ee5f84e056b.png",
             "x": 0,
-            "y": 0,
+            "y": 631,
             "rotatedWidth": 570,
             "rotatedHeight": 630
-          }
-        ],
-        "width": 570,
-        "height": 630,
-        "name": "Bear_Train-21",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-21.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-21"
-        }
-      },
-      {
-        "files": [
+          },
+          {
+            "name": "Bear_TrainType0_22",
+            "uuid": "bd265d36-6edd-469c-9732-3f31287d4a10",
+            "textureUuid": "a9047bdf-bcbd-43b8-9e3e-760ca31e45ab",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589602_image_14.png",
+            "trim": {
+              "x": 573,
+              "y": 634,
+              "width": 565,
+              "height": 623,
+              "rotatedWidth": 565,
+              "rotatedHeight": 623
+            },
+            "rawWidth": 565,
+            "rawHeight": 623,
+            "width": 571,
+            "height": 629,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a9/a9047bdf-bcbd-43b8-9e3e-760ca31e45ab.png",
+            "x": 570,
+            "y": 631,
+            "rotatedWidth": 571,
+            "rotatedHeight": 629
+          },
           {
             "name": "Bear_TrainType0_2",
             "uuid": "f56f95e5-6e1b-4e2c-99c6-c748899af75b",
             "textureUuid": "48e6d6bf-927c-4156-8436-1417cf79747a",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742309844_image_20.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330589603_image_20.png",
             "trim": {
-              "x": 3,
+              "x": 576,
               "y": 3,
               "width": 563,
               "height": 623,
@@ -1014,21 +752,21 @@
             "width": 569,
             "height": 629,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/48/48e6d6bf-927c-4156-8436-1417cf79747a.png",
-            "x": 0,
+            "x": 573,
             "y": 0,
             "rotatedWidth": 569,
             "rotatedHeight": 629
           }
         ],
-        "width": 569,
-        "height": 629,
-        "name": "Bear_Train-22",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-22.png",
+        "width": 1142,
+        "height": 1261,
+        "name": "Bear_Train-3",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\Bear_Train-3.png",
         "compressd": {
           "suffix": [
             ".png"
           ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-22"
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train0\\Bear_Train.pac\\compressed\\Bear_Train-3"
         }
       }
     ],

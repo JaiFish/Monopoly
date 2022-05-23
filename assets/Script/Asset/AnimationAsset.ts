@@ -4,8 +4,8 @@ class AnimationbAsset {
     filePath: string[] = [
 
     ];
-    bearPath:string[]=[
-        
+    bearPath: string[] = [
+        'Bear_Train'
     ]
     loadAsset(_Asset: Map<string, any>) {
         this.checkAssetState = false
@@ -18,9 +18,13 @@ class AnimationbAsset {
         return this
     }
 
-    targetLoadAsset(_Asset: Map<string, any>,_num:number) {
+    targetLoadAsset(_Asset: Map<string, any>, _num: number) {
         this.checkAssetState = false
-        cc.resources.l(this.typePath, cc.AnimationClip, (err, data: Array<cc.AnimationClip>) => {
+        let formatArr = []
+        for (let index = 0; index < this.bearPath.length; index++) {
+            formatArr.push(this.typePath + this.bearPath[index])
+        }
+        cc.resources.load(formatArr, cc.AnimationClip, (err, data: Array<cc.AnimationClip>) => {
             data.forEach(_animationClip => {
                 _Asset.set(_animationClip.name, _animationClip)
             });

@@ -1,0 +1,249 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "dd6dd28d-e1fd-4ced-a8e5-ad3e942f0565": {
+      "assetMtime": 1653329021290,
+      "metaMtime": 1653329053420
+    },
+    "10872cd3-9800-4b9c-8303-9c98e3d3cfc4": {
+      "assetMtime": 1651858575240,
+      "metaMtime": 1652741936946
+    },
+    "0b0d889d-344f-41f4-b625-1b36cabcc375": {
+      "assetMtime": 1651858575240,
+      "metaMtime": 1652741936946
+    },
+    "852d3600-3383-404d-9a29-cb7a6ddd8a50": {
+      "assetMtime": 1651858575245,
+      "metaMtime": 1652741936928
+    },
+    "3c10528e-a13b-4d84-a7ee-65dfd835391d": {
+      "assetMtime": 1651858575245,
+      "metaMtime": 1652741936928
+    },
+    "8ab4b1e6-15c8-4560-a04e-23771251326c": {
+      "assetMtime": 1651858575240,
+      "metaMtime": 1652741936957
+    },
+    "588597f6-0913-4be0-b3e7-5fcc24251ad8": {
+      "assetMtime": 1651858575240,
+      "metaMtime": 1652741936957
+    },
+    "a44011ab-1c17-415e-b37a-11079e68cb0e": {
+      "assetMtime": 1651858607066,
+      "metaMtime": 1652741936968
+    },
+    "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5": {
+      "assetMtime": 1651858607066,
+      "metaMtime": 1652741936968
+    },
+    "a6a0e515-faa7-404a-b44c-f85d93afc1f2": {
+      "assetMtime": 1651858607066,
+      "metaMtime": 1652741936943
+    },
+    "cb8d2d92-fb6b-4db1-b3b0-4276d9538179": {
+      "assetMtime": 1651858607066,
+      "metaMtime": 1652741936943
+    },
+    "df9df5f7-235f-45a0-b53f-1ee6993dba4a": {
+      "assetMtime": 1651858575245,
+      "metaMtime": 1652741936917
+    },
+    "c267b599-2ae8-470f-87cc-952cfe86f6c9": {
+      "assetMtime": 1651858575245,
+      "metaMtime": 1652741936917
+    }
+  },
+  "result": {
+    "name": "AutoAtlas",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.1",
+    "uuid": "dd6dd28d-e1fd-4ced-a8e5-ad3e942f0565",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {
+      "default": {
+        "formats": [
+          {
+            "name": "png",
+            "quality": 80
+          }
+        ]
+      }
+    },
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "控制區底",
+            "uuid": "a6a0e515-faa7-404a-b44c-f85d93afc1f2",
+            "textureUuid": "cb8d2d92-fb6b-4db1-b3b0-4276d9538179",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602304_image_4.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 636,
+              "height": 115,
+              "rotatedWidth": 115,
+              "rotatedHeight": 636
+            },
+            "rawWidth": 638,
+            "rawHeight": 115,
+            "width": 642,
+            "height": 121,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/cb/cb8d2d92-fb6b-4db1-b3b0-4276d9538179.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 121,
+            "rotatedHeight": 642
+          },
+          {
+            "name": "圓形按鈕底_上下",
+            "uuid": "10872cd3-9800-4b9c-8303-9c98e3d3cfc4",
+            "textureUuid": "0b0d889d-344f-41f4-b625-1b36cabcc375",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602303_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 645,
+              "width": 100,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 100
+            },
+            "rawWidth": 100,
+            "rawHeight": 100,
+            "width": 106,
+            "height": 106,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/0b/0b0d889d-344f-41f4-b625-1b36cabcc375.png",
+            "x": 0,
+            "y": 642,
+            "rotatedWidth": 106,
+            "rotatedHeight": 106
+          },
+          {
+            "name": "圓形按鈕底_左右",
+            "uuid": "8ab4b1e6-15c8-4560-a04e-23771251326c",
+            "textureUuid": "588597f6-0913-4be0-b3e7-5fcc24251ad8",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602304_image_2.png",
+            "trim": {
+              "x": 3,
+              "y": 751,
+              "width": 100,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 100
+            },
+            "rawWidth": 100,
+            "rawHeight": 100,
+            "width": 106,
+            "height": 106,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/58/588597f6-0913-4be0-b3e7-5fcc24251ad8.png",
+            "x": 0,
+            "y": 748,
+            "rotatedWidth": 106,
+            "rotatedHeight": 106
+          },
+          {
+            "name": "橢圓按鈕底",
+            "uuid": "a44011ab-1c17-415e-b37a-11079e68cb0e",
+            "textureUuid": "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602304_image_3.png",
+            "trim": {
+              "x": 3,
+              "y": 857,
+              "width": 158,
+              "height": 68,
+              "rotatedWidth": 68,
+              "rotatedHeight": 158
+            },
+            "rawWidth": 164,
+            "rawHeight": 74,
+            "width": 164,
+            "height": 74,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/99/99280d3a-9aba-4c18-97e9-0de6a0d2fdd5.png",
+            "x": 0,
+            "y": 854,
+            "rotated": true,
+            "rotatedWidth": 74,
+            "rotatedHeight": 164
+          },
+          {
+            "name": "白色圓形按鈕底_左右",
+            "uuid": "852d3600-3383-404d-9a29-cb7a6ddd8a50",
+            "textureUuid": "3c10528e-a13b-4d84-a7ee-65dfd835391d",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602304_image_1.png",
+            "trim": {
+              "x": 77,
+              "y": 857,
+              "width": 70,
+              "height": 70,
+              "rotatedWidth": 70,
+              "rotatedHeight": 70
+            },
+            "rawWidth": 70,
+            "rawHeight": 70,
+            "width": 76,
+            "height": 76,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/3c/3c10528e-a13b-4d84-a7ee-65dfd835391d.png",
+            "x": 74,
+            "y": 854,
+            "rotatedWidth": 76,
+            "rotatedHeight": 76
+          },
+          {
+            "name": "白色圓形按鈕底_上下",
+            "uuid": "df9df5f7-235f-45a0-b53f-1ee6993dba4a",
+            "textureUuid": "c267b599-2ae8-470f-87cc-952cfe86f6c9",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330602304_image_5.png",
+            "trim": {
+              "x": 77,
+              "y": 933,
+              "width": 70,
+              "height": 70,
+              "rotatedWidth": 70,
+              "rotatedHeight": 70
+            },
+            "rawWidth": 70,
+            "rawHeight": 70,
+            "width": 76,
+            "height": 76,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/c2/c267b599-2ae8-470f-87cc-952cfe86f6c9.png",
+            "x": 74,
+            "y": 930,
+            "rotatedWidth": 76,
+            "rotatedHeight": 76
+          }
+        ],
+        "width": 150,
+        "height": 1018,
+        "name": "AutoAtlas-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\BG\\AutoAtlas.pac\\AutoAtlas-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\BG\\AutoAtlas.pac\\compressed\\AutoAtlas-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

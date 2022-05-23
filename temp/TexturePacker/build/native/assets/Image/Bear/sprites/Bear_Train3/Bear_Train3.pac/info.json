@@ -4,7 +4,7 @@
   "mtimes": {
     "8a4602b5-1da5-4c83-ac0e-c03ba6f5dc36": {
       "assetMtime": 1652629694283,
-      "metaMtime": 1652741936239
+      "metaMtime": 1653329128309
     },
     "40e7416b-909e-4b19-b7f8-a6f7081fa7ef": {
       "assetMtime": 1652598934000,
@@ -184,13 +184,13 @@
     }
   },
   "result": {
-    "name": "Bear_Train3-11",
-    "width": 651,
-    "height": 920,
+    "name": "Bear_Train3-2",
+    "width": 1781,
+    "height": 1925,
     "ver": "1.2.1",
     "uuid": "8a4602b5-1da5-4c83-ac0e-c03ba6f5dc36",
-    "maxWidth": 1024,
-    "maxHeight": 1024,
+    "maxWidth": 2048,
+    "maxHeight": 2048,
     "padding": 2,
     "allowRotation": true,
     "forceSquared": false,
@@ -220,550 +220,10 @@
       {
         "files": [
           {
-            "name": "圖層 17",
-            "uuid": "b70517b1-e9f6-4787-901b-5ff56b43d274",
-            "textureUuid": "edeec4f3-2493-4a75-aae7-760078953c1d",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_10.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 481,
-              "height": 638,
-              "rotatedWidth": 481,
-              "rotatedHeight": 638
-            },
-            "rawWidth": 481,
-            "rawHeight": 638,
-            "width": 487,
-            "height": 644,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/ed/edeec4f3-2493-4a75-aae7-760078953c1d.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 487,
-            "rotatedHeight": 644
-          },
-          {
-            "name": "圖層 7",
-            "uuid": "e3a10558-1201-498b-aa79-a2d0e91f1153",
-            "textureUuid": "2d71907e-d7dd-461b-b253-e6a2f3332281",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316586_image_18.png",
-            "trim": {
-              "x": 490,
-              "y": 3,
-              "width": 481,
-              "height": 638,
-              "rotatedWidth": 481,
-              "rotatedHeight": 638
-            },
-            "rawWidth": 481,
-            "rawHeight": 638,
-            "width": 487,
-            "height": 644,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2d/2d71907e-d7dd-461b-b253-e6a2f3332281.png",
-            "x": 487,
-            "y": 0,
-            "rotatedWidth": 487,
-            "rotatedHeight": 644
-          }
-        ],
-        "width": 974,
-        "height": 644,
-        "name": "Bear_Train3-1",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-1.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-1"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 6",
-            "uuid": "6b946a7b-df67-4c1f-a900-be7b0a990f6f",
-            "textureUuid": "cf05bb93-f73d-4639-81b6-00500b25a3c3",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316583_image_4.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 479,
-              "height": 640,
-              "rotatedWidth": 479,
-              "rotatedHeight": 640
-            },
-            "rawWidth": 479,
-            "rawHeight": 640,
-            "width": 485,
-            "height": 646,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/cf/cf05bb93-f73d-4639-81b6-00500b25a3c3.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 485,
-            "rotatedHeight": 646
-          },
-          {
-            "name": "圖層 18",
-            "uuid": "bae88f82-f7ff-492d-b29c-233eaeb3be3e",
-            "textureUuid": "f27a69a4-c5d4-4b66-bcdb-ff6992d58261",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_11.png",
-            "trim": {
-              "x": 488,
-              "y": 3,
-              "width": 479,
-              "height": 639,
-              "rotatedWidth": 479,
-              "rotatedHeight": 639
-            },
-            "rawWidth": 479,
-            "rawHeight": 639,
-            "width": 485,
-            "height": 645,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/f2/f27a69a4-c5d4-4b66-bcdb-ff6992d58261.png",
-            "x": 485,
-            "y": 0,
-            "rotatedWidth": 485,
-            "rotatedHeight": 645
-          }
-        ],
-        "width": 970,
-        "height": 646,
-        "name": "Bear_Train3-2",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-2.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-2"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 8",
-            "uuid": "50d5e63d-2489-4f06-b9df-17f95351d44b",
-            "textureUuid": "1655cc86-fdc6-474a-8c67-d71d9fe95c64",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316583_image_2.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 480,
-              "height": 636,
-              "rotatedWidth": 480,
-              "rotatedHeight": 636
-            },
-            "rawWidth": 480,
-            "rawHeight": 636,
-            "width": 486,
-            "height": 642,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/16/1655cc86-fdc6-474a-8c67-d71d9fe95c64.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 486,
-            "rotatedHeight": 642
-          },
-          {
-            "name": "圖層 16",
-            "uuid": "d8475f28-d4c1-433e-940d-9ba04eb71fb2",
-            "textureUuid": "e4b196bf-5acc-4063-97c4-d2b5c093dd0a",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316585_image_16.png",
-            "trim": {
-              "x": 489,
-              "y": 3,
-              "width": 480,
-              "height": 636,
-              "rotatedWidth": 480,
-              "rotatedHeight": 636
-            },
-            "rawWidth": 480,
-            "rawHeight": 636,
-            "width": 486,
-            "height": 642,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e4/e4b196bf-5acc-4063-97c4-d2b5c093dd0a.png",
-            "x": 486,
-            "y": 0,
-            "rotatedWidth": 486,
-            "rotatedHeight": 642
-          }
-        ],
-        "width": 972,
-        "height": 642,
-        "name": "Bear_Train3-3",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-3.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-3"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 19",
-            "uuid": "c9a1c976-f3be-4c07-8f89-433dd874220a",
-            "textureUuid": "39cfb12a-3ad4-42f1-9029-9f34f7ca3b1b",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316585_image_15.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 475,
-              "height": 641,
-              "rotatedWidth": 475,
-              "rotatedHeight": 641
-            },
-            "rawWidth": 475,
-            "rawHeight": 641,
-            "width": 481,
-            "height": 647,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/39/39cfb12a-3ad4-42f1-9029-9f34f7ca3b1b.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 481,
-            "rotatedHeight": 647
-          },
-          {
-            "name": "圖層 5",
-            "uuid": "40e7416b-909e-4b19-b7f8-a6f7081fa7ef",
-            "textureUuid": "6260d5e6-9cc7-4938-9aef-f918c92af106",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316583_image_0.png",
-            "trim": {
-              "x": 484,
-              "y": 3,
-              "width": 474,
-              "height": 641,
-              "rotatedWidth": 474,
-              "rotatedHeight": 641
-            },
-            "rawWidth": 474,
-            "rawHeight": 641,
-            "width": 480,
-            "height": 647,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/62/6260d5e6-9cc7-4938-9aef-f918c92af106.png",
-            "x": 481,
-            "y": 0,
-            "rotatedWidth": 480,
-            "rotatedHeight": 647
-          }
-        ],
-        "width": 961,
-        "height": 647,
-        "name": "Bear_Train3-4",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-4.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-4"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 9",
-            "uuid": "b5cbd573-306c-4319-99eb-2a9b660f730c",
-            "textureUuid": "6f5809a8-c051-48d8-be0b-89f7527be75f",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_9.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 477,
-              "height": 634,
-              "rotatedWidth": 477,
-              "rotatedHeight": 634
-            },
-            "rawWidth": 477,
-            "rawHeight": 634,
-            "width": 483,
-            "height": 640,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/6f/6f5809a8-c051-48d8-be0b-89f7527be75f.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 483,
-            "rotatedHeight": 640
-          },
-          {
-            "name": "圖層 15",
-            "uuid": "dd3f9946-3d76-4a94-8f58-219ca5a9ae2e",
-            "textureUuid": "d3d6b442-a076-4c95-968b-ad7b121d9f2a",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316586_image_17.png",
-            "trim": {
-              "x": 486,
-              "y": 3,
-              "width": 477,
-              "height": 634,
-              "rotatedWidth": 477,
-              "rotatedHeight": 634
-            },
-            "rawWidth": 477,
-            "rawHeight": 634,
-            "width": 483,
-            "height": 640,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d3/d3d6b442-a076-4c95-968b-ad7b121d9f2a.png",
-            "x": 483,
-            "y": 0,
-            "rotatedWidth": 483,
-            "rotatedHeight": 640
-          }
-        ],
-        "width": 966,
-        "height": 640,
-        "name": "Bear_Train3-5",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-5.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-5"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 20",
-            "uuid": "7eeb74bc-afe5-407d-8eac-d448d7be8803",
-            "textureUuid": "3ebc613f-3400-453b-b8a3-ce14b2a2c27c",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_6.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 471,
-              "height": 642,
-              "rotatedWidth": 471,
-              "rotatedHeight": 642
-            },
-            "rawWidth": 471,
-            "rawHeight": 642,
-            "width": 477,
-            "height": 648,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/3e/3ebc613f-3400-453b-b8a3-ce14b2a2c27c.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 477,
-            "rotatedHeight": 648
-          },
-          {
-            "name": "圖層 14",
-            "uuid": "640cceac-39ee-412c-b2ab-bf2b4087a1b4",
-            "textureUuid": "fbe3eba0-a5bd-47b8-87ec-e9666f6f5a33",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316583_image_3.png",
-            "trim": {
-              "x": 480,
-              "y": 3,
-              "width": 475,
-              "height": 633,
-              "rotatedWidth": 475,
-              "rotatedHeight": 633
-            },
-            "rawWidth": 475,
-            "rawHeight": 633,
-            "width": 481,
-            "height": 639,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/fb/fbe3eba0-a5bd-47b8-87ec-e9666f6f5a33.png",
-            "x": 477,
-            "y": 0,
-            "rotatedWidth": 481,
-            "rotatedHeight": 639
-          }
-        ],
-        "width": 958,
-        "height": 648,
-        "name": "Bear_Train3-6",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-6.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-6"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 4",
-            "uuid": "c6d1ada8-f6a5-4e3c-94bd-7b549f22c917",
-            "textureUuid": "5f1755e7-1ba7-41b2-9f76-e79533948011",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316585_image_14.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 467,
-              "height": 643,
-              "rotatedWidth": 467,
-              "rotatedHeight": 643
-            },
-            "rawWidth": 467,
-            "rawHeight": 643,
-            "width": 473,
-            "height": 649,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/5f/5f1755e7-1ba7-41b2-9f76-e79533948011.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 473,
-            "rotatedHeight": 649
-          },
-          {
-            "name": "圖層 10",
-            "uuid": "845f3e80-ff4d-4cc9-afba-220ac1238536",
-            "textureUuid": "a88bde56-cd32-44bd-ba63-7d268086e1c9",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_7.png",
-            "trim": {
-              "x": 476,
-              "y": 3,
-              "width": 473,
-              "height": 632,
-              "rotatedWidth": 473,
-              "rotatedHeight": 632
-            },
-            "rawWidth": 473,
-            "rawHeight": 632,
-            "width": 479,
-            "height": 638,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a8/a88bde56-cd32-44bd-ba63-7d268086e1c9.png",
-            "x": 473,
-            "y": 0,
-            "rotatedWidth": 479,
-            "rotatedHeight": 638
-          }
-        ],
-        "width": 952,
-        "height": 649,
-        "name": "Bear_Train3-7",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-7.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-7"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 21",
-            "uuid": "f9e677d2-db9b-42fe-b0f1-7a4a21853fc0",
-            "textureUuid": "1fce6fcb-17c8-4cb2-96b3-ac8729559d18",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316586_image_21.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 464,
-              "height": 644,
-              "rotatedWidth": 464,
-              "rotatedHeight": 644
-            },
-            "rawWidth": 464,
-            "rawHeight": 644,
-            "width": 470,
-            "height": 650,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/1f/1fce6fcb-17c8-4cb2-96b3-ac8729559d18.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 470,
-            "rotatedHeight": 650
-          },
-          {
-            "name": "圖層 13",
-            "uuid": "ecb8a91d-ac52-4a01-a795-000928691cdc",
-            "textureUuid": "95dbf78b-8fa3-4daf-ab8b-1fd6d582354b",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316586_image_20.png",
-            "trim": {
-              "x": 473,
-              "y": 3,
-              "width": 472,
-              "height": 632,
-              "rotatedWidth": 472,
-              "rotatedHeight": 632
-            },
-            "rawWidth": 472,
-            "rawHeight": 632,
-            "width": 478,
-            "height": 638,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/95/95dbf78b-8fa3-4daf-ab8b-1fd6d582354b.png",
-            "x": 470,
-            "y": 0,
-            "rotatedWidth": 478,
-            "rotatedHeight": 638
-          }
-        ],
-        "width": 948,
-        "height": 650,
-        "name": "Bear_Train3-8",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-8.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-8"
-        }
-      },
-      {
-        "files": [
-          {
-            "name": "圖層 11",
-            "uuid": "eaff068e-371a-439d-94c2-0766765bff41",
-            "textureUuid": "5b2c6d45-28b2-4daf-a97c-e87f189d17d5",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316586_image_19.png",
-            "trim": {
-              "x": 3,
-              "y": 3,
-              "width": 471,
-              "height": 631,
-              "rotatedWidth": 471,
-              "rotatedHeight": 631
-            },
-            "rawWidth": 471,
-            "rawHeight": 631,
-            "width": 477,
-            "height": 637,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/5b/5b2c6d45-28b2-4daf-a97c-e87f189d17d5.png",
-            "x": 0,
-            "y": 0,
-            "rotatedWidth": 477,
-            "rotatedHeight": 637
-          },
-          {
-            "name": "圖層 3",
-            "uuid": "bd66ed87-a9c9-4c32-a717-90230cc2a8d4",
-            "textureUuid": "4d20e031-b013-4d80-9280-f421e2df4bfc",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316585_image_12.png",
-            "trim": {
-              "x": 480,
-              "y": 3,
-              "width": 461,
-              "height": 644,
-              "rotatedWidth": 461,
-              "rotatedHeight": 644
-            },
-            "rawWidth": 461,
-            "rawHeight": 644,
-            "width": 467,
-            "height": 650,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4d/4d20e031-b013-4d80-9280-f421e2df4bfc.png",
-            "x": 477,
-            "y": 0,
-            "rotatedWidth": 467,
-            "rotatedHeight": 650
-          }
-        ],
-        "width": 944,
-        "height": 650,
-        "name": "Bear_Train3-9",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-9.png",
-        "compressd": {
-          "suffix": [
-            ".png"
-          ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-9"
-        }
-      },
-      {
-        "files": [
-          {
             "name": "圖層 22",
             "uuid": "4de8876a-a8f9-4b8d-aa3a-970643f46f00",
             "textureUuid": "5e1670f1-6164-4a8a-b38e-0b11401f1a97",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316583_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_1.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -783,13 +243,223 @@
             "rotatedHeight": 651
           },
           {
-            "name": "圖層 12",
-            "uuid": "a2bb3d8e-a3bc-444f-83b8-3d9a8d7e29a9",
-            "textureUuid": "6d5eb291-77ba-47d4-a325-ae98b07b7147",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_8.png",
+            "name": "圖層 2",
+            "uuid": "c0bf2be0-3ecb-4949-ba73-5886dda3e83f",
+            "textureUuid": "4dd1b034-f217-4930-b699-8779a50aeadf",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_13.png",
+            "trim": {
+              "x": 3,
+              "y": 654,
+              "width": 455,
+              "height": 645,
+              "rotatedWidth": 455,
+              "rotatedHeight": 645
+            },
+            "rawWidth": 455,
+            "rawHeight": 645,
+            "width": 461,
+            "height": 651,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4d/4dd1b034-f217-4930-b699-8779a50aeadf.png",
+            "x": 0,
+            "y": 651,
+            "rotatedWidth": 461,
+            "rotatedHeight": 651
+          },
+          {
+            "name": "圖層 1",
+            "uuid": "763053a8-2f25-4320-ab24-03ba0568fa54",
+            "textureUuid": "8331556a-6570-4fe7-9ad4-215b0cb41e8c",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 1305,
+              "width": 453,
+              "height": 645,
+              "rotatedWidth": 453,
+              "rotatedHeight": 645
+            },
+            "rawWidth": 453,
+            "rawHeight": 645,
+            "width": 459,
+            "height": 651,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/83/8331556a-6570-4fe7-9ad4-215b0cb41e8c.png",
+            "x": 0,
+            "y": 1302,
+            "rotatedWidth": 459,
+            "rotatedHeight": 651
+          },
+          {
+            "name": "圖層 21",
+            "uuid": "f9e677d2-db9b-42fe-b0f1-7a4a21853fc0",
+            "textureUuid": "1fce6fcb-17c8-4cb2-96b3-ac8729559d18",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583026_image_21.png",
+            "trim": {
+              "x": 462,
+              "y": 1305,
+              "width": 464,
+              "height": 644,
+              "rotatedWidth": 464,
+              "rotatedHeight": 644
+            },
+            "rawWidth": 464,
+            "rawHeight": 644,
+            "width": 470,
+            "height": 650,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/1f/1fce6fcb-17c8-4cb2-96b3-ac8729559d18.png",
+            "x": 459,
+            "y": 1302,
+            "rotatedWidth": 470,
+            "rotatedHeight": 650
+          },
+          {
+            "name": "圖層 3",
+            "uuid": "bd66ed87-a9c9-4c32-a717-90230cc2a8d4",
+            "textureUuid": "4d20e031-b013-4d80-9280-f421e2df4bfc",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_12.png",
+            "trim": {
+              "x": 464,
+              "y": 654,
+              "width": 461,
+              "height": 644,
+              "rotatedWidth": 461,
+              "rotatedHeight": 644
+            },
+            "rawWidth": 461,
+            "rawHeight": 644,
+            "width": 467,
+            "height": 650,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4d/4d20e031-b013-4d80-9280-f421e2df4bfc.png",
+            "x": 461,
+            "y": 651,
+            "rotatedWidth": 467,
+            "rotatedHeight": 650
+          },
+          {
+            "name": "圖層 4",
+            "uuid": "c6d1ada8-f6a5-4e3c-94bd-7b549f22c917",
+            "textureUuid": "5f1755e7-1ba7-41b2-9f76-e79533948011",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_14.png",
             "trim": {
               "x": 468,
               "y": 3,
+              "width": 467,
+              "height": 643,
+              "rotatedWidth": 467,
+              "rotatedHeight": 643
+            },
+            "rawWidth": 467,
+            "rawHeight": 643,
+            "width": 473,
+            "height": 649,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/5f/5f1755e7-1ba7-41b2-9f76-e79533948011.png",
+            "x": 465,
+            "y": 0,
+            "rotatedWidth": 473,
+            "rotatedHeight": 649
+          },
+          {
+            "name": "圖層 20",
+            "uuid": "7eeb74bc-afe5-407d-8eac-d448d7be8803",
+            "textureUuid": "3ebc613f-3400-453b-b8a3-ce14b2a2c27c",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_6.png",
+            "trim": {
+              "x": 931,
+              "y": 652,
+              "width": 471,
+              "height": 642,
+              "rotatedWidth": 471,
+              "rotatedHeight": 642
+            },
+            "rawWidth": 471,
+            "rawHeight": 642,
+            "width": 477,
+            "height": 648,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/3e/3ebc613f-3400-453b-b8a3-ce14b2a2c27c.png",
+            "x": 928,
+            "y": 649,
+            "rotatedWidth": 477,
+            "rotatedHeight": 648
+          },
+          {
+            "name": "圖層 8",
+            "uuid": "50d5e63d-2489-4f06-b9df-17f95351d44b",
+            "textureUuid": "1655cc86-fdc6-474a-8c67-d71d9fe95c64",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_2.png",
+            "trim": {
+              "x": 1408,
+              "y": 3,
+              "width": 480,
+              "height": 636,
+              "rotatedWidth": 636,
+              "rotatedHeight": 480
+            },
+            "rawWidth": 480,
+            "rawHeight": 636,
+            "width": 486,
+            "height": 642,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/16/1655cc86-fdc6-474a-8c67-d71d9fe95c64.png",
+            "x": 1405,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 642,
+            "rotatedHeight": 486
+          },
+          {
+            "name": "圖層 16",
+            "uuid": "d8475f28-d4c1-433e-940d-9ba04eb71fb2",
+            "textureUuid": "e4b196bf-5acc-4063-97c4-d2b5c093dd0a",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_16.png",
+            "trim": {
+              "x": 1408,
+              "y": 489,
+              "width": 480,
+              "height": 636,
+              "rotatedWidth": 636,
+              "rotatedHeight": 480
+            },
+            "rawWidth": 480,
+            "rawHeight": 636,
+            "width": 486,
+            "height": 642,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e4/e4b196bf-5acc-4063-97c4-d2b5c093dd0a.png",
+            "x": 1405,
+            "y": 486,
+            "rotated": true,
+            "rotatedWidth": 642,
+            "rotatedHeight": 486
+          },
+          {
+            "name": "圖層 9",
+            "uuid": "b5cbd573-306c-4319-99eb-2a9b660f730c",
+            "textureUuid": "6f5809a8-c051-48d8-be0b-89f7527be75f",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_9.png",
+            "trim": {
+              "x": 1408,
+              "y": 975,
+              "width": 477,
+              "height": 634,
+              "rotatedWidth": 634,
+              "rotatedHeight": 477
+            },
+            "rawWidth": 477,
+            "rawHeight": 634,
+            "width": 483,
+            "height": 640,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/6f/6f5809a8-c051-48d8-be0b-89f7527be75f.png",
+            "x": 1405,
+            "y": 972,
+            "rotated": true,
+            "rotatedWidth": 640,
+            "rotatedHeight": 483
+          },
+          {
+            "name": "圖層 12",
+            "uuid": "a2bb3d8e-a3bc-444f-83b8-3d9a8d7e29a9",
+            "textureUuid": "6d5eb291-77ba-47d4-a325-ae98b07b7147",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_8.png",
+            "trim": {
+              "x": 932,
+              "y": 1300,
               "width": 470,
               "height": 631,
               "rotatedWidth": 470,
@@ -800,83 +470,296 @@
             "width": 476,
             "height": 637,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/6d/6d5eb291-77ba-47d4-a325-ae98b07b7147.png",
-            "x": 465,
-            "y": 0,
+            "x": 929,
+            "y": 1297,
             "rotatedWidth": 476,
             "rotatedHeight": 637
+          },
+          {
+            "name": "圖層 15",
+            "uuid": "dd3f9946-3d76-4a94-8f58-219ca5a9ae2e",
+            "textureUuid": "d3d6b442-a076-4c95-968b-ad7b121d9f2a",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_17.png",
+            "trim": {
+              "x": 1408,
+              "y": 1458,
+              "width": 477,
+              "height": 634,
+              "rotatedWidth": 634,
+              "rotatedHeight": 477
+            },
+            "rawWidth": 477,
+            "rawHeight": 634,
+            "width": 483,
+            "height": 640,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d3/d3d6b442-a076-4c95-968b-ad7b121d9f2a.png",
+            "x": 1405,
+            "y": 1455,
+            "rotated": true,
+            "rotatedWidth": 640,
+            "rotatedHeight": 483
           }
         ],
-        "width": 941,
-        "height": 651,
-        "name": "Bear_Train3-10",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-10.png",
+        "width": 2047,
+        "height": 1953,
+        "name": "Bear_Train3-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-1.png",
         "compressd": {
           "suffix": [
             ".png"
           ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-10"
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-1"
         }
       },
       {
         "files": [
           {
-            "name": "圖層 2",
-            "uuid": "c0bf2be0-3ecb-4949-ba73-5886dda3e83f",
-            "textureUuid": "4dd1b034-f217-4930-b699-8779a50aeadf",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316585_image_13.png",
+            "name": "圖層 19",
+            "uuid": "c9a1c976-f3be-4c07-8f89-433dd874220a",
+            "textureUuid": "39cfb12a-3ad4-42f1-9029-9f34f7ca3b1b",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_15.png",
             "trim": {
               "x": 3,
               "y": 3,
-              "width": 455,
-              "height": 645,
-              "rotatedWidth": 645,
-              "rotatedHeight": 455
+              "width": 475,
+              "height": 641,
+              "rotatedWidth": 641,
+              "rotatedHeight": 475
             },
-            "rawWidth": 455,
-            "rawHeight": 645,
-            "width": 461,
-            "height": 651,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4d/4dd1b034-f217-4930-b699-8779a50aeadf.png",
+            "rawWidth": 475,
+            "rawHeight": 641,
+            "width": 481,
+            "height": 647,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/39/39cfb12a-3ad4-42f1-9029-9f34f7ca3b1b.png",
             "x": 0,
             "y": 0,
             "rotated": true,
-            "rotatedWidth": 651,
-            "rotatedHeight": 461
+            "rotatedWidth": 647,
+            "rotatedHeight": 481
           },
           {
-            "name": "圖層 1",
-            "uuid": "763053a8-2f25-4320-ab24-03ba0568fa54",
-            "textureUuid": "8331556a-6570-4fe7-9ad4-215b0cb41e8c",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1652742316584_image_5.png",
+            "name": "圖層 5",
+            "uuid": "40e7416b-909e-4b19-b7f8-a6f7081fa7ef",
+            "textureUuid": "6260d5e6-9cc7-4938-9aef-f918c92af106",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583022_image_0.png",
+            "trim": {
+              "x": 650,
+              "y": 3,
+              "width": 474,
+              "height": 641,
+              "rotatedWidth": 641,
+              "rotatedHeight": 474
+            },
+            "rawWidth": 474,
+            "rawHeight": 641,
+            "width": 480,
+            "height": 647,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/62/6260d5e6-9cc7-4938-9aef-f918c92af106.png",
+            "x": 647,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 647,
+            "rotatedHeight": 480
+          },
+          {
+            "name": "圖層 17",
+            "uuid": "b70517b1-e9f6-4787-901b-5ff56b43d274",
+            "textureUuid": "edeec4f3-2493-4a75-aae7-760078953c1d",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_10.png",
+            "trim": {
+              "x": 1297,
+              "y": 3,
+              "width": 481,
+              "height": 638,
+              "rotatedWidth": 481,
+              "rotatedHeight": 638
+            },
+            "rawWidth": 481,
+            "rawHeight": 638,
+            "width": 487,
+            "height": 644,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/ed/edeec4f3-2493-4a75-aae7-760078953c1d.png",
+            "x": 1294,
+            "y": 0,
+            "rotatedWidth": 487,
+            "rotatedHeight": 644
+          },
+          {
+            "name": "圖層 6",
+            "uuid": "6b946a7b-df67-4c1f-a900-be7b0a990f6f",
+            "textureUuid": "cf05bb93-f73d-4639-81b6-00500b25a3c3",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_4.png",
+            "trim": {
+              "x": 650,
+              "y": 483,
+              "width": 479,
+              "height": 640,
+              "rotatedWidth": 640,
+              "rotatedHeight": 479
+            },
+            "rawWidth": 479,
+            "rawHeight": 640,
+            "width": 485,
+            "height": 646,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/cf/cf05bb93-f73d-4639-81b6-00500b25a3c3.png",
+            "x": 647,
+            "y": 480,
+            "rotated": true,
+            "rotatedWidth": 646,
+            "rotatedHeight": 485
+          },
+          {
+            "name": "圖層 18",
+            "uuid": "bae88f82-f7ff-492d-b29c-233eaeb3be3e",
+            "textureUuid": "f27a69a4-c5d4-4b66-bcdb-ff6992d58261",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_11.png",
             "trim": {
               "x": 3,
-              "y": 464,
-              "width": 453,
-              "height": 645,
-              "rotatedWidth": 645,
-              "rotatedHeight": 453
+              "y": 484,
+              "width": 479,
+              "height": 639,
+              "rotatedWidth": 639,
+              "rotatedHeight": 479
             },
-            "rawWidth": 453,
-            "rawHeight": 645,
-            "width": 459,
-            "height": 651,
-            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/83/8331556a-6570-4fe7-9ad4-215b0cb41e8c.png",
+            "rawWidth": 479,
+            "rawHeight": 639,
+            "width": 485,
+            "height": 645,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/f2/f27a69a4-c5d4-4b66-bcdb-ff6992d58261.png",
             "x": 0,
-            "y": 461,
+            "y": 481,
             "rotated": true,
-            "rotatedWidth": 651,
-            "rotatedHeight": 459
+            "rotatedWidth": 645,
+            "rotatedHeight": 485
+          },
+          {
+            "name": "圖層 7",
+            "uuid": "e3a10558-1201-498b-aa79-a2d0e91f1153",
+            "textureUuid": "2d71907e-d7dd-461b-b253-e6a2f3332281",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583025_image_18.png",
+            "trim": {
+              "x": 1296,
+              "y": 647,
+              "width": 481,
+              "height": 638,
+              "rotatedWidth": 481,
+              "rotatedHeight": 638
+            },
+            "rawWidth": 481,
+            "rawHeight": 638,
+            "width": 487,
+            "height": 644,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/2d/2d71907e-d7dd-461b-b253-e6a2f3332281.png",
+            "x": 1293,
+            "y": 644,
+            "rotatedWidth": 487,
+            "rotatedHeight": 644
+          },
+          {
+            "name": "圖層 14",
+            "uuid": "640cceac-39ee-412c-b2ab-bf2b4087a1b4",
+            "textureUuid": "fbe3eba0-a5bd-47b8-87ec-e9666f6f5a33",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583023_image_3.png",
+            "trim": {
+              "x": 648,
+              "y": 968,
+              "width": 475,
+              "height": 633,
+              "rotatedWidth": 633,
+              "rotatedHeight": 475
+            },
+            "rawWidth": 475,
+            "rawHeight": 633,
+            "width": 481,
+            "height": 639,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/fb/fbe3eba0-a5bd-47b8-87ec-e9666f6f5a33.png",
+            "x": 645,
+            "y": 965,
+            "rotated": true,
+            "rotatedWidth": 639,
+            "rotatedHeight": 481
+          },
+          {
+            "name": "圖層 10",
+            "uuid": "845f3e80-ff4d-4cc9-afba-220ac1238536",
+            "textureUuid": "a88bde56-cd32-44bd-ba63-7d268086e1c9",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583024_image_7.png",
+            "trim": {
+              "x": 3,
+              "y": 969,
+              "width": 473,
+              "height": 632,
+              "rotatedWidth": 632,
+              "rotatedHeight": 473
+            },
+            "rawWidth": 473,
+            "rawHeight": 632,
+            "width": 479,
+            "height": 638,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a8/a88bde56-cd32-44bd-ba63-7d268086e1c9.png",
+            "x": 0,
+            "y": 966,
+            "rotated": true,
+            "rotatedWidth": 638,
+            "rotatedHeight": 479
+          },
+          {
+            "name": "圖層 13",
+            "uuid": "ecb8a91d-ac52-4a01-a795-000928691cdc",
+            "textureUuid": "95dbf78b-8fa3-4daf-ab8b-1fd6d582354b",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583026_image_20.png",
+            "trim": {
+              "x": 3,
+              "y": 1448,
+              "width": 472,
+              "height": 632,
+              "rotatedWidth": 632,
+              "rotatedHeight": 472
+            },
+            "rawWidth": 472,
+            "rawHeight": 632,
+            "width": 478,
+            "height": 638,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/95/95dbf78b-8fa3-4daf-ab8b-1fd6d582354b.png",
+            "x": 0,
+            "y": 1445,
+            "rotated": true,
+            "rotatedWidth": 638,
+            "rotatedHeight": 478
+          },
+          {
+            "name": "圖層 11",
+            "uuid": "eaff068e-371a-439d-94c2-0766765bff41",
+            "textureUuid": "5b2c6d45-28b2-4daf-a97c-e87f189d17d5",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653330583026_image_19.png",
+            "trim": {
+              "x": 1287,
+              "y": 1291,
+              "width": 471,
+              "height": 631,
+              "rotatedWidth": 471,
+              "rotatedHeight": 631
+            },
+            "rawWidth": 471,
+            "rawHeight": 631,
+            "width": 477,
+            "height": 637,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/5b/5b2c6d45-28b2-4daf-a97c-e87f189d17d5.png",
+            "x": 1284,
+            "y": 1288,
+            "rotatedWidth": 477,
+            "rotatedHeight": 637
           }
         ],
-        "width": 651,
-        "height": 920,
-        "name": "Bear_Train3-11",
-        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-11.png",
+        "width": 1781,
+        "height": 1925,
+        "name": "Bear_Train3-2",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\Bear_Train3-2.png",
         "compressd": {
           "suffix": [
             ".png"
           ],
-          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-11"
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Bear\\sprites\\Bear_Train3\\Bear_Train3.pac\\compressed\\Bear_Train3-2"
         }
       }
     ],
