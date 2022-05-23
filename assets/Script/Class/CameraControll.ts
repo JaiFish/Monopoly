@@ -66,7 +66,7 @@ export default class CameraControll extends ComponentBase {
         let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
         this.mineCamera.node.position = manePos
     }
-    async moveToManCamera(isJump: boolean = true) {
+    async moveToManCamera(_speed: number = this.moveSpeed, isJump: boolean = true) {
         return new Promise<void>((resolve, reject) => {
             let tween: cc.Tween;
             // if (!isJump)
@@ -79,7 +79,7 @@ export default class CameraControll extends ComponentBase {
 
             let manePos = GameModle.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node)
             cc.tween(this.mineCamera.node)
-                .to(this.moveSpeed, { position: manePos }, { easing: Easing.cubicOut })
+                .to(_speed, { position: manePos })
                 .call(() => {
                     this.cameraState = CameraState.Men
                     this.activeManCamera(true);
@@ -88,7 +88,7 @@ export default class CameraControll extends ComponentBase {
                 })
                 .start()
             cc.tween(this.mineCamera)
-                .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
+                .to(_speed, { zoomRatio: this.manZoomRatio })
                 .start()
         })
 

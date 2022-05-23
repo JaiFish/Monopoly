@@ -43,7 +43,7 @@ export default class Controll extends ComponentBase {
     panel_Message: Panel_Message
     panel_Bear: Panel_Bear
     panel_Version: Panel_Version
-    panel_Test: Panel_Test
+    // panel_Test: Panel_Test
     panel_Bufer: Panel_Bufer
     panel_Loading: Panel_Loading
 
@@ -162,7 +162,7 @@ export default class Controll extends ComponentBase {
         MusciMng.effectPlay("maneyMixSound")
         await this.cameraControll.showAllView()
         await new MyDelay().setDelay(0.5)
-        await this.cameraControll.moveToManCamera(false)
+        await this.cameraControll.moveToManCamera()
 
         // GameModle.playData.level = 0
         // GameModle.playData.trainTypeNumber = 0
@@ -394,9 +394,10 @@ export default class Controll extends ComponentBase {
         cc.director.loadScene("GameSence");
     }
     async menGo() {
-        if (this.cameraControll.cameraState != CameraState.Men)
-            await this.cameraControll.moveToManCamera()
-        this.panel_Man.manGO()
+        if (this.cameraControll.cameraState != CameraState.Men) {
+            await this.cameraControll.moveToManCamera(0.3)
+            this.panel_Man.manGO()
+        }
     }
     manWait() {
         this.panel_Man.manWait()
@@ -427,8 +428,11 @@ export default class Controll extends ComponentBase {
         //正在走
         if (!this.panel_UI.props_Feature.isGo)
             this.panel_Man.manWait()
-        else
+        else {
             this.panel_Man.manGO()
+            this.menGo()
+        }
+
 
 
     }

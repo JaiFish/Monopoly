@@ -122,7 +122,8 @@ var CameraControll = /** @class */ (function (_super) {
         var manePos = GameModle_1.default.convertOtherNodeSpaceAR(this.manCamera.node, this.mineCamera.node);
         this.mineCamera.node.position = manePos;
     };
-    CameraControll.prototype.moveToManCamera = function (isJump) {
+    CameraControll.prototype.moveToManCamera = function (_speed, isJump) {
+        if (_speed === void 0) { _speed = this.moveSpeed; }
         if (isJump === void 0) { isJump = true; }
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
@@ -138,7 +139,7 @@ var CameraControll = /** @class */ (function (_super) {
                         //         .to(this.moveSpeed * 0.5, { zoomRatio: this.manZoomRatio }, { easing: Easing.cubicOut })
                         var manePos = GameModle_1.default.convertOtherNodeSpaceAR(_this.manCamera.node, _this.mineCamera.node);
                         cc.tween(_this.mineCamera.node)
-                            .to(_this.moveSpeed, { position: manePos }, { easing: Easing_1.Easing.cubicOut })
+                            .to(_speed, { position: manePos })
                             .call(function () {
                             _this.cameraState = CameraState_1.CameraState.Men;
                             _this.activeManCamera(true);
@@ -147,7 +148,7 @@ var CameraControll = /** @class */ (function (_super) {
                         })
                             .start();
                         cc.tween(_this.mineCamera)
-                            .to(_this.moveSpeed, { zoomRatio: _this.manZoomRatio })
+                            .to(_speed, { zoomRatio: _this.manZoomRatio })
                             .start();
                     })];
             });

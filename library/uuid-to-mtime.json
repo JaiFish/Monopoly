@@ -1034,11 +1034,6 @@
     "meta": 1652741939029,
     "relativePath": "resources\\Music\\True.mp3"
   },
-  "b43147aa-6224-4f02-8e12-160e15391749": {
-    "asset": 1652567332082,
-    "meta": 1652741938456,
-    "relativePath": "Script\\Asset\\AnimationAsset.ts"
-  },
   "757e7f4b-f733-48e7-b29f-82fcb37bbb27": {
     "asset": 1652584128569,
     "meta": 1652741939477,
@@ -2654,11 +2649,6 @@
     "meta": 1653211943109,
     "relativePath": "Script\\Class\\Message\\Choose_Train.ts"
   },
-  "142fdcf1-f8b0-41f9-9d11-0042e604aed6": {
-    "asset": 1653211865087,
-    "meta": 1653211943139,
-    "relativePath": "Script\\Item\\MapSprite.ts"
-  },
   "c36f5210-7740-49ef-ac9a-a82f7d1cfddf": {
     "asset": 1653212055767,
     "meta": 1653212055864,
@@ -2673,11 +2663,6 @@
     "asset": 1653214310508,
     "meta": 1653214311205,
     "relativePath": "Script\\Class\\Message\\Question.ts"
-  },
-  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
-    "asset": 1653239491222,
-    "meta": 1653239501838,
-    "relativePath": "Script\\Class\\CameraControll.ts"
   },
   "ca623ca8-b6a9-4853-8807-93c27d5efa06": {
     "asset": 1653239496589,
@@ -2719,11 +2704,6 @@
     "meta": 1653282159060,
     "relativePath": "Script\\Class\\Panel_Door.ts"
   },
-  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1653282154026,
-    "meta": 1653282159224,
-    "relativePath": "Script\\GameControll.ts"
-  },
   "1d6e6101-4936-41fc-bff1-1e2875e7c596": {
     "asset": 1653281784813,
     "meta": 1653282159243,
@@ -2735,13 +2715,33 @@
     "relativePath": "Script\\GameModle.ts"
   },
   "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653289086937,
-    "meta": 1653289086981,
+    "asset": 1653327707574,
+    "meta": 1653327707612,
     "relativePath": "Sence\\GameSence.fire"
   },
   "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
     "asset": 1653289080817,
     "meta": 1653289083856,
     "relativePath": "Script\\Data\\base\\MusciMng.ts"
+  },
+  "142fdcf1-f8b0-41f9-9d11-0042e604aed6": {
+    "asset": 1653318421449,
+    "meta": 1653319728594,
+    "relativePath": "Script\\Item\\MapSprite.ts"
+  },
+  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
+    "asset": 1653326943012,
+    "meta": 1653326952592,
+    "relativePath": "Script\\Class\\CameraControll.ts"
+  },
+  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
+    "asset": 1653327786742,
+    "meta": 1653327787972,
+    "relativePath": "Script\\GameControll.ts"
+  },
+  "b43147aa-6224-4f02-8e12-160e15391749": {
+    "asset": 1653328124197,
+    "meta": 1653328336067,
+    "relativePath": "Script\\Asset\\AnimationAsset.ts"
   }
 }

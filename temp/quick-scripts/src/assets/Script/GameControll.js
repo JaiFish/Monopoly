@@ -229,7 +229,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(0.5)];
                     case 4:
                         _a.sent();
-                        return [4 /*yield*/, this.cameraControll.moveToManCamera(false)
+                        return [4 /*yield*/, this.cameraControll.moveToManCamera()
                             // GameModle.playData.level = 0
                             // GameModle.playData.trainTypeNumber = 0
                             // GameModle.playData.trainType = TrainType.Type0
@@ -601,6 +601,7 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Door.closeDoor()];
                     case 3:
                         _a.sent();
+                        MusciMng_1.default.musicStop();
                         data = new postCmd();
                         data.cmd = "OpenView";
                         data.viewType = -1;
@@ -621,13 +622,12 @@ var Controll = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         if (!(this.cameraControll.cameraState != CameraState_1.CameraState.Men)) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.cameraControll.moveToManCamera()];
+                        return [4 /*yield*/, this.cameraControll.moveToManCamera(0.3)];
                     case 1:
                         _a.sent();
-                        _a.label = 2;
-                    case 2:
                         this.panel_Man.manGO();
-                        return [2 /*return*/];
+                        _a.label = 2;
+                    case 2: return [2 /*return*/];
                 }
             });
         });
@@ -669,8 +669,10 @@ var Controll = /** @class */ (function (_super) {
         //正在走
         if (!this.panel_UI.props_Feature.isGo)
             this.panel_Man.manWait();
-        else
+        else {
             this.panel_Man.manGO();
+            this.menGo();
+        }
     };
     Controll.prototype.showAllView = function () {
         this.cameraControll.activeManCamera(false);
