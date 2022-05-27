@@ -91,8 +91,7 @@ var Panel_Man = /** @class */ (function (_super) {
             this.isWaitSingnalLinght = true;
             return;
         }
-        var getID = MusciMng_1.default.effectPlay("TrainGoing", true);
-        cc.audioEngine.setVolume(getID, 1);
+        MusciMng_1.default.singleEffectPlay("TrainGoing", true);
         this.setManState(GameState_1.GameState.Start);
         this.startGO();
         // console.log("開始走囉", this.isCanGo);
@@ -101,7 +100,7 @@ var Panel_Man = /** @class */ (function (_super) {
         this.isWaitSingnalLinght = false;
         this.setManState(GameState_1.GameState.Start);
         this.startGO();
-        MusciMng_1.default.effectPlay("TrainGoing", true);
+        MusciMng_1.default.singleEffectPlay("TrainGoing", true);
     };
     Panel_Man.prototype.manLineWait = function () {
         if (this.isWaitSingnalLinght)
@@ -245,7 +244,7 @@ var Panel_Man = /** @class */ (function (_super) {
     };
     Panel_Man.prototype.checkSignalLight = function () {
         var tryGet = this.nowStation - 1;
-        console.log("計算數字：" + tryGet);
+        // console.log("計算數字：" + tryGet);
         if (this.WaitArray[0] == tryGet) {
             this.WaitArray.shift();
             return true;

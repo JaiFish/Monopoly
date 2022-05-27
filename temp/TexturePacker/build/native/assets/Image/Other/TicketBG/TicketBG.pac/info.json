@@ -1,0 +1,148 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "e8788890-09b3-49e1-9739-c1525dffb37d": {
+      "assetMtime": 1653672204588,
+      "metaMtime": 1653672205792
+    },
+    "219cde86-7770-443d-9f93-fdd47b4f939d": {
+      "assetMtime": 1653623484628,
+      "metaMtime": 1653623484746
+    },
+    "56baa156-eb84-4eab-b035-540662a98ab7": {
+      "assetMtime": 1653623484628,
+      "metaMtime": 1653623484746
+    },
+    "84401950-59e8-473e-b950-bff1d2671db4": {
+      "assetMtime": 1653623484628,
+      "metaMtime": 1653623484742
+    },
+    "4d0a4437-9492-4be4-881b-c327a9cdc3d7": {
+      "assetMtime": 1653623484628,
+      "metaMtime": 1653623484742
+    },
+    "d7a07dcd-d778-4656-a4ab-b730abdfff40": {
+      "assetMtime": 1653623484629,
+      "metaMtime": 1653623484774
+    },
+    "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba": {
+      "assetMtime": 1653623484629,
+      "metaMtime": 1653623484774
+    }
+  },
+  "result": {
+    "name": "TicketBG",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.1",
+    "uuid": "e8788890-09b3-49e1-9739-c1525dffb37d",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "車票-兒童",
+            "uuid": "219cde86-7770-443d-9f93-fdd47b4f939d",
+            "textureUuid": "56baa156-eb84-4eab-b035-540662a98ab7",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 332,
+              "height": 512,
+              "rotatedWidth": 512,
+              "rotatedHeight": 332
+            },
+            "rawWidth": 332,
+            "rawHeight": 512,
+            "width": 338,
+            "height": 518,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/56/56baa156-eb84-4eab-b035-540662a98ab7.jpg",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 518,
+            "rotatedHeight": 338
+          },
+          {
+            "name": "車票-公務員",
+            "uuid": "d7a07dcd-d778-4656-a4ab-b730abdfff40",
+            "textureUuid": "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_2.png",
+            "trim": {
+              "x": 3,
+              "y": 341,
+              "width": 332,
+              "height": 512,
+              "rotatedWidth": 512,
+              "rotatedHeight": 332
+            },
+            "rawWidth": 332,
+            "rawHeight": 512,
+            "width": 338,
+            "height": 518,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/91/91d171b9-f266-4ec9-85ad-56eeb8b9f5ba.jpg",
+            "x": 0,
+            "y": 338,
+            "rotated": true,
+            "rotatedWidth": 518,
+            "rotatedHeight": 338
+          },
+          {
+            "name": "車票-一般",
+            "uuid": "84401950-59e8-473e-b950-bff1d2671db4",
+            "textureUuid": "4d0a4437-9492-4be4-881b-c327a9cdc3d7",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 679,
+              "width": 331,
+              "height": 512,
+              "rotatedWidth": 512,
+              "rotatedHeight": 331
+            },
+            "rawWidth": 331,
+            "rawHeight": 512,
+            "width": 337,
+            "height": 518,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4d/4d0a4437-9492-4be4-881b-c327a9cdc3d7.jpg",
+            "x": 0,
+            "y": 676,
+            "rotated": true,
+            "rotatedWidth": 518,
+            "rotatedHeight": 337
+          }
+        ],
+        "width": 518,
+        "height": 1013,
+        "name": "TicketBG-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Other\\TicketBG\\TicketBG.pac\\TicketBG-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Other\\TicketBG\\TicketBG.pac\\compressed\\TicketBG-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

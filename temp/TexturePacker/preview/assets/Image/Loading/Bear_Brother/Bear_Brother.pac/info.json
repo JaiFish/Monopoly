@@ -1,0 +1,850 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "mtimes": {
+    "ad919517-79fd-4021-ac00-749dc71dd29c": {
+      "assetMtime": 1652626794204,
+      "metaMtime": 1652741934774
+    },
+    "018648dd-9d11-4a60-8970-481d596c32e5": {
+      "assetMtime": 1652626924684,
+      "metaMtime": 1652741934902
+    },
+    "0d342c1e-9cf4-4d80-92ab-a742e0481450": {
+      "assetMtime": 1652626924684,
+      "metaMtime": 1652741934902
+    },
+    "111f437d-ed35-417c-a678-35637df52647": {
+      "assetMtime": 1652626860339,
+      "metaMtime": 1652741934826
+    },
+    "1319458e-1247-4e31-953f-5c806b67d2db": {
+      "assetMtime": 1652626860339,
+      "metaMtime": 1652741934826
+    },
+    "1b693275-5d03-42c5-bf4e-e73fc0374e52": {
+      "assetMtime": 1652626928660,
+      "metaMtime": 1652741934867
+    },
+    "6f04835b-3204-41e5-850f-554d2b193d93": {
+      "assetMtime": 1652626928660,
+      "metaMtime": 1652741934867
+    },
+    "1cded361-7dc2-45fb-9157-0596e1d6e519": {
+      "assetMtime": 1652626856998,
+      "metaMtime": 1652741934934
+    },
+    "e20d14ac-5623-48a1-9570-03708fa224dd": {
+      "assetMtime": 1652626856998,
+      "metaMtime": 1652741934934
+    },
+    "52fe7bef-bdaa-4873-a24f-fdab695ed991": {
+      "assetMtime": 1652626929252,
+      "metaMtime": 1652741934886
+    },
+    "026ec8b9-d576-45b8-8e6c-25b053358294": {
+      "assetMtime": 1652626929252,
+      "metaMtime": 1652741934886
+    },
+    "5530d866-ae0d-442e-aabf-77052f297aae": {
+      "assetMtime": 1652626854451,
+      "metaMtime": 1652741934973
+    },
+    "d3b7f099-8b21-49a8-8570-ffc1cfeec46c": {
+      "assetMtime": 1652626854451,
+      "metaMtime": 1652741934973
+    },
+    "5df5023d-2a21-4bef-9682-281a1f4e1fdc": {
+      "assetMtime": 1652626926798,
+      "metaMtime": 1652741934921
+    },
+    "c8987310-764b-4c31-8d61-c17bdf15e7b2": {
+      "assetMtime": 1652626926798,
+      "metaMtime": 1652741934921
+    },
+    "5f983bd8-98ba-417f-bdd9-0aded593eaca": {
+      "assetMtime": 1652626853124,
+      "metaMtime": 1652741934989
+    },
+    "4184da8c-716c-4fba-9799-8dea2e70a2da": {
+      "assetMtime": 1652626853124,
+      "metaMtime": 1652741934989
+    },
+    "723e7ff7-f16d-44e1-902a-34fa4fbad1b2": {
+      "assetMtime": 1652626855083,
+      "metaMtime": 1652741934971
+    },
+    "33620d44-3c12-49a8-bdea-bceafa7df7c0": {
+      "assetMtime": 1652626855083,
+      "metaMtime": 1652741934971
+    },
+    "737e5983-6653-49a2-a445-2ec7c398d286": {
+      "assetMtime": 1652626858222,
+      "metaMtime": 1652741934792
+    },
+    "e7f20da2-f8e6-4670-8223-405e415b81fd": {
+      "assetMtime": 1652626858222,
+      "metaMtime": 1652741934792
+    },
+    "77bf09b2-50fc-4699-951d-97419b6fb184": {
+      "assetMtime": 1652626926374,
+      "metaMtime": 1652741934920
+    },
+    "a767926c-7a29-4985-8575-2e5913f5aaa4": {
+      "assetMtime": 1652626926374,
+      "metaMtime": 1652741934920
+    },
+    "8ea61afd-2120-4282-8b91-bd9e1e165b4d": {
+      "assetMtime": 1652626862096,
+      "metaMtime": 1652741934812
+    },
+    "4fb78e61-a01d-4824-821f-d6bbf52ea84e": {
+      "assetMtime": 1652626862096,
+      "metaMtime": 1652741934812
+    },
+    "8ff398e1-3fbc-498f-945a-e361292b32b4": {
+      "assetMtime": 1652626927282,
+      "metaMtime": 1652741934936
+    },
+    "c67eec46-9b72-427f-8669-a7eb6db1909f": {
+      "assetMtime": 1652626927282,
+      "metaMtime": 1652741934936
+    },
+    "a7a2d27f-b02a-4ddf-864c-a1f08b6a733b": {
+      "assetMtime": 1652626859772,
+      "metaMtime": 1652741934849
+    },
+    "f18bd35b-3c96-4b78-8933-8504ea52cd7a": {
+      "assetMtime": 1652626859772,
+      "metaMtime": 1652741934849
+    },
+    "b27dd6a2-b89e-4452-a804-29d43f662611": {
+      "assetMtime": 1652626856308,
+      "metaMtime": 1652741934954
+    },
+    "adbfce72-7f06-4858-951e-bbcdb45f4672": {
+      "assetMtime": 1652626856308,
+      "metaMtime": 1652741934954
+    },
+    "b432377c-edfd-4f08-8463-40a22f84d990": {
+      "assetMtime": 1652626925731,
+      "metaMtime": 1652741934904
+    },
+    "5c719b57-3eba-4176-9c9d-a765897b8a31": {
+      "assetMtime": 1652626925731,
+      "metaMtime": 1652741934904
+    },
+    "c53ee3b5-86e7-4ad4-b9ec-9b8518b89588": {
+      "assetMtime": 1652626861457,
+      "metaMtime": 1652741934828
+    },
+    "98ab3666-dc73-477f-9d0a-d0ddeabd43d8": {
+      "assetMtime": 1652626861457,
+      "metaMtime": 1652741934828
+    },
+    "cdf4c2bc-af6b-4956-b9a4-e6fe9ec66237": {
+      "assetMtime": 1652626853497,
+      "metaMtime": 1652741934987
+    },
+    "593b353d-d6ff-47e7-9bbd-132a08c40634": {
+      "assetMtime": 1652626853497,
+      "metaMtime": 1652741934987
+    },
+    "d2cbde7a-e66d-419d-8494-4afec9233824": {
+      "assetMtime": 1652626862576,
+      "metaMtime": 1652741934810
+    },
+    "69d1ac90-4440-44a9-8dc5-9546977228ff": {
+      "assetMtime": 1652626862576,
+      "metaMtime": 1652741934810
+    },
+    "d7e64c16-a5de-43e8-b122-bce4ec538b36": {
+      "assetMtime": 1652626858742,
+      "metaMtime": 1652741934865
+    },
+    "027e0343-c87c-409a-a060-ee2268d27585": {
+      "assetMtime": 1652626858742,
+      "metaMtime": 1652741934865
+    },
+    "d8465af2-ed3f-4d89-ab46-3887aa6b7f96": {
+      "assetMtime": 1652626857480,
+      "metaMtime": 1652741934888
+    },
+    "b2521dc9-f634-4222-af38-88aaecd772b0": {
+      "assetMtime": 1652626857480,
+      "metaMtime": 1652741934888
+    },
+    "e0ba4aaf-3908-4e71-a6fe-2d03f07fd4e2": {
+      "assetMtime": 1652626863280,
+      "metaMtime": 1652741934790
+    },
+    "93c891d0-fcba-43f0-af9b-9c5089c25f1b": {
+      "assetMtime": 1652626863280,
+      "metaMtime": 1652741934790
+    },
+    "e9bde4fd-e188-4e59-949b-0ea68262b232": {
+      "assetMtime": 1652626855751,
+      "metaMtime": 1652741934952
+    },
+    "276c7e40-6620-48d6-bd02-be2dd1144811": {
+      "assetMtime": 1652626855751,
+      "metaMtime": 1652741934952
+    },
+    "f70d27d7-0148-4749-b738-81831edf6ec7": {
+      "assetMtime": 1652626859135,
+      "metaMtime": 1652741934847
+    },
+    "d0599fd4-6d5b-4360-be5e-221d1ba48cca": {
+      "assetMtime": 1652626859135,
+      "metaMtime": 1652741934847
+    }
+  },
+  "result": {
+    "name": "Bear_Brother-6",
+    "width": 959,
+    "height": 957,
+    "ver": "1.2.1",
+    "uuid": "ad919517-79fd-4021-ac00-749dc71dd29c",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {
+      "default": {
+        "formats": [
+          {
+            "name": "png",
+            "quality": 80
+          }
+        ]
+      }
+    },
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "Bear_Brother3",
+            "uuid": "1cded361-7dc2-45fb-9157-0596e1d6e519",
+            "textureUuid": "e20d14ac-5623-48a1-9570-03708fa224dd",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908491_image_3.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 413,
+              "height": 567,
+              "rotatedWidth": 413,
+              "rotatedHeight": 567
+            },
+            "rawWidth": 413,
+            "rawHeight": 567,
+            "width": 419,
+            "height": 573,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e2/e20d14ac-5623-48a1-9570-03708fa224dd.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 419,
+            "rotatedHeight": 573
+          },
+          {
+            "name": "Bear_Brother4",
+            "uuid": "b27dd6a2-b89e-4452-a804-29d43f662611",
+            "textureUuid": "adbfce72-7f06-4858-951e-bbcdb45f4672",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908494_image_14.png",
+            "trim": {
+              "x": 3,
+              "y": 576,
+              "width": 412,
+              "height": 568,
+              "rotatedWidth": 568,
+              "rotatedHeight": 412
+            },
+            "rawWidth": 412,
+            "rawHeight": 568,
+            "width": 418,
+            "height": 574,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/ad/adbfce72-7f06-4858-951e-bbcdb45f4672.png",
+            "x": 0,
+            "y": 573,
+            "rotated": true,
+            "rotatedWidth": 574,
+            "rotatedHeight": 418
+          },
+          {
+            "name": "Bear_Brother5",
+            "uuid": "e9bde4fd-e188-4e59-949b-0ea68262b232",
+            "textureUuid": "276c7e40-6620-48d6-bd02-be2dd1144811",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908496_image_22.png",
+            "trim": {
+              "x": 422,
+              "y": 3,
+              "width": 410,
+              "height": 569,
+              "rotatedWidth": 569,
+              "rotatedHeight": 410
+            },
+            "rawWidth": 410,
+            "rawHeight": 569,
+            "width": 416,
+            "height": 575,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/27/276c7e40-6620-48d6-bd02-be2dd1144811.png",
+            "x": 419,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 575,
+            "rotatedHeight": 416
+          },
+          {
+            "name": "Bear_Brother2",
+            "uuid": "d8465af2-ed3f-4d89-ab46-3887aa6b7f96",
+            "textureUuid": "b2521dc9-f634-4222-af38-88aaecd772b0",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908495_image_20.png",
+            "trim": {
+              "x": 577,
+              "y": 419,
+              "width": 411,
+              "height": 567,
+              "rotatedWidth": 411,
+              "rotatedHeight": 567
+            },
+            "rawWidth": 411,
+            "rawHeight": 567,
+            "width": 417,
+            "height": 573,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/b2/b2521dc9-f634-4222-af38-88aaecd772b0.png",
+            "x": 574,
+            "y": 416,
+            "rotatedWidth": 417,
+            "rotatedHeight": 573
+          }
+        ],
+        "width": 994,
+        "height": 991,
+        "name": "Bear_Brother-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-1.png"
+      },
+      {
+        "files": [
+          {
+            "name": "Bear_Brother1",
+            "uuid": "737e5983-6653-49a2-a445-2ec7c398d286",
+            "textureUuid": "e7f20da2-f8e6-4670-8223-405e415b81fd",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908492_image_9.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 409,
+              "height": 567,
+              "rotatedWidth": 409,
+              "rotatedHeight": 567
+            },
+            "rawWidth": 409,
+            "rawHeight": 567,
+            "width": 415,
+            "height": 573,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e7/e7f20da2-f8e6-4670-8223-405e415b81fd.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 415,
+            "rotatedHeight": 573
+          },
+          {
+            "name": "Bear_Brother12",
+            "uuid": "8ea61afd-2120-4282-8b91-bd9e1e165b4d",
+            "textureUuid": "4fb78e61-a01d-4824-821f-d6bbf52ea84e",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908492_image_11.png",
+            "trim": {
+              "x": 3,
+              "y": 576,
+              "width": 372,
+              "height": 573,
+              "rotatedWidth": 573,
+              "rotatedHeight": 372
+            },
+            "rawWidth": 372,
+            "rawHeight": 573,
+            "width": 378,
+            "height": 579,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/4f/4fb78e61-a01d-4824-821f-d6bbf52ea84e.png",
+            "x": 0,
+            "y": 573,
+            "rotated": true,
+            "rotatedWidth": 579,
+            "rotatedHeight": 378
+          },
+          {
+            "name": "Bear_Brother6",
+            "uuid": "723e7ff7-f16d-44e1-902a-34fa4fbad1b2",
+            "textureUuid": "33620d44-3c12-49a8-bdea-bceafa7df7c0",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908492_image_8.png",
+            "trim": {
+              "x": 418,
+              "y": 3,
+              "width": 407,
+              "height": 570,
+              "rotatedWidth": 570,
+              "rotatedHeight": 407
+            },
+            "rawWidth": 407,
+            "rawHeight": 570,
+            "width": 413,
+            "height": 576,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/33/33620d44-3c12-49a8-bdea-bceafa7df7c0.png",
+            "x": 415,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 576,
+            "rotatedHeight": 413
+          },
+          {
+            "name": "Bear_Brother23",
+            "uuid": "5df5023d-2a21-4bef-9682-281a1f4e1fdc",
+            "textureUuid": "c8987310-764b-4c31-8d61-c17bdf15e7b2",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908491_image_6.png",
+            "trim": {
+              "x": 582,
+              "y": 416,
+              "width": 405,
+              "height": 568,
+              "rotatedWidth": 405,
+              "rotatedHeight": 568
+            },
+            "rawWidth": 405,
+            "rawHeight": 568,
+            "width": 411,
+            "height": 574,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/c8/c8987310-764b-4c31-8d61-c17bdf15e7b2.png",
+            "x": 579,
+            "y": 413,
+            "rotatedWidth": 411,
+            "rotatedHeight": 574
+          }
+        ],
+        "width": 991,
+        "height": 987,
+        "name": "Bear_Brother-2",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-2.png"
+      },
+      {
+        "files": [
+          {
+            "name": "Bear_Brother24",
+            "uuid": "8ff398e1-3fbc-498f-945a-e361292b32b4",
+            "textureUuid": "c67eec46-9b72-427f-8669-a7eb6db1909f",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908494_image_12.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 407,
+              "height": 567,
+              "rotatedWidth": 407,
+              "rotatedHeight": 567
+            },
+            "rawWidth": 407,
+            "rawHeight": 567,
+            "width": 413,
+            "height": 573,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/c6/c67eec46-9b72-427f-8669-a7eb6db1909f.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 413,
+            "rotatedHeight": 573
+          },
+          {
+            "name": "Bear_Brother22",
+            "uuid": "77bf09b2-50fc-4699-951d-97419b6fb184",
+            "textureUuid": "a767926c-7a29-4985-8575-2e5913f5aaa4",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908492_image_10.png",
+            "trim": {
+              "x": 3,
+              "y": 576,
+              "width": 402,
+              "height": 568,
+              "rotatedWidth": 568,
+              "rotatedHeight": 402
+            },
+            "rawWidth": 402,
+            "rawHeight": 568,
+            "width": 408,
+            "height": 574,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a7/a767926c-7a29-4985-8575-2e5913f5aaa4.png",
+            "x": 0,
+            "y": 573,
+            "rotated": true,
+            "rotatedWidth": 574,
+            "rotatedHeight": 408
+          },
+          {
+            "name": "Bear_Brother7",
+            "uuid": "5530d866-ae0d-442e-aabf-77052f297aae",
+            "textureUuid": "d3b7f099-8b21-49a8-8570-ffc1cfeec46c",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908491_image_5.png",
+            "trim": {
+              "x": 416,
+              "y": 3,
+              "width": 400,
+              "height": 570,
+              "rotatedWidth": 570,
+              "rotatedHeight": 400
+            },
+            "rawWidth": 400,
+            "rawHeight": 570,
+            "width": 406,
+            "height": 576,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d3/d3b7f099-8b21-49a8-8570-ffc1cfeec46c.png",
+            "x": 413,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 576,
+            "rotatedHeight": 406
+          },
+          {
+            "name": "Bear_Brother21",
+            "uuid": "b432377c-edfd-4f08-8463-40a22f84d990",
+            "textureUuid": "5c719b57-3eba-4176-9c9d-a765897b8a31",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908494_image_15.png",
+            "trim": {
+              "x": 577,
+              "y": 409,
+              "width": 396,
+              "height": 569,
+              "rotatedWidth": 396,
+              "rotatedHeight": 569
+            },
+            "rawWidth": 396,
+            "rawHeight": 569,
+            "width": 402,
+            "height": 575,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/5c/5c719b57-3eba-4176-9c9d-a765897b8a31.png",
+            "x": 574,
+            "y": 406,
+            "rotatedWidth": 402,
+            "rotatedHeight": 575
+          }
+        ],
+        "width": 989,
+        "height": 981,
+        "name": "Bear_Brother-3",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-3.png"
+      },
+      {
+        "files": [
+          {
+            "name": "Bear_Brother8",
+            "uuid": "cdf4c2bc-af6b-4956-b9a4-e6fe9ec66237",
+            "textureUuid": "593b353d-d6ff-47e7-9bbd-132a08c40634",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908495_image_17.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 391,
+              "height": 571,
+              "rotatedWidth": 391,
+              "rotatedHeight": 571
+            },
+            "rawWidth": 391,
+            "rawHeight": 571,
+            "width": 397,
+            "height": 577,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/59/593b353d-d6ff-47e7-9bbd-132a08c40634.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 397,
+            "rotatedHeight": 577
+          },
+          {
+            "name": "Bear_Brother20",
+            "uuid": "018648dd-9d11-4a60-8970-481d596c32e5",
+            "textureUuid": "0d342c1e-9cf4-4d80-92ab-a742e0481450",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908490_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 580,
+              "width": 390,
+              "height": 570,
+              "rotatedWidth": 570,
+              "rotatedHeight": 390
+            },
+            "rawWidth": 390,
+            "rawHeight": 570,
+            "width": 396,
+            "height": 576,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/0d/0d342c1e-9cf4-4d80-92ab-a742e0481450.png",
+            "x": 0,
+            "y": 577,
+            "rotated": true,
+            "rotatedWidth": 576,
+            "rotatedHeight": 396
+          },
+          {
+            "name": "Bear_Brother9",
+            "uuid": "5f983bd8-98ba-417f-bdd9-0aded593eaca",
+            "textureUuid": "4184da8c-716c-4fba-9799-8dea2e70a2da",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908492_image_7.png",
+            "trim": {
+              "x": 400,
+              "y": 3,
+              "width": 385,
+              "height": 572,
+              "rotatedWidth": 572,
+              "rotatedHeight": 385
+            },
+            "rawWidth": 385,
+            "rawHeight": 572,
+            "width": 391,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/41/4184da8c-716c-4fba-9799-8dea2e70a2da.png",
+            "x": 397,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 578,
+            "rotatedHeight": 391
+          },
+          {
+            "name": "Bear_Brother19",
+            "uuid": "52fe7bef-bdaa-4873-a24f-fdab695ed991",
+            "textureUuid": "026ec8b9-d576-45b8-8e6c-25b053358294",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908491_image_4.png",
+            "trim": {
+              "x": 579,
+              "y": 394,
+              "width": 381,
+              "height": 571,
+              "rotatedWidth": 381,
+              "rotatedHeight": 571
+            },
+            "rawWidth": 381,
+            "rawHeight": 571,
+            "width": 387,
+            "height": 577,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/02/026ec8b9-d576-45b8-8e6c-25b053358294.png",
+            "x": 576,
+            "y": 391,
+            "rotatedWidth": 387,
+            "rotatedHeight": 577
+          }
+        ],
+        "width": 975,
+        "height": 973,
+        "name": "Bear_Brother-4",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-4.png"
+      },
+      {
+        "files": [
+          {
+            "name": "Bear_Brother10",
+            "uuid": "e0ba4aaf-3908-4e71-a6fe-2d03f07fd4e2",
+            "textureUuid": "93c891d0-fcba-43f0-af9b-9c5089c25f1b",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908496_image_21.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 380,
+              "height": 572,
+              "rotatedWidth": 380,
+              "rotatedHeight": 572
+            },
+            "rawWidth": 380,
+            "rawHeight": 572,
+            "width": 386,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/93/93c891d0-fcba-43f0-af9b-9c5089c25f1b.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 386,
+            "rotatedHeight": 578
+          },
+          {
+            "name": "Bear_Brother14",
+            "uuid": "111f437d-ed35-417c-a678-35637df52647",
+            "textureUuid": "1319458e-1247-4e31-953f-5c806b67d2db",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908490_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 581,
+              "width": 371,
+              "height": 573,
+              "rotatedWidth": 573,
+              "rotatedHeight": 371
+            },
+            "rawWidth": 371,
+            "rawHeight": 573,
+            "width": 377,
+            "height": 579,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/13/1319458e-1247-4e31-953f-5c806b67d2db.png",
+            "x": 0,
+            "y": 578,
+            "rotated": true,
+            "rotatedWidth": 579,
+            "rotatedHeight": 377
+          },
+          {
+            "name": "Bear_Brother18",
+            "uuid": "1b693275-5d03-42c5-bf4e-e73fc0374e52",
+            "textureUuid": "6f04835b-3204-41e5-850f-554d2b193d93",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908491_image_2.png",
+            "trim": {
+              "x": 389,
+              "y": 3,
+              "width": 377,
+              "height": 571,
+              "rotatedWidth": 571,
+              "rotatedHeight": 377
+            },
+            "rawWidth": 377,
+            "rawHeight": 571,
+            "width": 383,
+            "height": 577,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/6f/6f04835b-3204-41e5-850f-554d2b193d93.png",
+            "x": 386,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 577,
+            "rotatedHeight": 383
+          },
+          {
+            "name": "Bear_Brother11",
+            "uuid": "d2cbde7a-e66d-419d-8494-4afec9233824",
+            "textureUuid": "69d1ac90-4440-44a9-8dc5-9546977228ff",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908495_image_18.png",
+            "trim": {
+              "x": 582,
+              "y": 386,
+              "width": 375,
+              "height": 572,
+              "rotatedWidth": 375,
+              "rotatedHeight": 572
+            },
+            "rawWidth": 375,
+            "rawHeight": 572,
+            "width": 381,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/69/69d1ac90-4440-44a9-8dc5-9546977228ff.png",
+            "x": 579,
+            "y": 383,
+            "rotatedWidth": 381,
+            "rotatedHeight": 578
+          }
+        ],
+        "width": 963,
+        "height": 961,
+        "name": "Bear_Brother-5",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-5.png"
+      },
+      {
+        "files": [
+          {
+            "name": "Bear_Brother17",
+            "uuid": "d7e64c16-a5de-43e8-b122-bce4ec538b36",
+            "textureUuid": "027e0343-c87c-409a-a060-ee2268d27585",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908495_image_19.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 375,
+              "height": 572,
+              "rotatedWidth": 375,
+              "rotatedHeight": 572
+            },
+            "rawWidth": 375,
+            "rawHeight": 572,
+            "width": 381,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/02/027e0343-c87c-409a-a060-ee2268d27585.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 381,
+            "rotatedHeight": 578
+          },
+          {
+            "name": "Bear_Brother13",
+            "uuid": "c53ee3b5-86e7-4ad4-b9ec-9b8518b89588",
+            "textureUuid": "98ab3666-dc73-477f-9d0a-d0ddeabd43d8",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908494_image_16.png",
+            "trim": {
+              "x": 3,
+              "y": 581,
+              "width": 370,
+              "height": 573,
+              "rotatedWidth": 573,
+              "rotatedHeight": 370
+            },
+            "rawWidth": 370,
+            "rawHeight": 573,
+            "width": 376,
+            "height": 579,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/98/98ab3666-dc73-477f-9d0a-d0ddeabd43d8.png",
+            "x": 0,
+            "y": 578,
+            "rotated": true,
+            "rotatedWidth": 579,
+            "rotatedHeight": 376
+          },
+          {
+            "name": "Bear_Brother16",
+            "uuid": "f70d27d7-0148-4749-b738-81831edf6ec7",
+            "textureUuid": "d0599fd4-6d5b-4360-be5e-221d1ba48cca",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908496_image_23.png",
+            "trim": {
+              "x": 384,
+              "y": 3,
+              "width": 373,
+              "height": 572,
+              "rotatedWidth": 572,
+              "rotatedHeight": 373
+            },
+            "rawWidth": 373,
+            "rawHeight": 572,
+            "width": 379,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/d0/d0599fd4-6d5b-4360-be5e-221d1ba48cca.png",
+            "x": 381,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 578,
+            "rotatedHeight": 379
+          },
+          {
+            "name": "Bear_Brother15",
+            "uuid": "a7a2d27f-b02a-4ddf-864c-a1f08b6a733b",
+            "textureUuid": "f18bd35b-3c96-4b78-8933-8504ea52cd7a",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671908494_image_13.png",
+            "trim": {
+              "x": 582,
+              "y": 382,
+              "width": 371,
+              "height": 572,
+              "rotatedWidth": 371,
+              "rotatedHeight": 572
+            },
+            "rawWidth": 371,
+            "rawHeight": 572,
+            "width": 377,
+            "height": 578,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/f1/f18bd35b-3c96-4b78-8933-8504ea52cd7a.png",
+            "x": 579,
+            "y": 379,
+            "rotatedWidth": 377,
+            "rotatedHeight": 578
+          }
+        ],
+        "width": 959,
+        "height": 957,
+        "name": "Bear_Brother-6",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Loading\\Bear_Brother\\Bear_Brother.pac\\Bear_Brother-6.png"
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

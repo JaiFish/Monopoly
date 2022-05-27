@@ -95,7 +95,7 @@ var ManAction = /** @class */ (function (_super) {
     //         .start()
     // }
     ManAction.prototype.setGameModle = function (_gameModle) {
-        console.log(_gameModle);
+        // console.log(_gameModle);
         this.gameModle = _gameModle;
     };
     return ManAction;

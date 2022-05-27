@@ -10,12 +10,14 @@ class AssetMng {
     data_Music: Map<string, any> = new Map();
     data_Animation: Map<string, any> = new Map();
 
+
+    isAllOK: boolean;
     AllAssetClass: Array<any> = []
     startLoad() {
         this.AllAssetClass.push(SpriteAtlasAsset.loadAsset(this.data_SprtieAtlas));
         this.AllAssetClass.push(SpriteAsset.loadAsset(this.data_Sprtie));
         this.AllAssetClass.push(MusicAsset.loadAsset(this.data_Music));
-        
+
     }
 
     bearAsset(_num: number) {
@@ -24,16 +26,21 @@ class AssetMng {
 
     checkState(): Promise<void> {
         return new Promise<void>((resolve: Function) => {
-            let repet = setInterval(() => {
-                let check = true;
-                this.AllAssetClass.forEach(_AssetClass => {
-                    if (!_AssetClass.checkAssetState) return check = false
-                })
-                if (check) {
-                    clearInterval(repet);
-                    resolve();
-                }
-            }, 500)
+            if (this.isAllOK) return resolve()
+            else {
+                let repet = setInterval(() => {
+                    let check = true;
+                    this.AllAssetClass.forEach(_AssetClass => {
+                        if (!_AssetClass.checkAssetState) return check = false
+                    })
+                    if (check) {
+                        this.isAllOK = true
+                        clearInterval(repet);
+                        resolve();
+                    }
+                }, 500)
+            }
+
         })
     }
 

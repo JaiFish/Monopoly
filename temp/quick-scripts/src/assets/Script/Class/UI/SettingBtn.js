@@ -73,6 +73,7 @@ var SettingBtn = /** @class */ (function (_super) {
         this.sprite = cc.find("icon", this.node).getComponent(cc.Sprite);
         this.btn = this.node.getComponent(cc.Button);
         this.node.setPosition(0, 0);
+        this.nowState = true;
     };
     SettingBtn.prototype.setEvent = function (_num) {
         return __awaiter(this, void 0, void 0, function () {
@@ -108,6 +109,7 @@ var SettingBtn = /** @class */ (function (_super) {
             var getBoolean;
             return __generator(this, function (_a) {
                 getBoolean = MusciMng_1.default.isMusicOpen ? "Open" : "Close";
+                this.nowState = MusciMng_1.default.isMusicOpen;
                 this.sprite.spriteFrame = AssetMng_1.default.data_SprtieAtlas.get("Sound" + getBoolean);
                 return [2 /*return*/];
             });

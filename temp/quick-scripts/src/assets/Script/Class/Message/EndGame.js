@@ -39,11 +39,13 @@ var EndGame = /** @class */ (function (_super) {
         this.animation_Bear = cc.find("Mask/animation_Bear", this.node).getComponent(cc.Animation);
         this.btn_GoLottery = cc.find("Btn_GoLottery", this.node).getComponent(cc.Button);
         this.btn_Again = cc.find("Btn_Again", this.node).getComponent(cc.Button);
+        this.btn_BackGame = cc.find("Btn_BackGame", this.node).getComponent(cc.Button);
         this.defaultReset();
     };
     EndGame.prototype.start = function () {
         ButtonMng_1.default.addEvent(this.node, "EndGame", "sendEvent", this.btn_GoLottery, "0");
         ButtonMng_1.default.addEvent(this.node, "EndGame", "sendEvent", this.btn_Again, "1");
+        ButtonMng_1.default.addEvent(this.node, "EndGame", "sendEvent", this.btn_BackGame, "2");
     };
     EndGame.prototype.playBearSprite = function (number) {
         // console.log(number);
@@ -63,6 +65,9 @@ var EndGame = /** @class */ (function (_super) {
                 break;
             case "1": //再玩一次
                 this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.AgainGame);
+                break;
+            case "2": //回到遊戲
+                this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndToBackGame);
                 break;
         }
     };

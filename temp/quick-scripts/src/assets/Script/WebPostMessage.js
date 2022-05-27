@@ -19,18 +19,18 @@ var WebPostMessage = /** @class */ (function () {
     WebPostMessage.prototype.send = function (data) {
         //@ts-ignore
         // this.curreVideo = data.viewType
-        console.error(data);
+        // console.error(data);
         window.parent.postMessage(data, "*");
-        console.log("傳遞封包內容", data);
+        // console.log("傳遞封包內容", data);
     };
     //接收到網頁給的訊息
     WebPostMessage.prototype.onReceiveMessage = function (event) {
         var cmd = event.data.cmd;
         var viewType = event.data.viewType;
-        console.error(event);
+        // console.error(event);
         switch (String(cmd)) {
             case "OpenView":
-                console.log("收到");
+                // console.log("收到");
                 switch (viewType) {
                     case 0:
                         EventMng_1.default.emit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.CloseVideo);
@@ -44,7 +44,7 @@ var WebPostMessage = /** @class */ (function () {
                 break;
         }
         // EventMng.emit(cmd, viewType);
-        console.log("收到內容", event);
+        // console.log("收到內容", event);
     };
     return WebPostMessage;
 }());

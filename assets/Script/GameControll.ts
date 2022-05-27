@@ -27,6 +27,8 @@ import { MyDelay } from "./Data/DelayTime";
 import Panel_Bufer from "./Class/Panel_Bufer";
 import MusciMng from "./Data/base/MusciMng";
 import Panel_Loading from "./Class/Panel_Loading";
+import EndGame from "./Class/Message/EndGame";
+
 
 const { ccclass, property } = cc._decorator;
 
@@ -47,7 +49,9 @@ export default class Controll extends ComponentBase {
     panel_Bufer: Panel_Bufer
     panel_Loading: Panel_Loading
 
+
     onLoad() {
+
         this.panel_Loading = cc.find("Canvas/Panel_Loading").addComponent(Panel_Loading);
         this.panel_AniPath = cc.find("Canvas/Panel_AniPath").addComponent(Panel_AniPath);
         this.panel_Map = cc.find("Canvas/Panel_Map").addComponent(Panel_Map);
@@ -59,21 +63,24 @@ export default class Controll extends ComponentBase {
         this.panel_Bear = cc.find("Canvas/Panel_Bear").addComponent(Panel_Bear);
         this.panel_Bufer = cc.find("Canvas/Panel_Bufer").addComponent(Panel_Bufer);
 
+
+
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version);
 
         this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
+        // if (CC_DEV)
+        //     this.panel_Test.show()
+        // else
+        //     this.panel_Test.hide()
+
 
         this.initEvent(GameEvent.SendModel, this.sendModle)
         this.initEvent(GameEvent.SendCommand, this.sendCommand)
         this.initEvent(GameEvent.GetStation, this.changeStationSprite)
 
-        // cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL)
-        // cc.view.enableAutoFullScreen(true);
-
         AssetMng.startLoad();
-        // console.log(this.mapItem);
-        // console.log(fcc);
+
         fcc.configMgr
             .build()
         let updateTime = cc.sys.os == cc.sys.OS_IOS ? 500 : 100
@@ -83,9 +90,14 @@ export default class Controll extends ComponentBase {
             .setDesignWidth(1280)
             .updateSize(fcc.type.SceneStyleType.HORIZONTAL)
             .startListener(updateTime)
-
     }
     start() {
+        let data = new postCmd()
+        data.cmd = "StartLoading"
+        //@ts-ignore
+        data.isRotated = cc.view._isRotated
+        GameModle.webPostMessage.send(data)
+
         MusciMng.init()
         this.panel_Version.setVersion(GameModle.version);
         this.sendModle(GameEvent.InitMap);
@@ -97,7 +109,6 @@ export default class Controll extends ComponentBase {
 
         this.panel_Door.reset()
         this.checkData()
-        // this.mainInit()
     }
     sendModle(type: string) {
         switch (type) {
@@ -125,46 +136,30 @@ export default class Controll extends ComponentBase {
      * 流程
      */
     async checkData() {
+        // console.log("初始化檢查資料");
+
         GameModle.isEndLoadingData = false
         this.panel_Loading.show()
         //Test
-        // GameModle.playData.level = 2
-        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
-        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-
-        // console.log(GameModle.qaLibrary.qaLib_str);
-        // console.log(GameModle.chooseLibrary.chooseLib);
-        // console.log(GameModle.answerLibrary.answerLib_str);
-        // console.log(GameModle.explainLibrary.explainLib);
         await AssetMng.checkState();
+        this.doorAgainGame()
         GameModle.isEndLoadingData = true
-        MusciMng.musicPlay("gameBG")
         this.panel_Loading.Actionhide()
-        // MusciMng.effectPlay("DoorOpen")
-        // MusciMng.musicStop()
-        // MusciMng.effectAllStop()
-
-
     }
     async mainInit() {
-        // await AssetMng.checkState();
-        // MusciMng.musicPlay("gameBG")
-        // MusciMng.effectPlay("DoorOpen")
-        // MusciMng.musicStop()
-        // MusciMng.effectAllStop()
-
         this.panel_Version.node.active = false
         MusciMng.effectPlay("DoorOpen")
         await this.panel_Door.openDoor()
         await this.panel_Door.scaleAction()
         MusciMng.effectPlay("maneyMixSound")
         await this.cameraControll.showAllView()
+        MusciMng.musicPlay("gameBG")
         await new MyDelay().setDelay(0.5)
         await this.cameraControll.moveToManCamera()
 
-        // GameModle.playData.level = 0
+
+        // this.panel_Man.nowStation = 20
+        // GameModle.playData.level = 0 
         // GameModle.playData.trainTypeNumber = 0
         // GameModle.playData.trainType = TrainType.Type0
         // this.endChoosTrain()
@@ -201,7 +196,7 @@ export default class Controll extends ComponentBase {
     async endChoosTrain() {
         AssetMng.bearAsset(GameModle.playData.trainTypeNumber)
         await new MyDelay().setDelay(2)
-        
+
         this.panel_Man.setManSprite(AssetMng.data_SprtieAtlas.get(GameModle.playData.trainType))
         this.panel_Man.resetOeg()
         this.panel_Bear.init()
@@ -240,15 +235,18 @@ export default class Controll extends ComponentBase {
         this.panel_Man.manState = GameState.ShowMessage
         await this.panel_Message.show();
         let data = new postCmd()
-        MusciMng.swichEffect()
-        MusciMng.swichMusic()
+        if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
+            MusciMng.swichEffect()
+            MusciMng.swichMusic()
+        }
+
         switch (this.panel_Man.nowStation) {
             case 1:
                 data.cmd = "OpenView"
                 data.viewType = 1
                 data.kid = false
                 GameModle.webPostMessage.send(data)
-                console.log("播放安全影片");
+                // console.log("播放安全影片");
                 break
             case 20:
                 let getKid = GameModle.playData.level == 0 ? true : false
@@ -256,7 +254,7 @@ export default class Controll extends ComponentBase {
                 data.viewType = 2
                 data.kid = getKid;
                 GameModle.webPostMessage.send(data)
-                console.log("播放廉政影片");
+                // console.log("播放廉政影片");
                 break
         }
 
@@ -264,8 +262,10 @@ export default class Controll extends ComponentBase {
         // window.parent.postMessage({}, "*")
     }
     async closeVideo() {
-        MusciMng.swichEffect()
-        MusciMng.swichMusic()
+        if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
+            MusciMng.swichEffect()
+            MusciMng.swichMusic()
+        }
         await this.panel_Message.hide();
         this.panel_Man.manState = GameState.Wait
         this.panel_UI.props_Feature.setStart_Stop(true)
@@ -362,7 +362,9 @@ export default class Controll extends ComponentBase {
         this.panel_Man.manGO()
     }
     async showEndGame() {
+        this.panel_Man.manStop()
         this.panel_Man.manState = GameState.ShowMessage
+
         await this.panel_Message.show();
         await AssetMng.checkState();
         this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
@@ -376,22 +378,40 @@ export default class Controll extends ComponentBase {
     againGame() {
         this.closeEndGame()
         cc.director.loadScene("GameSence");
+        MusciMng.musicStop()
+        MusciMng.effectAllStop()
     }
 
     async goLottery() {
         this.closeEndGame()
         MusciMng.effectPlay("maneyMixSound")
+
         await this.cameraControll.showAllView()
         await this.panel_Door.backScaleAction()
         await this.panel_Door.closeDoor()
         MusciMng.musicStop()
+        MusciMng.effectAllStop()
         let data = new postCmd()
         data.cmd = "OpenView"
         data.viewType = -1
         data.kid = false
         GameModle.webPostMessage.send(data)
-        console.log("遊戲結束Show抽獎與問答");
 
+        this.doorAgainGame()//穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變
+        // console.log("遊戲結束Show抽獎與問答");
+
+    }
+
+    endToBackGame() {
+        this.closeEndGame()
+        this.panel_Man.node.active = false
+        this.cameraControll.activeMineCamera(true)
+        this.cameraControll.activeManCamera(false)
+        this.cameraControll.moveToStation(GameModle.mapItem.get(0).node)
+        this.panel_UI.show()
+        this.panel_UI.props_Feature.hide()
+        this.panel_UI.setbtnEvent_Again()
+        this.panel_UI.backGameUse.show()
     }
     doorAgainGame() {
         cc.director.loadScene("GameSence");
@@ -435,9 +455,6 @@ export default class Controll extends ComponentBase {
             this.panel_Man.manGO()
             this.menGo()
         }
-
-
-
     }
     showAllView() {
         this.cameraControll.activeManCamera(false);
@@ -448,20 +465,34 @@ export default class Controll extends ComponentBase {
     webCheckData() {
         if (GameModle.isEndLoadingData) {
             GameModle.isEndLoadingData = false //避免重複敲
+
             let data = new postCmd()
             data.cmd = 'Close'
+            //@ts-ignore
             GameModle.webPostMessage.send(data)
             //開始遊戲
             this.mainInit()
         }
 
     }
+    //音樂的處理
+    public lateUpdate() {
+        //@ts-ignore
+        let context = cc.sys.__audioSupport.context;
+        if (context.state === 'suspended') {
+            context.resume();
+            // console.log(context.state);
+        }
+    }
     protected update(dt: number): void {
         // console.log(cc.audioEngine.getState(MusciMng.musicID));
         // console.log(cc.audioEngine.getState(MusciMng.effectID.get('DoorOpen')));
         // console.log("正在播放嗎?" + cc.audioEngine.isMusicPlaying());
 
-
+        // cc.find("Panel_長寬測試/視窗").getComponent(cc.Label).string = "寬：" + cc.view.getDesignResolutionSize().width + "\n高：" + cc.view.getDesignResolutionSize().height
+        //@ts-ignore
+        // cc.find("Panel_長寬測試/旋轉").getComponent(cc.Label).string = cc.view._isRotated.toString()
+        // cc.game.
     }
 
 
@@ -471,6 +502,7 @@ class postCmd {
     cmd: string
     viewType: number
     kid: boolean
+    isRotated: boolean;
 }
 
 

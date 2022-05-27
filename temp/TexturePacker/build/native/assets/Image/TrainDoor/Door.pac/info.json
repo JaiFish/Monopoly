@@ -1,0 +1,146 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "795f286c-39a5-433d-8337-80ad54ef5472": {
+      "assetMtime": 1653672675417,
+      "metaMtime": 1653672683108
+    },
+    "3e309556-07af-4044-ae0e-91c1dd1e460f": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113615
+    },
+    "97585245-54e0-4e1c-8294-733e6ee76144": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113615
+    },
+    "833e6b5f-02da-47ce-97b2-76f1beb45269": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113631
+    },
+    "9e5a6a72-5377-4bf8-84da-ba4418a36690": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113631
+    },
+    "d9d2878a-aab3-4ff5-b9b1-2a2d317ddfb6": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113598
+    },
+    "a39bfdbd-e88c-43c9-88c3-0df93832fcac": {
+      "assetMtime": 1653281113525,
+      "metaMtime": 1653281113598
+    }
+  },
+  "result": {
+    "name": "Door",
+    "width": 2048,
+    "height": 2048,
+    "ver": "1.2.1",
+    "uuid": "795f286c-39a5-433d-8337-80ad54ef5472",
+    "maxWidth": 2048,
+    "maxHeight": 2048,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "列車-車廂",
+            "uuid": "833e6b5f-02da-47ce-97b2-76f1beb45269",
+            "textureUuid": "9e5a6a72-5377-4bf8-84da-ba4418a36690",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734064_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 1921,
+              "height": 1081,
+              "rotatedWidth": 1081,
+              "rotatedHeight": 1921
+            },
+            "rawWidth": 1921,
+            "rawHeight": 1081,
+            "width": 1927,
+            "height": 1087,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/9e/9e5a6a72-5377-4bf8-84da-ba4418a36690.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 1087,
+            "rotatedHeight": 1927
+          },
+          {
+            "name": "列車-車門-右",
+            "uuid": "d9d2878a-aab3-4ff5-b9b1-2a2d317ddfb6",
+            "textureUuid": "a39bfdbd-e88c-43c9-88c3-0df93832fcac",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734064_image_2.png",
+            "trim": {
+              "x": 1090,
+              "y": 3,
+              "width": 282,
+              "height": 798,
+              "rotatedWidth": 282,
+              "rotatedHeight": 798
+            },
+            "rawWidth": 282,
+            "rawHeight": 799,
+            "width": 288,
+            "height": 804,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a3/a39bfdbd-e88c-43c9-88c3-0df93832fcac.png",
+            "x": 1087,
+            "y": 0,
+            "rotatedWidth": 288,
+            "rotatedHeight": 804
+          },
+          {
+            "name": "列車-車門-左",
+            "uuid": "3e309556-07af-4044-ae0e-91c1dd1e460f",
+            "textureUuid": "97585245-54e0-4e1c-8294-733e6ee76144",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734064_image_0.png",
+            "trim": {
+              "x": 1090,
+              "y": 807,
+              "width": 281,
+              "height": 798,
+              "rotatedWidth": 281,
+              "rotatedHeight": 798
+            },
+            "rawWidth": 281,
+            "rawHeight": 799,
+            "width": 287,
+            "height": 804,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/97/97585245-54e0-4e1c-8294-733e6ee76144.png",
+            "x": 1087,
+            "y": 804,
+            "rotatedWidth": 287,
+            "rotatedHeight": 804
+          }
+        ],
+        "width": 1375,
+        "height": 1927,
+        "name": "Door-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\TrainDoor\\Door.pac\\Door-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\TrainDoor\\Door.pac\\compressed\\Door-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

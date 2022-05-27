@@ -17,6 +17,9 @@ export default class Question extends ComponentBase {
     info_Normal_9: cc.Node
     item_Btn: cc.Node;
 
+    baseHight_Text: number = -20
+    hightSpacting: number = -30
+
 
     scrollView: cc.ScrollView
 
@@ -55,10 +58,13 @@ export default class Question extends ComponentBase {
     reset() {
         this.info_Normal_5.active = false
         this.info_Normal_9.active = false
+        this.scrollView.scrollToTop(0.1)
     }
     setQAInfo(str: string, _level: number, _qaNum: number) {
         // console.log(_level, _qaNum);
 
+
+        this.reset()
         if (_level == 1 && (_qaNum == 4 || _qaNum == 8)) {
             switch (_qaNum) {
                 case 4:
@@ -85,24 +91,8 @@ export default class Question extends ComponentBase {
         //開始接中央
     }
     checkLenght(str: string) {
-        let get = Math.floor(str.length / 32)
-        switch (get) {
-            case 0:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -50
-                break;
-            case 1:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -80
-                break;
-            case 2:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -110
-                break;
-            case 3:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -140
-                break;
-            case 4:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -170
-                break;
-        }
+        let getHight = 1 + (Math.floor(str.length / 32)) //為了相乘公式必須_+1 不然0行= 0
+        this.scrollView.content.getComponent(cc.Layout).spacingY = this.baseHight_Text + (this.hightSpacting * getHight)
 
     }
 }

@@ -1,0 +1,209 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "1e83a9d3-5b16-45e5-a4ee-c3585f44b9b0": {
+      "assetMtime": 1653672126874,
+      "metaMtime": 1653672130061
+    },
+    "1bc3bdf0-35b2-4dc8-9c18-cac44a28039d": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748303
+    },
+    "dbe1a6a5-aeb0-4458-81e6-75f6301097ed": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748303
+    },
+    "1d07c7de-0cd5-44d1-bcb2-e0fa7c4d4763": {
+      "assetMtime": 1652375869617,
+      "metaMtime": 1652741937377
+    },
+    "438112e6-7d95-4ad5-8452-a8533052f032": {
+      "assetMtime": 1652375869617,
+      "metaMtime": 1652741937377
+    },
+    "850cd3db-5848-4518-a481-1f1d36fe97f4": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748324
+    },
+    "af7084f0-e5a3-416d-b90d-d2800d6258d3": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748324
+    },
+    "d088d549-681c-4b20-a592-dccb7ac1047a": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748330
+    },
+    "c1a30094-27ec-4d90-81f5-b255d7301c2d": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748330
+    },
+    "d196acac-1460-402e-aaac-01ec3fe56398": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748310
+    },
+    "ce6b52dc-0778-43b6-b13c-7f424d5fd277": {
+      "assetMtime": 1653114748196,
+      "metaMtime": 1653114748310
+    }
+  },
+  "result": {
+    "name": "TalkBG",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.1",
+    "uuid": "1e83a9d3-5b16-45e5-a4ee-c3585f44b9b0",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "對話框-1",
+            "uuid": "d196acac-1460-402e-aaac-01ec3fe56398",
+            "textureUuid": "ce6b52dc-0778-43b6-b13c-7f424d5fd277",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732202_image_4.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 599,
+              "height": 365,
+              "rotatedWidth": 599,
+              "rotatedHeight": 365
+            },
+            "rawWidth": 605,
+            "rawHeight": 372,
+            "width": 605,
+            "height": 371,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/ce/ce6b52dc-0778-43b6-b13c-7f424d5fd277.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 605,
+            "rotatedHeight": 371
+          },
+          {
+            "name": "對話框-4",
+            "uuid": "1bc3bdf0-35b2-4dc8-9c18-cac44a28039d",
+            "textureUuid": "dbe1a6a5-aeb0-4458-81e6-75f6301097ed",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732201_image_0.png",
+            "trim": {
+              "x": 608,
+              "y": 3,
+              "width": 328,
+              "height": 180,
+              "rotatedWidth": 180,
+              "rotatedHeight": 328
+            },
+            "rawWidth": 334,
+            "rawHeight": 187,
+            "width": 334,
+            "height": 186,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/db/dbe1a6a5-aeb0-4458-81e6-75f6301097ed.png",
+            "x": 605,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 186,
+            "rotatedHeight": 334
+          },
+          {
+            "name": "對話框-2",
+            "uuid": "850cd3db-5848-4518-a481-1f1d36fe97f4",
+            "textureUuid": "af7084f0-e5a3-416d-b90d-d2800d6258d3",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732202_image_2.png",
+            "trim": {
+              "x": 3,
+              "y": 374,
+              "width": 542,
+              "height": 256,
+              "rotatedWidth": 256,
+              "rotatedHeight": 542
+            },
+            "rawWidth": 548,
+            "rawHeight": 263,
+            "width": 548,
+            "height": 262,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/af/af7084f0-e5a3-416d-b90d-d2800d6258d3.png",
+            "x": 0,
+            "y": 371,
+            "rotated": true,
+            "rotatedWidth": 262,
+            "rotatedHeight": 548
+          },
+          {
+            "name": "對話框-3",
+            "uuid": "d088d549-681c-4b20-a592-dccb7ac1047a",
+            "textureUuid": "c1a30094-27ec-4d90-81f5-b255d7301c2d",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732202_image_3.png",
+            "trim": {
+              "x": 265,
+              "y": 374,
+              "width": 496,
+              "height": 302,
+              "rotatedWidth": 496,
+              "rotatedHeight": 302
+            },
+            "rawWidth": 504,
+            "rawHeight": 308,
+            "width": 502,
+            "height": 308,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/c1/c1a30094-27ec-4d90-81f5-b255d7301c2d.png",
+            "x": 262,
+            "y": 371,
+            "rotatedWidth": 502,
+            "rotatedHeight": 308
+          },
+          {
+            "name": "對話框",
+            "uuid": "1d07c7de-0cd5-44d1-bcb2-e0fa7c4d4763",
+            "textureUuid": "438112e6-7d95-4ad5-8452-a8533052f032",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732202_image_1.png",
+            "trim": {
+              "x": 265,
+              "y": 682,
+              "width": 475,
+              "height": 297,
+              "rotatedWidth": 475,
+              "rotatedHeight": 297
+            },
+            "rawWidth": 486,
+            "rawHeight": 308,
+            "width": 481,
+            "height": 303,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/43/438112e6-7d95-4ad5-8452-a8533052f032.png",
+            "x": 262,
+            "y": 679,
+            "rotatedWidth": 481,
+            "rotatedHeight": 303
+          }
+        ],
+        "width": 791,
+        "height": 982,
+        "name": "TalkBG-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Other\\TalkBG\\TalkBG.pac\\TalkBG-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Other\\TalkBG\\TalkBG.pac\\compressed\\TalkBG-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

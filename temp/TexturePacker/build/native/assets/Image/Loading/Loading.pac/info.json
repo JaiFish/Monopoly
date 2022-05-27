@@ -1,0 +1,116 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "60315232-90f0-4e06-a066-49e01cb13c85": {
+      "assetMtime": 1653671803975,
+      "metaMtime": 1653671844605
+    },
+    "1185e3d7-8ced-4cbb-8496-a61daf7a88f1": {
+      "assetMtime": 1653122109726,
+      "metaMtime": 1653122109748
+    },
+    "70726051-5299-421d-b117-00a65e53330a": {
+      "assetMtime": 1653122109726,
+      "metaMtime": 1653122109748
+    },
+    "81b8ad52-c0f9-4553-bb72-944d8cd7dc8e": {
+      "assetMtime": 1653122117893,
+      "metaMtime": 1653122117911
+    },
+    "7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1": {
+      "assetMtime": 1653122117893,
+      "metaMtime": 1653122117911
+    }
+  },
+  "result": {
+    "name": "Loading",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.1",
+    "uuid": "60315232-90f0-4e06-a066-49e01cb13c85",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "對話框-loading",
+            "uuid": "81b8ad52-c0f9-4553-bb72-944d8cd7dc8e",
+            "textureUuid": "7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732876_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 372,
+              "height": 232,
+              "rotatedWidth": 232,
+              "rotatedHeight": 372
+            },
+            "rawWidth": 377,
+            "rawHeight": 237,
+            "width": 378,
+            "height": 238,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/7e/7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 238,
+            "rotatedHeight": 378
+          },
+          {
+            "name": "陰影",
+            "uuid": "1185e3d7-8ced-4cbb-8496-a61daf7a88f1",
+            "textureUuid": "70726051-5299-421d-b117-00a65e53330a",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732876_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 381,
+              "width": 348,
+              "height": 93,
+              "rotatedWidth": 93,
+              "rotatedHeight": 348
+            },
+            "rawWidth": 348,
+            "rawHeight": 93,
+            "width": 354,
+            "height": 99,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/70/70726051-5299-421d-b117-00a65e53330a.png",
+            "x": 0,
+            "y": 378,
+            "rotated": true,
+            "rotatedWidth": 99,
+            "rotatedHeight": 354
+          }
+        ],
+        "width": 238,
+        "height": 732,
+        "name": "Loading-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Loading\\Loading.pac\\Loading-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Loading\\Loading.pac\\compressed\\Loading-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

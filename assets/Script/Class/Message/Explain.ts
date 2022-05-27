@@ -23,10 +23,11 @@ export default class Explain extends ComponentBase {
 
     }
     setInfoStr(str: string) {
+        this.scrollView.scrollToTop(0.1)
         this.info_Text.string = str
     }
     nextProcess(e: cc.Event, _customEventData: string) {
         MusciMng.effectPlay("BtnClick")
-        this.EventEmit(GameEvent.SendCommand,Commamnd.EndExplain)
+        this.EventEmit(GameEvent.SendCommand, Commamnd.EndExplain)
     }
 }

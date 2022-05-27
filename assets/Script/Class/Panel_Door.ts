@@ -58,22 +58,26 @@ export default class Panel_Door extends ComponentBase {
 
     }
     async closeDoor() {
-        cc.tween(this.left)
-            .by(1, { x: this.distance })
-            .call(() => {
-                this.btn_Start.node.active = true
-                ButtonMng.addEvent(this.node, "Panel_Door", "sendDoorAgainGame", this.btn_Start)
-            })
-            .start()
-        cc.tween(this.right)
-            .by(1, { x: -this.distance })
+        return new Promise<void>((resolve, reject) => {
+            cc.tween(this.left)
+                .by(1, { x: this.distance })
+                .call(() => {
+                    this.btn_Start.node.active = true
+                    ButtonMng.reMoveEvent(this.btn_Start, "sendMainInit")
+                    ButtonMng.addEvent(this.node, "Panel_Door", "sendDoorAgainGame", this.btn_Start)
+                    resolve()
+                })
+                .start()
+            cc.tween(this.right)
+                .by(1, { x: -this.distance })
 
-            .start()
+                .start()
+        })
     }
     async scaleAction() {
         return new Promise<void>((resolve, reject) => {
             cc.tween(this.node)
-                .to(0.5, { scale:2.35 })
+                .to(0.5, { scale: 2.35 })
                 .call(() => {
                     this.node.active = false
                     resolve()

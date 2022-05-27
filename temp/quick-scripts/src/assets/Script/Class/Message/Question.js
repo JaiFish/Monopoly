@@ -33,7 +33,10 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Question = /** @class */ (function (_super) {
     __extends(Question, _super);
     function Question() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.baseHight_Text = -20;
+        _this.hightSpacting = -30;
+        return _this;
     }
     Question.prototype.onLoad = function () {
         this.title = cc.find("Title", this.node).getComponent(cc.Label);
@@ -66,9 +69,11 @@ var Question = /** @class */ (function (_super) {
     Question.prototype.reset = function () {
         this.info_Normal_5.active = false;
         this.info_Normal_9.active = false;
+        this.scrollView.scrollToTop(0.1);
     };
     Question.prototype.setQAInfo = function (str, _level, _qaNum) {
         // console.log(_level, _qaNum);
+        this.reset();
         if (_level == 1 && (_qaNum == 4 || _qaNum == 8)) {
             switch (_qaNum) {
                 case 4:
@@ -95,24 +100,8 @@ var Question = /** @class */ (function (_super) {
         //開始接中央
     };
     Question.prototype.checkLenght = function (str) {
-        var get = Math.floor(str.length / 32);
-        switch (get) {
-            case 0:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -50;
-                break;
-            case 1:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -80;
-                break;
-            case 2:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -110;
-                break;
-            case 3:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -140;
-                break;
-            case 4:
-                this.scrollView.content.getComponent(cc.Layout).spacingY = -170;
-                break;
-        }
+        var getHight = 1 + (Math.floor(str.length / 32)); //為了相乘公式必須_+1 不然0行= 0
+        this.scrollView.content.getComponent(cc.Layout).spacingY = this.baseHight_Text + (this.hightSpacting * getHight);
     };
     Question = __decorate([
         ccclass

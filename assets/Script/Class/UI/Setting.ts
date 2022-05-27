@@ -18,6 +18,7 @@ export default class Setting extends ComponentBase {
     maxIndex: number = 4
     itemCount: number = 1;
     info3: cc.Node
+    itemMap:Map<number,any> = new Map()
 
     protected onLoad(): void {
         this.btn_ControllOpen = cc.find("Btn_ControllOpen", this.node).getComponent(cc.Button)
@@ -76,8 +77,9 @@ export default class Setting extends ComponentBase {
     }
     itemSop(index: number) {
         let _item = cc.instantiate(this.item)
-        this.con.addChild(_item);
+        this.con.addChild(_item,cc.macro.MAX_ZINDEX,index.toString());
         let _class = _item.addComponent(SettingBtn)
+        this.itemMap.set(index,_class)
         _class.setEvent(index)
         _item.active = true
     }

@@ -28,6 +28,7 @@ require('./assets/Script/Class/Panel_Loading');
 require('./assets/Script/Class/Panel_Map');
 require('./assets/Script/Class/Panel_Test');
 require('./assets/Script/Class/Panel_Version');
+require('./assets/Script/Class/UI/BackGameUse');
 require('./assets/Script/Class/UI/Panel_UI');
 require('./assets/Script/Class/UI/Props_Feature');
 require('./assets/Script/Class/UI/Setting');

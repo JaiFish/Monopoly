@@ -74,7 +74,7 @@ export default class ManAction extends DataMan {
     //         .start()
     // }
     setGameModle(_gameModle: GameModle) {
-        console.log(_gameModle);
+        // console.log(_gameModle);
         
         this.gameModle = _gameModle
     }

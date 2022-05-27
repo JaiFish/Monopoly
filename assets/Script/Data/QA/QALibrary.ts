@@ -5,7 +5,7 @@ export default class QALibrary {
     lib: string[] = []
     constructor(level: number, getCount: number) {
         let libClass: lib = new lib()
-        console.log("創立");
+        // console.log("創立");
         
         switch (level) {
             case 0: this.lib = libClass.easy;
@@ -22,7 +22,7 @@ export default class QALibrary {
             this.lib[index] = String(index) + "_" + this.lib[index]
         }
 
-        console.log(this.lib);
+        // console.log(this.lib);
         for (let index = 0; index < getCount; index++) {
             let randomQA = Math.floor(Math.random() * this.lib.length)
             let formatStr = this.lib[randomQA].split('_')
@@ -30,7 +30,6 @@ export default class QALibrary {
             this.qaLib_num.push(Number(formatStr[0]))
             this.lib.splice(randomQA, 1)//刪除第幾個物件,刪除數量
         }
-        console.log();
 
     }
 }

@@ -11,20 +11,20 @@ export class WebPostMessage {
     send(data: object): void {
         //@ts-ignore
         // this.curreVideo = data.viewType
-        console.error(data);
+        // console.error(data);
 
         window.parent.postMessage(data, "*");
-        console.log("傳遞封包內容", data);
+        // console.log("傳遞封包內容", data);
 
     }
     //接收到網頁給的訊息
     onReceiveMessage(event): void {
         const cmd = event.data.cmd;
         const viewType = event.data.viewType;
-        console.error(event);
+        // console.error(event);
         switch (String(cmd)) {
             case "OpenView":
-                console.log("收到");
+                // console.log("收到");
 
                 switch (viewType) {
                     case 0:
@@ -40,7 +40,7 @@ export class WebPostMessage {
         }
 
         // EventMng.emit(cmd, viewType);
-        console.log("收到內容", event);
+        // console.log("收到內容", event);
     }
 
 }

@@ -3,6 +3,7 @@ import ComponentBase from "../../Data/base/ComponentBase";
 import MusciMng from "../../Data/base/MusciMng";
 import { Commamnd } from "../../Enum/Commad";
 import { GameEvent } from "../../Enum/GameEvent";
+import BackGameUse from "./BackGameUse";
 import Props_Feature from "./Props_Feature";
 import Setting from "./Setting";
 import Station from "./Station";
@@ -16,6 +17,7 @@ export default class Panel_UI extends ComponentBase {
     props_Feature: Props_Feature;
     station: Station
     setting: Setting
+    backGameUse: BackGameUse
     protected onLoad(): void {
 
         this.node.opacity = 255
@@ -24,16 +26,16 @@ export default class Panel_UI extends ComponentBase {
         this.props_Feature = cc.find("Props_Feature", this.node).addComponent(Props_Feature)
         this.station = cc.find("Station", this.node).addComponent(Station)
         this.setting = cc.find("Setting", this.node).addComponent(Setting)
-
+        this.backGameUse = cc.find("BackGameUse", this.node).addComponent(BackGameUse);
         this.initEvent(GameEvent.UIReset, this.reset)
         this.reset()
     }
     protected start(): void {
-//Teach
-ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info0).getComponent(cc.Button), "0")
-ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info1).getComponent(cc.Button), "1")
-ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "2")
-ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.setting.info3).getComponent(cc.Button), "3")
+        //Teach
+        ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info0).getComponent(cc.Button), "0")
+        ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.props_Feature.info1).getComponent(cc.Button), "1")
+        ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "2")
+        ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", this.setting.info3).getComponent(cc.Button), "3")
     }
     async reset() {
         await this.checkInit()
@@ -55,7 +57,23 @@ ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", 
         ButtonMng.addEvent(this.props_Feature.node, "Props_Feature", "eventClinetClickStart_Stop", this.props_Feature.btn_Start_Stop)
         ButtonMng.addEvent(this.props_Feature.node, "Props_Feature", "eventSkip", this.props_Feature.skip)
         ButtonMng.addEvent(this.props_Feature.node, "Props_Feature", "evetResetView", this.props_Feature.resetView)
+
+    }
+    setbtnEvent_Again() {
+        this.station.block.active = true
+        this.station.info2.active = true
+        this.station.scroll.node.active = true
+        this.station.isOpen = this.station.scroll.node.active
+        this.station.icon.angle = 0
+        this.station.chengeInfo2BtnText()
+        this.setting.node.setSiblingIndex(cc.macro.MIN_ZINDEX)
+        this.backGameUse.node.setSiblingIndex(cc.macro.MIN_ZINDEX)
+        this.station.node.setSiblingIndex(cc.macro.MAX_ZINDEX)
         
+        this.bg.active = true
+        this.block.active = true
+        ButtonMng.reMoveEvent(cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "eventControll")
+        ButtonMng.addEvent(this.node, "Panel_UI", "eventAgain", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button))
     }
     async checkInit() {
         return new Promise<void>((resolve, reject) => {
@@ -79,7 +97,6 @@ ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", 
         MusciMng.effectPlay("BtnClick")
         switch (Number(_customEventData)) {
             case 0:
-
                 this.props_Feature.info0.active = false
                 this.props_Feature.info1.active = true
                 break;
@@ -103,5 +120,11 @@ ButtonMng.addEvent(this.node, "Panel_UI", "eventControll", cc.find("Btn_Close", 
                 break;
 
         }
+    }
+    eventAgain() {
+        this.station.info2.active = false
+        this.bg.active = false
+        this.block.active = false
+        this.station.block.active = false
     }
 }

@@ -106,14 +106,14 @@ var Controll = /** @class */ (function (_super) {
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message_1.default);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version_1.default);
         this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test_1.default);
+        // if (CC_DEV)
+        //     this.panel_Test.show()
+        // else
+        //     this.panel_Test.hide()
         this.initEvent(GameEvent_1.GameEvent.SendModel, this.sendModle);
         this.initEvent(GameEvent_1.GameEvent.SendCommand, this.sendCommand);
         this.initEvent(GameEvent_1.GameEvent.GetStation, this.changeStationSprite);
-        // cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL)
-        // cc.view.enableAutoFullScreen(true);
         AssetMng_1.default.startLoad();
-        // console.log(this.mapItem);
-        // console.log(fcc);
         fcc.configMgr
             .build();
         var updateTime = cc.sys.os == cc.sys.OS_IOS ? 500 : 100;
@@ -125,6 +125,11 @@ var Controll = /** @class */ (function (_super) {
             .startListener(updateTime);
     };
     Controll.prototype.start = function () {
+        var data = new postCmd();
+        data.cmd = "StartLoading";
+        //@ts-ignore
+        data.isRotated = cc.view._isRotated;
+        GameModle_1.default.webPostMessage.send(data);
         MusciMng_1.default.init();
         this.panel_Version.setVersion(GameModle_1.default.version);
         this.sendModle(GameEvent_1.GameEvent.InitMap);
@@ -134,7 +139,6 @@ var Controll = /** @class */ (function (_super) {
         this.panel_Message.node.opacity = 255;
         this.panel_Door.reset();
         this.checkData();
-        // this.mainInit()
     };
     Controll.prototype.sendModle = function (type) {
         switch (type) {
@@ -172,33 +176,16 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        // console.log("初始化檢查資料");
                         GameModle_1.default.isEndLoadingData = false;
                         this.panel_Loading.show();
                         //Test
-                        // GameModle.playData.level = 2
-                        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
-                        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // console.log(GameModle.qaLibrary.qaLib_str);
-                        // console.log(GameModle.chooseLibrary.chooseLib);
-                        // console.log(GameModle.answerLibrary.answerLib_str);
-                        // console.log(GameModle.explainLibrary.explainLib);
                         return [4 /*yield*/, AssetMng_1.default.checkState()];
                     case 1:
                         //Test
-                        // GameModle.playData.level = 2
-                        // GameModle.qaLibrary = new QALibrary(GameModle.playData.level, 3);
-                        // GameModle.chooseLibrary = new ChooseLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // GameModle.answerLibrary = new AnswerLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // GameModle.explainLibrary = new ExplainLibrary(GameModle.playData.level, GameModle.qaLibrary.qaLib_num)
-                        // console.log(GameModle.qaLibrary.qaLib_str);
-                        // console.log(GameModle.chooseLibrary.chooseLib);
-                        // console.log(GameModle.answerLibrary.answerLib_str);
-                        // console.log(GameModle.explainLibrary.explainLib);
                         _a.sent();
+                        this.doorAgainGame();
                         GameModle_1.default.isEndLoadingData = true;
-                        MusciMng_1.default.musicPlay("gameBG");
                         this.panel_Loading.Actionhide();
                         return [2 /*return*/];
                 }
@@ -210,11 +197,6 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        // await AssetMng.checkState();
-                        // MusciMng.musicPlay("gameBG")
-                        // MusciMng.effectPlay("DoorOpen")
-                        // MusciMng.musicStop()
-                        // MusciMng.effectAllStop()
                         this.panel_Version.node.active = false;
                         MusciMng_1.default.effectPlay("DoorOpen");
                         return [4 /*yield*/, this.panel_Door.openDoor()];
@@ -227,11 +209,13 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.cameraControll.showAllView()];
                     case 3:
                         _a.sent();
+                        MusciMng_1.default.musicPlay("gameBG");
                         return [4 /*yield*/, new DelayTime_1.MyDelay().setDelay(0.5)];
                     case 4:
                         _a.sent();
                         return [4 /*yield*/, this.cameraControll.moveToManCamera()
-                            // GameModle.playData.level = 0
+                            // this.panel_Man.nowStation = 20
+                            // GameModle.playData.level = 0 
                             // GameModle.playData.trainTypeNumber = 0
                             // GameModle.playData.trainType = TrainType.Type0
                             // this.endChoosTrain()
@@ -239,7 +223,8 @@ var Controll = /** @class */ (function (_super) {
                         ];
                     case 5:
                         _a.sent();
-                        // GameModle.playData.level = 0
+                        // this.panel_Man.nowStation = 20
+                        // GameModle.playData.level = 0 
                         // GameModle.playData.trainTypeNumber = 0
                         // GameModle.playData.trainType = TrainType.Type0
                         // this.endChoosTrain()
@@ -352,15 +337,17 @@ var Controll = /** @class */ (function (_super) {
                     case 1:
                         _a.sent();
                         data = new postCmd();
-                        MusciMng_1.default.swichEffect();
-                        MusciMng_1.default.swichMusic();
+                        if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
+                            MusciMng_1.default.swichEffect();
+                            MusciMng_1.default.swichMusic();
+                        }
                         switch (this.panel_Man.nowStation) {
                             case 1:
                                 data.cmd = "OpenView";
                                 data.viewType = 1;
                                 data.kid = false;
                                 GameModle_1.default.webPostMessage.send(data);
-                                console.log("播放安全影片");
+                                // console.log("播放安全影片");
                                 break;
                             case 20:
                                 getKid = GameModle_1.default.playData.level == 0 ? true : false;
@@ -368,7 +355,7 @@ var Controll = /** @class */ (function (_super) {
                                 data.viewType = 2;
                                 data.kid = getKid;
                                 GameModle_1.default.webPostMessage.send(data);
-                                console.log("播放廉政影片");
+                                // console.log("播放廉政影片");
                                 break;
                         }
                         return [2 /*return*/];
@@ -381,8 +368,10 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        MusciMng_1.default.swichEffect();
-                        MusciMng_1.default.swichMusic();
+                        if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
+                            MusciMng_1.default.swichEffect();
+                            MusciMng_1.default.swichMusic();
+                        }
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
                         _a.sent();
@@ -557,6 +546,7 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        this.panel_Man.manStop();
                         this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
@@ -589,6 +579,8 @@ var Controll = /** @class */ (function (_super) {
     Controll.prototype.againGame = function () {
         this.closeEndGame();
         cc.director.loadScene("GameSence");
+        MusciMng_1.default.musicStop();
+        MusciMng_1.default.effectAllStop();
     };
     Controll.prototype.goLottery = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -608,16 +600,28 @@ var Controll = /** @class */ (function (_super) {
                     case 3:
                         _a.sent();
                         MusciMng_1.default.musicStop();
+                        MusciMng_1.default.effectAllStop();
                         data = new postCmd();
                         data.cmd = "OpenView";
                         data.viewType = -1;
                         data.kid = false;
                         GameModle_1.default.webPostMessage.send(data);
-                        console.log("遊戲結束Show抽獎與問答");
+                        this.doorAgainGame(); //穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變
                         return [2 /*return*/];
                 }
             });
         });
+    };
+    Controll.prototype.endToBackGame = function () {
+        this.closeEndGame();
+        this.panel_Man.node.active = false;
+        this.cameraControll.activeMineCamera(true);
+        this.cameraControll.activeManCamera(false);
+        this.cameraControll.moveToStation(GameModle_1.default.mapItem.get(0).node);
+        this.panel_UI.show();
+        this.panel_UI.props_Feature.hide();
+        this.panel_UI.setbtnEvent_Again();
+        this.panel_UI.backGameUse.show();
     };
     Controll.prototype.doorAgainGame = function () {
         cc.director.loadScene("GameSence");
@@ -691,15 +695,29 @@ var Controll = /** @class */ (function (_super) {
             GameModle_1.default.isEndLoadingData = false; //避免重複敲
             var data = new postCmd();
             data.cmd = 'Close';
+            //@ts-ignore
             GameModle_1.default.webPostMessage.send(data);
             //開始遊戲
             this.mainInit();
+        }
+    };
+    //音樂的處理
+    Controll.prototype.lateUpdate = function () {
+        //@ts-ignore
+        var context = cc.sys.__audioSupport.context;
+        if (context.state === 'suspended') {
+            context.resume();
+            // console.log(context.state);
         }
     };
     Controll.prototype.update = function (dt) {
         // console.log(cc.audioEngine.getState(MusciMng.musicID));
         // console.log(cc.audioEngine.getState(MusciMng.effectID.get('DoorOpen')));
         // console.log("正在播放嗎?" + cc.audioEngine.isMusicPlaying());
+        // cc.find("Panel_長寬測試/視窗").getComponent(cc.Label).string = "寬：" + cc.view.getDesignResolutionSize().width + "\n高：" + cc.view.getDesignResolutionSize().height
+        //@ts-ignore
+        // cc.find("Panel_長寬測試/旋轉").getComponent(cc.Label).string = cc.view._isRotated.toString()
+        // cc.game.
     };
     Controll = __decorate([
         ccclass

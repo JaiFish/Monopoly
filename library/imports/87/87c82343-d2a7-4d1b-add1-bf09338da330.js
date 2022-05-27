@@ -45,6 +45,7 @@ var Explain = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.node, "Explain", "nextProcess", this.btn_Next);
     };
     Explain.prototype.setInfoStr = function (str) {
+        this.scrollView.scrollToTop(0.1);
         this.info_Text.string = str;
     };
     Explain.prototype.nextProcess = function (e, _customEventData) {

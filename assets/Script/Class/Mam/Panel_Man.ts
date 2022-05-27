@@ -74,8 +74,7 @@ export default class Panel_Man extends ManAction {
             this.isWaitSingnalLinght = true
             return
         }
-        let getID = MusciMng.effectPlay("TrainGoing",true)
-        cc.audioEngine.setVolume(getID,1)
+        MusciMng.singleEffectPlay("TrainGoing", true)
         this.setManState(GameState.Start)
         this.startGO();
 
@@ -85,7 +84,7 @@ export default class Panel_Man extends ManAction {
         this.isWaitSingnalLinght = false
         this.setManState(GameState.Start)
         this.startGO();
-        MusciMng.effectPlay("TrainGoing",true)
+        MusciMng.singleEffectPlay("TrainGoing", true)
     }
     manLineWait() {
         if (this.isWaitSingnalLinght) return
@@ -236,7 +235,7 @@ export default class Panel_Man extends ManAction {
     }
     checkSignalLight() {//因為都會先計算下一個路的點，因此都會先+1，為了往回推需不需要停止就要-1
         let tryGet = this.nowStation - 1
-        console.log("計算數字：" + tryGet);
+        // console.log("計算數字：" + tryGet);
         if (this.WaitArray[0] == tryGet) {
             this.WaitArray.shift()
             return true

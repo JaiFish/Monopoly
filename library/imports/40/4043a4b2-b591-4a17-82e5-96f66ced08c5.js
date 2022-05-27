@@ -86,8 +86,10 @@ var Station = /** @class */ (function (_super) {
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout);
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout);
         this.info2 = cc.find('Info2', this.node);
+        this.block = cc.find("Block", this.node);
         this.initEvent(GameEvent_1.GameEvent.UIGetStation, this.getStation);
         this.info2.active = false;
+        this.block.active = false;
         //額外處理
         this.sortData();
         this.itemCount = this.getStationData.length;
@@ -182,6 +184,9 @@ var Station = /** @class */ (function (_super) {
             this.getStationData.push(GameModle_1.default.stationType_QA[index]);
         }
         this.getStationData.sort(function (a, b) { return a - b; });
+    };
+    Station.prototype.chengeInfo2BtnText = function () {
+        cc.find("Btn_Close/Label", this.info2).getComponent(cc.Label).string = "關閉";
     };
     Station = __decorate([
         ccclass

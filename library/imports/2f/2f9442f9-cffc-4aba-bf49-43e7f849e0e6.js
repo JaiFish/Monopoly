@@ -70,7 +70,7 @@ var Props_Feature = /** @class */ (function (_super) {
      * @param isboolean isGO?
      */
     Props_Feature.prototype.setStart_Stop = function (isboolean) {
-        console.error(isboolean);
+        // console.error(isboolean);
         this.isGo = isboolean == null || isboolean == undefined ? !this.isGo : isboolean;
         var getBoolean = this.isGo ? "Stop" : "Start"; //要相反，如果正在走就要顯示停止
         this.sprtie_start_Stop.node.x = this.isGo ? 0 : 4.5;

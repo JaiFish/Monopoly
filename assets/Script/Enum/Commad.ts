@@ -32,4 +32,5 @@ export enum Commamnd {
     ClinetClickStart_Stop = "clinetClickStart_Stop",
     ShowAllView = "showAllView",
     WebCheckData = "webCheckData",
+    EndToBackGame= "endToBackGame"
 }

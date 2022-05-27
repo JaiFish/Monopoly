@@ -123,17 +123,20 @@ var Panel_Door = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
-                cc.tween(this.left)
-                    .by(1, { x: this.distance })
-                    .call(function () {
-                    _this.btn_Start.node.active = true;
-                    ButtonMng_1.default.addEvent(_this.node, "Panel_Door", "sendDoorAgainGame", _this.btn_Start);
-                })
-                    .start();
-                cc.tween(this.right)
-                    .by(1, { x: -this.distance })
-                    .start();
-                return [2 /*return*/];
+                return [2 /*return*/, new Promise(function (resolve, reject) {
+                        cc.tween(_this.left)
+                            .by(1, { x: _this.distance })
+                            .call(function () {
+                            _this.btn_Start.node.active = true;
+                            ButtonMng_1.default.reMoveEvent(_this.btn_Start, "sendMainInit");
+                            ButtonMng_1.default.addEvent(_this.node, "Panel_Door", "sendDoorAgainGame", _this.btn_Start);
+                            resolve();
+                        })
+                            .start();
+                        cc.tween(_this.right)
+                            .by(1, { x: -_this.distance })
+                            .start();
+                    })];
             });
         });
     };

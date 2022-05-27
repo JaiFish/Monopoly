@@ -17,8 +17,11 @@ class MusicMng {
         // this.setEffectsicVol(0)
         // this.swichMusic()
         // this.swichEffect()
+        this.isMusicOpen = true
+        this.isEffectOpen = true
         this.setMusicVol()
         this.setEffectsicVol()
+
     }
 
     testPlayMusic(str: string, isLoop: boolean = true) {
@@ -32,7 +35,7 @@ class MusicMng {
         cc.audioEngine.setMusicVolume(this.isMusicOpen ? this.musicVol : 0)
     }
     setMusicVol(vol?: number) {
-        this.musicVol = vol ? vol : this.musicVol
+        this.musicVol = vol ? vol : this.default_Music
         cc.audioEngine.setMusicVolume(this.isMusicOpen ? this.musicVol : 0)
     }
     musicPlay(str: string, isLoop: boolean = true) {
@@ -48,14 +51,21 @@ class MusicMng {
         cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0)
     }
     setEffectsicVol(vol?: number) {
-        this.effectVol = vol ? vol : this.effectVol
+        this.effectVol = vol ? vol : this.default_Effect
         cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0)
     }
     effectPlay(str: string, isLoop: boolean = false) {
         this.effectID.set(str, cc.audioEngine.playEffect(AssetMng.data_Music.get(str), isLoop))
-        return  this.effectID.get(str)
+        return this.effectID.get(str)
     }
 
+    singleEffectPlay(str: string, isLoop: boolean = false) {
+        let tryGetID = this.effectID.get(str)
+        if (tryGetID != undefined)
+            cc.audioEngine.stopEffect(tryGetID)
+        this.effectID.set(str, cc.audioEngine.playEffect(AssetMng.data_Music.get(str), isLoop))
+        return this.effectID.get(str)
+    }
     effectStop(str: string) {
         cc.audioEngine.stopEffect(this.effectID.get(str))
 

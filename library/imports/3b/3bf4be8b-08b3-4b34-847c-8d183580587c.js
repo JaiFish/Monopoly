@@ -27,17 +27,22 @@ var AssetMng = /** @class */ (function () {
     AssetMng.prototype.checkState = function () {
         var _this = this;
         return new Promise(function (resolve) {
-            var repet = setInterval(function () {
-                var check = true;
-                _this.AllAssetClass.forEach(function (_AssetClass) {
-                    if (!_AssetClass.checkAssetState)
-                        return check = false;
-                });
-                if (check) {
-                    clearInterval(repet);
-                    resolve();
-                }
-            }, 500);
+            if (_this.isAllOK)
+                return resolve();
+            else {
+                var repet_1 = setInterval(function () {
+                    var check = true;
+                    _this.AllAssetClass.forEach(function (_AssetClass) {
+                        if (!_AssetClass.checkAssetState)
+                            return check = false;
+                    });
+                    if (check) {
+                        _this.isAllOK = true;
+                        clearInterval(repet_1);
+                        resolve();
+                    }
+                }, 500);
+            }
         });
     };
     return AssetMng;

@@ -59,7 +59,7 @@ export default class Props_Feature extends ComponentBase {
      * @param isboolean isGO?
      */
     setStart_Stop(isboolean?: boolean) {
-        console.error(isboolean);
+        // console.error(isboolean);
         this.isGo = isboolean == null || isboolean == undefined ? !this.isGo : isboolean
         let getBoolean = this.isGo ? "Stop" : "Start"//要相反，如果正在走就要顯示停止
         this.sprtie_start_Stop.node.x = this.isGo ? 0 : 4.5

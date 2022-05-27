@@ -1,0 +1,119 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "03a1abaf-e2ee-4f62-bd0e-047bf01ac32f": {
+      "assetMtime": 1653672316658,
+      "metaMtime": 1653672324349
+    },
+    "8f6d6f90-f9fa-44de-8977-b897a31286d7": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695197
+    },
+    "769c775d-8a94-466e-b667-a631768a2937": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695197
+    },
+    "a4f51e12-cb72-4867-9d86-fcef48d57ff6": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695248
+    },
+    "ac22d09e-46de-43b7-bc1c-422bf840ff39": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695248
+    },
+    "f2f9d861-782a-467b-a056-859876d3bc9b": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695193
+    },
+    "b38a8d59-699b-4917-81e2-808c08273a02": {
+      "assetMtime": 1652669132000,
+      "metaMtime": 1653113695193
+    }
+  },
+  "result": {
+    "name": "See",
+    "width": 2048,
+    "height": 2048,
+    "ver": "1.2.1",
+    "uuid": "03a1abaf-e2ee-4f62-bd0e-047bf01ac32f",
+    "maxWidth": 2048,
+    "maxHeight": 2048,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [],
+    "unpackedTextures": [
+      {
+        "name": "海-中",
+        "uuid": "8f6d6f90-f9fa-44de-8977-b897a31286d7",
+        "textureUuid": "769c775d-8a94-466e-b667-a631768a2937",
+        "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733597_image_0.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 2048,
+          "height": 2048,
+          "rotatedWidth": 2048,
+          "rotatedHeight": 2048
+        },
+        "rawWidth": 2048,
+        "rawHeight": 2048,
+        "width": 2054,
+        "height": 2054,
+        "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/76/769c775d-8a94-466e-b667-a631768a2937.jpg"
+      },
+      {
+        "name": "海-左",
+        "uuid": "a4f51e12-cb72-4867-9d86-fcef48d57ff6",
+        "textureUuid": "ac22d09e-46de-43b7-bc1c-422bf840ff39",
+        "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733597_image_1.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 2048,
+          "height": 2048,
+          "rotatedWidth": 2048,
+          "rotatedHeight": 2048
+        },
+        "rawWidth": 2048,
+        "rawHeight": 2048,
+        "width": 2054,
+        "height": 2054,
+        "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/ac/ac22d09e-46de-43b7-bc1c-422bf840ff39.jpg"
+      },
+      {
+        "name": "海-右",
+        "uuid": "f2f9d861-782a-467b-a056-859876d3bc9b",
+        "textureUuid": "b38a8d59-699b-4917-81e2-808c08273a02",
+        "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733597_image_2.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 2048,
+          "height": 2048,
+          "rotatedWidth": 2048,
+          "rotatedHeight": 2048
+        },
+        "rawWidth": 2048,
+        "rawHeight": 2048,
+        "width": 2054,
+        "height": 2054,
+        "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/b3/b38a8d59-699b-4917-81e2-808c08273a02.jpg"
+      }
+    ]
+  }
+}

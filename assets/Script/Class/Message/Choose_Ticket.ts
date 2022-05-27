@@ -32,12 +32,13 @@ export default class Choose_Ticket extends ComponentBase {
             case "Blue":
                 GameModle.playData.level = 0
                 break;
-            case "Red":
+            case "Green":
                 GameModle.playData.level = 1
                 break;
-            case "Green":
+            case "Red":
                 GameModle.playData.level = 2
                 break;
+
         }
         this.EventEmit(GameEvent.SendCommand, Commamnd.EndChooseTicket)
         // this.actionHide(() => {

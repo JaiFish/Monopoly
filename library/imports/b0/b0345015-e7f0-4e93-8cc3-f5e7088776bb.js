@@ -54,10 +54,10 @@ var Choose_Ticket = /** @class */ (function (_super) {
             case "Blue":
                 GameModle_1.default.playData.level = 0;
                 break;
-            case "Red":
+            case "Green":
                 GameModle_1.default.playData.level = 1;
                 break;
-            case "Green":
+            case "Red":
                 GameModle_1.default.playData.level = 2;
                 break;
         }

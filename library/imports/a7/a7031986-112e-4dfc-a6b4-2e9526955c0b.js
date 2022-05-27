@@ -11,7 +11,7 @@ var QALibrary = /** @class */ (function () {
         this.url = "https://docs.google.com/spreadsheets/d/1fbzCyt95TSj1nbzuwHgFHyImxNJISVFvs6BuiE-BO70/edit#gid=131335285";
         this.lib = [];
         var libClass = new lib();
-        console.log("創立");
+        // console.log("創立");
         switch (level) {
             case 0:
                 this.lib = libClass.easy;
@@ -27,7 +27,7 @@ var QALibrary = /** @class */ (function () {
         for (var index = 0; index < this.lib.length; index++) {
             this.lib[index] = String(index) + "_" + this.lib[index];
         }
-        console.log(this.lib);
+        // console.log(this.lib);
         for (var index = 0; index < getCount; index++) {
             var randomQA = Math.floor(Math.random() * this.lib.length);
             var formatStr = this.lib[randomQA].split('_');
@@ -35,7 +35,6 @@ var QALibrary = /** @class */ (function () {
             this.qaLib_num.push(Number(formatStr[0]));
             this.lib.splice(randomQA, 1); //刪除第幾個物件,刪除數量
         }
-        console.log();
     }
     return QALibrary;
 }());

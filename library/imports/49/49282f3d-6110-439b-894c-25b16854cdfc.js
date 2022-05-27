@@ -39,6 +39,7 @@ var Commamnd;
     Commamnd["ClinetClickStart_Stop"] = "clinetClickStart_Stop";
     Commamnd["ShowAllView"] = "showAllView";
     Commamnd["WebCheckData"] = "webCheckData";
+    Commamnd["EndToBackGame"] = "endToBackGame";
 })(Commamnd = exports.Commamnd || (exports.Commamnd = {}));
 
 cc._RF.pop();

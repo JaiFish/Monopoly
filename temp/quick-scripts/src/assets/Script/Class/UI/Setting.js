@@ -33,6 +33,7 @@ var Setting = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.maxIndex = 4;
         _this.itemCount = 1;
+        _this.itemMap = new Map();
         return _this;
     }
     Setting.prototype.onLoad = function () {
@@ -89,8 +90,9 @@ var Setting = /** @class */ (function (_super) {
     };
     Setting.prototype.itemSop = function (index) {
         var _item = cc.instantiate(this.item);
-        this.con.addChild(_item);
+        this.con.addChild(_item, cc.macro.MAX_ZINDEX, index.toString());
         var _class = _item.addComponent(SettingBtn_1.default);
+        this.itemMap.set(index, _class);
         _class.setEvent(index);
         _item.active = true;
     };

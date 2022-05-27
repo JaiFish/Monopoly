@@ -134,11 +134,6 @@
     "meta": 1653108570907,
     "relativePath": "Script\\design\\framework-production.js"
   },
-  "43f85ca6-4595-42c0-8df9-45850569178a": {
-    "asset": 1650463417594,
-    "meta": 1652741937212,
-    "relativePath": "Image\\Other\\直線路線.png"
-  },
   "3f265f40-dbc3-412c-a9df-6cff7093ea87": {
     "asset": 1650504495903,
     "meta": 1652741939009,
@@ -155,8 +150,8 @@
     "relativePath": "Script\\Class\\Message"
   },
   "570540a9-2b1c-4bdd-a416-e0bc1c21fbeb": {
-    "asset": 1653074965438,
-    "meta": 1653075599406,
+    "asset": 1653496381781,
+    "meta": 1653572638558,
     "relativePath": "Script\\Class\\UI"
   },
   "40c8dac6-01a0-42fb-8c33-6d51d2153d1d": {
@@ -730,8 +725,8 @@
     "relativePath": "Image\\TrainDoor"
   },
   "75ed4dab-2ad7-446c-8c26-9a892e06b0aa": {
-    "asset": 1653122092806,
-    "meta": 1653123631496,
+    "asset": 1653623484619,
+    "meta": 1653660292849,
     "relativePath": "Image\\Other"
   },
   "91a0272c-0104-47a8-9921-b3d0ae4ba3ae": {
@@ -755,8 +750,8 @@
     "relativePath": "Image\\Other\\相片底.png"
   },
   "056c8011-8c09-47a0-8b4e-c00e07664628": {
-    "asset": 1653329021291,
-    "meta": 1653330805582,
+    "asset": 1653416619819,
+    "meta": 1653423475055,
     "relativePath": "Image\\BG"
   },
   "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5": {
@@ -773,11 +768,6 @@
     "asset": 1651858607067,
     "meta": 1652741936971,
     "relativePath": "Image\\BG\\橢圓藍色按鈕-大.png"
-  },
-  "cb8d2d92-fb6b-4db1-b3b0-4276d9538179": {
-    "asset": 1651858607066,
-    "meta": 1652741936943,
-    "relativePath": "Image\\BG\\控制區底.png"
   },
   "d8336dce-fd71-41ce-8322-4a1dfee5c5bf": {
     "asset": 1652739980249,
@@ -877,7 +867,7 @@
   "438112e6-7d95-4ad5-8452-a8533052f032": {
     "asset": 1652375869617,
     "meta": 1652741937377,
-    "relativePath": "Image\\Other\\對話框.png"
+    "relativePath": "Image\\Other\\TalkBG\\對話框.png"
   },
   "8d3fceaf-73c1-4bdb-a88a-7db7872916ad": {
     "asset": 1652454572393,
@@ -2239,11 +2229,6 @@
     "meta": 1652894342302,
     "relativePath": "Script\\Data\\base\\ComponentBase.ts"
   },
-  "87c82343-d2a7-4d1b-add1-bf09338da330": {
-    "asset": 1652979448524,
-    "meta": 1652980169681,
-    "relativePath": "Script\\Class\\Message\\Explain.ts"
-  },
   "2b25a93e-2971-4516-b479-f67cc0448037": {
     "asset": 1652979468462,
     "meta": 1652980169729,
@@ -2259,11 +2244,6 @@
     "meta": 1653066192847,
     "relativePath": "Script\\Asset\\MusicAsset.ts"
   },
-  "b0345015-e7f0-4e93-8cc3-f5e7088776bb": {
-    "asset": 1653069478073,
-    "meta": 1653069624380,
-    "relativePath": "Script\\Class\\Message\\Choose_Ticket.ts"
-  },
   "31e45280-fbcc-4723-9467-d99b637dff1f": {
     "asset": 1653069634405,
     "meta": 1653069634946,
@@ -2272,57 +2252,37 @@
   "b38a8d59-699b-4917-81e2-808c08273a02": {
     "asset": 1652669132000,
     "meta": 1653113695193,
-    "relativePath": "Image\\Other\\海-右.jpg"
+    "relativePath": "Image\\Other\\SeeBG\\海-右.jpg"
   },
   "769c775d-8a94-466e-b667-a631768a2937": {
     "asset": 1652669132000,
     "meta": 1653113695197,
-    "relativePath": "Image\\Other\\海-中.jpg"
+    "relativePath": "Image\\Other\\SeeBG\\海-中.jpg"
   },
   "ac22d09e-46de-43b7-bc1c-422bf840ff39": {
     "asset": 1652669132000,
     "meta": 1653113695248,
-    "relativePath": "Image\\Other\\海-左.jpg"
-  },
-  "195f4860-8764-4d77-b39a-6b65fb7529a1": {
-    "asset": 1651582486000,
-    "meta": 1653114353624,
-    "relativePath": "Image\\QA\\一般版第5題原始圖示.jpg"
-  },
-  "2c0ee9e3-fee2-4f89-9278-042d27b25759": {
-    "asset": 1651582784000,
-    "meta": 1653114353627,
-    "relativePath": "Image\\QA\\一般版第9題原始圖示-1.jpg"
-  },
-  "e0bd381d-1717-4c2b-bc5d-2104479b5990": {
-    "asset": 1651582784000,
-    "meta": 1653114353677,
-    "relativePath": "Image\\QA\\一般版第9題原始圖示-3.jpg"
-  },
-  "5fcab410-8abc-40c3-9474-5c68db6eecd1": {
-    "asset": 1651582784000,
-    "meta": 1653114353677,
-    "relativePath": "Image\\QA\\一般版第9題原始圖示-2.jpg"
+    "relativePath": "Image\\Other\\SeeBG\\海-左.jpg"
   },
   "dbe1a6a5-aeb0-4458-81e6-75f6301097ed": {
     "asset": 1653114748196,
     "meta": 1653114748303,
-    "relativePath": "Image\\Other\\對話框-4.png"
+    "relativePath": "Image\\Other\\TalkBG\\對話框-4.png"
   },
   "ce6b52dc-0778-43b6-b13c-7f424d5fd277": {
     "asset": 1653114748196,
     "meta": 1653114748310,
-    "relativePath": "Image\\Other\\對話框-1.png"
+    "relativePath": "Image\\Other\\TalkBG\\對話框-1.png"
   },
   "af7084f0-e5a3-416d-b90d-d2800d6258d3": {
     "asset": 1653114748196,
     "meta": 1653114748324,
-    "relativePath": "Image\\Other\\對話框-2.png"
+    "relativePath": "Image\\Other\\TalkBG\\對話框-2.png"
   },
   "c1a30094-27ec-4d90-81f5-b255d7301c2d": {
     "asset": 1653114748196,
     "meta": 1653114748330,
-    "relativePath": "Image\\Other\\對話框-3.png"
+    "relativePath": "Image\\Other\\TalkBG\\對話框-3.png"
   },
   "10b17d17-3e04-489a-8be8-f73987001736": {
     "asset": 1653116811140,
@@ -2394,21 +2354,6 @@
     "meta": 1653116972774,
     "relativePath": "Image\\Other\\山\\功維敘隧道.png"
   },
-  "4d0a4437-9492-4be4-881b-c327a9cdc3d7": {
-    "asset": 1653117328348,
-    "meta": 1653117328384,
-    "relativePath": "Image\\Other\\車票-一般.jpg"
-  },
-  "56baa156-eb84-4eab-b035-540662a98ab7": {
-    "asset": 1653117328348,
-    "meta": 1653117328386,
-    "relativePath": "Image\\Other\\車票-兒童.jpg"
-  },
-  "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba": {
-    "asset": 1653117328348,
-    "meta": 1653117328401,
-    "relativePath": "Image\\Other\\車票-公務員.jpg"
-  },
   "e7b646ef-6204-43fb-9b8d-7ec60646103e": {
     "asset": 1653117372410,
     "meta": 1653117372431,
@@ -2438,16 +2383,6 @@
     "asset": 1653120818159,
     "meta": 1653120901318,
     "relativePath": "Script\\Asset\\SpriteAsset.ts"
-  },
-  "ce4940a4-546d-4f40-aa47-b33a806dfedf": {
-    "asset": 1653120832027,
-    "meta": 1653120901365,
-    "relativePath": "Script\\Class\\Mam\\ManAnimation.ts"
-  },
-  "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
-    "asset": 1653120846641,
-    "meta": 1653120901520,
-    "relativePath": "Script\\Class\\Message\\EndGame.ts"
   },
   "1d2da556-63d7-4952-bb2d-73c11159a21e": {
     "asset": 1653120849500,
@@ -2489,16 +2424,6 @@
     "meta": 1653123750478,
     "relativePath": "Script\\Class\\Panel_Loading.ts"
   },
-  "a30bf20e-c33c-45d7-acc0-62412d72ea3c": {
-    "asset": 1653124491760,
-    "meta": 1653124643418,
-    "relativePath": "Script\\Class\\UI\\Setting.ts"
-  },
-  "4043a4b2-b591-4a17-82e5-96f66ced08c5": {
-    "asset": 1653124486204,
-    "meta": 1653124643519,
-    "relativePath": "Script\\Class\\UI\\Station.ts"
-  },
   "3b2f2549-493b-4d49-a90a-b0aae4eab5ec": {
     "asset": 1653126316701,
     "meta": 1653126335958,
@@ -2513,21 +2438,6 @@
     "asset": 1653128872622,
     "meta": 1653128873127,
     "relativePath": "Script\\Enum\\GameState.ts"
-  },
-  "75793531-e711-41e9-b66c-af73ff1e2938": {
-    "asset": 1653132257485,
-    "meta": 1653132258890,
-    "relativePath": "Script\\Class\\UI\\Panel_UI.ts"
-  },
-  "2f9442f9-cffc-4aba-bf49-43e7f849e0e6": {
-    "asset": 1653133487968,
-    "meta": 1653133568115,
-    "relativePath": "Script\\Class\\UI\\Props_Feature.ts"
-  },
-  "43ed14be-b31d-4152-93c1-c1c571423f0b": {
-    "asset": 1653134096282,
-    "meta": 1653134179744,
-    "relativePath": "Script\\Class\\UI\\SettingBtn.ts"
   },
   "3b1ff3b9-90e4-4598-ab25-9efa5954c512": {
     "asset": 1653135085659,
@@ -2574,16 +2484,6 @@
     "meta": 1653146855092,
     "relativePath": "Image\\Other\\山\\山脈-04.png"
   },
-  "5fd683a9-b4ac-4b33-8c8f-dec6039b1f89": {
-    "asset": 1653205267713,
-    "meta": 1653205269980,
-    "relativePath": "Script\\Data\\QA\\ChooseLibrary.ts"
-  },
-  "a7031986-112e-4dfc-a6b4-2e9526955c0b": {
-    "asset": 1653209369942,
-    "meta": 1653209370978,
-    "relativePath": "Script\\Data\\QA\\QALibrary.ts"
-  },
   "c002027b-a025-43c9-89ef-445e9b9c5044": {
     "asset": 1653211338900,
     "meta": 1653211353940,
@@ -2614,11 +2514,6 @@
     "meta": 1653212055856,
     "relativePath": "resources\\Image\\Cloud.png"
   },
-  "b50505a3-32d2-4e05-8941-5b7f98218ccf": {
-    "asset": 1653214310508,
-    "meta": 1653214311205,
-    "relativePath": "Script\\Class\\Message\\Question.ts"
-  },
   "ca623ca8-b6a9-4853-8807-93c27d5efa06": {
     "asset": 1653239496589,
     "meta": 1653239502049,
@@ -2644,21 +2539,6 @@
     "meta": 1653281113631,
     "relativePath": "Image\\TrainDoor\\列車-車廂.png"
   },
-  "49282f3d-6110-439b-894c-25b16854cdfc": {
-    "asset": 1653281552293,
-    "meta": 1653281659718,
-    "relativePath": "Script\\Enum\\Commad.ts"
-  },
-  "82a59f89-f2e3-4340-a818-426383dad8ef": {
-    "asset": 1653281989308,
-    "meta": 1653282159060,
-    "relativePath": "Script\\Class\\Panel_Door.ts"
-  },
-  "1d6e6101-4936-41fc-bff1-1e2875e7c596": {
-    "asset": 1653281784813,
-    "meta": 1653282159243,
-    "relativePath": "Script\\WebPostMessage.ts"
-  },
   "142fdcf1-f8b0-41f9-9d11-0042e604aed6": {
     "asset": 1653318421449,
     "meta": 1653319728594,
@@ -2674,45 +2554,15 @@
     "meta": 1653329076732,
     "relativePath": "Image\\Bear\\sprites\\Bear_False\\Bear_False.pac"
   },
-  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653330560461,
-    "meta": 1653330560487,
-    "relativePath": "Sence\\GameSence.fire"
-  },
   "dd6dd28d-e1fd-4ced-a8e5-ad3e942f0565": {
     "asset": 1653329021290,
-    "meta": 1653329053420,
-    "relativePath": "Image\\BG\\AutoAtlas.pac"
+    "meta": 1653671823829,
+    "relativePath": "Image\\BG\\BG.pac"
   },
   "b43147aa-6224-4f02-8e12-160e15391749": {
     "asset": 1653329431696,
     "meta": 1653329630887,
     "relativePath": "Script\\Asset\\AnimationAsset.ts"
-  },
-  "3bf4be8b-08b3-4b34-847c-8d183580587c": {
-    "asset": 1653329467036,
-    "meta": 1653329630904,
-    "relativePath": "Script\\Asset\\AssetMng.ts"
-  },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1653329895326,
-    "meta": 1653330032590,
-    "relativePath": "Script\\GameModle.ts"
-  },
-  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
-    "asset": 1653330234451,
-    "meta": 1653330269669,
-    "relativePath": "Script\\Data\\base\\MusciMng.ts"
-  },
-  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1653330141069,
-    "meta": 1653330269794,
-    "relativePath": "Script\\GameControll.ts"
-  },
-  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
-    "asset": 1653330345683,
-    "meta": 1653330377891,
-    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
   },
   "50d40874-106b-43e1-8c2e-c5834bfdf69e": {
     "asset": 1653330501630,
@@ -2746,7 +2596,222 @@
   },
   "62b9bdcc-3061-4819-8004-b7f394486aa3": {
     "asset": 1653330502196,
-    "meta": 1653330503220,
+    "meta": 1653486581576,
     "relativePath": "resources\\Music\\gameBG.mp3"
+  },
+  "89087785-d454-4c36-888e-d95bbbf5b372": {
+    "asset": 1653415909011,
+    "meta": 1653415909039,
+    "relativePath": "Image\\Other\\裝飾-樹-01.png"
+  },
+  "87c82343-d2a7-4d1b-add1-bf09338da330": {
+    "asset": 1653416241189,
+    "meta": 1653416559411,
+    "relativePath": "Script\\Class\\Message\\Explain.ts"
+  },
+  "cb8d2d92-fb6b-4db1-b3b0-4276d9538179": {
+    "asset": 1653416619821,
+    "meta": 1653416619857,
+    "relativePath": "Image\\BG\\控制區底.png"
+  },
+  "a30bf20e-c33c-45d7-acc0-62412d72ea3c": {
+    "asset": 1653418045285,
+    "meta": 1653418103907,
+    "relativePath": "Script\\Class\\UI\\Setting.ts"
+  },
+  "43ed14be-b31d-4152-93c1-c1c571423f0b": {
+    "asset": 1653417848354,
+    "meta": 1653418103927,
+    "relativePath": "Script\\Class\\UI\\SettingBtn.ts"
+  },
+  "b0345015-e7f0-4e93-8cc3-f5e7088776bb": {
+    "asset": 1653419489606,
+    "meta": 1653419494406,
+    "relativePath": "Script\\Class\\Message\\Choose_Ticket.ts"
+  },
+  "b50505a3-32d2-4e05-8941-5b7f98218ccf": {
+    "asset": 1653420638891,
+    "meta": 1653420641814,
+    "relativePath": "Script\\Class\\Message\\Question.ts"
+  },
+  "5fd683a9-b4ac-4b33-8c8f-dec6039b1f89": {
+    "asset": 1653423005133,
+    "meta": 1653423025636,
+    "relativePath": "Script\\Data\\QA\\ChooseLibrary.ts"
+  },
+  "a7031986-112e-4dfc-a6b4-2e9526955c0b": {
+    "asset": 1653423024095,
+    "meta": 1653423025654,
+    "relativePath": "Script\\Data\\QA\\QALibrary.ts"
+  },
+  "ce4940a4-546d-4f40-aa47-b33a806dfedf": {
+    "asset": 1653423114486,
+    "meta": 1653423117754,
+    "relativePath": "Script\\Class\\Mam\\ManAnimation.ts"
+  },
+  "4043a4b2-b591-4a17-82e5-96f66ced08c5": {
+    "asset": 1653496148397,
+    "meta": 1653496183532,
+    "relativePath": "Script\\Class\\UI\\Station.ts"
+  },
+  "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
+    "asset": 1653496362079,
+    "meta": 1653496381805,
+    "relativePath": "Script\\Class\\Message\\EndGame.ts"
+  },
+  "49282f3d-6110-439b-894c-25b16854cdfc": {
+    "asset": 1653580961536,
+    "meta": 1653580962465,
+    "relativePath": "Script\\Enum\\Commad.ts"
+  },
+  "9565d50c-f94a-4fc9-975f-bc78d2f2d861": {
+    "asset": 1653582075299,
+    "meta": 1653582075748,
+    "relativePath": "Script\\Class\\UI\\BackGameUse.ts"
+  },
+  "82a59f89-f2e3-4340-a818-426383dad8ef": {
+    "asset": 1653583130259,
+    "meta": 1653583131850,
+    "relativePath": "Script\\Class\\Panel_Door.ts"
+  },
+  "1d6e6101-4936-41fc-bff1-1e2875e7c596": {
+    "asset": 1653585781341,
+    "meta": 1653585823571,
+    "relativePath": "Script\\WebPostMessage.ts"
+  },
+  "2f9442f9-cffc-4aba-bf49-43e7f849e0e6": {
+    "asset": 1653587817800,
+    "meta": 1653587818607,
+    "relativePath": "Script\\Class\\UI\\Props_Feature.ts"
+  },
+  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
+    "asset": 1653678450715,
+    "meta": 1653678450751,
+    "relativePath": "Sence\\GameSence.fire"
+  },
+  "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
+    "asset": 1653589086176,
+    "meta": 1653589086557,
+    "relativePath": "Script\\Data\\base\\MusciMng.ts"
+  },
+  "6dd35f7d-0a53-40c3-ac14-0e141c1f8609": {
+    "asset": 1653589119917,
+    "meta": 1653589121375,
+    "relativePath": "Script\\Class\\Mam\\Panel_Man.ts"
+  },
+  "4d0a4437-9492-4be4-881b-c327a9cdc3d7": {
+    "asset": 1653623484628,
+    "meta": 1653623484742,
+    "relativePath": "Image\\Other\\TicketBG\\車票-一般.jpg"
+  },
+  "56baa156-eb84-4eab-b035-540662a98ab7": {
+    "asset": 1653623484628,
+    "meta": 1653623484746,
+    "relativePath": "Image\\Other\\TicketBG\\車票-兒童.jpg"
+  },
+  "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba": {
+    "asset": 1653623484629,
+    "meta": 1653623484774,
+    "relativePath": "Image\\Other\\TicketBG\\車票-公務員.jpg"
+  },
+  "064f6c09-1358-4ce7-9203-d078b07717cb": {
+    "asset": 1653671761817,
+    "meta": 1653671837612,
+    "relativePath": "Image\\Icon\\Icon.pac"
+  },
+  "60315232-90f0-4e06-a066-49e01cb13c85": {
+    "asset": 1653671803975,
+    "meta": 1653671844605,
+    "relativePath": "Image\\Loading\\Loading.pac"
+  },
+  "f1f0c8ef-1d2a-4dba-af6a-3906447aec83": {
+    "asset": 1653671856783,
+    "meta": 1653671899006,
+    "relativePath": "Image\\Other\\山\\Mountain.pac"
+  },
+  "911d4010-83e7-460c-a63f-ece4944c8a89": {
+    "asset": 1653672105514,
+    "meta": 1653672105515,
+    "relativePath": "Image\\Other\\TalkBG"
+  },
+  "1e83a9d3-5b16-45e5-a4ee-c3585f44b9b0": {
+    "asset": 1653672126874,
+    "meta": 1653672130061,
+    "relativePath": "Image\\Other\\TalkBG\\TalkBG.pac"
+  },
+  "f13161ac-0591-4c91-b99c-f0545f036081": {
+    "asset": 1653672158898,
+    "meta": 1653672158899,
+    "relativePath": "Image\\Other\\SeeBG"
+  },
+  "06050674-d40c-4d5b-bc86-49f017a0d239": {
+    "asset": 1653672175092,
+    "meta": 1653672175093,
+    "relativePath": "Image\\Other\\TicketBG"
+  },
+  "e8788890-09b3-49e1-9739-c1525dffb37d": {
+    "asset": 1653672204588,
+    "meta": 1653672205792,
+    "relativePath": "Image\\Other\\TicketBG\\TicketBG.pac"
+  },
+  "6e758322-806f-4a00-9486-93c27b1e3b5e": {
+    "asset": 1653672274492,
+    "meta": 1653672292212,
+    "relativePath": "Image\\Other\\Other.pac"
+  },
+  "03a1abaf-e2ee-4f62-bd0e-047bf01ac32f": {
+    "asset": 1653672316658,
+    "meta": 1653672324349,
+    "relativePath": "Image\\Other\\SeeBG\\See.pac"
+  },
+  "cbe6e5f2-705e-4c6c-b7d4-d12294a87fee": {
+    "asset": 1653672430907,
+    "meta": 1653672665114,
+    "relativePath": "Image\\QA\\QA.pac"
+  },
+  "5fcab410-8abc-40c3-9474-5c68db6eecd1": {
+    "asset": 1653672534683,
+    "meta": 1653672534749,
+    "relativePath": "Image\\QA\\一般版第9題原始圖示-2.jpg"
+  },
+  "e0bd381d-1717-4c2b-bc5d-2104479b5990": {
+    "asset": 1653672534682,
+    "meta": 1653672534751,
+    "relativePath": "Image\\QA\\一般版第9題原始圖示-3.jpg"
+  },
+  "2c0ee9e3-fee2-4f89-9278-042d27b25759": {
+    "asset": 1653672534683,
+    "meta": 1653672534768,
+    "relativePath": "Image\\QA\\一般版第9題原始圖示-1.jpg"
+  },
+  "195f4860-8764-4d77-b39a-6b65fb7529a1": {
+    "asset": 1653672534683,
+    "meta": 1653672534772,
+    "relativePath": "Image\\QA\\一般版第5題原始圖示.jpg"
+  },
+  "795f286c-39a5-433d-8337-80ad54ef5472": {
+    "asset": 1653672675417,
+    "meta": 1653672683108,
+    "relativePath": "Image\\TrainDoor\\Door.pac"
+  },
+  "3bf4be8b-08b3-4b34-847c-8d183580587c": {
+    "asset": 1653673205897,
+    "meta": 1653673207416,
+    "relativePath": "Script\\Asset\\AssetMng.ts"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1653673155796,
+    "meta": 1653673207446,
+    "relativePath": "Script\\GameModle.ts"
+  },
+  "75793531-e711-41e9-b66c-af73ff1e2938": {
+    "asset": 1653676099326,
+    "meta": 1653676101544,
+    "relativePath": "Script\\Class\\UI\\Panel_UI.ts"
+  },
+  "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
+    "asset": 1653678034990,
+    "meta": 1653678036428,
+    "relativePath": "Script\\GameControll.ts"
   }
 }

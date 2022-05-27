@@ -20,6 +20,8 @@ var MusicMng = /** @class */ (function () {
         // this.setEffectsicVol(0)
         // this.swichMusic()
         // this.swichEffect()
+        this.isMusicOpen = true;
+        this.isEffectOpen = true;
         this.setMusicVol();
         this.setEffectsicVol();
     };
@@ -32,7 +34,7 @@ var MusicMng = /** @class */ (function () {
         cc.audioEngine.setMusicVolume(this.isMusicOpen ? this.musicVol : 0);
     };
     MusicMng.prototype.setMusicVol = function (vol) {
-        this.musicVol = vol ? vol : this.musicVol;
+        this.musicVol = vol ? vol : this.default_Music;
         cc.audioEngine.setMusicVolume(this.isMusicOpen ? this.musicVol : 0);
     };
     MusicMng.prototype.musicPlay = function (str, isLoop) {
@@ -48,11 +50,19 @@ var MusicMng = /** @class */ (function () {
         cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0);
     };
     MusicMng.prototype.setEffectsicVol = function (vol) {
-        this.effectVol = vol ? vol : this.effectVol;
+        this.effectVol = vol ? vol : this.default_Effect;
         cc.audioEngine.setEffectsVolume(this.isEffectOpen ? this.effectVol : 0);
     };
     MusicMng.prototype.effectPlay = function (str, isLoop) {
         if (isLoop === void 0) { isLoop = false; }
+        this.effectID.set(str, cc.audioEngine.playEffect(AssetMng_1.default.data_Music.get(str), isLoop));
+        return this.effectID.get(str);
+    };
+    MusicMng.prototype.singleEffectPlay = function (str, isLoop) {
+        if (isLoop === void 0) { isLoop = false; }
+        var tryGetID = this.effectID.get(str);
+        if (tryGetID != undefined)
+            cc.audioEngine.stopEffect(tryGetID);
         this.effectID.set(str, cc.audioEngine.playEffect(AssetMng_1.default.data_Music.get(str), isLoop));
         return this.effectID.get(str);
     };

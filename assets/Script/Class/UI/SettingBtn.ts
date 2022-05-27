@@ -8,11 +8,12 @@ const { ccclass, property } = cc._decorator;
 export default class SettingBtn extends ComponentBase {
     sprite: cc.Sprite
     btn: cc.Button
+    nowState: boolean
     protected onLoad(): void {
         this.sprite = cc.find("icon", this.node).getComponent(cc.Sprite)
         this.btn = this.node.getComponent(cc.Button);
         this.node.setPosition(0, 0)
-
+        this.nowState = true
     }
     async setEvent(_num: number) {
         switch (_num) {
@@ -31,6 +32,7 @@ export default class SettingBtn extends ComponentBase {
     }
     async setSoundSprite() {
         let getBoolean = MusciMng.isMusicOpen ? "Open" : "Close";
+        this.nowState = MusciMng.isMusicOpen
         this.sprite.spriteFrame = AssetMng.data_SprtieAtlas.get("Sound" + getBoolean)
     }
 }

@@ -64,6 +64,7 @@ var ComponentBase_1 = require("../../Data/base/ComponentBase");
 var MusciMng_1 = require("../../Data/base/MusciMng");
 var Commad_1 = require("../../Enum/Commad");
 var GameEvent_1 = require("../../Enum/GameEvent");
+var BackGameUse_1 = require("./BackGameUse");
 var Props_Feature_1 = require("./Props_Feature");
 var Setting_1 = require("./Setting");
 var Station_1 = require("./Station");
@@ -80,6 +81,7 @@ var Panel_UI = /** @class */ (function (_super) {
         this.props_Feature = cc.find("Props_Feature", this.node).addComponent(Props_Feature_1.default);
         this.station = cc.find("Station", this.node).addComponent(Station_1.default);
         this.setting = cc.find("Setting", this.node).addComponent(Setting_1.default);
+        this.backGameUse = cc.find("BackGameUse", this.node).addComponent(BackGameUse_1.default);
         this.initEvent(GameEvent_1.GameEvent.UIReset, this.reset);
         this.reset();
     };
@@ -119,6 +121,21 @@ var Panel_UI = /** @class */ (function (_super) {
         ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "eventClinetClickStart_Stop", this.props_Feature.btn_Start_Stop);
         ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "eventSkip", this.props_Feature.skip);
         ButtonMng_1.default.addEvent(this.props_Feature.node, "Props_Feature", "evetResetView", this.props_Feature.resetView);
+    };
+    Panel_UI.prototype.setbtnEvent_Again = function () {
+        this.station.block.active = true;
+        this.station.info2.active = true;
+        this.station.scroll.node.active = true;
+        this.station.isOpen = this.station.scroll.node.active;
+        this.station.icon.angle = 0;
+        this.station.chengeInfo2BtnText();
+        this.setting.node.setSiblingIndex(cc.macro.MIN_ZINDEX);
+        this.backGameUse.node.setSiblingIndex(cc.macro.MIN_ZINDEX);
+        this.station.node.setSiblingIndex(cc.macro.MAX_ZINDEX);
+        this.bg.active = true;
+        this.block.active = true;
+        ButtonMng_1.default.reMoveEvent(cc.find("Btn_Close", this.station.info2).getComponent(cc.Button), "eventControll");
+        ButtonMng_1.default.addEvent(this.node, "Panel_UI", "eventAgain", cc.find("Btn_Close", this.station.info2).getComponent(cc.Button));
     };
     Panel_UI.prototype.checkInit = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -169,6 +186,12 @@ var Panel_UI = /** @class */ (function (_super) {
                 this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.EndTeaching);
                 break;
         }
+    };
+    Panel_UI.prototype.eventAgain = function () {
+        this.station.info2.active = false;
+        this.bg.active = false;
+        this.block.active = false;
+        this.station.block.active = false;
     };
     Panel_UI = __decorate([
         ccclass

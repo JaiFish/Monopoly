@@ -1,0 +1,298 @@
+{
+  "projectPath": "D:\\CocosCreateProject\\2.4.4_Monopoly",
+  "mtimes": {
+    "f1f0c8ef-1d2a-4dba-af6a-3906447aec83": {
+      "assetMtime": 1653671856783,
+      "metaMtime": 1653671879547
+    },
+    "3ee0bf22-c44b-4f10-aa64-de75d1642276": {
+      "assetMtime": 1652139096812,
+      "metaMtime": 1653146788952
+    },
+    "489cda95-03ff-4307-9cb2-377a6757c55a": {
+      "assetMtime": 1652139096812,
+      "metaMtime": 1653146788952
+    },
+    "456609bd-63fb-406a-9ba1-ab5412181464": {
+      "assetMtime": 1653116972732,
+      "metaMtime": 1653116972774
+    },
+    "58ad7543-3594-4ad0-ba3c-c268a1461141": {
+      "assetMtime": 1653116972732,
+      "metaMtime": 1653116972774
+    },
+    "66bd7bd5-078b-4d7d-96ba-e6a9f807bd68": {
+      "assetMtime": 1653145678000,
+      "metaMtime": 1653146788923
+    },
+    "015fd4ba-0637-43e4-80b2-18dace1f3058": {
+      "assetMtime": 1653145678000,
+      "metaMtime": 1653146788923
+    },
+    "8447e3da-8f86-4852-8f91-d33898ed7f8c": {
+      "assetMtime": 1653114707272,
+      "metaMtime": 1653146788925
+    },
+    "55a3494c-daf9-460c-ba9e-6fe30e4f5b1c": {
+      "assetMtime": 1653114707272,
+      "metaMtime": 1653146788925
+    },
+    "86467bb2-1462-4300-94a3-05a9085f04a1": {
+      "assetMtime": 1653146855041,
+      "metaMtime": 1653146855092
+    },
+    "41eb6291-3da7-45e5-8cc4-97cfbe7d1151": {
+      "assetMtime": 1653146855041,
+      "metaMtime": 1653146855092
+    },
+    "dd971990-b4e8-4c85-98bd-ea96bd437efb": {
+      "assetMtime": 1652139096807,
+      "metaMtime": 1652741937061
+    },
+    "a9de8ef8-5d3f-4875-b2de-edbe7da73c29": {
+      "assetMtime": 1652139096807,
+      "metaMtime": 1652741937061
+    },
+    "e0ee67f6-bbcb-4fb5-937a-572ecef31a0c": {
+      "assetMtime": 1653145678000,
+      "metaMtime": 1653146788937
+    },
+    "8c26b157-efb8-4173-92dd-18b30d11214f": {
+      "assetMtime": 1653145678000,
+      "metaMtime": 1653146788937
+    },
+    "ffd835af-ce08-4249-923a-10c05b743737": {
+      "assetMtime": 1653114707260,
+      "metaMtime": 1653146788954
+    },
+    "bc2ef3c0-5fbc-4780-a22c-36e38131ce65": {
+      "assetMtime": 1653114707260,
+      "metaMtime": 1653146788954
+    }
+  },
+  "result": {
+    "name": "Mountain",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.1",
+    "uuid": "f1f0c8ef-1d2a-4dba-af6a-3906447aec83",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "功維敘隧道",
+            "uuid": "456609bd-63fb-406a-9ba1-ab5412181464",
+            "textureUuid": "58ad7543-3594-4ad0-ba3c-c268a1461141",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886068_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 479,
+              "height": 357,
+              "rotatedWidth": 479,
+              "rotatedHeight": 357
+            },
+            "rawWidth": 479,
+            "rawHeight": 357,
+            "width": 485,
+            "height": 363,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/58/58ad7543-3594-4ad0-ba3c-c268a1461141.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 485,
+            "rotatedHeight": 363
+          },
+          {
+            "name": "山脈-01",
+            "uuid": "8447e3da-8f86-4852-8f91-d33898ed7f8c",
+            "textureUuid": "55a3494c-daf9-460c-ba9e-6fe30e4f5b1c",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886069_image_3.png",
+            "trim": {
+              "x": 488,
+              "y": 3,
+              "width": 786,
+              "height": 230,
+              "rotatedWidth": 230,
+              "rotatedHeight": 786
+            },
+            "rawWidth": 786,
+            "rawHeight": 230,
+            "width": 792,
+            "height": 236,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/55/55a3494c-daf9-460c-ba9e-6fe30e4f5b1c.png",
+            "x": 485,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 236,
+            "rotatedHeight": 792
+          },
+          {
+            "name": "山脈-05",
+            "uuid": "ffd835af-ce08-4249-923a-10c05b743737",
+            "textureUuid": "bc2ef3c0-5fbc-4780-a22c-36e38131ce65",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886069_image_7.png",
+            "trim": {
+              "x": 3,
+              "y": 366,
+              "width": 540,
+              "height": 263,
+              "rotatedWidth": 263,
+              "rotatedHeight": 540
+            },
+            "rawWidth": 540,
+            "rawHeight": 263,
+            "width": 546,
+            "height": 269,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/bc/bc2ef3c0-5fbc-4780-a22c-36e38131ce65.png",
+            "x": 0,
+            "y": 363,
+            "rotated": true,
+            "rotatedWidth": 269,
+            "rotatedHeight": 546
+          },
+          {
+            "name": "山脈-03",
+            "uuid": "e0ee67f6-bbcb-4fb5-937a-572ecef31a0c",
+            "textureUuid": "8c26b157-efb8-4173-92dd-18b30d11214f",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886069_image_6.png",
+            "trim": {
+              "x": 272,
+              "y": 366,
+              "width": 410,
+              "height": 190,
+              "rotatedWidth": 190,
+              "rotatedHeight": 410
+            },
+            "rawWidth": 410,
+            "rawHeight": 190,
+            "width": 416,
+            "height": 196,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/8c/8c26b157-efb8-4173-92dd-18b30d11214f.png",
+            "x": 269,
+            "y": 363,
+            "rotated": true,
+            "rotatedWidth": 196,
+            "rotatedHeight": 416
+          },
+          {
+            "name": "重製-功維敘隧道",
+            "uuid": "dd971990-b4e8-4c85-98bd-ea96bd437efb",
+            "textureUuid": "a9de8ef8-5d3f-4875-b2de-edbe7da73c29",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886069_image_5.png",
+            "trim": {
+              "x": 272,
+              "y": 782,
+              "width": 193,
+              "height": 135,
+              "rotatedWidth": 193,
+              "rotatedHeight": 135
+            },
+            "rawWidth": 193,
+            "rawHeight": 135,
+            "width": 199,
+            "height": 141,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/a9/a9de8ef8-5d3f-4875-b2de-edbe7da73c29.png",
+            "x": 269,
+            "y": 779,
+            "rotatedWidth": 199,
+            "rotatedHeight": 141
+          },
+          {
+            "name": "山脈-02",
+            "uuid": "66bd7bd5-078b-4d7d-96ba-e6a9f807bd68",
+            "textureUuid": "015fd4ba-0637-43e4-80b2-18dace1f3058",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886068_image_2.png",
+            "trim": {
+              "x": 471,
+              "y": 795,
+              "width": 409,
+              "height": 190,
+              "rotatedWidth": 409,
+              "rotatedHeight": 190
+            },
+            "rawWidth": 409,
+            "rawHeight": 190,
+            "width": 415,
+            "height": 196,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/01/015fd4ba-0637-43e4-80b2-18dace1f3058.png",
+            "x": 468,
+            "y": 792,
+            "rotatedWidth": 415,
+            "rotatedHeight": 196
+          },
+          {
+            "name": "山脈-04",
+            "uuid": "86467bb2-1462-4300-94a3-05a9085f04a1",
+            "textureUuid": "41eb6291-3da7-45e5-8cc4-97cfbe7d1151",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886069_image_4.png",
+            "trim": {
+              "x": 724,
+              "y": 3,
+              "width": 410,
+              "height": 234,
+              "rotatedWidth": 234,
+              "rotatedHeight": 410
+            },
+            "rawWidth": 410,
+            "rawHeight": 234,
+            "width": 416,
+            "height": 240,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/41/41eb6291-3da7-45e5-8cc4-97cfbe7d1151.png",
+            "x": 721,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 240,
+            "rotatedHeight": 416
+          },
+          {
+            "name": "山脈-06",
+            "uuid": "3ee0bf22-c44b-4f10-aa64-de75d1642276",
+            "textureUuid": "489cda95-03ff-4307-9cb2-377a6757c55a",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653671886067_image_0.png",
+            "trim": {
+              "x": 724,
+              "y": 419,
+              "width": 321,
+              "height": 190,
+              "rotatedWidth": 190,
+              "rotatedHeight": 321
+            },
+            "rawWidth": 321,
+            "rawHeight": 190,
+            "width": 327,
+            "height": 196,
+            "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/48/489cda95-03ff-4307-9cb2-377a6757c55a.png",
+            "x": 721,
+            "y": 416,
+            "rotated": true,
+            "rotatedWidth": 196,
+            "rotatedHeight": 327
+          }
+        ],
+        "width": 961,
+        "height": 988,
+        "name": "Mountain-1",
+        "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\preview\\assets\\Image\\Other\\山\\Mountain.pac\\Mountain-1.png"
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

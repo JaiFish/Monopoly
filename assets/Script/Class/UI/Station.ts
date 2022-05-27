@@ -21,6 +21,9 @@ export default class Station extends ComponentBase {
     maxIndex: number = 5
     getStationData: number[] = []
     itemCount: number;//火車站總共數量
+    label_btn: cc.Label;
+
+    block:cc.Node
 
 
     info2: cc.Node
@@ -37,9 +40,11 @@ export default class Station extends ComponentBase {
         this.Layout_BG2 = cc.find("Layout_BG2", this.Layout_BG1.node).getComponent(cc.Layout)
         this.Layout_Mask = cc.find("Layout_Mask", this.Layout_BG2.node).getComponent(cc.Layout)
         this.info2 = cc.find('Info2', this.node)
+        this.block = cc.find("Block",this.node)
 
         this.initEvent(GameEvent.UIGetStation, this.getStation)
         this.info2.active = false
+        this.block.active = false
         //額外處理
         this.sortData()
         this.itemCount = this.getStationData.length
@@ -57,7 +62,7 @@ export default class Station extends ComponentBase {
         for (let index = 0; index < this.itemCount; index++) {
             this.itemSop(this.getStationData[index])
         }
- 
+
         //有問題的方法
         // if (this.maxIndex < this.itemCount) {
         //     for (let index = 0; index < this.maxIndex; index++) {
@@ -135,5 +140,8 @@ export default class Station extends ComponentBase {
             this.getStationData.push(GameModle.stationType_QA[index])
         }
         this.getStationData.sort((a, b) => a - b)
+    }
+    chengeInfo2BtnText(){
+        cc.find("Btn_Close/Label",this.info2).getComponent(cc.Label).string = "關閉"
     }
 }
