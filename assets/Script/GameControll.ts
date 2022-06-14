@@ -69,10 +69,10 @@ export default class Controll extends ComponentBase {
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version);
 
         this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test);
-        // if (CC_DEV)
-        //     this.panel_Test.show()
-        // else
-        //     this.panel_Test.hide()
+        if (CC_DEV)
+            this.panel_Test.show()
+        else
+            this.panel_Test.hide()
 
 
         this.initEvent(GameEvent.SendModel, this.sendModle)
@@ -82,6 +82,7 @@ export default class Controll extends ComponentBase {
         AssetMng.startLoad();
 
         fcc.configMgr
+            .setFrameWorkDebug(false)
             .build()
         let updateTime = cc.sys.os == cc.sys.OS_IOS ? 500 : 100
         fcc.sceneMgr.sceneDirection = fcc.type.SceneDirectionType.LANDSCAPE
@@ -90,6 +91,7 @@ export default class Controll extends ComponentBase {
             .setDesignWidth(1280)
             .updateSize(fcc.type.SceneStyleType.HORIZONTAL)
             .startListener(updateTime)
+
     }
     start() {
         let data = new postCmd()
@@ -142,7 +144,7 @@ export default class Controll extends ComponentBase {
         this.panel_Loading.show()
         //Test
         await AssetMng.checkState();
-        this.doorAgainGame()
+        // this.doorAgainGame()
         GameModle.isEndLoadingData = true
         this.panel_Loading.Actionhide()
     }
@@ -232,6 +234,7 @@ export default class Controll extends ComponentBase {
 
     }
     async showVideo() {
+        GameModle.isVideoEnd = true
         this.panel_Man.manState = GameState.ShowMessage
         await this.panel_Message.show();
         let data = new postCmd()
@@ -239,7 +242,6 @@ export default class Controll extends ComponentBase {
             MusciMng.swichEffect()
             MusciMng.swichMusic()
         }
-
         switch (this.panel_Man.nowStation) {
             case 1:
                 data.cmd = "OpenView"
@@ -257,11 +259,12 @@ export default class Controll extends ComponentBase {
                 // console.log("播放廉政影片");
                 break
         }
-
         // this.closeVideo();
         // window.parent.postMessage({}, "*")
     }
     async closeVideo() {
+        if (!GameModle.isVideoEnd) return;
+        GameModle.isVideoEnd = false
         if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
             MusciMng.swichEffect()
             MusciMng.swichMusic()
@@ -270,7 +273,6 @@ export default class Controll extends ComponentBase {
         this.panel_Man.manState = GameState.Wait
         this.panel_UI.props_Feature.setStart_Stop(true)
         this.panel_Man.manGO()
-
     }
     async showQA() {
         let getQA = ""
@@ -389,15 +391,21 @@ export default class Controll extends ComponentBase {
         await this.cameraControll.showAllView()
         await this.panel_Door.backScaleAction()
         await this.panel_Door.closeDoor()
+        this.panel_Loading.show()
+        this.panel_Loading.startLoading()
         MusciMng.musicStop()
         MusciMng.effectAllStop()
-        let data = new postCmd()
-        data.cmd = "OpenView"
-        data.viewType = -1
-        data.kid = false
-        GameModle.webPostMessage.send(data)
+        //活動結束拔除
+        // let data = new postCmd()
+        // data.cmd = "OpenView"
+        // data.viewType = -1
+        // data.kid = false
+        // GameModle.webPostMessage.send(data)
 
-        this.doorAgainGame()//穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變
+        setTimeout(() => {
+            this.doorAgainGame()//穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變    
+        }, 500);
+
         // console.log("遊戲結束Show抽獎與問答");
 
     }
@@ -422,6 +430,13 @@ export default class Controll extends ComponentBase {
             this.panel_Man.manGO()
         }
     }
+    async manSkip() {
+        if (this.cameraControll.cameraState != CameraState.Men) {
+            await this.cameraControll.moveToManCamera(0.3)
+        }
+        this.panel_Man.manSkip()
+    }
+
     manWait() {
         this.panel_Man.manWait()
     }

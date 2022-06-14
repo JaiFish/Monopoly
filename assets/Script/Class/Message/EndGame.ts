@@ -15,9 +15,9 @@ export default class EndGame extends ComponentBase {
  
     protected onLoad(): void {
         this.animation_Bear = cc.find("Mask/animation_Bear", this.node).getComponent(cc.Animation)
-        this.btn_GoLottery = cc.find("Btn_GoLottery", this.node).getComponent(cc.Button)
-        this.btn_Again = cc.find("Btn_Again", this.node).getComponent(cc.Button)
-        this.btn_BackGame = cc.find("Btn_BackGame", this.node).getComponent(cc.Button)
+        this.btn_GoLottery = cc.find("Btn_Layout/Btn_GoLottery", this.node).getComponent(cc.Button)
+        this.btn_Again = cc.find("Btn_Layout/Btn_Again", this.node).getComponent(cc.Button)
+        this.btn_BackGame = cc.find("Btn_Layout/Btn_BackGame", this.node).getComponent(cc.Button)
         this.defaultReset()
     }
     protected start(): void {

@@ -29,6 +29,9 @@ var Panel_Loading = /** @class */ (function (_super) {
         this.defaultReset();
     };
     Panel_Loading.prototype.start = function () {
+        this.startLoading();
+    };
+    Panel_Loading.prototype.startLoading = function () {
         var _this = this;
         this.PointAction = setInterval(function () {
             _this.point.string = _this.point.string + ".";
@@ -42,7 +45,8 @@ var Panel_Loading = /** @class */ (function (_super) {
             .to(0.3, { opacity: 0 })
             .call(function () {
             clearInterval(_this.PointAction);
-            _this.node.destroy();
+            _this.hide();
+            // this.node.destroy()
         })
             .start();
     };

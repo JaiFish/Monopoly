@@ -5,8 +5,8 @@
     "relativePath": "Animation"
   },
   "ad357443-95eb-472c-bf35-5284d945165c": {
-    "asset": 1653122092806,
-    "meta": 1653123631491,
+    "asset": 1653681203920,
+    "meta": 1653790874116,
     "relativePath": "Image"
   },
   "e6b1f0b0-9420-463c-a466-7d60800bfd74": {
@@ -720,13 +720,13 @@
     "relativePath": "Image\\Bear"
   },
   "196e0a91-d960-42ec-997c-831c17d20142": {
-    "asset": 1653281113519,
-    "meta": 1653286112325,
+    "asset": 1653672678498,
+    "meta": 1653678652909,
     "relativePath": "Image\\TrainDoor"
   },
   "75ed4dab-2ad7-446c-8c26-9a892e06b0aa": {
-    "asset": 1653623484619,
-    "meta": 1653660292849,
+    "asset": 1653681216390,
+    "meta": 1653790874118,
     "relativePath": "Image\\Other"
   },
   "91a0272c-0104-47a8-9921-b3d0ae4ba3ae": {
@@ -750,8 +750,8 @@
     "relativePath": "Image\\Other\\相片底.png"
   },
   "056c8011-8c09-47a0-8b4e-c00e07664628": {
-    "asset": 1653416619819,
-    "meta": 1653423475055,
+    "asset": 1653671813079,
+    "meta": 1653678652897,
     "relativePath": "Image\\BG"
   },
   "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5": {
@@ -770,8 +770,8 @@
     "relativePath": "Image\\BG\\橢圓藍色按鈕-大.png"
   },
   "d8336dce-fd71-41ce-8322-4a1dfee5c5bf": {
-    "asset": 1652739980249,
-    "meta": 1652741936969,
+    "asset": 1653671837610,
+    "meta": 1653678652899,
     "relativePath": "Image\\Icon"
   },
   "2a401984-621a-4493-8ee1-31ef0e0f6f72": {
@@ -805,8 +805,8 @@
     "relativePath": "Script\\Data\\QA"
   },
   "31bd3bb4-2483-4251-8d0e-fea8132d7001": {
-    "asset": 1653146855038,
-    "meta": 1653147170061,
+    "asset": 1653671879540,
+    "meta": 1653678652903,
     "relativePath": "Image\\Other\\山"
   },
   "a9de8ef8-5d3f-4875-b2de-edbe7da73c29": {
@@ -900,8 +900,8 @@
     "relativePath": "Script\\Interface\\IAsset.ts"
   },
   "d93cb32f-1e40-4ba4-b486-3b47609a86f1": {
-    "asset": 1653116835977,
-    "meta": 1653123631502,
+    "asset": 1653681571175,
+    "meta": 1653790874121,
     "relativePath": "resources\\Image\\Station"
   },
   "28f3a8ed-3217-40cf-a27f-729c931b4d1a": {
@@ -1005,8 +1005,8 @@
     "relativePath": "Script\\Data\\QA\\PropsLibrary.ts"
   },
   "33d9f444-7505-4898-b242-2d6d74123d07": {
-    "asset": 1653114353592,
-    "meta": 1653116564498,
+    "asset": 1653672665112,
+    "meta": 1653678652908,
     "relativePath": "Image\\QA"
   },
   "eace3634-afd3-4d53-b7b9-ffbb9f7336f3": {
@@ -2252,17 +2252,17 @@
   "b38a8d59-699b-4917-81e2-808c08273a02": {
     "asset": 1652669132000,
     "meta": 1653113695193,
-    "relativePath": "Image\\Other\\SeeBG\\海-右.jpg"
+    "relativePath": "Image\\Other2\\SeeBG\\海-右.jpg"
   },
   "769c775d-8a94-466e-b667-a631768a2937": {
     "asset": 1652669132000,
     "meta": 1653113695197,
-    "relativePath": "Image\\Other\\SeeBG\\海-中.jpg"
+    "relativePath": "Image\\Other2\\SeeBG\\海-中.jpg"
   },
   "ac22d09e-46de-43b7-bc1c-422bf840ff39": {
     "asset": 1652669132000,
     "meta": 1653113695248,
-    "relativePath": "Image\\Other\\SeeBG\\海-左.jpg"
+    "relativePath": "Image\\Other2\\SeeBG\\海-左.jpg"
   },
   "dbe1a6a5-aeb0-4458-81e6-75f6301097ed": {
     "asset": 1653114748196,
@@ -2304,16 +2304,6 @@
     "meta": 1653116836521,
     "relativePath": "resources\\Image\\Station\\Station_Gary.plist"
   },
-  "fb45fc8c-a87b-48eb-a40f-9709a8e35c06": {
-    "asset": 1653116835977,
-    "meta": 1653116836531,
-    "relativePath": "resources\\Image\\Station\\StationInfo2.plist"
-  },
-  "f9b19d92-039c-4f62-a42d-908558a83ef4": {
-    "asset": 1653116835977,
-    "meta": 1653116836540,
-    "relativePath": "resources\\Image\\Station\\StationInfo1.plist"
-  },
   "cc5700a6-cf97-4e54-9401-be28657c24ed": {
     "asset": 1653116835977,
     "meta": 1653116836562,
@@ -2334,20 +2324,10 @@
     "meta": 1653116836371,
     "relativePath": "resources\\Image\\Station\\Station.png"
   },
-  "1a0cd707-f974-4415-abd1-f15df5e0dd64": {
-    "asset": 1653116836000,
-    "meta": 1653116836394,
-    "relativePath": "resources\\Image\\Station\\StationInfo1.png"
-  },
-  "79bdb4d2-8738-47d4-852f-24e735e91800": {
-    "asset": 1653116835998,
-    "meta": 1653116836488,
-    "relativePath": "resources\\Image\\Station\\StationInfo2.png"
-  },
   "c31ede83-d99e-4f32-8208-615d274d70f6": {
     "asset": 1653116934706,
     "meta": 1653116934842,
-    "relativePath": "Image\\Other\\台灣地圖.png"
+    "relativePath": "Image\\Other2\\台灣地圖.png"
   },
   "58ad7543-3594-4ad0-ba3c-c268a1461141": {
     "asset": 1653116972732,
@@ -2405,8 +2385,8 @@
     "relativePath": "Script\\Data\\QA\\ExplainLibrary.ts"
   },
   "56f7f50c-b21c-46f4-9ed6-34e6391a10e5": {
-    "asset": 1653122117895,
-    "meta": 1653123631495,
+    "asset": 1653671844601,
+    "meta": 1653678652900,
     "relativePath": "Image\\Loading"
   },
   "70726051-5299-421d-b117-00a65e53330a": {
@@ -2418,11 +2398,6 @@
     "asset": 1653122117893,
     "meta": 1653122117911,
     "relativePath": "Image\\Loading\\對話框-loading.png"
-  },
-  "be4fbf2e-4f7f-48ff-bdb4-04a1a4e3971f": {
-    "asset": 1653123743249,
-    "meta": 1653123750478,
-    "relativePath": "Script\\Class\\Panel_Loading.ts"
   },
   "3b2f2549-493b-4d49-a90a-b0aae4eab5ec": {
     "asset": 1653126316701,
@@ -2544,11 +2519,6 @@
     "meta": 1653319728594,
     "relativePath": "Script\\Item\\MapSprite.ts"
   },
-  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
-    "asset": 1653326943012,
-    "meta": 1653326952592,
-    "relativePath": "Script\\Class\\CameraControll.ts"
-  },
   "5686f388-6069-467f-9ee2-2beb9cfcd2eb": {
     "asset": 1653328968415,
     "meta": 1653329076732,
@@ -2654,16 +2624,6 @@
     "meta": 1653496183532,
     "relativePath": "Script\\Class\\UI\\Station.ts"
   },
-  "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
-    "asset": 1653496362079,
-    "meta": 1653496381805,
-    "relativePath": "Script\\Class\\Message\\EndGame.ts"
-  },
-  "49282f3d-6110-439b-894c-25b16854cdfc": {
-    "asset": 1653580961536,
-    "meta": 1653580962465,
-    "relativePath": "Script\\Enum\\Commad.ts"
-  },
   "9565d50c-f94a-4fc9-975f-bc78d2f2d861": {
     "asset": 1653582075299,
     "meta": 1653582075748,
@@ -2678,16 +2638,6 @@
     "asset": 1653585781341,
     "meta": 1653585823571,
     "relativePath": "Script\\WebPostMessage.ts"
-  },
-  "2f9442f9-cffc-4aba-bf49-43e7f849e0e6": {
-    "asset": 1653587817800,
-    "meta": 1653587818607,
-    "relativePath": "Script\\Class\\UI\\Props_Feature.ts"
-  },
-  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1653678450715,
-    "meta": 1653678450751,
-    "relativePath": "Sence\\GameSence.fire"
   },
   "16bbf9e8-317b-4603-86b4-38fd01e7abfd": {
     "asset": 1653589086176,
@@ -2730,8 +2680,8 @@
     "relativePath": "Image\\Other\\山\\Mountain.pac"
   },
   "911d4010-83e7-460c-a63f-ece4944c8a89": {
-    "asset": 1653672105514,
-    "meta": 1653672105515,
+    "asset": 1653672130060,
+    "meta": 1653678652905,
     "relativePath": "Image\\Other\\TalkBG"
   },
   "1e83a9d3-5b16-45e5-a4ee-c3585f44b9b0": {
@@ -2740,13 +2690,13 @@
     "relativePath": "Image\\Other\\TalkBG\\TalkBG.pac"
   },
   "f13161ac-0591-4c91-b99c-f0545f036081": {
-    "asset": 1653672158898,
-    "meta": 1653672158899,
-    "relativePath": "Image\\Other\\SeeBG"
+    "asset": 1653681208452,
+    "meta": 1653678652904,
+    "relativePath": "Image\\Other2\\SeeBG"
   },
   "06050674-d40c-4d5b-bc86-49f017a0d239": {
-    "asset": 1653672175092,
-    "meta": 1653672175093,
+    "asset": 1653672205791,
+    "meta": 1653678652906,
     "relativePath": "Image\\Other\\TicketBG"
   },
   "e8788890-09b3-49e1-9739-c1525dffb37d": {
@@ -2758,11 +2708,6 @@
     "asset": 1653672274492,
     "meta": 1653672292212,
     "relativePath": "Image\\Other\\Other.pac"
-  },
-  "03a1abaf-e2ee-4f62-bd0e-047bf01ac32f": {
-    "asset": 1653672316658,
-    "meta": 1653672324349,
-    "relativePath": "Image\\Other\\SeeBG\\See.pac"
   },
   "cbe6e5f2-705e-4c6c-b7d4-d12294a87fee": {
     "asset": 1653672430907,
@@ -2799,19 +2744,74 @@
     "meta": 1653673207416,
     "relativePath": "Script\\Asset\\AssetMng.ts"
   },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1653673155796,
-    "meta": 1653673207446,
-    "relativePath": "Script\\GameModle.ts"
-  },
   "75793531-e711-41e9-b66c-af73ff1e2938": {
     "asset": 1653676099326,
     "meta": 1653676101544,
     "relativePath": "Script\\Class\\UI\\Panel_UI.ts"
   },
+  "be4fbf2e-4f7f-48ff-bdb4-04a1a4e3971f": {
+    "asset": 1653680969436,
+    "meta": 1653680973513,
+    "relativePath": "Script\\Class\\Panel_Loading.ts"
+  },
+  "f056ffb9-f85b-46d3-af13-553348b6b115": {
+    "asset": 1653681216390,
+    "meta": 1653790874119,
+    "relativePath": "Image\\Other2"
+  },
+  "fb45fc8c-a87b-48eb-a40f-9709a8e35c06": {
+    "asset": 1653681534941,
+    "meta": 1653681535074,
+    "relativePath": "resources\\Image\\Station\\StationInfo2.plist"
+  },
+  "f9b19d92-039c-4f62-a42d-908558a83ef4": {
+    "asset": 1653681534941,
+    "meta": 1653681535084,
+    "relativePath": "resources\\Image\\Station\\StationInfo1.plist"
+  },
+  "6860af9c-8de6-4e68-821f-97f09f31a5d1": {
+    "asset": 1653681534949,
+    "meta": 1653681535065,
+    "relativePath": "resources\\Image\\Station\\StationInfo2.jpg"
+  },
+  "88812407-6654-4fbd-af3f-df8788e197d3": {
+    "asset": 1653681534950,
+    "meta": 1653681535066,
+    "relativePath": "resources\\Image\\Station\\StationInfo1.jpg"
+  },
+  "2f9442f9-cffc-4aba-bf49-43e7f849e0e6": {
+    "asset": 1653681755566,
+    "meta": 1653681756769,
+    "relativePath": "Script\\Class\\UI\\Props_Feature.ts"
+  },
+  "49282f3d-6110-439b-894c-25b16854cdfc": {
+    "asset": 1653681741534,
+    "meta": 1653681756780,
+    "relativePath": "Script\\Enum\\Commad.ts"
+  },
+  "7361a010-e760-4c53-9f3d-6e683a8edb62": {
+    "asset": 1653682792996,
+    "meta": 1653682939330,
+    "relativePath": "Script\\Class\\CameraControll.ts"
+  },
+  "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
+    "asset": 1655222970833,
+    "meta": 1655222970862,
+    "relativePath": "Sence\\GameSence.fire"
+  },
+  "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
+    "asset": 1655221007939,
+    "meta": 1655221008714,
+    "relativePath": "Script\\Class\\Message\\EndGame.ts"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1655222226461,
+    "meta": 1655222263749,
+    "relativePath": "Script\\GameModle.ts"
+  },
   "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1653678034990,
-    "meta": 1653678036428,
+    "asset": 1655222621376,
+    "meta": 1655222634579,
     "relativePath": "Script\\GameControll.ts"
   }
 }

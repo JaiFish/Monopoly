@@ -106,15 +106,16 @@ var Controll = /** @class */ (function (_super) {
         this.panel_Message = cc.find("Canvas/Panel_Message").addComponent(Panel_Message_1.default);
         this.panel_Version = cc.find("Canvas/Panel_Version").addComponent(Panel_Version_1.default);
         this.panel_Test = cc.find("Canvas/Panel_Test").addComponent(Panel_Test_1.default);
-        // if (CC_DEV)
-        //     this.panel_Test.show()
-        // else
-        //     this.panel_Test.hide()
+        if (CC_DEV)
+            this.panel_Test.show();
+        else
+            this.panel_Test.hide();
         this.initEvent(GameEvent_1.GameEvent.SendModel, this.sendModle);
         this.initEvent(GameEvent_1.GameEvent.SendCommand, this.sendCommand);
         this.initEvent(GameEvent_1.GameEvent.GetStation, this.changeStationSprite);
         AssetMng_1.default.startLoad();
         fcc.configMgr
+            .setFrameWorkDebug(false)
             .build();
         var updateTime = cc.sys.os == cc.sys.OS_IOS ? 500 : 100;
         fcc.sceneMgr.sceneDirection = fcc.type.SceneDirectionType.LANDSCAPE;
@@ -184,7 +185,7 @@ var Controll = /** @class */ (function (_super) {
                     case 1:
                         //Test
                         _a.sent();
-                        this.doorAgainGame();
+                        // this.doorAgainGame()
                         GameModle_1.default.isEndLoadingData = true;
                         this.panel_Loading.Actionhide();
                         return [2 /*return*/];
@@ -332,6 +333,7 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        GameModle_1.default.isVideoEnd = true;
                         this.panel_Man.manState = GameState_1.GameState.ShowMessage;
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
@@ -368,6 +370,9 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        if (!GameModle_1.default.isVideoEnd)
+                            return [2 /*return*/];
+                        GameModle_1.default.isVideoEnd = false;
                         if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
                             MusciMng_1.default.swichEffect();
                             MusciMng_1.default.swichMusic();
@@ -584,7 +589,7 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.goLottery = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var data;
+            var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -599,14 +604,19 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Door.closeDoor()];
                     case 3:
                         _a.sent();
+                        this.panel_Loading.show();
+                        this.panel_Loading.startLoading();
                         MusciMng_1.default.musicStop();
                         MusciMng_1.default.effectAllStop();
-                        data = new postCmd();
-                        data.cmd = "OpenView";
-                        data.viewType = -1;
-                        data.kid = false;
-                        GameModle_1.default.webPostMessage.send(data);
-                        this.doorAgainGame(); //穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變
+                        //活動結束拔除
+                        // let data = new postCmd()
+                        // data.cmd = "OpenView"
+                        // data.viewType = -1
+                        // data.kid = false
+                        // GameModle.webPostMessage.send(data)
+                        setTimeout(function () {
+                            _this.doorAgainGame(); //穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變    
+                        }, 500);
                         return [2 /*return*/];
                 }
             });
@@ -638,6 +648,23 @@ var Controll = /** @class */ (function (_super) {
                         this.panel_Man.manGO();
                         _a.label = 2;
                     case 2: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Controll.prototype.manSkip = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!(this.cameraControll.cameraState != CameraState_1.CameraState.Men)) return [3 /*break*/, 2];
+                        return [4 /*yield*/, this.cameraControll.moveToManCamera(0.3)];
+                    case 1:
+                        _a.sent();
+                        _a.label = 2;
+                    case 2:
+                        this.panel_Man.manSkip();
+                        return [2 /*return*/];
                 }
             });
         });

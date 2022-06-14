@@ -25,6 +25,7 @@ export enum Commamnd {
     GoLottery = "goLottery",
     DoorAgainGame = "doorAgainGame",
     MenGO = "menGo",
+    ManSkip="manSkip",
     ManWait = "manWait",
     ManLineWait = "manLineWait",
     MoveTarget = "moveTarget",

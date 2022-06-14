@@ -8,6 +8,9 @@ export default class Panel_Loading extends ComponentBase {
         this.defaultReset()
     }
     protected start(): void {
+        this.startLoading()
+    }
+    startLoading() {
         this.PointAction = setInterval(() => {
             this.point.string = this.point.string + "."
             if (this.point.string.length > 3)
@@ -19,7 +22,9 @@ export default class Panel_Loading extends ComponentBase {
             .to(0.3, { opacity: 0 })
             .call(() => {
                 clearInterval(this.PointAction)
-                this.node.destroy()
+                this.hide()
+
+                // this.node.destroy()
             })
             .start()
     }
