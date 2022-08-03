@@ -7055,7 +7055,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 145.1,
+      "width": 290.2,
       "height": 200
     },
     "_anchorPoint": {
@@ -7136,7 +7136,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        -72.55,
         -301.627,
         0,
         0,
@@ -7370,7 +7370,7 @@
         "__id__": 143
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 145
@@ -7504,8 +7504,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "前往抽獎",
-    "_N$string": "前往抽獎",
+    "_string": "離開遊戲",
+    "_N$string": "離開遊戲",
     "_fontSize": 50,
     "_lineHeight": 50,
     "_enableWrapText": true,
@@ -7634,7 +7634,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 145.1,
+      "width": 290.2,
       "height": 200
     },
     "_resize": 1,
@@ -24691,7 +24691,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 290.2,
+      "width": 435.29999999999995,
       "height": 200
     },
     "_anchorPoint": {
@@ -24772,7 +24772,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -217.64999999999998,
+        -362.74999999999994,
         0,
         0,
         0,
@@ -25038,7 +25038,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -72.54999999999997,
+        -217.64999999999992,
         0,
         0,
         0,
@@ -25272,7 +25272,7 @@
         "__id__": 503
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 505
@@ -25406,8 +25406,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "前往抽獎",
-    "_N$string": "前往抽獎",
+    "_string": "離開遊戲",
+    "_N$string": "離開遊戲",
     "_fontSize": 50,
     "_lineHeight": 50,
     "_enableWrapText": true,
@@ -25536,7 +25536,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 290.2,
+      "width": 435.29999999999995,
       "height": 200
     },
     "_resize": 1,

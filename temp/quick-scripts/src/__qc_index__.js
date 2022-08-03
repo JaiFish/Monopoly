@@ -11,6 +11,7 @@ require('./assets/Script/Class/Mam/ManAnimation');
 require('./assets/Script/Class/Mam/Panel_Man');
 require('./assets/Script/Class/Message/Choose_Ticket');
 require('./assets/Script/Class/Message/Choose_Train');
+require('./assets/Script/Class/Message/CloseFrame');
 require('./assets/Script/Class/Message/EndGame');
 require('./assets/Script/Class/Message/Explain');
 require('./assets/Script/Class/Message/GetProps');

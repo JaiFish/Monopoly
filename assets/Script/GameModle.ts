@@ -28,6 +28,10 @@ class NumberConvertEnglish {
 
 class GameModel {
     version: string = "1.1.19";
+    /**
+     * 是否連線版本
+     */
+    isConnet:boolean = false
     chooseAnswer: string;
     playData: Player = new Player();
 

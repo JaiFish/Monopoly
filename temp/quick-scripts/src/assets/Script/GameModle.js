@@ -25,6 +25,10 @@ var NumberConvertEnglish = /** @class */ (function () {
 var GameModel = /** @class */ (function () {
     function GameModel() {
         this.version = "1.1.19";
+        /**
+         * 是否連線版本
+         */
+        this.isConnet = false;
         this.playData = new Player();
         //------資料區，無引用到
         // noUseStation: number[] = [8]

@@ -56,6 +56,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var GameEvent_1 = require("../../Enum/GameEvent");
 var Choose_Ticket_1 = require("./Choose_Ticket");
 var Choose_Train_1 = require("./Choose_Train");
+var CloseFrame_1 = require("./CloseFrame");
 var EndGame_1 = require("./EndGame");
 var Explain_1 = require("./Explain");
 var GetProps_1 = require("./GetProps");
@@ -81,6 +82,7 @@ var Panel_Message = /** @class */ (function (_super) {
         this.stationInfo = cc.find("StationInfo", this.bgMask).addComponent(StationInfo_1.default);
         this.getProps = cc.find("GetProps", this.bgMask).addComponent(GetProps_1.default);
         this.endGame = cc.find("EndGame", this.bgMask).addComponent(EndGame_1.default);
+        this.closeFrame = cc.find("CloseFrame", this.bgMask).addComponent(CloseFrame_1.default);
         this.initEvent(GameEvent_1.GameEvent.ShowMessage, this.show);
         this.initEvent(GameEvent_1.GameEvent.HideMessage, this.hide);
         this.defaultReset();

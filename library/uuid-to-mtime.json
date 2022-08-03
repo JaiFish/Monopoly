@@ -869,11 +869,6 @@
     "meta": 1652741937377,
     "relativePath": "Image\\Other\\TalkBG\\對話框.png"
   },
-  "8d3fceaf-73c1-4bdb-a88a-7db7872916ad": {
-    "asset": 1652454572393,
-    "meta": 1652741938911,
-    "relativePath": "Script\\Class\\Message\\Panel_Message.ts"
-  },
   "588597f6-0913-4be0-b3e7-5fcc24251ad8": {
     "asset": 1651858575240,
     "meta": 1652741936957,
@@ -2795,8 +2790,8 @@
     "relativePath": "Script\\Class\\CameraControll.ts"
   },
   "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1655222970833,
-    "meta": 1655222970862,
+    "asset": 1659550857956,
+    "meta": 1659550858057,
     "relativePath": "Sence\\GameSence.fire"
   },
   "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
@@ -2805,13 +2800,23 @@
     "relativePath": "Script\\Class\\Message\\EndGame.ts"
   },
   "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1655222226461,
-    "meta": 1655222263749,
+    "asset": 1659537599643,
+    "meta": 1659537636885,
     "relativePath": "Script\\GameModle.ts"
   },
+  "8d3fceaf-73c1-4bdb-a88a-7db7872916ad": {
+    "asset": 1659541551059,
+    "meta": 1659542868425,
+    "relativePath": "Script\\Class\\Message\\Panel_Message.ts"
+  },
+  "2e047595-77ee-4d66-87ca-4a1935bdb5c4": {
+    "asset": 1659545204846,
+    "meta": 1659545207688,
+    "relativePath": "Script\\Class\\Message\\CloseFrame.ts"
+  },
   "6f03fa2a-015c-4c8e-a146-4750a8f56200": {
-    "asset": 1655222621376,
-    "meta": 1655222634579,
+    "asset": 1659550855031,
+    "meta": 1659550857034,
     "relativePath": "Script\\GameControll.ts"
   }
 }

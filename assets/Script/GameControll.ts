@@ -237,37 +237,49 @@ export default class Controll extends ComponentBase {
         GameModle.isVideoEnd = true
         this.panel_Man.manState = GameState.ShowMessage
         await this.panel_Message.show();
-        let data = new postCmd()
-        if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
-            MusciMng.swichEffect()
-            MusciMng.swichMusic()
+
+        if (GameModle.isConnet) {
+            let data = new postCmd()
+            if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
+                MusciMng.swichEffect()
+                MusciMng.swichMusic()
+            }
+            switch (this.panel_Man.nowStation) {
+                case 1:
+                    data.cmd = "OpenView"
+                    data.viewType = 1
+                    data.kid = false
+                    GameModle.webPostMessage.send(data)
+                    // console.log("播放安全影片");
+                    break
+                case 20:
+                    let getKid = GameModle.playData.level == 0 ? true : false
+                    data.cmd = "OpenView"
+                    data.viewType = 2
+                    data.kid = getKid;
+                    GameModle.webPostMessage.send(data)
+                    // console.log("播放廉政影片");
+                    break
+            }
         }
-        switch (this.panel_Man.nowStation) {
-            case 1:
-                data.cmd = "OpenView"
-                data.viewType = 1
-                data.kid = false
-                GameModle.webPostMessage.send(data)
-                // console.log("播放安全影片");
-                break
-            case 20:
-                let getKid = GameModle.playData.level == 0 ? true : false
-                data.cmd = "OpenView"
-                data.viewType = 2
-                data.kid = getKid;
-                GameModle.webPostMessage.send(data)
-                // console.log("播放廉政影片");
-                break
+        else {
+            this.panel_Message.closeFrame.show()
         }
+
         // this.closeVideo();
         // window.parent.postMessage({}, "*")
     }
     async closeVideo() {
-        if (!GameModle.isVideoEnd) return;
-        GameModle.isVideoEnd = false
-        if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
-            MusciMng.swichEffect()
-            MusciMng.swichMusic()
+        if (GameModle.isConnet) {
+            if (!GameModle.isVideoEnd) return;
+            GameModle.isVideoEnd = false
+            if (this.panel_UI.setting.itemMap.get(0).nowState) {//暫時這樣寫在另想好方法，指引到SettingBtn
+                MusciMng.swichEffect()
+                MusciMng.swichMusic()
+            }
+        }
+        else {
+            this.panel_Message.closeFrame.hide()
         }
         await this.panel_Message.hide();
         this.panel_Man.manState = GameState.Wait
@@ -369,6 +381,7 @@ export default class Controll extends ComponentBase {
 
         await this.panel_Message.show();
         await AssetMng.checkState();
+        if (!GameModle.isConnet) this.panel_Message.endGame.btn_GoLottery.node.active = false
         this.panel_Message.endGame.playBearSprite(GameModle.playData.trainTypeNumber);
         this.panel_Message.endGame.show();
     }
@@ -420,6 +433,8 @@ export default class Controll extends ComponentBase {
         this.panel_UI.props_Feature.hide()
         this.panel_UI.setbtnEvent_Again()
         this.panel_UI.backGameUse.show()
+        if (!GameModle.isConnet)
+            this.panel_UI.backGameUse.btn_GoLottery.node.active = false
     }
     doorAgainGame() {
         cc.director.loadScene("GameSence");

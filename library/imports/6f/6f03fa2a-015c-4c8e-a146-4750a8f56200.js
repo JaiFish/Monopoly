@@ -338,27 +338,32 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Message.show()];
                     case 1:
                         _a.sent();
-                        data = new postCmd();
-                        if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
-                            MusciMng_1.default.swichEffect();
-                            MusciMng_1.default.swichMusic();
+                        if (GameModle_1.default.isConnet) {
+                            data = new postCmd();
+                            if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
+                                MusciMng_1.default.swichEffect();
+                                MusciMng_1.default.swichMusic();
+                            }
+                            switch (this.panel_Man.nowStation) {
+                                case 1:
+                                    data.cmd = "OpenView";
+                                    data.viewType = 1;
+                                    data.kid = false;
+                                    GameModle_1.default.webPostMessage.send(data);
+                                    // console.log("播放安全影片");
+                                    break;
+                                case 20:
+                                    getKid = GameModle_1.default.playData.level == 0 ? true : false;
+                                    data.cmd = "OpenView";
+                                    data.viewType = 2;
+                                    data.kid = getKid;
+                                    GameModle_1.default.webPostMessage.send(data);
+                                    // console.log("播放廉政影片");
+                                    break;
+                            }
                         }
-                        switch (this.panel_Man.nowStation) {
-                            case 1:
-                                data.cmd = "OpenView";
-                                data.viewType = 1;
-                                data.kid = false;
-                                GameModle_1.default.webPostMessage.send(data);
-                                // console.log("播放安全影片");
-                                break;
-                            case 20:
-                                getKid = GameModle_1.default.playData.level == 0 ? true : false;
-                                data.cmd = "OpenView";
-                                data.viewType = 2;
-                                data.kid = getKid;
-                                GameModle_1.default.webPostMessage.send(data);
-                                // console.log("播放廉政影片");
-                                break;
+                        else {
+                            this.panel_Message.closeFrame.show();
                         }
                         return [2 /*return*/];
                 }
@@ -370,12 +375,17 @@ var Controll = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (!GameModle_1.default.isVideoEnd)
-                            return [2 /*return*/];
-                        GameModle_1.default.isVideoEnd = false;
-                        if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
-                            MusciMng_1.default.swichEffect();
-                            MusciMng_1.default.swichMusic();
+                        if (GameModle_1.default.isConnet) {
+                            if (!GameModle_1.default.isVideoEnd)
+                                return [2 /*return*/];
+                            GameModle_1.default.isVideoEnd = false;
+                            if (this.panel_UI.setting.itemMap.get(0).nowState) { //暫時這樣寫在另想好方法，指引到SettingBtn
+                                MusciMng_1.default.swichEffect();
+                                MusciMng_1.default.swichMusic();
+                            }
+                        }
+                        else {
+                            this.panel_Message.closeFrame.hide();
                         }
                         return [4 /*yield*/, this.panel_Message.hide()];
                     case 1:
@@ -559,6 +569,8 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, AssetMng_1.default.checkState()];
                     case 2:
                         _a.sent();
+                        if (!GameModle_1.default.isConnet)
+                            this.panel_Message.endGame.btn_GoLottery.node.active = false;
                         this.panel_Message.endGame.playBearSprite(GameModle_1.default.playData.trainTypeNumber);
                         this.panel_Message.endGame.show();
                         return [2 /*return*/];
@@ -632,6 +644,8 @@ var Controll = /** @class */ (function (_super) {
         this.panel_UI.props_Feature.hide();
         this.panel_UI.setbtnEvent_Again();
         this.panel_UI.backGameUse.show();
+        if (!GameModle_1.default.isConnet)
+            this.panel_UI.backGameUse.btn_GoLottery.node.active = false;
     };
     Controll.prototype.doorAgainGame = function () {
         cc.director.loadScene("GameSence");

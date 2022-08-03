@@ -1,6 +1,7 @@
 import { GameEvent } from "../../Enum/GameEvent";
 import Choose_Ticket from "./Choose_Ticket";
 import Choose_Train from "./Choose_Train";
+import CloseFrame from "./CloseFrame";
 import EndGame from "./EndGame";
 import Explain from "./Explain";
 import GetProps from "./GetProps";
@@ -20,8 +21,9 @@ export default class Panel_Message extends MessageAction {
     qaAnswer: QAAnswer;
     explain: Explain;
     stationInfo: StationInfo;
-    getProps:GetProps
-    endGame:EndGame
+    getProps: GetProps
+    endGame: EndGame
+    closeFrame: CloseFrame;
 
     protected onLoad(): void {
 
@@ -38,6 +40,7 @@ export default class Panel_Message extends MessageAction {
         this.stationInfo = cc.find("StationInfo", this.bgMask).addComponent(StationInfo)
         this.getProps = cc.find("GetProps", this.bgMask).addComponent(GetProps)
         this.endGame = cc.find("EndGame", this.bgMask).addComponent(EndGame)
+        this.closeFrame = cc.find("CloseFrame", this.bgMask).addComponent(CloseFrame)
 
         this.initEvent(GameEvent.ShowMessage, this.show)
         this.initEvent(GameEvent.HideMessage, this.hide)
