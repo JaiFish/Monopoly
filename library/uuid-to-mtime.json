@@ -2790,19 +2790,14 @@
     "relativePath": "Script\\Class\\CameraControll.ts"
   },
   "4004546e-7563-48c6-bf8b-8e92b6f8198e": {
-    "asset": 1659550857956,
-    "meta": 1659550858057,
+    "asset": 1659552973793,
+    "meta": 1659552973832,
     "relativePath": "Sence\\GameSence.fire"
   },
   "b93a8c2c-e0ea-4e7f-84a0-19eed9f30f79": {
     "asset": 1655221007939,
     "meta": 1655221008714,
     "relativePath": "Script\\Class\\Message\\EndGame.ts"
-  },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1659537599643,
-    "meta": 1659537636885,
-    "relativePath": "Script\\GameModle.ts"
   },
   "8d3fceaf-73c1-4bdb-a88a-7db7872916ad": {
     "asset": 1659541551059,
@@ -2818,5 +2813,10 @@
     "asset": 1659550855031,
     "meta": 1659550857034,
     "relativePath": "Script\\GameControll.ts"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1659552385032,
+    "meta": 1659552385736,
+    "relativePath": "Script\\GameModle.ts"
   }
 }

@@ -27,11 +27,11 @@ class NumberConvertEnglish {
 }
 
 class GameModel {
-    version: string = "1.1.19";
+    version: string = "1.0.0_NoConnet";
     /**
      * 是否連線版本
      */
-    isConnet:boolean = false
+    isConnet: boolean = false;
     chooseAnswer: string;
     playData: Player = new Player();
 
@@ -55,13 +55,13 @@ class GameModel {
 
     englishLib: NumberConvertEnglish = new NumberConvertEnglish()
     gameState: GameState;
-    bearState:BearState
+    bearState: BearState
 
-    webPostMessage:WebPostMessage = new WebPostMessage();
+    webPostMessage: WebPostMessage = new WebPostMessage();
 
-    isEndLoadingData:boolean;
+    isEndLoadingData: boolean;
 
-    isVideoEnd:boolean;
+    isVideoEnd: boolean;
     //-------題庫-------
     qaLibrary: QALibrary;
     qaIndex: number = 0

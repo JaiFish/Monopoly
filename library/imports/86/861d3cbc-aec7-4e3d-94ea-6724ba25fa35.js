@@ -24,7 +24,7 @@ var NumberConvertEnglish = /** @class */ (function () {
 }());
 var GameModel = /** @class */ (function () {
     function GameModel() {
-        this.version = "1.1.19";
+        this.version = "1.0.0_NoConnet";
         /**
          * 是否連線版本
          */
