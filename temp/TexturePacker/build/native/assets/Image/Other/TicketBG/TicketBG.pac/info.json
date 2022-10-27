@@ -3,32 +3,32 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "e8788890-09b3-49e1-9739-c1525dffb37d": {
-      "assetMtime": 1653672204588,
-      "metaMtime": 1653672205792
+      "assetMtime": 1659633174708,
+      "metaMtime": 1666880057055
     },
     "219cde86-7770-443d-9f93-fdd47b4f939d": {
-      "assetMtime": 1653623484628,
-      "metaMtime": 1653623484746
+      "assetMtime": 1659633174743,
+      "metaMtime": 1666880057058
     },
     "56baa156-eb84-4eab-b035-540662a98ab7": {
-      "assetMtime": 1653623484628,
-      "metaMtime": 1653623484746
+      "assetMtime": 1659633174743,
+      "metaMtime": 1666880057058
     },
     "84401950-59e8-473e-b950-bff1d2671db4": {
-      "assetMtime": 1653623484628,
-      "metaMtime": 1653623484742
+      "assetMtime": 1659633174726,
+      "metaMtime": 1666880057042
     },
     "4d0a4437-9492-4be4-881b-c327a9cdc3d7": {
-      "assetMtime": 1653623484628,
-      "metaMtime": 1653623484742
+      "assetMtime": 1659633174726,
+      "metaMtime": 1666880057042
     },
     "d7a07dcd-d778-4656-a4ab-b730abdfff40": {
-      "assetMtime": 1653623484629,
-      "metaMtime": 1653623484774
+      "assetMtime": 1659633174756,
+      "metaMtime": 1666880057053
     },
     "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba": {
-      "assetMtime": 1653623484629,
-      "metaMtime": 1653623484774
+      "assetMtime": 1659633174756,
+      "metaMtime": 1666880057053
     }
   },
   "result": {
@@ -62,7 +62,7 @@
             "name": "車票-兒童",
             "uuid": "219cde86-7770-443d-9f93-fdd47b4f939d",
             "textureUuid": "56baa156-eb84-4eab-b035-540662a98ab7",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554441_image_0.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -86,7 +86,7 @@
             "name": "車票-公務員",
             "uuid": "d7a07dcd-d778-4656-a4ab-b730abdfff40",
             "textureUuid": "91d171b9-f266-4ec9-85ad-56eeb8b9f5ba",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554442_image_2.png",
             "trim": {
               "x": 3,
               "y": 341,
@@ -110,7 +110,7 @@
             "name": "車票-一般",
             "uuid": "84401950-59e8-473e-b950-bff1d2671db4",
             "textureUuid": "4d0a4437-9492-4be4-881b-c327a9cdc3d7",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732515_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554442_image_1.png",
             "trim": {
               "x": 3,
               "y": 679,

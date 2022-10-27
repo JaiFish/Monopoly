@@ -3,24 +3,24 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "60315232-90f0-4e06-a066-49e01cb13c85": {
-      "assetMtime": 1653671803975,
-      "metaMtime": 1653671844605
+      "assetMtime": 1659633174564,
+      "metaMtime": 1666880056876
     },
     "1185e3d7-8ced-4cbb-8496-a61daf7a88f1": {
-      "assetMtime": 1653122109726,
-      "metaMtime": 1653122109748
+      "assetMtime": 1659633174601,
+      "metaMtime": 1666880056695
     },
     "70726051-5299-421d-b117-00a65e53330a": {
-      "assetMtime": 1653122109726,
-      "metaMtime": 1653122109748
+      "assetMtime": 1659633174601,
+      "metaMtime": 1666880056695
     },
     "81b8ad52-c0f9-4553-bb72-944d8cd7dc8e": {
-      "assetMtime": 1653122117893,
-      "metaMtime": 1653122117911
+      "assetMtime": 1659633174584,
+      "metaMtime": 1666880056700
     },
     "7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1": {
-      "assetMtime": 1653122117893,
-      "metaMtime": 1653122117911
+      "assetMtime": 1659633174584,
+      "metaMtime": 1666880056700
     }
   },
   "result": {
@@ -54,7 +54,7 @@
             "name": "對話框-loading",
             "uuid": "81b8ad52-c0f9-4553-bb72-944d8cd7dc8e",
             "textureUuid": "7eba60a9-0d7c-4fa9-b4b0-e7f539130ae1",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732876_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556596_image_1.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -78,7 +78,7 @@
             "name": "陰影",
             "uuid": "1185e3d7-8ced-4cbb-8496-a61daf7a88f1",
             "textureUuid": "70726051-5299-421d-b117-00a65e53330a",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672732876_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556596_image_0.png",
             "trim": {
               "x": 3,
               "y": 381,

@@ -3,32 +3,32 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "064f6c09-1358-4ce7-9203-d078b07717cb": {
-      "assetMtime": 1653671761817,
-      "metaMtime": 1653671837612
+      "assetMtime": 1659633174258,
+      "metaMtime": 1666880056683
     },
     "0420a21a-0da3-4664-b848-683c5de6ed9e": {
-      "assetMtime": 1651858630199,
-      "metaMtime": 1652741936984
+      "assetMtime": 1659633174267,
+      "metaMtime": 1666880056681
     },
     "75068b82-d6d5-444a-9236-89e484b02bea": {
-      "assetMtime": 1651858630199,
-      "metaMtime": 1652741936984
+      "assetMtime": 1659633174267,
+      "metaMtime": 1666880056681
     },
     "97220396-16de-4126-adba-e6df82072c39": {
-      "assetMtime": 1651858630200,
-      "metaMtime": 1652741936983
+      "assetMtime": 1659633174263,
+      "metaMtime": 1666880056670
     },
     "2a401984-621a-4493-8ee1-31ef0e0f6f72": {
-      "assetMtime": 1651858630200,
-      "metaMtime": 1652741936983
+      "assetMtime": 1659633174263,
+      "metaMtime": 1666880056670
     },
     "e9211131-113c-4628-bd28-a06cf5b5ab0f": {
-      "assetMtime": 1651858630200,
-      "metaMtime": 1652741936996
+      "assetMtime": 1659633174271,
+      "metaMtime": 1666880056686
     },
     "ebc4aa4d-71d9-4ca7-a23c-cbd96cb20cc4": {
-      "assetMtime": 1651858630200,
-      "metaMtime": 1652741936996
+      "assetMtime": 1659633174271,
+      "metaMtime": 1666880056686
     }
   },
   "result": {
@@ -62,7 +62,7 @@
             "name": "箭頭",
             "uuid": "0420a21a-0da3-4664-b848-683c5de6ed9e",
             "textureUuid": "75068b82-d6d5-444a-9236-89e484b02bea",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731352_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880550615_image_0.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -86,7 +86,7 @@
             "name": "齒輪",
             "uuid": "e9211131-113c-4628-bd28-a06cf5b5ab0f",
             "textureUuid": "ebc4aa4d-71d9-4ca7-a23c-cbd96cb20cc4",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731353_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880550615_image_2.png",
             "trim": {
               "x": 3,
               "y": 77,
@@ -109,7 +109,7 @@
             "name": "三角形",
             "uuid": "97220396-16de-4126-adba-e6df82072c39",
             "textureUuid": "2a401984-621a-4493-8ee1-31ef0e0f6f72",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731353_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880550615_image_1.png",
             "trim": {
               "x": 66,
               "y": 77,

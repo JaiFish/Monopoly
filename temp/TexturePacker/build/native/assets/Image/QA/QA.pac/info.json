@@ -3,40 +3,40 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "cbe6e5f2-705e-4c6c-b7d4-d12294a87fee": {
-      "assetMtime": 1653672430907,
-      "metaMtime": 1653672665114
+      "assetMtime": 1659633175136,
+      "metaMtime": 1666880057235
     },
     "24197e8e-9f52-4ee7-b049-f19b20377032": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534768
+      "assetMtime": 1659633175184,
+      "metaMtime": 1666880057223
     },
     "2c0ee9e3-fee2-4f89-9278-042d27b25759": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534768
+      "assetMtime": 1659633175184,
+      "metaMtime": 1666880057223
     },
     "9fe1300b-0daa-421b-ae1a-79ffc0ba4241": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534772
+      "assetMtime": 1659633175155,
+      "metaMtime": 1666880057217
     },
     "195f4860-8764-4d77-b39a-6b65fb7529a1": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534772
+      "assetMtime": 1659633175155,
+      "metaMtime": 1666880057217
     },
     "dad52b69-dd87-489e-b0a8-5b96afba0bb0": {
-      "assetMtime": 1653672534682,
-      "metaMtime": 1653672534751
+      "assetMtime": 1659633175208,
+      "metaMtime": 1666880057238
     },
     "e0bd381d-1717-4c2b-bc5d-2104479b5990": {
-      "assetMtime": 1653672534682,
-      "metaMtime": 1653672534751
+      "assetMtime": 1659633175208,
+      "metaMtime": 1666880057238
     },
     "e2a07b95-fd53-48be-8482-3dfc52779112": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534749
+      "assetMtime": 1659633175189,
+      "metaMtime": 1666880057233
     },
     "5fcab410-8abc-40c3-9474-5c68db6eecd1": {
-      "assetMtime": 1653672534683,
-      "metaMtime": 1653672534749
+      "assetMtime": 1659633175189,
+      "metaMtime": 1666880057233
     }
   },
   "result": {
@@ -70,7 +70,7 @@
             "name": "一般版第5題原始圖示",
             "uuid": "9fe1300b-0daa-421b-ae1a-79ffc0ba4241",
             "textureUuid": "195f4860-8764-4d77-b39a-6b65fb7529a1",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733039_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554809_image_1.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -93,7 +93,7 @@
             "name": "一般版第9題原始圖示-1",
             "uuid": "24197e8e-9f52-4ee7-b049-f19b20377032",
             "textureUuid": "2c0ee9e3-fee2-4f89-9278-042d27b25759",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733038_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554809_image_0.png",
             "trim": {
               "x": 3,
               "y": 717,
@@ -116,7 +116,7 @@
             "name": "一般版第9題原始圖示-3",
             "uuid": "dad52b69-dd87-489e-b0a8-5b96afba0bb0",
             "textureUuid": "e0bd381d-1717-4c2b-bc5d-2104479b5990",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733039_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554810_image_2.png",
             "trim": {
               "x": 422,
               "y": 717,
@@ -139,7 +139,7 @@
             "name": "一般版第9題原始圖示-2",
             "uuid": "e2a07b95-fd53-48be-8482-3dfc52779112",
             "textureUuid": "5fcab410-8abc-40c3-9474-5c68db6eecd1",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672733039_image_3.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880554810_image_3.png",
             "trim": {
               "x": 841,
               "y": 717,

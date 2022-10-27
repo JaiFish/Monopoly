@@ -589,6 +589,7 @@ var Controll = /** @class */ (function (_super) {
     };
     Controll.prototype.goLottery = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var data;
             var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -604,16 +605,13 @@ var Controll = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.panel_Door.closeDoor()];
                     case 3:
                         _a.sent();
-                        this.panel_Loading.show();
-                        this.panel_Loading.startLoading();
                         MusciMng_1.default.musicStop();
                         MusciMng_1.default.effectAllStop();
-                        //活動結束拔除
-                        // let data = new postCmd()
-                        // data.cmd = "OpenView"
-                        // data.viewType = -1
-                        // data.kid = false
-                        // GameModle.webPostMessage.send(data)
+                        data = new postCmd();
+                        data.cmd = "OpenView";
+                        data.viewType = -1;
+                        data.kid = false;
+                        GameModle_1.default.webPostMessage.send(data);
                         setTimeout(function () {
                             _this.doorAgainGame(); //穰遊戲整個重新，因為現在要跟網頁合作關係所以做法改變    
                         }, 500);

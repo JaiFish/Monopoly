@@ -3,64 +3,64 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "f1f0c8ef-1d2a-4dba-af6a-3906447aec83": {
-      "assetMtime": 1653671856783,
-      "metaMtime": 1653671899006
+      "assetMtime": 1659633174790,
+      "metaMtime": 1666880056932
     },
     "3ee0bf22-c44b-4f10-aa64-de75d1642276": {
-      "assetMtime": 1652139096812,
-      "metaMtime": 1653146788952
+      "assetMtime": 1659633174906,
+      "metaMtime": 1666880056928
     },
     "489cda95-03ff-4307-9cb2-377a6757c55a": {
-      "assetMtime": 1652139096812,
-      "metaMtime": 1653146788952
+      "assetMtime": 1659633174906,
+      "metaMtime": 1666880056928
     },
     "456609bd-63fb-406a-9ba1-ab5412181464": {
-      "assetMtime": 1653116972732,
-      "metaMtime": 1653116972774
+      "assetMtime": 1659633174806,
+      "metaMtime": 1666880056930
     },
     "58ad7543-3594-4ad0-ba3c-c268a1461141": {
-      "assetMtime": 1653116972732,
-      "metaMtime": 1653116972774
+      "assetMtime": 1659633174806,
+      "metaMtime": 1666880056930
     },
     "66bd7bd5-078b-4d7d-96ba-e6a9f807bd68": {
-      "assetMtime": 1653145678000,
-      "metaMtime": 1653146788923
+      "assetMtime": 1659633174862,
+      "metaMtime": 1666880056903
     },
     "015fd4ba-0637-43e4-80b2-18dace1f3058": {
-      "assetMtime": 1653145678000,
-      "metaMtime": 1653146788923
+      "assetMtime": 1659633174862,
+      "metaMtime": 1666880056903
     },
     "8447e3da-8f86-4852-8f91-d33898ed7f8c": {
-      "assetMtime": 1653114707272,
-      "metaMtime": 1653146788925
+      "assetMtime": 1659633174820,
+      "metaMtime": 1666880056893
     },
     "55a3494c-daf9-460c-ba9e-6fe30e4f5b1c": {
-      "assetMtime": 1653114707272,
-      "metaMtime": 1653146788925
+      "assetMtime": 1659633174820,
+      "metaMtime": 1666880056893
     },
     "86467bb2-1462-4300-94a3-05a9085f04a1": {
-      "assetMtime": 1653146855041,
-      "metaMtime": 1653146855092
+      "assetMtime": 1659633174874,
+      "metaMtime": 1666880502852
     },
     "41eb6291-3da7-45e5-8cc4-97cfbe7d1151": {
-      "assetMtime": 1653146855041,
-      "metaMtime": 1653146855092
+      "assetMtime": 1659633174874,
+      "metaMtime": 1666880502852
     },
     "e0ee67f6-bbcb-4fb5-937a-572ecef31a0c": {
-      "assetMtime": 1653145678000,
-      "metaMtime": 1653146788937
+      "assetMtime": 1659633174868,
+      "metaMtime": 1666880056905
     },
     "8c26b157-efb8-4173-92dd-18b30d11214f": {
-      "assetMtime": 1653145678000,
-      "metaMtime": 1653146788937
+      "assetMtime": 1659633174868,
+      "metaMtime": 1666880056905
     },
     "ffd835af-ce08-4249-923a-10c05b743737": {
-      "assetMtime": 1653114707260,
-      "metaMtime": 1653146788954
+      "assetMtime": 1659633174890,
+      "metaMtime": 1666880056918
     },
     "bc2ef3c0-5fbc-4780-a22c-36e38131ce65": {
-      "assetMtime": 1653114707260,
-      "metaMtime": 1653146788954
+      "assetMtime": 1659633174890,
+      "metaMtime": 1666880056918
     }
   },
   "result": {
@@ -94,7 +94,7 @@
             "name": "功維敘隧道",
             "uuid": "456609bd-63fb-406a-9ba1-ab5412181464",
             "textureUuid": "58ad7543-3594-4ad0-ba3c-c268a1461141",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731849_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_1.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -117,7 +117,7 @@
             "name": "山脈-04",
             "uuid": "86467bb2-1462-4300-94a3-05a9085f04a1",
             "textureUuid": "41eb6291-3da7-45e5-8cc4-97cfbe7d1151",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731850_image_4.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_4.png",
             "trim": {
               "x": 3,
               "y": 366,
@@ -140,7 +140,7 @@
             "name": "山脈-03",
             "uuid": "e0ee67f6-bbcb-4fb5-937a-572ecef31a0c",
             "textureUuid": "8c26b157-efb8-4173-92dd-18b30d11214f",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731850_image_5.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_5.png",
             "trim": {
               "x": 3,
               "y": 606,
@@ -163,7 +163,7 @@
             "name": "山脈-02",
             "uuid": "66bd7bd5-078b-4d7d-96ba-e6a9f807bd68",
             "textureUuid": "015fd4ba-0637-43e4-80b2-18dace1f3058",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731850_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_2.png",
             "trim": {
               "x": 3,
               "y": 802,
@@ -186,7 +186,7 @@
             "name": "山脈-01",
             "uuid": "8447e3da-8f86-4852-8f91-d33898ed7f8c",
             "textureUuid": "55a3494c-daf9-460c-ba9e-6fe30e4f5b1c",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731850_image_3.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_3.png",
             "trim": {
               "x": 3,
               "y": 998,
@@ -210,7 +210,7 @@
             "name": "山脈-05",
             "uuid": "ffd835af-ce08-4249-923a-10c05b743737",
             "textureUuid": "bc2ef3c0-5fbc-4780-a22c-36e38131ce65",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731850_image_6.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553406_image_6.png",
             "trim": {
               "x": 239,
               "y": 998,
@@ -234,7 +234,7 @@
             "name": "山脈-06",
             "uuid": "3ee0bf22-c44b-4f10-aa64-de75d1642276",
             "textureUuid": "489cda95-03ff-4307-9cb2-377a6757c55a",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672731849_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880553405_image_0.png",
             "trim": {
               "x": 239,
               "y": 1544,

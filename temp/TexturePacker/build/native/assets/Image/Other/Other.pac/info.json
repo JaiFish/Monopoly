@@ -3,64 +3,56 @@
   "actualPlatform": "web-mobile",
   "mtimes": {
     "6e758322-806f-4a00-9486-93c27b1e3b5e": {
-      "assetMtime": 1653672274492,
-      "metaMtime": 1653672292212
+      "assetMtime": 1659633174607,
+      "metaMtime": 1666880056995
     },
     "06430ee0-e765-42ef-afff-d519bafa65da": {
-      "assetMtime": 1651915661026,
-      "metaMtime": 1652741937009
+      "assetMtime": 1659633174762,
+      "metaMtime": 1666880056891
     },
     "c3e9df83-6312-45fc-a80b-bfccc108d192": {
-      "assetMtime": 1651915661026,
-      "metaMtime": 1652741937009
+      "assetMtime": 1659633174762,
+      "metaMtime": 1666880056891
     },
     "23b3cb69-6979-4eed-9483-97676e277f16": {
-      "assetMtime": 1651858444789,
-      "metaMtime": 1652741937411
+      "assetMtime": 1659633174934,
+      "metaMtime": 1666880057000
     },
     "91a0272c-0104-47a8-9921-b3d0ae4ba3ae": {
-      "assetMtime": 1651858444789,
-      "metaMtime": 1652741937411
+      "assetMtime": 1659633174934,
+      "metaMtime": 1666880057000
     },
     "2ad8b65c-c59a-4d3a-8720-85ab81a9f3d6": {
-      "assetMtime": 1651858455696,
-      "metaMtime": 1652741937143
+      "assetMtime": 1659633174976,
+      "metaMtime": 1666880056984
     },
     "d715ec24-2e69-4461-a920-0cab499e7af9": {
-      "assetMtime": 1651858455696,
-      "metaMtime": 1652741937143
-    },
-    "5f8fd048-4f5f-4e20-9afe-e556ccece41d": {
-      "assetMtime": 1653116934706,
-      "metaMtime": 1653116934842
-    },
-    "c31ede83-d99e-4f32-8208-615d274d70f6": {
-      "assetMtime": 1653116934706,
-      "metaMtime": 1653116934842
+      "assetMtime": 1659633174976,
+      "metaMtime": 1666880056984
     },
     "61b8486d-59d8-4bf8-8fbc-6795ebc7ab26": {
-      "assetMtime": 1653117372410,
-      "metaMtime": 1653117372431
+      "assetMtime": 1659633175020,
+      "metaMtime": 1666880056993
     },
     "e7b646ef-6204-43fb-9b8d-7ec60646103e": {
-      "assetMtime": 1653117372410,
-      "metaMtime": 1653117372431
+      "assetMtime": 1659633175020,
+      "metaMtime": 1666880056993
     },
     "77c645ad-65d1-4a34-b4ae-d9eaae3dde85": {
-      "assetMtime": 1653415909011,
-      "metaMtime": 1653415909039
+      "assetMtime": 1659633174991,
+      "metaMtime": 1666880056974
     },
     "89087785-d454-4c36-888e-d95bbbf5b372": {
-      "assetMtime": 1653415909011,
-      "metaMtime": 1653415909039
+      "assetMtime": 1659633174991,
+      "metaMtime": 1666880056974
     },
     "d0cd5077-34ca-44d6-b240-5a0240e35e3b": {
-      "assetMtime": 1651858448066,
-      "metaMtime": 1652741937094
+      "assetMtime": 1659633174784,
+      "metaMtime": 1666880056959
     },
     "6615bcef-682b-4b24-aa1f-0059b1227cc5": {
-      "assetMtime": 1651858448066,
-      "metaMtime": 1652741937094
+      "assetMtime": 1659633174784,
+      "metaMtime": 1666880056959
     }
   },
   "result": {
@@ -94,7 +86,7 @@
             "name": "彈跳底",
             "uuid": "23b3cb69-6979-4eed-9483-97676e277f16",
             "textureUuid": "91a0272c-0104-47a8-9921-b3d0ae4ba3ae",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734516_image_1.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_1.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -117,7 +109,7 @@
             "name": "光束",
             "uuid": "d0cd5077-34ca-44d6-b240-5a0240e35e3b",
             "textureUuid": "6615bcef-682b-4b24-aa1f-0059b1227cc5",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734517_image_6.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_5.png",
             "trim": {
               "x": 3,
               "y": 807,
@@ -140,7 +132,7 @@
             "name": "三角錐",
             "uuid": "06430ee0-e765-42ef-afff-d519bafa65da",
             "textureUuid": "c3e9df83-6312-45fc-a80b-bfccc108d192",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734516_image_0.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_0.png",
             "trim": {
               "x": 1309,
               "y": 807,
@@ -163,10 +155,10 @@
             "name": "裝飾-樹-01",
             "uuid": "77c645ad-65d1-4a34-b4ae-d9eaae3dde85",
             "textureUuid": "89087785-d454-4c36-888e-d95bbbf5b372",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734517_image_5.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_4.png",
             "trim": {
-              "x": 1327,
-              "y": 3,
+              "x": 1309,
+              "y": 891,
               "width": 44,
               "height": 72,
               "rotatedWidth": 44,
@@ -177,8 +169,8 @@
             "width": 50,
             "height": 78,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/89/89087785-d454-4c36-888e-d95bbbf5b372.png",
-            "x": 1324,
-            "y": 0,
+            "x": 1306,
+            "y": 888,
             "rotatedWidth": 50,
             "rotatedHeight": 78
           },
@@ -186,10 +178,10 @@
             "name": "選擇的箭頭",
             "uuid": "61b8486d-59d8-4bf8-8fbc-6795ebc7ab26",
             "textureUuid": "e7b646ef-6204-43fb-9b8d-7ec60646103e",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734516_image_4.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_3.png",
             "trim": {
-              "x": 1327,
-              "y": 81,
+              "x": 1309,
+              "y": 969,
               "width": 37,
               "height": 18,
               "rotatedWidth": 18,
@@ -200,14 +192,14 @@
             "width": 43,
             "height": 24,
             "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/e7/e7b646ef-6204-43fb-9b8d-7ec60646103e.png",
-            "x": 1324,
-            "y": 78,
+            "x": 1306,
+            "y": 966,
             "rotated": true,
             "rotatedWidth": 24,
             "rotatedHeight": 43
           }
         ],
-        "width": 1374,
+        "width": 1357,
         "height": 1590,
         "name": "Other-1",
         "imagePath": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\TexturePacker\\build\\native\\assets\\Image\\Other\\Other.pac\\Other-1.png",
@@ -224,7 +216,7 @@
             "name": "相片底",
             "uuid": "2ad8b65c-c59a-4d3a-8720-85ab81a9f3d6",
             "textureUuid": "d715ec24-2e69-4461-a920-0cab499e7af9",
-            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734516_image_2.png",
+            "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1666880556743_image_2.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -256,26 +248,6 @@
         }
       }
     ],
-    "unpackedTextures": [
-      {
-        "name": "台灣地圖",
-        "uuid": "5f8fd048-4f5f-4e20-9afe-e556ccece41d",
-        "textureUuid": "c31ede83-d99e-4f32-8208-615d274d70f6",
-        "path": "D:\\CocosCreateProject\\2.4.4_Monopoly\\temp\\trimImages\\spritesheet_js_1653672734516_image_3.png",
-        "trim": {
-          "x": 0,
-          "y": 0,
-          "width": 2105,
-          "height": 3429,
-          "rotatedWidth": 2105,
-          "rotatedHeight": 3429
-        },
-        "rawWidth": 2105,
-        "rawHeight": 3429,
-        "width": 2111,
-        "height": 3435,
-        "originalPath": "D:/CocosCreateProject/2.4.4_Monopoly/library/imports/c3/c31ede83-d99e-4f32-8208-615d274d70f6.png"
-      }
-    ]
+    "unpackedTextures": []
   }
 }
