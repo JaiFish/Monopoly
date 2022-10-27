@@ -20,15 +20,15 @@
             <key>Props_15.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{75,50}}</string>
+                <string>{{78,2},{74,50}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{75,50}}</string>
+                <string>{{0,0},{74,50}}</string>
                 <key>sourceSize</key>
-                <string>{75,50}</string>
+                <string>{74,50}</string>
             </dict>
             <key>Props_5.png</key>
             <dict>
@@ -46,7 +46,7 @@
             <key>Props_Gary_11.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{155,2},{73,53}}</string>
+                <string>{{154,2},{73,53}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>Props_Gary_15.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{79,2},{74,50}}</string>
+                <string>{{2,2},{74,50}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -90,9 +90,9 @@
             <key>realTextureFileName</key>
             <string>Props.png</string>
             <key>size</key>
-            <string>{230,115}</string>
+            <string>{229,115}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c1e4f3eca00bb6f94e5bf9e48481a905$</string>
+            <string>$TexturePacker:SmartUpdate:7451d496a48f7ed7a95069f7fee1401e$</string>
             <key>textureFileName</key>
             <string>Props.png</string>
         </dict>

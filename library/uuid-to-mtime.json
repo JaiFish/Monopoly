@@ -5,8 +5,8 @@
     "relativePath": "Animation"
   },
   "ad357443-95eb-472c-bf35-5284d945165c": {
-    "asset": 1666880052959,
-    "meta": 1666880053384,
+    "asset": 1666880492070,
+    "meta": 1666881644373,
     "relativePath": "Image"
   },
   "e6b1f0b0-9420-463c-a466-7d60800bfd74": {
@@ -15,18 +15,18 @@
     "relativePath": "resources"
   },
   "e36cf74b-761d-4e46-ac24-bd7f5caec1be": {
-    "asset": 1666879616155,
-    "meta": 1666880057834,
+    "asset": 1666880492073,
+    "meta": 1666881644399,
     "relativePath": "Script"
   },
   "cbe3fae9-f887-4b72-92e5-4eb14556bd5c": {
-    "asset": 1666879796890,
-    "meta": 1666880059240,
+    "asset": 1666880492077,
+    "meta": 1666881644408,
     "relativePath": "Sence"
   },
   "8694e02d-4c53-4d7a-98a8-e0d4a8b4c17e": {
-    "asset": 1666879616182,
-    "meta": 1666880057275,
+    "asset": 1666880480575,
+    "meta": 1666881644380,
     "relativePath": "resources\\Image"
   },
   "3c7e9c98-3d3d-47ea-b5a9-47a9d4a50aee": {
@@ -40,8 +40,8 @@
     "relativePath": "Animation\\Path.anim"
   },
   "de3f4eda-75df-487c-98f2-9fb79536d431": {
-    "asset": 1666879616152,
-    "meta": 1666880058982,
+    "asset": 1666880480546,
+    "meta": 1666881644407,
     "relativePath": "Script\\Enum"
   },
   "c2e79fdc-7456-44e1-80dd-eba02f121953": {
@@ -50,8 +50,8 @@
     "relativePath": "Animation\\TWPath.anim"
   },
   "9686e3ab-1bb3-4bbe-82e3-4ef7482a0993": {
-    "asset": 1666879616149,
-    "meta": 1666880058064,
+    "asset": 1666880480544,
+    "meta": 1666881644401,
     "relativePath": "Script\\Class"
   },
   "2cc700ab-410e-4a08-882d-8b6d67fb799e": {
@@ -145,13 +145,13 @@
     "relativePath": "Script\\Data\\base"
   },
   "57d63927-c427-4414-8650-eb36aee755b3": {
-    "asset": 1666879616147,
-    "meta": 1666880058241,
+    "asset": 1666880480541,
+    "meta": 1666881644404,
     "relativePath": "Script\\Class\\Message"
   },
   "570540a9-2b1c-4bdd-a416-e0bc1c21fbeb": {
-    "asset": 1666879616151,
-    "meta": 1666880058656,
+    "asset": 1666880480545,
+    "meta": 1666881644405,
     "relativePath": "Script\\Class\\UI"
   },
   "40c8dac6-01a0-42fb-8c33-6d51d2153d1d": {
@@ -720,13 +720,13 @@
     "relativePath": "Image\\Bear"
   },
   "196e0a91-d960-42ec-997c-831c17d20142": {
-    "asset": 1666879708238,
-    "meta": 1666880057236,
+    "asset": 1666880480539,
+    "meta": 1666881644379,
     "relativePath": "Image\\TrainDoor"
   },
   "75ed4dab-2ad7-446c-8c26-9a892e06b0aa": {
-    "asset": 1666879616119,
-    "meta": 1666880056878,
+    "asset": 1666880480515,
+    "meta": 1666881644376,
     "relativePath": "Image\\Other"
   },
   "91a0272c-0104-47a8-9921-b3d0ae4ba3ae": {
@@ -750,8 +750,8 @@
     "relativePath": "Image\\Other\\相片底.png"
   },
   "056c8011-8c09-47a0-8b4e-c00e07664628": {
-    "asset": 1666879708237,
-    "meta": 1666880056608,
+    "asset": 1666880480519,
+    "meta": 1666881644375,
     "relativePath": "Image\\BG"
   },
   "99280d3a-9aba-4c18-97e9-0de6a0d2fdd5": {
@@ -805,8 +805,8 @@
     "relativePath": "Script\\Data\\QA"
   },
   "31bd3bb4-2483-4251-8d0e-fea8132d7001": {
-    "asset": 1666879616124,
-    "meta": 1666880056881,
+    "asset": 1666880480520,
+    "meta": 1666881644377,
     "relativePath": "Image\\Other\\山"
   },
   "a9de8ef8-5d3f-4875-b2de-edbe7da73c29": {
@@ -815,8 +815,8 @@
     "relativePath": "Image\\Other\\山\\重製-功維敘隧道.png"
   },
   "6ae35de2-6ca6-44f8-b629-fbb343d476d7": {
-    "asset": 1659789292964,
-    "meta": 1666880057309,
+    "asset": 1666881531157,
+    "meta": 1666881644381,
     "relativePath": "resources\\Image\\Props"
   },
   "5091a8c1-f7c4-4ebc-b91c-260bc4663536": {
@@ -900,8 +900,8 @@
     "relativePath": "Script\\Interface\\IAsset.ts"
   },
   "d93cb32f-1e40-4ba4-b486-3b47609a86f1": {
-    "asset": 1666879616181,
-    "meta": 1666880057326,
+    "asset": 1666880480574,
+    "meta": 1666881644398,
     "relativePath": "resources\\Image\\Station"
   },
   "28f3a8ed-3217-40cf-a27f-729c931b4d1a": {
@@ -1010,13 +1010,13 @@
     "relativePath": "Image\\QA"
   },
   "eace3634-afd3-4d53-b7b9-ffbb9f7336f3": {
-    "asset": 1659633178818,
-    "meta": 1666880059540,
+    "asset": 1666881610175,
+    "meta": 1666881644425,
     "relativePath": "resources\\Image\\Props\\Props.plist"
   },
   "14ae3327-fb39-4847-a388-d0917df0074b": {
-    "asset": 1659633178716,
-    "meta": 1666880059534,
+    "asset": 1666881388697,
+    "meta": 1666881644418,
     "relativePath": "resources\\Image\\Props\\GetProps.plist"
   },
   "19927c35-6cd6-4063-817c-e7144dbbfe19": {
@@ -1030,8 +1030,8 @@
     "relativePath": "Script\\Class\\UI\\StationBtn.ts"
   },
   "1a8de254-c4e8-48e5-927d-d8a98b3f1c5b": {
-    "asset": 1659633178893,
-    "meta": 1666880057325,
+    "asset": 1666881610174,
+    "meta": 1666881644396,
     "relativePath": "resources\\Image\\Props\\Props.png"
   },
   "b004eb7e-ab56-415e-b018-e07d438336a8": {
@@ -1040,8 +1040,8 @@
     "relativePath": "resources\\Image\\Setting.png"
   },
   "8c06a1c3-beed-4e2c-99af-02dd687d56f2": {
-    "asset": 1659633178814,
-    "meta": 1666880057319,
+    "asset": 1666881388696,
+    "meta": 1666881644400,
     "relativePath": "resources\\Image\\Props\\GetProps.png"
   },
   "91533688-f25f-4e92-b9ec-4d6b6548d196": {
