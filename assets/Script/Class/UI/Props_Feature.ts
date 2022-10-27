@@ -44,11 +44,11 @@ export default class Props_Feature extends ComponentBase {
         this.info1.active = false
     }
     eventClinetClickStart_Stop(e: cc.Event, _customEventData: string) {
-        this.EventEmit(GameEvent.SendCommand,Commamnd.ClinetClickStart_Stop)
+        this.EventEmit(GameEvent.SendCommand, Commamnd.ClinetClickStart_Stop)
     }
     eventSkip(e: cc.Event, _customEventData: string) {
         MusciMng.effectPlay("BtnClick")
-        this.EventEmit(GameEvent.ManSkip)
+        this.EventEmit(GameEvent.SendCommand, Commamnd.ManSkip)
     }
     evetResetView(e: cc.Event, _customEventData: string) {
         MusciMng.effectPlay("BtnClick")

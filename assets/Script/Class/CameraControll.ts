@@ -15,6 +15,8 @@ export default class CameraControll extends ComponentBase {
 
     cameraState: CameraState;
 
+    isMoveIng: boolean;
+
     protected onLoad(): void {
         this.mineCamera = this.node.getComponent(cc.Camera)
         this.manCamera = cc.find("Canvas/Panel_Man/nMan/manCamera").getComponent(cc.Camera)
@@ -42,7 +44,6 @@ export default class CameraControll extends ComponentBase {
                 this.asyncMine()
                 this.cameraState = CameraState.Mine
             }
-
             // if (!isJump)
             //     tween = cc.tween()
             //         .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
@@ -68,7 +69,9 @@ export default class CameraControll extends ComponentBase {
     }
     async moveToManCamera(_speed: number = this.moveSpeed, isJump: boolean = true) {
         return new Promise<void>((resolve, reject) => {
-            let tween: cc.Tween;
+            if (this.isMoveIng) return reject()
+            this.isMoveIng = true
+            //有問題所以暫時不用
             // if (!isJump)
             //     tween = cc.tween()
             //         .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
@@ -85,6 +88,7 @@ export default class CameraControll extends ComponentBase {
                     this.activeManCamera(true);
                     this.activeMineCamera(false);
                     resolve()
+                    this.isMoveIng = false
                 })
                 .start()
             cc.tween(this.mineCamera)

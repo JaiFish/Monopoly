@@ -32,6 +32,7 @@ var Commamnd;
     Commamnd["GoLottery"] = "goLottery";
     Commamnd["DoorAgainGame"] = "doorAgainGame";
     Commamnd["MenGO"] = "menGo";
+    Commamnd["ManSkip"] = "manSkip";
     Commamnd["ManWait"] = "manWait";
     Commamnd["ManLineWait"] = "manLineWait";
     Commamnd["MoveTarget"] = "moveTarget";

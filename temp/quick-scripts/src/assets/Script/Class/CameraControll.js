@@ -129,7 +129,10 @@ var CameraControll = /** @class */ (function (_super) {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
-                        var tween;
+                        if (_this.isMoveIng)
+                            return reject();
+                        _this.isMoveIng = true;
+                        //有問題所以暫時不用
                         // if (!isJump)
                         //     tween = cc.tween()
                         //         .to(this.moveSpeed, { zoomRatio: this.manZoomRatio })
@@ -145,6 +148,7 @@ var CameraControll = /** @class */ (function (_super) {
                             _this.activeManCamera(true);
                             _this.activeMineCamera(false);
                             resolve();
+                            _this.isMoveIng = false;
                         })
                             .start();
                         cc.tween(_this.mineCamera)

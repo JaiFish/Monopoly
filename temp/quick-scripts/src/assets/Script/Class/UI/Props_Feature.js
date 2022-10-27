@@ -59,7 +59,7 @@ var Props_Feature = /** @class */ (function (_super) {
     };
     Props_Feature.prototype.eventSkip = function (e, _customEventData) {
         MusciMng_1.default.effectPlay("BtnClick");
-        this.EventEmit(GameEvent_1.GameEvent.ManSkip);
+        this.EventEmit(GameEvent_1.GameEvent.SendCommand, Commad_1.Commamnd.ManSkip);
     };
     Props_Feature.prototype.evetResetView = function (e, _customEventData) {
         MusciMng_1.default.effectPlay("BtnClick");

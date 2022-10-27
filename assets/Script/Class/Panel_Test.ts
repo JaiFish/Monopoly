@@ -37,6 +37,7 @@ export default class Panel_Test extends ComponentBase {
 
     }
     eventCloseView() {
+
         MusciMng.effectPlay("BtnClick")
         this.EventEmit(GameEvent.SendCommand, Commamnd.CloseVideo)
     }

@@ -1,7 +1,7 @@
 {
   "ver": "1.2.4",
   "uuid": "fb45fc8c-a87b-48eb-a40f-9709a8e35c06",
-  "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+  "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
   "size": {
     "width": 1778,
     "height": 1688
@@ -11,7 +11,7 @@
     "StationInfo_12.jpg": {
       "ver": "1.0.4",
       "uuid": "da9d3046-5814-4452-ab03-153a5b42a582",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,
@@ -33,7 +33,7 @@
     "StationInfo_13.jpg": {
       "ver": "1.0.4",
       "uuid": "65264922-519f-448d-bf67-c1a6cbfef914",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -55,7 +55,7 @@
     "StationInfo_14.jpg": {
       "ver": "1.0.4",
       "uuid": "8983d774-4497-47d8-af99-4b8e26dd457e",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,
@@ -77,7 +77,7 @@
     "StationInfo_16.jpg": {
       "ver": "1.0.4",
       "uuid": "cf0e0a96-b592-4945-8053-352b590a053a",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -99,7 +99,7 @@
     "StationInfo_17.jpg": {
       "ver": "1.0.4",
       "uuid": "7cdafc88-a4ad-452c-b736-85303f39df73",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,
@@ -121,7 +121,7 @@
     "StationInfo_18.jpg": {
       "ver": "1.0.4",
       "uuid": "ba02e911-7c65-4238-a54a-cb46b2847a80",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -143,7 +143,7 @@
     "StationInfo_19.jpg": {
       "ver": "1.0.4",
       "uuid": "f559a832-80bd-4b86-b29e-1ce936e47888",
-      "rawTextureUuid": "79bdb4d2-8738-47d4-852f-24e735e91800",
+      "rawTextureUuid": "6860af9c-8de6-4e68-821f-97f09f31a5d1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
