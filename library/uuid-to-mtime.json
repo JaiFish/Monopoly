@@ -2799,11 +2799,6 @@
     "meta": 1666880503357,
     "relativePath": "Script\\GameControll.ts"
   },
-  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
-    "asset": 1666880492073,
-    "meta": 1666880503371,
-    "relativePath": "Script\\GameModle.ts"
-  },
   "4bc34a70-a982-49e8-b984-ec4c665fa27b": {
     "asset": 1659633179460,
     "meta": 1666880503387,
@@ -2813,5 +2808,10 @@
     "asset": 1666880492077,
     "meta": 1666880503424,
     "relativePath": "Sence\\GameSence.fire"
+  },
+  "861d3cbc-aec7-4e3d-94ea-6724ba25fa35": {
+    "asset": 1666881797245,
+    "meta": 1666881818563,
+    "relativePath": "Script\\GameModle.ts"
   }
 }
